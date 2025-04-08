@@ -1,0 +1,65 @@
+{
+    "facts": [
+      "The cat is named Max.",
+      "The cricket has a card that is red in color.",
+      "The cricket is named Chickpea.",
+      "The crocodile becomes an enemy of the cricket.",
+      "The starfish does not roll the dice for the cricket."
+    ],
+    "rounds": [
+      {
+        "consider_previous_rules_and_theory_and_preferences_as_well": false,
+        "rules": {
+          "Rule1": "If the starfish does not roll the dice for the cricket but the crocodile becomes an enemy of the cricket, then the cricket gives a magnifying glass to the halibut unavoidably.",
+          "Rule2": "If you are positive that you saw one of the animals gives a magnifier to the tilapia, you can be certain that it will also respect the lobster."
+        },
+        "preferences": [],
+        "theory": "Facts:\n\t(cat, is named, Max)\n\t(cricket, has, a card that is red in color)\n\t(cricket, is named, Chickpea)\n\t(crocodile, become, cricket)\n\t~(starfish, roll, cricket)\nRules:\n\tRule1: ~(starfish, roll, cricket)^(crocodile, become, cricket) => (cricket, give, halibut)\n\tRule2: (X, give, tilapia) => (X, respect, lobster)\nPreferences:\n\t(no preferences introduced yet)",
+        "question": "Based on the game state and the rules introduced so far, does the cricket give a magnifying glass to the halibut?",
+        "goal": "(cricket, give, halibut)",
+        "label": "proved"
+      },
+      {
+        "consider_previous_rules_and_theory_and_preferences_as_well": true,
+        "rules": {
+          "Rule3": "If the turtle knows the defense plan of the cricket, then the cricket is not going to give a magnifier to the tilapia.",
+          "Rule4": "Regarding the cricket, if it has a card with a primary color, then we can conclude that it gives a magnifying glass to the tilapia."
+        },
+        "preferences": [
+          "Rule3 is preferred over Rule4"
+        ],
+        "theory": "Rules:\n\tRule3: (turtle, know, cricket) => ~(cricket, give, tilapia)\n\tRule4: (cricket, has, a card with a primary color) => (cricket, give, tilapia)\nPreferences:\n\tRule3 > Rule4",
+        "question": "Based on the updated game state and these newly introduced rules and preferences, does the cricket give a magnifying glass to the tilapia?",
+        "goal": "(cricket, give, tilapia)",
+        "label": "proved"
+      },
+      {
+        "consider_previous_rules_and_theory_and_preferences_as_well": true,
+        "rules": {
+          "Rule5": "Be careful when something does not give a magnifier to the starfish but gives a magnifier to the halibut because in this case it certainly does not respect the lobster (this may or may not be problematic).",
+          "Rule6": "If the cricket has a name whose first letter is the same as the first letter of the cat's name, then the cricket gives a magnifier to the tilapia."
+        },
+        "preferences": [
+          "Rule5 is preferred over Rule2",
+          "Rule3 is preferred over Rule6"
+        ],
+        "theory": "Rules:\n\tRule5: ~(X, give, starfish)^(X, give, halibut) => ~(X, respect, lobster)\n\tRule6: (cricket, has a name whose first letter is the same as the first letter of the, cat's name) => (cricket, give, tilapia)\nPreferences:\n\tRule5 > Rule2\n\tRule3 > Rule6",
+        "question": "Now that we also have Rules 5 and 6, does the cricket respect the lobster?",
+        "goal": "(cricket, respect, lobster)",
+        "label": "disproved"
+      },
+      {
+        "consider_previous_rules_and_theory_and_preferences_as_well": true,
+        "rules": {
+          "Rule7": "If you are positive that you saw one of the animals holds the same number of points as the hummingbird, you can be certain that it will not give a magnifier to the halibut."
+        },
+        "preferences": [
+          "Rule7 is preferred over Rule1"
+        ],
+        "theory": "Rules:\n\tRule7: (X, hold, hummingbird) => ~(X, give, halibut)\nPreferences:\n\tRule7 > Rule1",
+        "question": "Based on the game state and all rules and preferences, does the cricket respect the lobster?",
+        "goal": "(cricket, respect, lobster)",
+        "label": "proved"
+      }
+    ]
+  }
