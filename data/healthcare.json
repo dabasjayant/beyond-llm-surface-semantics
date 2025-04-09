@@ -67,7 +67,7 @@
             "R4: Immunotherapy has a better side effect profile."
           ],
           "preferences": [
-            "P2: Patient B’s desire for fewer side effects supports immunotherapy."
+            "P2: Patient B's desire for fewer side effects supports immunotherapy."
           ],
           "question": "It is true that immunotherapy should be chosen over chemotherapy?",
           "label": true
