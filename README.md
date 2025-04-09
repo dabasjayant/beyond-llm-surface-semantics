@@ -62,7 +62,7 @@ As part of the experimental design, we introduced a dynamic, variable-length cau
       "preferences": [],
       "question": "",
       "label": boolean,
-      "rounds": [
+      "updates": [
         {
           "facts": [],
           "rules": [],
