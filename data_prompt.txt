@@ -24,7 +24,7 @@ Objectives:
 
 Guidelines:
 - Facts: Can only be added. They should provide critical information and evolve with each update.
-- Rules: Can be added, modified, or removed. They should be logically consistent with the facts presented and reflect realistic causal changes.
+- Rules: Can be added or modified. They should be logically consistent with the facts presented and reflect realistic causal changes.
 - Preferences: Can be updated or added based on the changing context of the scenario.
 - Question: This may stay the same or change between updates. It should always be relevant to the facts and rules presented.
 - Label: Represents the ground-truth answer to the question for that update, based on the current facts, rules, and preferences.
