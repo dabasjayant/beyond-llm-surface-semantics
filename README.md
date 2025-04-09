@@ -28,6 +28,12 @@ Tests: Systemic reasoning, belief updates under uncertainty, and intervention ef
 Why: Controlled environment with rule changes and turn-based logic. <br/>
 Tests: Rule injection, memory over turns, multi-step planning.
 
+## Rounds
+Rounds are used to update the initial scenario for an adaptive evaluation. <br/>
+
+## Depth
+We use a minimum of 3 to a maximum of 7 update rounds to create samples for complex reasoning tasks while keeping the data generalized by using varying depth.
+
 ## Dataset schema
 As part of the experimental design, we introduced a dynamic, variable-length causal evolution framework that simulates real-world complexity through escalating task difficulty and contextual shifts across dialogue rounds.
 ```
@@ -71,3 +77,21 @@ As part of the experimental design, we introduced a dynamic, variable-length cau
   ...
 }
 ```
+
+## Dataset Generation
+
+- **Synthetic Examples**
+- **Model-Based Generation (Few-Shot Method)**
+
+### Synthetic Examples
+To begin, we manually design five carefully evaluated scenarios for each domain. These initial scenarios serve as demonstrations for generating the remaining samples. At this stage, we focus on refining the examples and addressing any issues to ensure a smooth generation process later on.
+
+### Model-Based Generation
+**Model Used:** `Claude 3.7 Sonnet`
+
+The prompts used in this step can be found in the `data_prompt.txt` file within this repository.
+
+Key considerations during the generation process:
+- **Model Exclusion:** To eliminate any potential bias between the model and our ReACT benchmark, the model is excluded from the experiments.
+- **Hypothetical Scenario Generation:** We instruct the model to avoid using any public information or common knowledge, ensuring that the generated scenarios remain free of biases embedded during the model's training.
+- **Manual Evaluation:** After generation, we manually review the scenarios to validate the labels and confirm the causal relationships are accurate.
