@@ -1,0 +1,508 @@
+[
+  {
+      "facts": [
+        "F1: Team Nexus has won their last 5 tournament matches with an average kill-death ratio of 2.1.",
+        "F2: The upcoming tournament uses a double-elimination bracket format.",
+        "F3: Team Nexus has a 75% win rate against their first-round opponent, Team Specter.",
+        "F4: Team Nexus recently signed a new support player who has increased their objective control rate by 15%."
+      ],
+      "rules": [
+        "R1: Teams with win streaks exceeding 3 matches typically maintain momentum in early tournament rounds.",
+        "R2: Double-elimination formats favor teams with consistent performance over teams with volatile performance.",
+        "R3: Historical win rates above 60% against specific opponents strongly predict future match outcomes.",
+        "R4: New roster additions typically cause temporary coordination issues that offset individual skill advantages."
+      ],
+      "preferences": [
+        "P1: Recent performance trends outweigh historical team matchup statistics.",
+        "P2: Objective control improvements outweigh potential team coordination issues when the roster change is in a support role."
+      ],
+      "question": "Will Team Nexus advance to the second round of the tournament?",
+      "label": true,
+      "rounds": [
+        {
+          "facts": [
+            "F5: Team Nexus's star player has reported wrist pain and will play with a wrist brace in the tournament.",
+            "F6: Team Specter has been boot camping for two weeks specifically to counter Team Nexus's playstyle.",
+            "F7: The tournament meta favors aggressive early-game strategies, which Team Specter specializes in."
+          ],
+          "rules": [
+            "R5: Player injuries reducing mechanical performance by 20% or more significantly impact team win probability.",
+            "R6: Targeted preparation against specific opponents can reduce historical win rate advantages by half.",
+            "R7: Teams playing against their preferred meta style gain a 25% performance advantage."
+          ],
+          "preferences": [
+            "P3: Meta advantages outweigh historical win rates when the meta strongly favors one team's established playstyle.",
+            "P4: Specific team preparation takes precedence over general performance trends."
+          ],
+          "question": "Will Team Nexus advance to the second round of the tournament?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F8: Team Nexus has adjusted their strategy to focus on mid-game teamfights rather than early aggression.",
+            "F9: The new support player has prior experience playing against Team Specter's roster in amateur leagues.",
+            "F10: Team Nexus's injured star player has been cleared to play without a wrist brace after successful treatment."
+          ],
+          "rules": [
+            "R8: Strategic adaptations that avoid direct confrontation with opponent strengths increase win probability by 30%.",
+            "R9: Prior player experience against specific opponents provides valuable insight that reduces preparation advantages.",
+            "R10: Full recovery from potential injuries eliminates performance penalties."
+          ],
+          "preferences": [
+            "P5: Strategic adaptation to avoid opponent strengths outweighs meta advantages.",
+            "P6: Player-specific knowledge can neutralize team-level preparation advantages."
+          ],
+          "question": "Will Team Nexus advance to the second round of the tournament?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F11: The tournament organizer has announced a last-minute change to patch 14.8, which significantly nerfs Team Nexus's preferred champions.",
+            "F12: Team Nexus has had only 48 hours to practice on the tournament patch.",
+            "F13: Analysis shows the patch changes reduce the effectiveness of mid-game teamfight compositions by 35%."
+          ],
+          "rules": [
+            "R11: Patch changes targeting a team's core strategy reduce their win probability proportional to the strategy's centrality.",
+            "R12: Teams require minimum 72 hours to effectively adapt to major patch changes.",
+            "R13: Nerfs exceeding 30% effectiveness require fundamental strategy shifts rather than minor adaptations."
+          ],
+          "preferences": [
+            "P7: Patch impact on core strategies outweighs previous strategic adaptations when preparation time is insufficient.",
+            "P8: Fundamental game changes override player-specific advantages."
+          ],
+          "question": "Will Team Nexus advance to the second round of the tournament?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F14: Team Nexus's coaching staff has prepared multiple alternate strategies on previous patches that are viable in the new meta.",
+            "F15: Team Specter's key jungler has been diagnosed with food poisoning and will be replaced by their substitute player.",
+            "F16: Team Nexus has historically performed 40% better against teams using substitute players."
+          ],
+          "rules": [
+            "R14: Pre-prepared alternate strategies reduce adaptation time requirements by 50%.",
+            "R15: Substitute players in key roles reduce team coordination effectiveness by 25-40%.",
+            "R16: The jungle position has the highest impact on early game performance in the current meta."
+          ],
+          "preferences": [
+            "P9: Core player substitutions outweigh strategic preparation advantages.",
+            "P10: Historical performance against substitute players is a stronger predictor than general match history when substitutions occur in key roles."
+          ],
+          "question": "Will Team Nexus advance to the second round of the tournament?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F17: Tournament officials have ruled that all matches must be played on local network rather than tournament realm due to technical issues.",
+            "F18: Team Nexus has a 30% lower win rate in local network environments compared to online play.",
+            "F19: Team Specter's substitute jungler is their former starting player who left on good terms and maintains practice with the team."
+          ],
+          "rules": [
+            "R17: Performance environment changes impact teams differently based on their practice conditions.",
+            "R18: Substitute players with recent team experience perform at 90% of starting player effectiveness.",
+            "R19: Local network play eliminates ping advantages that benefit certain playstyles."
+          ],
+          "preferences": [
+            "P11: Environmental factors that align with historical team weaknesses take precedence over player-specific advantages.",
+            "P12: Substitute players with significant recent team experience should be evaluated closer to starters than typical substitutes."
+          ],
+          "question": "Will Team Nexus advance to the second round of the tournament?",
+          "label": false
+        }
+      ]
+  },
+  {
+      "facts": [
+        "F1: The Global Gaming League (GGL) Championship has announced a $2 million prize pool for this year's tournament.",
+        "F2: Teams must qualify through regional tournaments or maintain a top 8 ranking in the world leaderboard.",
+        "F3: Team Phantom currently ranks 9th globally but has won their regional qualifier tournament.",
+        "F4: Team Phantom recently recruited a former world champion as their new coach."
+      ],
+      "rules": [
+        "R1: Regional qualifier winners receive automatic invitations to the GGL Championship regardless of global ranking.",
+        "R2: Teams are seeded in the championship bracket according to their global ranking.",
+        "R3: Lower-seeded teams face more difficult early matchups against higher-ranked opponents.",
+        "R4: Teams with experienced coaching staff typically outperform their ranking in tournament settings."
+      ],
+      "preferences": [
+        "P1: Tournament experience and preparation quality outweigh raw skill metrics in high-pressure competitions.",
+        "P2: Strategic coaching advantages are most impactful in series longer than single matches."
+      ],
+      "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+      "label": true,
+      "rounds": [
+        {
+          "facts": [
+            "F5: The GGL Championship's first round will use a best-of-one format instead of the traditional best-of-three.",
+            "F6: Team Phantom has been seeded against the 2nd ranked team globally, Team Dynasty, in the first round.",
+            "F7: Team Phantom has a 15% win rate against top 5 teams in single-game matches."
+          ],
+          "rules": [
+            "R5: Best-of-one formats increase upset potential but favor higher-ranked teams overall.",
+            "R6: First-round matchups against top 3 teams reduce advancement probability by 65% for lower-ranked teams.",
+            "R7: Historical win rates below 30% against a category of opponents indicate significant skill gaps."
+          ],
+          "preferences": [
+            "P3: Format disadvantages outweigh coaching advantages when formats specifically limit strategic adaptation.",
+            "P4: Historical performance metrics against similar-caliber opponents take precedence over general tournament preparation advantages."
+          ],
+          "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F8: GGL has revised the format to best-of-three for all rounds after multiple teams protested.",
+            "F9: Team Dynasty's star player has visa issues and may miss the first week of competition.",
+            "F10: Team Phantom has a 40% win rate in best-of-three matches against top 5 teams when those teams are missing a starting player."
+          ],
+          "rules": [
+            "R8: Format changes to best-of-three increase the importance of strategic depth and coaching.",
+            "R9: Teams missing key players perform at approximately 70% of their normal effectiveness.",
+            "R10: Win rates above 35% in best-of-three formats translate to upset potential exceeding 50% when combined with other advantages."
+          ],
+          "preferences": [
+            "P5: Player availability issues outweigh ranking advantages in tournament settings.",
+            "P6: Format changes that align with a team's strengths multiply the effect of other positive factors."
+          ],
+          "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F11: Team Dynasty's management has secured an emergency visa for their star player, who will arrive in time for the match.",
+            "F12: The tournament meta has shifted toward aggressive early-game compositions, which is contrary to Team Phantom's preferred playstyle.",
+            "F13: Team Phantom's coach has limited experience with the current meta, having been inactive for the past two seasons."
+          ],
+          "rules": [
+            "R11: Teams playing against their preferred meta style suffer a 30% performance penalty.",
+            "R12: Coaching advantages are reduced by 60% when coaches lack recent experience in the current meta.",
+            "R13: Full-strength top 3 teams win approximately 75% of best-of-three series against teams ranked outside the top 5."
+          ],
+          "preferences": [
+            "P7: Meta alignment takes priority over coaching advantages when the meta strongly contradicts a team's established playstyle.",
+            "P8: Coach experience relevance outweighs general coaching credentials when significant meta shifts have occurred."
+          ],
+          "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F14: Team Phantom has been secretly practicing innovative counter-meta strategies during their boot camp.",
+            "F15: The championship's first-round matches will be played on a surprise patch that nerfs several of Team Dynasty's core champions.",
+            "F16: Statistical analysis shows Team Phantom performs 50% better when employing unexpected strategies against higher-ranked opponents."
+          ],
+          "rules": [
+            "R14: Innovative strategies that directly counter the expected meta provide a 40% performance boost in their first implementation.",
+            "R15: Champion nerfs targeting a team's core picks reduce their effectiveness by approximately 25%.",
+            "R16: The combination of opponent-specific preparation and favorable patch changes can neutralize up to two tiers of ranking difference."
+          ],
+          "preferences": [
+            "P9: Strategic innovation advantages are amplified when combined with favorable patch changes.",
+            "P10: Specific champion balance changes outweigh general meta trends when they directly affect a team's core roster of champions."
+          ],
+          "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F17: An anonymous source has leaked Team Phantom's counter-strategies to several teams, including Team Dynasty.",
+            "F18: Team Dynasty has devoted their final 48 hours of preparation exclusively to countering Team Phantom's planned approach.",
+            "F19: Historically, teams who have had their strategies leaked lose 80% of matches against prepared opponents."
+          ],
+          "rules": [
+            "R17: Strategy leaks eliminate surprise advantages and typically result in the leaked strategy becoming a disadvantage.",
+            "R18: Teams with superior mechanical skill can develop effective counter-strategies within 48 hours when given specific information.",
+            "R19: Higher-ranked teams capitalize on strategic information more effectively than lower-ranked teams."
+          ],
+          "preferences": [
+            "P11: Information security breaches override other strategic advantages regardless of their magnitude.",
+            "P12: When both teams have complete information about each other's strategies, raw skill differences become the primary determining factor."
+          ],
+          "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F20: Team Phantom identified the source of the leak and intentionally fed misinformation as a double-bluff.",
+            "F21: Team Phantom has prepared a completely different set of strategies that specifically exploit the counters Team Dynasty is likely to employ.",
+            "F22: Team Dynasty has committed significant practice time to countering strategies Team Phantom does not intend to use."
+          ],
+          "rules": [
+            "R20: Double-bluff strategies provide a 70% advantage when opponents commit significant resources to countering decoy strategies.",
+            "R21: Practice time allocated to countering unused strategies represents wasted preparation that reduces overall effectiveness.",
+            "R22: Teams successfully executing complex psychological tactics typically outperform their mechanical skill level."
+          ],
+          "preferences": [
+            "P13: Strategic misdirection advantages outweigh raw skill differences when the misdirection successfully manipulates opponent preparation.",
+            "P14: Adaptability and tactical intelligence become determining factors when conventional strategy development has been compromised."
+          ],
+          "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
+          "label": true
+        }
+      ]
+  },
+  {
+      "facts": [
+        "F1: Celestial Tournament Series (CTS) has announced its next major event will use a new battle royale game called 'Apex Legends: Evolution'.",
+        "F2: Team Supernova is currently the #1 ranked team in the previous version of the game with 85% win rate in tournaments.",
+        "F3: The new game version introduces a class-based character system that significantly changes gameplay mechanics.",
+        "F4: Teams have been given 30 days to practice on the new version before the tournament begins."
+      ],
+      "rules": [
+        "R1: Teams with superior mechanical skills typically adapt to new game versions within 14-21 days.",
+        "R2: Game mechanic changes exceeding 40% of core gameplay require teams to develop entirely new strategies.",
+        "R3: Previous champions receive preferential seeding in tournament brackets regardless of experience with new versions.",
+        "R4: Teams with flexible playstyles adapt to drastic changes more effectively than teams with specialized strategies."
+      ],
+      "preferences": [
+        "P1: Raw mechanical skill transfers across game versions and takes precedence over specific game knowledge during transition periods.",
+        "P2: Teams that can innovate strategies quickly outperform teams relying on refined execution of established tactics when games undergo significant changes."
+      ],
+      "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+      "label": true,
+      "rounds": [
+        {
+          "facts": [
+            "F5: Team Supernova's captain and shot-caller has announced a 2-week vacation during the critical practice period.",
+            "F6: Competing teams have been secretly practicing on beta versions of the new game for the past month.",
+            "F7: Analysis shows that Team Supernova's dominant strategy in the previous version is completely ineffective in the new game."
+          ],
+          "rules": [
+            "R5: Teams missing key strategic leaders during practice periods experience a 35% reduction in adaptation speed.",
+            "R6: Early access to game versions provides approximately 1.5x effective practice time advantage.",
+            "R7: Teams forced to abandon their primary strategies typically require twice the normal adaptation period."
+          ],
+          "preferences": [
+            "P3: Practice time disadvantages outweigh mechanical skill advantages when adaptation involves fundamental strategic changes.",
+            "P4: Leadership availability during transition periods takes priority over individual player skill when evaluating team performance potential."
+          ],
+          "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F8: Team Supernova has hired an expert coach who specialized in the exact type of class-based systems introduced in the new game.",
+            "F9: The tournament format has been changed to include a group stage before elimination rounds, giving teams more competitive matches to adapt.",
+            "F10: Team Supernova's players have been participating in remote strategy sessions despite their captain's absence."
+          ],
+          "rules": [
+            "R8: Expert coaching in relevant systems can reduce adaptation time by up to 50%.",
+            "R9: Group stage formats benefit teams still adapting to new mechanics by providing competitive practice with lower elimination risk.",
+            "R10: Remote strategy development retains approximately 70% effectiveness compared to in-person sessions."
+          ],
+          "preferences": [
+            "P5: Specialized expertise in relevant systems outweighs general practice time advantages.",
+            "P6: Format advantages that allow for in-tournament adaptation outweigh pre-tournament preparation disadvantages."
+          ],
+          "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F11: A major balance patch will be applied one week before the tournament, significantly altering the effectiveness of several character classes.",
+            "F12: Team Supernova's coach specializes in the character classes most negatively affected by the balance changes.",
+            "F13: Three of Team Supernova's players have expressed frustration with the constant changes and have reduced their practice schedules."
+          ],
+          "rules": [
+            "R11: Pre-tournament patches requiring strategic readjustment disadvantage teams already behind on adaptation.",
+            "R12: Coach expertise becomes 40% less valuable when their specialized knowledge is outdated by balance changes.",
+            "R13: Reduced practice time during the final preparation week decreases performance by 15% per day of limited practice."
+          ],
+          "preferences": [
+            "P7: Team motivation and practice dedication outweigh raw skill during periods of rapid adaptation requirements.",
+            "P8: Late-stage disruptions disproportionately affect teams still establishing their fundamental approach to the game."
+          ],
+          "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F14: Team Supernova's captain has returned early from vacation after seeing the balance patch notes.",
+            "F15: The team has executed a successful 72-hour bootcamp focusing exclusively on the post-patch meta.",
+            "F16: Statistical analysis shows that the balance changes actually favor Team Supernova's natural playstyle from previous games."
+          ],
+          "rules": [
+            "R14: Intensive bootcamps can provide the equivalent of 7 days of normal practice.",
+            "R15: Leadership presence during critical adaptation periods increases team performance by 25%.",
+            "R16: Natural playstyle alignment with game meta increases performance by 30% regardless of specific game knowledge."
+          ],
+          "preferences": [
+            "P9: Intensive, focused practice sessions outweigh distributed practice time when addressing specific adaptation challenges.",
+            "P10: Natural compatibility with emerging meta takes precedence over forced adaptation to unfavorable conditions."
+          ],
+          "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F17: The tournament organizer has announced all matches will be played on LAN rather than online.",
+            "F18: Team Supernova has historically performed 40% worse in LAN environments compared to online competition.",
+            "F19: Two competing teams have significantly more LAN experience in battle royale formats."
+          ],
+          "rules": [
+            "R17: First-time LAN performers experience a 25-35% performance decrease due to environmental factors and pressure.",
+            "R18: Teams with LAN experience specific to the genre being played have a 20% performance advantage over teams without such experience.",
+            "R19: Environmental factors affect strategic execution more significantly than they affect mechanical skills."
+          ],
+          "preferences": [
+            "P11: Competition environment compatibility outweighs practice advantages when the environment significantly differs from practice conditions.",
+            "P12: Historical performance patterns in specific environments are stronger predictors than recent practice results when environment is a key variable."
+          ],
+          "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F20: Team Supernova has secured the tournament venue for three days of pre-event practice to acclimate to the LAN environment.",
+            "F21: The tournament organizer has implemented soundproof booths, eliminating many of the environmental factors that previously affected Team Supernova.",
+            "F22: Analysis of recent Team Supernova scrimmages shows they have developed innovative tactics that counter the expected tournament meta."
+          ],
+          "rules": [
+            "R20: Pre-event venue access reduces environmental adaptation requirements by 80%.",
+            "R21: Soundproof booths standardize playing conditions and reduce the variance between online and LAN performance.",
+            "R22: Innovative counter-meta strategies provide a 45% win probability increase during early tournament phases before adaptation occurs."
+          ],
+          "preferences": [
+            "P13: Environmental adaptation solutions nullify historical environment-based performance discrepancies.",
+            "P14: Strategic innovation advantages are amplified in standardized environments where execution variance is minimized."
+          ],
+          "question": "Will Team Supernova win the upcoming CTS Major tournament?",
+          "label": true
+        }
+      ]
+  },
+  {
+      "facts": [
+        "F1: Team Eclipse has dominated their league using aggressive map rotations and flanking maneuvers.",
+        "F2: A new AI-powered positioning analysis system can identify optimal map positioning in real-time.",
+        "F3: Initial testing suggests the system could improve situational awareness by approximately 15%."
+      ],
+      "rules": [
+        "R1: Teams typically adopt new technologies that enhance their existing strategic strengths.",
+        "R2: Player autonomy in decision-making is a core principle in many professional esports teams.",
+        "R3: Technology adoption depends heavily on perceived reliability in high-pressure tournament environments."
+      ],
+      "preferences": [
+        "P1: Performance improvements that align with existing team strategies are prioritized over general enhancements.",
+        "P2: Player agency in strategic decision-making outweighs potential statistical advantages from automated systems."
+      ],
+      "question": "Will Team Eclipse integrate the AI positioning system for the upcoming championship?",
+      "label": true,
+      "rounds": [
+        {
+          "facts": [
+            "F4: During scrimmage testing, three core players expressed concerns about the system overriding their intuitive flanking decisions.",
+            "F5: The team captain reported feeling distracted by the system's recommendations during critical moments."
+          ],
+          "rules": [
+            "R4: Technologies that conflict with players' instinctive gameplay are typically rejected regardless of theoretical benefits.",
+            "R5: Team captain feedback carries disproportionate weight in adoption decisions compared to other team members."
+          ],
+          "preferences": [
+            "P3: Player comfort with technology integration takes precedence over potential performance gains when team cohesion might be affected."
+          ],
+          "question": "Will Team Eclipse integrate the AI positioning system for the upcoming championship?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F6: The system developers have implemented a configurable threshold that only shows recommendations for high-impact situations.",
+            "F7: Team Eclipse's coach has customized the system to specifically enhance their signature flanking strategies rather than replace them."
+          ],
+          "rules": [
+            "R6: Customizable technology that enhances rather than replaces player decision-making significantly increases adoption likelihood.",
+            "R7: Coach-led customization creates stronger buy-in from players when technology aligns with established team identity."
+          ],
+          "preferences": [
+            "P4: Technologies that respect and enhance player agency are valued more highly than those offering marginally superior but more prescriptive recommendations."
+          ],
+          "question": "Will Team Eclipse integrate the AI positioning system for the upcoming championship?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F8: The team's main rivals have recently lost two consecutive tournaments after implementing similar AI systems.",
+            "F9: While most Team Eclipse players now appreciate the customized implementation, their star player remains vocal about preferring complete autonomy.",
+            "F10: The tournament organizer has announced stricter time limits between matches, reducing the team's traditional strategic planning sessions."
+          ],
+          "rules": [
+            "R8: Visible failures of similar technologies by competitors significantly influence adoption decisions regardless of implementation differences.",
+            "R9: Star player preferences carry substantial weight in team technology decisions, especially regarding in-game tools."
+          ],
+          "preferences": [
+            "P5: When external constraints limit traditional strategic advantages, tools that preserve effectiveness under new limitations gain priority over individual preferences."
+          ],
+          "question": "Will Team Eclipse integrate the AI positioning system for the upcoming championship?",
+          "label": true
+        }
+      ]
+  },
+  {
+      "facts": [
+        "F1: Team Crimson Strike is renowned for its strong late-game comebacks.",
+        "F2: The coaching staff has proposed integrating an early aggression tactic to disrupt opponents from the start.",
+        "F3: Preliminary simulations show that adopting this tactic could provide a 20% kill advantage during the early rounds."
+      ],
+      "rules": [
+        "R1: Teams usually stick to strategies that have reliably secured wins in the past.",
+        "R2: Quantifiable performance improvements are persuasive in considering significant strategy changes.",
+        "R3: Coaching recommendations are given high priority when supported by reliable simulation data."
+      ],
+      "preferences": [
+        "P1: A notable numerical advantage in early rounds can justify deviating from a well-established late-game strategy if simulations are robust.",
+        "P2: Coaching insights that promise a strategic edge override moderate concerns from historical playstyles."
+      ],
+      "question": "Will Team Crimson Strike adopt the early aggression tactic in the upcoming major tournament?",
+      "label": true,
+      "rounds": [
+        {
+          "facts": [
+            "F4: Initial scrimmages with the early aggression tactic revealed disorganized starts and uncoordinated team play during the first five minutes.",
+            "F5: Several veteran players voiced strong concerns about the tactic's reliability under high-pressure conditions."
+          ],
+          "rules": [
+            "R4: Early scrimmage performance is a key indicator of a tactic's viability, particularly in high-stakes scenarios.",
+            "R5: Concerns from veteran players can significantly hinder the adoption of drastic changes in playstyle."
+          ],
+          "preferences": [
+            "P3: When a new tactic introduces immediate disarray, the weight of veteran opinion can nullify promising simulation metrics."
+          ],
+          "question": "Will Team Crimson Strike adopt the early aggression tactic in the upcoming major tournament?",
+          "label": false
+        },
+        {
+          "facts": [
+            "F6: Subsequent scrimmages introduced adjusted timing for initiating the aggression, resulting in improved team coordination.",
+            "F7: Revised simulation metrics now indicate an 18% early round kill advantage with a reduction in coordination issues."
+          ],
+          "rules": [
+            "R6: Tactical adjustments that address early disorganization can redeem previous experimental shortcomings.",
+            "R7: Enhanced simulation results, particularly when team coordination is improved, are heavily weighted in decision-making."
+          ],
+          "preferences": [
+            "P4: Improvements that successfully mitigate initial disarray can shift the overall evaluation in favor of the new tactic."
+          ],
+          "question": "Will Team Crimson Strike adopt the early aggression tactic in the upcoming major tournament?",
+          "label": true
+        },
+        {
+          "facts": [
+            "F8: Recent analytic reports highlight a growing meta trend where opponents are increasingly vulnerable during early game aggression.",
+            "F9: The newest recruits on the team have quickly adapted to the modified early aggression tactic, showing significant skill improvements.",
+            "F10: Overall practice sessions now report higher win rates with the tactic, despite some lingering skepticism from a minority of veteran players."
+          ],
+          "rules": [
+            "R8: Exploiting opponent vulnerabilities is a crucial factor in determining strategic effectiveness.",
+            "R9: Quick adaptation by newer team members is a strong indicator of successful tactic integration.",
+            "R7: Coaching recommendations remain authoritative, especially when validated by cumulative positive metrics."
+          ],
+          "preferences": [
+            "P5: The combined evidence of opponent vulnerability, rapid adaption by new players, and improved win rates outweighs the reservations of a few skeptics."
+          ],
+          "question": "Will Team Crimson Strike adopt the early aggression tactic in the upcoming major tournament?",
+          "label": true
+        }
+      ]
+    }
+
+]
