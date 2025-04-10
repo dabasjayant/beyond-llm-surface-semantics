@@ -68,496 +68,801 @@
       ]
   },
   {
-      "facts": [
-        "F1: Samantha is a 28-year-old professional who has experienced moderate anxiety over the past year.",
-        "F2: She recently started a daily journaling practice after reading about its benefits for mental health.",
-        "F3: Studies in human behavior indicate that consistent journaling can help reduce stress and improve emotional clarity."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to continue a self-help practice when they experience early improvements in mental well-being.",
-        "R2: Positive reinforcement from personal experience and feedback encourages long-term habit formation.",
-        "R3: Consistency in daily routines is a critical predictor of sustained behavioral change."
-      ],
-      "preferences": [
-        "P1: Direct improvements in well-being are prioritized over occasional setbacks in habit formation.",
-        "P2: Feedback from mental health professionals can further reinforce continued engagement in healthy practices."
-      ],
-      "question": "Will Samantha maintain a daily journaling habit for improved mental health?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: After one month, Samantha reported feeling more organized and less overwhelmed by her daily stressors.",
-            "F5: Her close friends noticed a more positive outlook and the development of healthier coping strategies.",
-            "F6: A preliminary self-assessment indicated a 30% reduction in daily anxiety levels since starting journaling."
-          ],
-          "rules": [
-            "R4: Self-reported improvements and observable behavioral changes serve as strong motivators for continuing a habit.",
-            "R5: Positive social feedback from peers reinforces personal commitment to self-improvement practices."
-          ],
-          "preferences": [
-            "P3: When both personal metrics and social observations are positive, commitment to a new habit is strongly supported."
-          ],
-          "question": "Will Samantha maintain a daily journaling habit for improved mental health?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: Two months into her journaling practice, Samantha experienced a few weeks with inconsistent entries due to a temporary increase in work demands.",
-            "F8: Despite the inconsistency, a scheduled consultation with a mental health professional confirmed some ongoing benefits from her past journaling.",
-            "F9: During this period, she expressed concern about maintaining her routine amidst fluctuating work pressures."
-          ],
-          "rules": [
-            "R6: Occasional disruptions due to external stressors do not necessarily indicate the abandonment of a beneficial habit.",
-            "R7: Professional consultation and external validation are key factors to support the continued practice despite temporary setbacks."
-          ],
-          "preferences": [
-            "P4: Temporary inconsistencies are acceptable if professional feedback confirms the overall benefit of the habit."
-          ],
-          "question": "Will Samantha maintain a daily journaling habit for improved mental health?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F10: Following her consultation, Samantha enrolled in an online community group focused on journaling for mental health.",
-            "F11: Participation in peer support sessions led to renewed motivation, and she reported rediscovering the benefits of regular journaling.",
-            "F12: Recent self-assessments indicated a sustained decrease in anxiety and improved clarity in emotion management."
-          ],
-          "rules": [
-            "R8: Engagement in community support programs is a strong predictor of sustained behavioral change.",
-            "R9: When individuals rekindle their motivation through peer interactions, the habit is more likely to become permanent."
-          ],
-          "preferences": [
-            "P5: Community reinforcement and ongoing self-assessment improvements override earlier inconsistencies in the habit."
-          ],
-          "question": "Will Samantha maintain a daily journaling habit for improved mental health?",
-          "label": true
-        }
-      ]
+    "facts": [
+      "F1: Thomas has been advised by his doctor to begin a regular exercise program to address his borderline high blood pressure.",
+      "F2: Thomas has purchased a 12-month gym membership at a facility near his workplace.",
+      "F3: Thomas has verbally committed to his spouse that he will exercise three times per week.",
+      "F4: Thomas has historically abandoned new health initiatives within 4-6 weeks."
+    ],
+    "rules": [
+      "R1: Financial commitments increase the likelihood of sustained behavior change.",
+      "R2: Public commitments to close relationships enhance accountability for health behavior change.",
+      "R3: Past behavior patterns strongly predict future behavior consistency unless intervention strategies specifically address historical barriers."
+    ],
+    "preferences": [
+      "P1: Medical necessity can override historical behavior patterns when the consequences are clearly understood.",
+      "P2: Multiple commitment mechanisms enhance probability of success more than any single approach."
+    ],
+    "question": "Will Thomas maintain his exercise program for at least six months?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: Thomas has joined a workplace wellness program that offers $50 monthly incentives for meeting exercise goals.",
+          "F6: Thomas's spouse has agreed to exercise with him twice weekly.",
+          "F7: Thomas has scheduled exercise sessions in his calendar as recurring appointments."
+        ],
+        "rules": [
+          "R4: Financial incentives that provide immediate rewards increase adherence to health behavior changes.",
+          "R5: Exercise with companionship significantly increases program retention rates.",
+          "R6: Implementation intentions (specific plans for when, where, and how to act) increase follow-through on health behaviors."
+        ],
+        "preferences": [
+          "P3: Social support mechanisms are more effective than individual commitment strategies.",
+          "P4: Multiple reinforcement systems that address different motivation types can overcome historical behavior patterns."
+        ],
+        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Thomas's workplace has announced a restructuring requiring him to commute an additional 30 minutes each way.",
+          "F9: The wellness program incentive has been reduced to $25 monthly due to budget constraints.",
+          "F10: Thomas missed four scheduled exercise sessions in the past two weeks."
+        ],
+        "rules": [
+          "R7: Time constraints are the most commonly cited barrier to maintaining exercise programs.",
+          "R8: Reduction in incentives reduces behavioral compliance proportionally to the percentage decrease.",
+          "R9: Missing multiple scheduled health behaviors in succession predicts program abandonment."
+        ],
+        "preferences": [
+          "P5: Practical barriers such as time constraints typically outweigh incentive and social support mechanisms.",
+          "P6: Initial behavior patterns within the first month predict long-term adherence with 70% accuracy."
+        ],
+        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: Thomas has received results from recent medical tests showing his blood pressure has increased to clinical hypertension levels.",
+          "F12: Thomas has adjusted his schedule to exercise during lunch breaks at his workplace gym.",
+          "F13: Thomas's doctor has discussed potential medication requirements if lifestyle changes are not implemented."
+        ],
+        "rules": [
+          "R10: Concrete evidence of health deterioration significantly increases health behavior compliance.",
+          "R11: Adaptation of exercise timing to fit current life circumstances increases program adherence.",
+          "R12: Desire to avoid medication is a strong motivator for lifestyle modification compliance."
+        ],
+        "preferences": [
+          "P7: Tangible health concerns outweigh inconvenience factors when consequences are immediate and serious.",
+          "P8: Adaptive strategies that address specific obstacles demonstrate higher success rates than rigid approaches."
+        ],
+        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F14: Thomas's spouse has injured their knee and can no longer participate in exercise sessions.",
+          "F15: Thomas has been assigned a major project at work with deadlines that require occasional overtime.",
+          "F16: Thomas has missed the past five scheduled exercise sessions."
+        ],
+        "rules": [
+          "R13: Loss of exercise companionship reduces program adherence by approximately 40%.",
+          "R14: Work demands that fluctuate unpredictably disrupt health behavior more than consistent time constraints.",
+          "R15: Consecutive missed sessions beyond four typically indicate pattern collapse rather than temporary disruption."
+        ],
+        "preferences": [
+          "P9: Work obligations typically take precedence over health behaviors during high-pressure periods.",
+          "P10: Multiple simultaneous disruptions to support systems predict behavior abandonment even when health consequences are understood."
+        ],
+        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F17: Thomas has been prescribed blood pressure medication by his doctor with notable side effects.",
+          "F18: Thomas has hired a personal trainer who provides accountability through twice-weekly sessions.",
+          "F19: Thomas has found a substitute exercise partner in a coworker with similar health goals."
+        ],
+        "rules": [
+          "R16: Experiencing medication side effects increases motivation for lifestyle modifications by an average of 60%.",
+          "R17: Professional accountability with financial commitment provides stronger adherence than peer accountability.",
+          "R18: Replacement of lost support systems within 2 weeks prevents complete behavior abandonment."
+        ],
+        "preferences": [
+          "P11: Direct negative experiences with treatment alternatives strongly reinforce health behavior compliance.",
+          "P12: Professional support systems can compensate for most other adherence barriers when consistently applied."
+        ],
+        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "label": true
+      }
+    ]
   },
   {
-      "facts": [
-        "F1: Marcus is a 40-year-old working parent who experiences considerable daily stress.",
-        "F2: He recently enrolled in an evening yoga class to manage his stress levels.",
-        "F3: Research in human behavior indicates that even one weekly yoga session can lead to significant stress reduction."
-      ],
-      "rules": [
-        "R1: Individuals under high stress are often motivated to adopt practices with proven wellness benefits.",
-        "R2: Consistent participation in stress-relief activities tends to increase when early positive outcomes are noted.",
-        "R3: Social encouragement and a supportive environment are key factors in sustaining new healthy habits."
-      ],
-      "preferences": [
-        "P1: Immediate improvements in mental and physical well-being are prioritized over initial scheduling conflicts.",
-        "P2: Reinforcement from peers and visible benefits in personal health enhance commitment to the practice."
-      ],
-      "question": "Will Marcus continue to attend yoga classes regularly over the next six months?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: In the first month, Marcus attended yoga classes three times and noted slight improvements in sleep quality.",
-            "F5: Positive feedback from his fellow yoga practitioners encouraged him to persist with his new routine.",
-            "F6: Occasionally, a busy work schedule forced him to miss sessions."
-          ],
-          "rules": [
-            "R4: Early engagement in a wellness activity coupled with measurable improvements increases the likelihood of continued participation.",
-            "R5: Occasional absences are acceptable if the overall trend in personal benefits is positive."
-          ],
-          "preferences": [
-            "P3: Positive social feedback can mitigate concerns about sporadic attendance."
-          ],
-          "question": "Will Marcus continue to attend yoga classes regularly over the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: By the three-month mark, Marcus adjusted his work schedule and began attending classes more consistently.",
-            "F8: His self-assessment indicated a 25% reduction in stress and increased energy levels during this period."
-          ],
-          "rules": [
-            "R6: Noticeable improvements in well-being promote more consistent engagement in stress-relief activities.",
-            "R7: Improved personal outcomes reinforce the desire to adhere to the new habit, despite occasional schedule conflicts."
-          ],
-          "preferences": [
-            "P4: Measurable stress reduction and energy gains strengthen the commitment to long-term practice."
-          ],
-          "question": "Will Marcus continue to attend yoga classes regularly over the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F9: After five months, Marcus not only sustained regular attendance but also began encouraging colleagues to join the sessions.",
-            "F10: A new flexible work schedule introduced by his employer further supports his ability to maintain his yoga routine."
-          ],
-          "rules": [
-            "R8: Long-term behavioral changes are more likely when individuals become advocates for the activity they benefit from.",
-            "R9: External modifications such as workplace flexibility play a decisive role in supporting continued habit formation."
-          ],
-          "preferences": [
-            "P5: The combination of personal improvements, social advocacy, and workplace support solidifies the longevity of the new behavior."
-          ],
-          "question": "Will Marcus continue to attend yoga classes regularly over the next six months?",
-          "label": true
-        }
-      ]
+    "facts": [
+      "F1: Olivia is considering purchasing a new electric vehicle priced at $45,000.",
+      "F2: Olivia currently owns a 10-year-old gas-powered car with increasing maintenance costs.",
+      "F3: Olivia has researched electric vehicles for 3 months and identified this specific model as her preference.",
+      "F4: Olivia's annual income is $85,000 with monthly discretionary funds of approximately $800."
+    ],
+    "rules": [
+      "R1: Major purchase decisions typically require the financial capacity to maintain regular payments without exceeding 15% of monthly income.",
+      "R2: Consumers replace vehicles when maintenance costs exceed 30% of the vehicle's current value within a 12-month period.",
+      "R3: Extended research periods (>2 months) typically indicate serious purchase intent and increase purchase probability."
+    ],
+    "preferences": [
+      "P1: Financial prudence takes precedence over consumer preferences when monthly payments would exceed available discretionary funds.",
+      "P2: Practical necessity outweighs financial constraints when current solutions become unreliable."
+    ],
+    "question": "Will Olivia purchase the electric vehicle within the next month?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: The dealership has offered Olivia a financing option of $550 monthly payments for 72 months.",
+          "F6: Olivia's current vehicle has broken down twice in the past month, requiring $1,200 in repairs.",
+          "F7: A government tax incentive program has just been announced, offering $7,500 rebates on electric vehicle purchases."
+        ],
+        "rules": [
+          "R4: Vehicle reliability issues that impact daily functioning accelerate replacement timelines.",
+          "R5: Tax incentives effectively reduce perceived purchase price and increase purchase likelihood.",
+          "R6: Monthly payments below 70% of discretionary funds are typically considered manageable for major purchases."
+        ],
+        "preferences": [
+          "P3: Immediate financial incentives significantly increase the priority of planned purchases.",
+          "P4: Reliability concerns outweigh short-term financial constraints when daily functioning is impacted."
+        ],
+        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Olivia has discovered the tax incentive requires waiting 6-8 weeks for reimbursement after purchase.",
+          "F9: Olivia's employer has announced possible layoffs in her department within the next quarter.",
+          "F10: The dealership has a limited inventory and cannot guarantee availability beyond the current month."
+        ],
+        "rules": [
+          "R7: Job insecurity typically delays major financial commitments by 6-12 months.",
+          "R8: Delayed financial incentives reduce their immediate impact on purchase decisions by approximately 50%.",
+          "R9: Perceived scarcity increases purchase urgency but is moderated by financial risk assessment."
+        ],
+        "preferences": [
+          "P5: Employment stability concerns override most other purchase factors in decision-making hierarchies.",
+          "P6: Immediate financial security takes precedence over potential future scarcity."
+        ],
+        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: Olivia's employer has confirmed her position is secure and not affected by the layoffs.",
+          "F12: The dealership has offered an additional $3,000 discount if Olivia purchases within two weeks.",
+          "F13: Olivia's mechanic has advised her current vehicle needs a transmission replacement estimated at $3,800."
+        ],
+        "rules": [
+          "R10: Repair costs exceeding 50% of a vehicle's value typically trigger replacement decisions.",
+          "R11: Immediate discounts have approximately twice the psychological impact of equivalent delayed incentives.",
+          "R12: Confirmation of job security typically restores pre-uncertainty purchasing patterns within 2 weeks."
+        ],
+        "preferences": [
+          "P7: Confirmed job security neutralizes employment concern factors in purchase decisions.",
+          "P8: Combined immediate incentives and functional necessity override most remaining financial hesitations."
+        ],
+        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F14: Olivia has discovered the electric vehicle model has been recalled twice in the past year for battery issues.",
+          "F15: A new model with improved range and features will be released in three months at a similar price point.",
+          "F16: Olivia's current vehicle has been repaired and the mechanic believes it should function reliably for another 6-8 months."
+        ],
+        "rules": [
+          "R13: Safety and reliability concerns reduce purchase likelihood for specific models by approximately 65%.",
+          "R14: Anticipated product improvements within a 3-month window delay purchase decisions in approximately 70% of cases.",
+          "R15: Temporary resolution of immediate necessity reduces purchase urgency proportional to the estimated resolution timeframe."
+        ],
+        "preferences": [
+          "P9: Product quality and safety concerns override financial incentives in purchase hierarchies.",
+          "P10: Anticipated product improvements within a near timeframe (≤3 months) typically delay purchases when current solutions are functional."
+        ],
+        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F17: The manufacturer has addressed the recall issues and extended the battery warranty to 10 years with free replacement.",
+          "F18: The dealership has only one vehicle left in stock and has received multiple inquiries about it.",
+          "F19: Olivia's car has developed new electrical problems affecting its reliability for her daily commute."
+        ],
+        "rules": [
+          "R16: Extended warranties mitigate approximately 80% of reliability concerns in purchase decisions.",
+          "R17: Genuine scarcity with verification increases purchase urgency by approximately 40%.",
+          "R18: Commute reliability is typically weighted as essential in vehicle purchase decisions for working professionals."
+        ],
+        "preferences": [
+          "P11: Daily function necessities override future product improvement considerations.",
+          "P12: Manufacturer accountability measures significantly reduce the impact of previous quality concerns."
+        ],
+        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "label": true
+      }
+    ]
   },
   {
-      "facts": [
-        "F1: David is a 45-year-old manager who has been experiencing persistent burnout at work.",
-        "F2: To cope with his stress, he recently started a daily meditation practice.",
-        "F3: Research in human behavior shows that regular meditation can significantly reduce burnout and improve emotional regulation."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to continue a wellness practice if they notice early emotional improvements.",
-        "R2: Consistent engagement in mindfulness practices is correlated with long-term mental health benefits.",
-        "R3: External support from family, colleagues, and professionals reinforces commitment to new stress-relief practices."
-      ],
-      "preferences": [
-        "P1: Immediate positive changes in mood and stress levels are prioritized over initial irregularities in practice.",
-        "P2: Regular encouragement and professional feedback further solidify the commitment to daily meditation."
-      ],
-      "question": "Will David continue his daily meditation practice for the next six months?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: Two weeks into his new routine, David reported feeling marginally less overwhelmed, though some days remained challenging.",
-            "F5: His family observed a slight improvement in his mood and patience at home.",
-            "F6: David occasionally missed meditation sessions due to unpredictable work demands."
-          ],
-          "rules": [
-            "R4: Early stages of adopting new habits often include fluctuations in routine and benefits.",
-            "R5: Initial improvements in mood and energy can motivate continued engagement, even with occasional lapses."
-          ],
-          "preferences": [
-            "P3: Occasional missed sessions are acceptable if the overall trend shows reduced burnout symptoms."
-          ],
-          "question": "Will David continue his daily meditation practice for the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: After one month, David's self-assessment indicated a 20% improvement in perceived stress levels.",
-            "F8: Colleagues commented on his increased calmness during high-pressure meetings.",
-            "F9: A meditation coach provided personalized feedback that boosted his confidence in the practice."
-          ],
-          "rules": [
-            "R6: Consistent practice resulting in measurable improvements reinforces long-term adherence to wellness activities.",
-            "R7: Positive external feedback and professional guidance are key facilitators for sustaining new behaviors."
-          ],
-          "preferences": [
-            "P4: Direct performance feedback can effectively counterbalance early inconsistencies in daily practice."
-          ],
-          "question": "Will David continue his daily meditation practice for the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F10: At the two-month mark, increased work pressure forced David to skip several meditation sessions.",
-            "F11: Nevertheless, he reported a heightened awareness of his stress triggers even when sessions were missed.",
-            "F12: His meditation coach reassured him that even intermittent practice can yield cumulative benefits over time."
-          ],
-          "rules": [
-            "R8: High work demands can cause temporary disruptions, but observable personal benefits still promote continued practice.",
-            "R9: Professional reassurance helps mitigate discouragement resulting from inconsistent adherence."
-          ],
-          "preferences": [
-            "P5: Recognition that even intermittent meditation is beneficial supports David’s long-term commitment despite scheduling challenges."
-          ],
-          "question": "Will David continue his daily meditation practice for the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F13: By the three-month point, David adapted his schedule to include short meditation breaks during work hours.",
-            "F14: He also joined an online meditation community that provided daily motivational messages.",
-            "F15: Recent surveys revealed that his overall stress levels had significantly decreased compared to his baseline measurement."
-          ],
-          "rules": [
-            "R10: Adaptability in integrating wellness practices into a busy schedule is a strong predictor of long-term adherence.",
-            "R11: Active participation in supportive communities enhances motivation and commitment to daily practices."
-          ],
-          "preferences": [
-            "P6: Practical scheduling adjustments combined with community support can effectively overcome challenges posed by a hectic work environment."
-          ],
-          "question": "Will David continue his daily meditation practice for the next six months?",
-          "label": true
-        }
-      ]
+    "facts": [
+      "F1: Marcus and Jamie have been dating for eight months.",
+      "F2: Marcus has been offered a prestigious job opportunity requiring relocation to another country for two years.",
+      "F3: Jamie has a established career in their current city that would be difficult to continue remotely.",
+      "F4: Marcus and Jamie have discussed marriage as a future possibility but have made no formal commitments."
+    ],
+    "rules": [
+      "R1: Relationships under one year typically have lower resilience to long-distance arrangements than more established relationships.",
+      "R2: Career advancement opportunities are generally given high priority by individuals in their professional development years (25-35).",
+      "R3: Relationship commitments typically increase in priority relative to their formality and duration."
+    ],
+    "preferences": [
+      "P1: Professional growth opportunities typically take precedence over early-stage relationships without formal commitments.",
+      "P2: Career stability typically outweighs relationship factors unless the relationship has formalized commitments."
+    ],
+    "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: Marcus has learned that the position includes provisions for four paid visits home annually.",
+          "F6: Jamie has expressed willingness to attempt a long-distance relationship.",
+          "F7: Three of Marcus's colleagues have maintained successful relationships through similar international assignments."
+        ],
+        "rules": [
+          "R4: Regular in-person contact significantly increases the viability of long-distance relationships.",
+          "R5: Explicit partner support for career decisions increases the likelihood of choosing career advancement.",
+          "R6: Social evidence of success in similar situations increases willingness to attempt challenging relationship arrangements."
+        ],
+        "preferences": [
+          "P3: Mutual support for individual growth typically strengthens relationship foundations when temporary sacrifices are required.",
+          "P4: Viable compromise solutions are typically preferred over binary choose-one decisions in relationship contexts."
+        ],
+        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F8: Marcus's previous relationship ended due to career-related relocation and prolonged separation.",
+          "F9: Jamie has revealed plans to pursue a graduate degree that would require intensive time commitment for the next two years.",
+          "F10: The job opportunity's salary would allow Marcus to eliminate his substantial student debt within 18 months."
+        ],
+        "rules": [
+          "R7: Past relationship disappointments with similar causes create heightened caution about similar situations.",
+          "R8: Parallel intensive commitments can reduce the perceived cost of separation periods in relationships.",
+          "R9: Financial freedom goals within specific timeframes strongly influence major life decisions."
+        ],
+        "preferences": [
+          "P5: Avoiding repeated relationship failure patterns typically takes precedence over new professional opportunities when patterns are recognized.",
+          "P6: Financial stability goals can outweigh relationship considerations when debt burden is significant."
+        ],
+        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: Marcus and Jamie have discovered that Jamie's graduate program offers study abroad options at a university near Marcus's potential job location.",
+          "F12: Marcus's company has offered to provide housing that could accommodate both Marcus and Jamie.",
+          "F13: Jamie's family has expressed strong disapproval of potentially relocating for a relationship without marriage."
+        ],
+        "rules": [
+          "R10: Synchronistic opportunities that address major obstacles typically shift decision outcomes.",
+          "R11: Practical support for relocation significantly reduces the perceived cost of relationship transitions.",
+          "R12: Family approval functions as a significant factor in relationship decisions, particularly for major transitions."
+        ],
+        "preferences": [
+          "P7: Coincidental opportunities that solve multiple problems simultaneously typically override previous decision frameworks.",
+          "P8: Practical solutions to logistical challenges take precedence over social approval factors in relationship decisions."
+        ],
+        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F14: Jamie has learned that the foreign study option would delay graduation by an additional year.",
+          "F15: Marcus has discovered the position would require 60% travel throughout the region, limiting time together even if Jamie relocated.",
+          "F16: Marcus and Jamie have had three significant relationship conflicts in the past month while discussing the potential move."
+        ],
+        "rules": [
+          "R13: Educational timeline extensions typically decrease willingness to modify academic plans for relationship factors.",
+          "R14: Anticipated time together is a primary factor in evaluating relationship transition decisions.",
+          "R15: Increased conflict frequency during decision periods predicts relationship stress under the contemplated conditions."
+        ],
+        "preferences": [
+          "P9: Relationship harmony indicators during stress periods outweigh opportunity factors in predicting successful transitions.",
+          "P10: Clear relationship viability concerns typically take precedence over professional advantages when conflict patterns emerge."
+        ],
+        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F17: Marcus's current employer has offered a promotion with only 15% less compensation than the international position.",
+          "F18: Marcus and Jamie have attended relationship counseling and developed improved communication strategies.",
+          "F19: The international employer has reduced the travel requirement to 30% and offered to review after six months."
+        ],
+        "rules": [
+          "R16: Local alternatives within 20% of compensation value significantly reduce the attractiveness of relocation opportunities.",
+          "R17: Proactive relationship maintenance efforts increase confidence in relationship resilience during stress periods.",
+          "R18: Employer flexibility on key obstacles demonstrates potential for ongoing accommodation of relationship needs."
+        ],
+        "preferences": [
+          "P11: Relationship investment through formal improvement processes increases the priority of relationship preservation.",
+          "P12: Reduced differential between competing options decreases willingness to accept relationship disruption."
+        ],
+        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
+        "label": true
+      }
+    ]
   },
   {
-      "facts": [
-        "F1: Eric is a 32-year-old technology professional with a keen interest in sustainable living.",
-        "F2: He recently started a home composting system to reduce his carbon footprint.",
-        "F3: Research in human behavior shows that eco-friendly practices can boost personal satisfaction and reduce stress."
-      ],
-      "rules": [
-        "R1: Individuals tend to continue sustainable habits if they experience immediate personal benefits.",
-        "R2: Social reinforcement from peers and community groups significantly influences the maintenance of new lifestyle choices.",
-        "R3: Long-term adherence to eco-friendly practices is facilitated by accessible community resources and visible positive outcomes."
-      ],
-      "preferences": [
-        "P1: Personal well-being improvements from sustainable practices outweigh initial inconveniences.",
-        "P2: Strong online and community support reinforces the commitment to eco-friendly behaviors."
-      ],
-      "question": "Will Eric maintain his sustainable living practices, including composting, over the next year?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: After three months, Eric’s composting system has produced nutrient-rich soil for his home garden.",
-            "F5: His social media posts about the composting success have received enthusiastic praise from his peers.",
-            "F6: Local environmental groups have shared additional composting tips with him, encouraging further improvement."
-          ],
-          "rules": [
-            "R4: Early tangible benefits, such as improved garden yield, reinforce the continuation of sustainable habits.",
-            "R5: Positive social media and community feedback play a crucial role in encouraging new eco-friendly practices."
-          ],
-          "preferences": [
-            "P3: Visible community recognition and early success make it highly likely for individuals to sustain eco-friendly actions."
-          ],
-          "question": "Will Eric maintain his sustainable living practices, including composting, over the next year?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: At the six-month mark, Eric encountered setbacks due to inconsistent local waste disposal policies.",
-            "F8: He needed to invest extra time to manually manage his composting system during irregular waste pickup schedules.",
-            "F9: Despite these challenges, the overall benefits of rich compost and a flourishing garden remained evident."
-          ],
-          "rules": [
-            "R6: Temporary administrative setbacks, such as inconsistent waste disposal, generally do not deter adoption when personal benefits are clear.",
-            "R7: Minor inconveniences are considered acceptable if the long-term ecological and personal benefits persist."
-          ],
-          "preferences": [
-            "P4: Occasional management hassles are outweighed by the environmental benefits and community support that sustain motivation."
-          ],
-          "question": "Will Eric maintain his sustainable living practices, including composting, over the next year?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F10: Recently, a new local environmental policy introduced subsidies for composting and other sustainable practices.",
-            "F11: Eric has seen a growing number of neighbors joining community gardens and composting initiatives.",
-            "F12: He is now actively volunteering with a local environmental group to promote sustainable living practices."
-          ],
-          "rules": [
-            "R8: Policy incentives and expanding community networks significantly enhance the likelihood of maintaining sustainable behaviors.",
-            "R9: Active community involvement and volunteering provide robust reinforcement for long-term behavior change."
-          ],
-          "preferences": [
-            "P5: The combined effect of financial incentives, community networking, and volunteer engagement decisively supports the continued practice of sustainable living."
-          ],
-          "question": "Will Eric maintain his sustainable living practices, including composting, over the next year?",
-          "label": true
-        }
-      ]
+    "facts": [
+      "F1: Alex has been smoking one pack of cigarettes daily for 12 years.",
+      "F2: Alex has attempted to quit smoking three times in the past five years, with the longest smoke-free period lasting 6 weeks.",
+      "F3: Alex's doctor has recently informed them that early signs of respiratory issues are developing.",
+      "F4: Alex's health insurance now offers a smoking cessation program with free nicotine replacement therapy."
+    ],
+    "rules": [
+      "R1: Health warning events typically increase motivation for behavior change by approximately 40% in the short term.",
+      "R2: Previous quit attempts with relapse reduce confidence in future success by approximately 15% per failed attempt.",
+      "R3: Access to evidence-based cessation resources increases quit success probability by 25-30%."
+    ],
+    "preferences": [
+      "P1: Immediate health concerns typically outweigh habit reinforcement in decision hierarchies.",
+      "P2: Resource accessibility reduces the impact of past failure patterns on new behavior change attempts."
+    ],
+    "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: Alex's partner has also decided to quit smoking simultaneously and suggested they support each other.",
+          "F6: Alex has joined a weekly smoking cessation support group at a local community center.",
+          "F7: Alex has informed friends and family about the quit attempt, creating social accountability."
+        ],
+        "rules": [
+          "R4: Partner co-quitting increases success rates by approximately 35% compared to solo attempts.",
+          "R5: Regular support group participation increases long-term cessation success by approximately 25%.",
+          "R6: Public commitment to behavior change creates accountability mechanisms that increase follow-through likelihood."
+        ],
+        "preferences": [
+          "P3: Social support systems significantly increase the effectiveness of cessation resources.",
+          "P4: Multiple simultaneous support mechanisms can overcome historical relapse patterns."
+        ],
+        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Alex's partner has relapsed after three weeks and resumed smoking at home.",
+          "F9: Alex has experienced significant withdrawal symptoms including irritability and difficulty concentrating at work.",
+          "F10: Alex has begun socializing more frequently with colleagues who smoke during break periods."
+        ],
+        "rules": [
+          "R7: Partner relapse increases the quit failure rate by approximately 60% in cohabiting relationships.",
+          "R8: Withdrawal symptoms that impact work performance predict relapse with 70% accuracy when persistent beyond three weeks.",
+          "R9: Regular exposure to social smoking environments decreases success probability by approximately 45%."
+        ],
+        "preferences": [
+          "P5: Environmental smoking cues typically override support resources when multiple triggers are present simultaneously.",
+          "P6: Daily functional impairment typically outweighs long-term health concerns during intense withdrawal periods."
+        ],
+        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: Alex has requested and received a prescription for medication that reduces nicotine cravings.",
+          "F12: Alex has switched to a different department at work where fewer colleagues smoke.",
+          "F13: Alex's respiratory symptoms have noticeably improved after four weeks without smoking."
+        ],
+        "rules": [
+          "R10: Pharmacological interventions reduce relapse risk by approximately 50% compared to willpower-only approaches.",
+          "R11: Environmental modifications that reduce exposure to smoking cues increase success rates by approximately 30%.",
+          "R12: Noticeable health improvements within the first month increase motivation maintenance by approximately 40%."
+        ],
+        "preferences": [
+          "P7: Tangible health improvements typically reinforce commitment more effectively than abstract future health benefits.",
+          "P8: Combined pharmacological and environmental interventions can override the impact of significant social triggers."
+        ],
+        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F14: Alex has experienced a major family crisis requiring extended time with relatives who smoke heavily.",
+          "F15: Alex has reported significant side effects from the cessation medication and stopped taking it.",
+          "F16: Alex has missed three consecutive support group meetings due to the family situation."
+        ],
+        "rules": [
+          "R13: Acute stress events trigger relapse in approximately 65% of recent quitters when combined with environmental cues.",
+          "R14: Discontinuation of pharmacological support increases relapse risk by approximately 70% within two weeks.",
+          "R15: Interruption of support group attendance for more than two consecutive sessions reduces their protective effect by approximately 50%."
+        ],
+        "preferences": [
+          "P9: Acute emotional stress typically overrides accumulated health benefits in behavioral maintenance hierarchies.",
+          "P10: Multiple simultaneous support system disruptions predict relapse with approximately 80% accuracy."
+        ],
+        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F17: Alex attended an intensive three-day relapse prevention workshop after smoking two cigarettes during the family crisis.",
+          "F18: Alex's doctor has prescribed an alternative medication with fewer side effects.",
+          "F19: Alex has recruited a quit buddy from the support group who is available for 24/7 text support during craving episodes."
+        ],
+        "rules": [
+          "R16: Early intervention following minimal relapse prevents complete behavior reversion in approximately 70% of cases.",
+          "R17: Successful medication adjustment after side effect issues restores approximately 80% of the pharmacological benefit.",
+          "R18: 24/7 accessible peer support reduces crisis relapse by approximately 65%."
+        ],
+        "preferences": [
+          "P11: Immediate relapse intervention significantly outweighs the negative impact of minor slips when implemented within 48 hours.",
+          "P12: Crisis-focused support systems specifically designed for high-risk periods take precedence over general support in effectiveness hierarchies."
+        ],
+        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F20: Alex's workplace has announced a stressful reorganization with potential layoffs.",
+          "F21: Alex's partner has suggested they could save money by purchasing cigarettes instead of the more expensive medication.",
+          "F22: Alex has begun experiencing insomnia, a common withdrawal effect that can persist for months."
+        ],
+        "rules": [
+          "R19: Job insecurity increases relapse rates by approximately 55% during the acute stress period.",
+          "R20: Financial pressure combined with partner enabling increases relapse likelihood by approximately 65%.",
+          "R21: Persistent sleep disruption for more than three weeks reduces cognitive resources for impulse control by approximately 40%."
+        ],
+        "preferences": [
+          "P13: Combined financial and employment stress typically outweighs health motivations in behavioral maintenance hierarchies.",
+          "P14: Multiple physiological challenges simultaneous with environmental stressors predict cessation failure with approximately 75% accuracy."
+        ],
+        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "label": false
+      }
+    ]
   },
   {
-      "facts": [
-        "F1: Maria is a 27-year-old marketing professional who has been feeling overwhelmed by constant digital connectivity.",
-        "F2: She recently started a digital detox routine by designating one day per week as a gadget-free day.",
-        "F3: Research in human behavior indicates that periodic digital detoxes can improve mental clarity and reduce stress."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to continue a new habit if they experience noticeable improvements in well-being.",
-        "R2: Structured breaks, such as designated gadget-free days, are effective in reducing digital burnout.",
-        "R3: Positive personal experiences combined with supportive feedback increase the likelihood of habit permanence."
-      ],
-      "preferences": [
-        "P1: Immediate improvements in stress reduction are prioritized over initial inconveniences of disconnecting.",
-        "P2: Encouragement from peers and family reinforces the continuation of healthy digital habits."
-      ],
-      "question": "Will Maria maintain her weekly digital detox routine over the next six months?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: After two weeks of practicing the digital detox, Maria reported feeling more relaxed and better able to focus on personal tasks.",
-            "F5: Her immediate circle noticed a positive shift in her mood and energy levels during off-screen interactions.",
-            "F6: Maria experienced minor challenges in adjusting her work schedule to accommodate the detox day, but she managed these effectively."
-          ],
-          "rules": [
-            "R4: Early observable benefits in mood and focus are key drivers for the continuation of new behavioral practices.",
-            "R5: Temporary scheduling challenges are generally acceptable when outweighed by significant personal improvements."
-          ],
-          "preferences": [
-            "P3: Enhanced well-being and positive social feedback can help overcome initial disruptions in routine."
-          ],
-          "question": "Will Maria maintain her weekly digital detox routine over the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: At the three-month mark, Maria's self-assessment indicated a 35% reduction in self-reported stress levels.",
-            "F8: Her offline social interactions improved, with colleagues commenting on her increased presence during meetings.",
-            "F9: Maria had to temporarily adjust the detox day due to an important project deadline, resulting in one missed detox session."
-          ],
-          "rules": [
-            "R6: Consistent stress reduction and enhanced social presence are strong motivators for long-term behavioral change.",
-            "R7: Occasional deviations from a new habit are acceptable if overall progress remains positive."
-          ],
-          "preferences": [
-            "P4: Even with rare setbacks, the cumulative positive benefits reinforce the likelihood of sustaining the detox routine."
-          ],
-          "question": "Will Maria maintain her weekly digital detox routine over the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F10: By the five-month point, Maria integrated flexible scheduling that allowed contingency days when work demands increased.",
-            "F11: She started a peer group at work to collectively observe digital detox days, enhancing community support.",
-            "F12: Follow-up evaluations showed continued improvements in mental clarity and reduced burnout symptoms."
-          ],
-          "rules": [
-            "R8: Adaptive scheduling and peer-based accountability are decisive factors in sustaining long-term behavioral habits.",
-            "R9: Ongoing improvements in mental health and reduced burnout serve as strong determinants for permanent behavior change."
-          ],
-          "preferences": [
-            "P5: The combined effects of flexible adaptation, strong peer support, and continued mental benefits make the continuation of the detox routine highly likely."
-          ],
-          "question": "Will Maria maintain her weekly digital detox routine over the next six months?",
-          "label": true
-        }
-      ]
+    "facts": [
+      "F1: Noah is a second-year university student with a current GPA of 2.7 out of 4.0.",
+      "F2: Noah has enrolled in an advanced statistics course that has a 40% historical failure rate.",
+      "F3: Noah scored a C- in the prerequisite introductory statistics course last semester.",
+      "F4: Noah typically studies alone for approximately 5 hours per week per course."
+    ],
+    "rules": [
+      "R1: Performance in prerequisite courses predicts performance in advanced courses with approximately 70% accuracy.",
+      "R2: Courses with failure rates above 30% typically require study time of 10-15 hours weekly for average students to pass.",
+      "R3: Students with GPAs below 3.0 have approximately 35% lower success rates in high-difficulty courses compared to the general population."
+    ],
+    "preferences": [
+      "P1: Previous subject-specific performance typically outweighs general academic performance in predicting course-specific outcomes.",
+      "P2: Study time allocations below recommended levels for challenging courses typically cannot be compensated for by general academic ability."
+    ],
+    "question": "Will Noah pass the advanced statistics course this semester?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: Noah has joined a statistics study group that meets twice weekly for 2-hour sessions.",
+          "F6: Noah has increased individual study time to 8 hours weekly for this course.",
+          "F7: Noah has met with the professor during office hours to discuss effective study strategies."
+        ],
+        "rules": [
+          "R4: Collaborative study groups increase pass rates by approximately 25% in challenging quantitative courses.",
+          "R5: Substantial increases in dedicated study time (>50%) correlate with grade improvements of one letter grade on average.",
+          "R6: Proactive engagement with instructors increases course performance by approximately 15% on average."
+        ],
+        "preferences": [
+          "P3: Multiple complementary learning approaches typically overcome historical performance limitations.",
+          "P4: Proactive learning strategy adjustments predict improved outcomes more reliably than historical performance metrics."
+        ],
+        "question": "Will Noah pass the advanced statistics course this semester?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Noah scored a D on the first major exam, which constitutes 25% of the final grade.",
+          "F9: Noah has been offered an opportunity to work on an additional project for up to 10% extra credit.",
+          "F10: Noah's attendance at study group sessions has dropped to approximately 50% due to conflicts with a part-time job."
+        ],
+        "rules": [
+          "R7: Performance on first major assessments predicts final course outcomes with approximately 65% accuracy.",
+          "R8: Extra credit opportunities typically improve final grades by 60-70% of their potential value due to variable completion quality.",
+          "R9: Inconsistent participation in study groups reduces their effectiveness by approximately 60%."
+        ],
+        "preferences": [
+          "P5: Early assessment performance typically outweighs study strategy factors when the assessment constitutes a significant portion of the final grade.",
+          "P6: Employment-education conflicts that reduce study resources typically take precedence over supplemental improvement opportunities."
+        ],
+        "question": "Will Noah pass the advanced statistics course this semester?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: Noah has hired a statistics tutor for weekly one-on-one sessions focused on areas of weakness.",
+          "F12: Noah has negotiated reduced hours at work to prioritize academics for the remainder of the semester.",
+          "F13: The professor has announced that the final exam will be weighted more heavily (40%) than originally planned (30%)."
+        ],
+        "rules": [
+          "R10: Personalized tutoring improves subject performance by approximately 30% in challenging quantitative subjects.",
+          "R11: Reallocation of time from employment to academics typically yields improved outcomes proportional to the time shifted.",
+          "R12: Increased weighting of final assessments amplifies the impact of preparation strategies implemented after early assessments."
+        ],
+        "preferences": [
+          "P7: Targeted intervention strategies focused on identified weaknesses typically outweigh poor early performance metrics.",
+          "P8: Resource reallocation demonstrating commitment to academic priorities typically predicts improved performance trajectories."
+        ],
+        "question": "Will Noah pass the advanced statistics course this semester?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F14: Noah has been diagnosed with mononucleosis, causing two weeks of missed classes during the critical mid-semester period.",
+          "F15: The professor has declined to offer make-up assessments for a missed mid-term exam worth 20% of the final grade.",
+          "F16: Noah's tutor has reported difficulty maintaining consistent progress due to Noah's health-related absences."
+        ],
+        "rules": [
+          "R13: Extended illness-related absences during critical learning periods reduce course performance by approximately 35% on average.",
+          "R14: Missed assessments without make-up opportunities create performance deficits that require exceptional performance on remaining assessments.",
+          "R15: Interruptions to tutoring progress reduce its effectiveness by approximately 45% when exceeding one week."
+        ],
+        "preferences": [
+          "P9: Health disruptions to learning continuity typically outweigh prior positive trajectory indicators in performance predictions.",
+          "P10: Missing weighted assessments above 15% of course grade typically cannot be compensated for without exceptional performance or formal accommodations."
+        ],
+        "question": "Will Noah pass the advanced statistics course this semester?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F17: Noah has petitioned for and received medical accommodation allowing extended deadlines and a make-up mid-term exam.",
+          "F18: Noah has obtained comprehensive notes from study group members for all missed lectures.",
+          "F19: The professor has provided Noah with additional practice problems focusing on the missed content areas."
+        ],
+        "rules": [
+          "R16: Formal academic accommodations for documented medical issues neutralize approximately 80% of absence-related performance deficits.",
+          "R17: Access to comprehensive peer notes recovers approximately 60% of direct instruction benefits.",
+          "R18: Instructor-provided supplemental materials targeted to specific content gaps improve mastery of those areas by approximately 40%."
+        ],
+        "preferences": [
+          "P11: Institutional accommodations for documented medical issues typically override standard performance prediction metrics.",
+          "P12: Multiple coordinated recovery strategies implemented promptly after health disruptions predict successful course completion with approximately 75% accuracy."
+        ],
+        "question": "Will Noah pass the advanced statistics course this semester?",
+        "label": true
+      }
+    ]
   },
   {
-      "facts": [
-        "F1: Kelly is a 22-year-old college student who has historically struggled with procrastination and disorganized study habits.",
-        "F2: Recently, Kelly adopted a time blocking technique to better manage her college assignments and study schedule.",
-        "F3: Research in human behavior suggests that structured time management practices can significantly enhance productivity and reduce procrastination if maintained consistently."
-      ],
-      "rules": [
-        "R1: Students whose academic efficiency improves noticeably after adopting structured routines are more likely to continue using them.",
-        "R2: Consistent self-monitoring and flexibility in schedule adjustments are essential for long-term adherence to new study habits.",
-        "R3: Support and positive reinforcement from peers and instructors play a crucial role in encouraging sustained behavioral changes."
-      ],
-      "preferences": [
-        "P1: Immediate academic improvements are prioritized over the initial challenges of adapting to a new routine.",
-        "P2: Consistent progress and external recognition are valued over sporadic scheduling conflicts."
-      ],
-      "question": "Will Kelly maintain her time blocking technique for managing college assignments over the next academic semester?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: Two weeks after adopting the time blocking method, Kelly noted increased clarity in her study tasks and reported a slight improvement in completing assignments on time.",
-            "F5: Despite some initial struggles in adjusting to the new schedule, Kelly received encouraging feedback from her study group regarding her improved focus.",
-            "F6: Minor scheduling conflicts were observed, but they did not significantly disrupt her overall productivity."
-          ],
-          "rules": [
-            "R4: Early observable academic improvements tend to reinforce the continuation of structured study habits.",
-            "R5: Temporary difficulties in schedule adjustments are acceptable if the overall benefit is evident."
-          ],
-          "preferences": [
-            "P3: Minor struggles during the initial phase are outweighed by the positive impact on her academic performance and external validation from peers."
-          ],
-          "question": "Will Kelly maintain her time blocking technique for managing college assignments over the next academic semester?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: After one month, Kelly refined her time blocks to better accommodate varying assignment deadlines, demonstrating increased flexibility.",
-            "F8: Instructors and classmates began to notice a marked improvement in her work quality and timely submissions.",
-            "F9: On a few occasions, unexpected schedule conflicts led to reduced productivity during some study sessions."
-          ],
-          "rules": [
-            "R6: Flexibility and adaptive scheduling are critical factors in maintaining new academic routines in dynamic environments.",
-            "R7: Occasional conflicts do not undermine the overall benefits if continuous improvement is observed."
-          ],
-          "preferences": [
-            "P4: The benefits of a structured approach to time management outweigh occasional setbacks, especially when enhanced by positive feedback."
-          ],
-          "question": "Will Kelly maintain her time blocking technique for managing college assignments over the next academic semester?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F10: At the three-month mark, Kelly's grades had improved significantly and she demonstrated a consistent application of the time blocking strategy.",
-            "F11: Her success in managing multiple assignments led her to share her techniques in a peer mentoring program for time management.",
-            "F12: Kelly's increased confidence and academic achievements have solidified her commitment to the structured study routine."
-          ],
-          "rules": [
-            "R8: Long-term improvements and the adoption of a mentorship role are strong indicators of sustained behavioral change.",
-            "R9: Demonstrable academic success and peer recognition are decisive factors in predicting continued adherence to time management practices."
-          ],
-          "preferences": [
-            "P5: The combined impact of academic success and peer mentoring reinforces the likelihood that Kelly will maintain her new time blocking habit despite occasional minor setbacks."
-          ],
-          "question": "Will Kelly maintain her time blocking technique for managing college assignments over the next academic semester?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: John is a 38-year-old teacher who has recently struggled with maintaining a healthy work-life balance.",
-        "F2: To address his stress and improve physical health, he joined a local fitness club that emphasizes both exercise and community engagement.",
-        "F3: Research in human behavior suggests that incorporating social elements into exercise routines significantly increases adherence and boosts mental well-being."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to persist with a new habit when there is a strong social support component.",
-        "R2: Noticeable improvements in physical and mental health serve as critical reinforcements for maintaining behavioral changes.",
-        "R3: Consistent positive feedback from both personal assessment and peer observation enhances commitment to long-term routines."
-      ],
-      "preferences": [
-        "P1: Immediate benefits in reduced stress and improved energy levels are prioritized when evaluating a new habit's sustainability.",
-        "P2: Occasional scheduling conflicts are acceptable if overall progress and social satisfaction are evident."
-      ],
-      "question": "Will John continue attending fitness club sessions regularly over the next eight months?",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F4: After one month, John reported feeling more energized and less overwhelmed in his daily life following his fitness sessions.",
-            "F5: Several colleagues observed that he appeared more cheerful and engaged, suggesting improved well-being.",
-            "F6: Although John missed a couple of sessions due to personal commitments, these absences were minimal compared to his overall attendance."
-          ],
-          "rules": [
-            "R4: Early improvements in energy and mood significantly encourage the continuation of a new routine.",
-            "R5: Minor and infrequent scheduling conflicts are not sufficient to derail a habit that shows clear positive outcomes."
-          ],
-          "preferences": [
-            "P3: The positive reinforcement from both personal experience and peer observations can easily offset the impact of occasional absences."
-          ],
-          "question": "Will John continue attending fitness club sessions regularly over the next eight months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: At the two-month point, John initiated after-session social gatherings among fitness club members, enhancing the communal aspect of the activity.",
-            "F8: His self-assessments indicated a continued decline in stress levels and an increase in overall well-being.",
-            "F9: Minor adjustments were made to his schedule to better integrate the club sessions with his work responsibilities."
-          ],
-          "rules": [
-            "R6: Enhancing the social dimension of an activity further motivates individuals to sustain that behavior.",
-            "R7: Adjusting routines to accommodate personal schedules is acceptable if it improves overall satisfaction and benefits."
-          ],
-          "preferences": [
-            "P4: Social engagement and flexible scheduling are prioritized factors when evaluating the likelihood of long-term adherence."
-          ],
-          "question": "Will John continue attending fitness club sessions regularly over the next eight months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F10: At four months, a fitness coach confirmed significant improvements in John’s endurance and mental clarity.",
-            "F11: John has become actively involved in organizing club events, strengthening his ties with the community.",
-            "F12: Despite experiencing a brief increase in workload during a school term, he maintained consistent participation in the club."
-          ],
-          "rules": [
-            "R8: Professional validation of health improvements combined with community engagement are strong predictors of long-term behavioral change.",
-            "R9: Temporary increases in workload are unlikely to affect overall commitment if long-term positive outcomes are evident."
-          ],
-          "preferences": [
-            "P5: Long-term improvements and active involvement in the community outweigh short-term disruptions, decisively supporting sustained participation."
-          ],
-          "question": "Will John continue attending fitness club sessions regularly over the next eight months?",
-          "label": true
-        }
-      ]
-    },
-    {
+    "facts": [
+      "F1: Sophia has worked as a marketing manager at the same company for eight years.",
+      "F2: Sophia has been taking evening classes in web development for the past year.",
+      "F3: Sophia feels increasingly dissatisfied with her current career path and lacks growth opportunities.",
+      "F4: Sophia has built a small portfolio of web projects but has no professional experience in the field."
+    ],
+    "rules": [
+      "R1: Career transitions become more challenging as individuals spend more time in their original field.",
+      "R2: Formal education in a new field significantly increases the viability of career changes.",
+      "R3: Job dissatisfaction is a strong motivator for career changes but is insufficient alone to ensure successful transitions."
+    ],
+    "preferences": [
+      "P1: Practical experience in a new field typically carries more weight than theoretical knowledge when seeking employment.",
+      "P2: Career stability concerns often compete with personal fulfillment when considering major professional changes."
+    ],
+    "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: Sophia's company has announced a restructuring that includes potential layoffs in the marketing department.",
+          "F6: A former colleague has offered Sophia contract work on a small web development project.",
+          "F7: Sophia has sufficient savings to cover living expenses for four months without income."
+        ],
+        "rules": [
+          "R4: External career threats significantly increase willingness to pursue alternative paths.",
+          "R5: Initial professional opportunities in a new field serve as critical transition bridges.",
+          "R6: Financial safety nets reduce the perceived risk of career transitions."
+        ],
+        "preferences": [
+          "P3: Job security threats substantially elevate the appeal of previously considered alternative careers.",
+          "P4: Concrete opportunities in a new field typically outweigh the abstract risks of career changes."
+        ],
+        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Sophia's position has been confirmed as secure in the restructuring, with a modest salary increase.",
+          "F9: The contract work has revealed significant gaps in Sophia's practical development knowledge.",
+          "F10: Sophia's partner has expressed concerns about financial stability if she changes careers."
+        ],
+        "rules": [
+          "R7: Renewed security and recognition in current positions typically diminish transition motivation.",
+          "R8: Skill gap awareness increases hesitation about career changes unless addressed directly.",
+          "R9: Partner concerns about financial stability significantly influence major career decisions."
+        ],
+        "preferences": [
+          "P5: Family financial security considerations typically outweigh personal fulfillment when directly in conflict.",
+          "P6: Concrete skill deficiencies delay transition timelines until they can be adequately addressed."
+        ],
+        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: Sophia has been invited to join an intensive web development bootcamp with job placement services.",
+          "F12: Sophia's company has denied her request for a part-time schedule to accommodate additional training.",
+          "F13: Several bootcamp graduates have shared success stories of transitioning to development roles within three months."
+        ],
+        "rules": [
+          "R10: Structured transition programs with placement support substantially increase career change success.",
+          "R11: Employer inflexibility regarding professional development often accelerates departure decisions.",
+          "R12: Social proof of successful transitions by similar individuals strongly influences decision-making."
+        ],
+        "preferences": [
+          "P7: Clear pathways to new careers with support systems often override short-term financial stability concerns.",
+          "P8: Demonstrated success of similar individuals provides compelling evidence that can outweigh personal skill doubts."
+        ],
+        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F14: The bootcamp requires a substantial upfront payment that would deplete most of Sophia's savings.",
+          "F15: Sophia's current employer has announced a new digital marketing initiative that includes web development components.",
+          "F16: Sophia's partner has unexpectedly lost their job and is beginning a job search."
+        ],
+        "rules": [
+          "R13: High financial commitments to career transitions increase hesitation during periods of household financial uncertainty.",
+          "R14: Hybrid opportunities that blend current expertise with desired new skills are highly attractive alternatives to complete transitions.",
+          "R15: Household job losses create strong pressure to maintain existing stable income sources."
+        ],
+        "preferences": [
+          "P9: Household financial stability nearly always takes precedence during periods of employment uncertainty.",
+          "P10: Opportunities to develop new skills within current roles typically delay complete career transitions."
+        ],
+        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F17: Sophia has discovered a part-time web development training program that offers deferred payment until employment.",
+          "F18: Sophia's partner has secured a new position with higher compensation than their previous job.",
+          "F19: Sophia's manager has assigned her primarily to administrative tasks following her expression of interest in the digital initiative."
+        ],
+        "rules": [
+          "R16: Accessible training options that reduce financial barriers reignite transition considerations.",
+          "R17: Restored household financial stability reopens career transition possibilities.",
+          "R18: Professional devaluation in current roles strongly motivates career changes regardless of company opportunities."
+        ],
+        "preferences": [
+          "P11: Professional respect and meaningful work often outweigh compensation and stability when individuals feel devalued.",
+          "P12: Reduced financial barriers combined with perceived disrespect in current roles create compelling transition incentives."
+        ],
+        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Daniel and Leila's 16-year-old son has asked permission to attend a weekend music festival three hours away.",
+      "F2: Their son has maintained good grades and followed household rules consistently over the past year.",
+      "F3: The festival will be attended by several of their son's friends, but no parents will be present in their group.",
+      "F4: This would be their son's first overnight trip without adult family members or school supervision."
+    ],
+    "rules": [
+      "R1: Parents typically grant increased independence to teenagers who demonstrate consistent responsibility.",
+      "R2: First-time permissions for significant independence milestones create precedents for future requests.",
+      "R3: Parents generally assess peer influence heavily when evaluating unsupervised social opportunities."
+    ],
+    "preferences": [
+      "P1: Demonstrated maturity through consistent responsibility typically outweighs parental caution about age-appropriate independence.",
+      "P2: Child safety considerations take priority over social development opportunities when substantial uncertainty exists."
+    ],
+    "question": "Will Daniel and Leila allow their son to attend the music festival?",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F5: Their son has presented a detailed plan including transportation, accommodations, emergency contacts, and check-in schedule.",
+          "F6: One of the friends attending is a responsible 18-year-old whom the parents know and trust.",
+          "F7: The festival has a strong security presence and clear safety protocols for attendees."
+        ],
+        "rules": [
+          "R4: Thorough planning by teenagers demonstrates maturity that significantly increases parental confidence.",
+          "R5: The presence of trusted older peers creates an informal supervision layer that reduces parental concerns.",
+          "R6: Venue safety measures substantially influence parental comfort with attendance permissions."
+        ],
+        "preferences": [
+          "P3: Demonstrated planning capacity substantially shifts the balance toward independence permissions.",
+          "P4: Structured safety measures combined with trusted peer presence often satisfies parental protection concerns."
+        ],
+        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Daniel and Leila have discovered concerning social media posts showing drug use at previous iterations of this festival.",
+          "F9: Their son has never broken their trust regarding substance use before but has never been in such an environment.",
+          "F10: The parents of two other teens in the friend group have decided not to allow their children to attend."
+        ],
+        "rules": [
+          "R7: Evidence of concerning activities at venues strongly impacts parental permission regardless of child's history.",
+          "R8: Untested situations carry greater weight in parental decision-making than history-based trust.",
+          "R9: Peer parent decisions often influence parental permission through both social calibration and practical logistics."
+        ],
+        "preferences": [
+          "P5: Substance exposure risk typically overrides independence development considerations in parental decisions.",
+          "P6: Alignment with trusted peer parents often resolves decision ambivalence toward the more cautious position."
+        ],
+        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: The festival organizers have published comprehensive information about their zero-tolerance drug policy and enforcement measures.",
+          "F12: Their son has proposed a compromise where he will attend only during daytime hours and stay overnight at a hotel with his friend's older brother, a college student they know well.",
+          "F13: The parents who previously refused permission are reconsidering based on the daytime-only attendance option."
+        ],
+        "rules": [
+          "R10: Transparent venue policies with enforcement mechanisms reduce but don't eliminate specific risk concerns.",
+          "R11: Teenager-initiated compromises that address parental concerns demonstrate maturity that increases permission likelihood.",
+          "R12: Adjusted peer parent perspectives often reframe the decision context for ambivalent parents."
+        ],
+        "preferences": [
+          "P7: Creative solutions that address specific concerns while preserving core experiences often bridge parent-child differences.",
+          "P8: Partial permission arrangements serve as effective testing grounds for increased future independence."
+        ],
+        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F14: Daniel and Leila have learned that the older brother chaperone has previously been arrested for providing alcohol to minors, though the charge was later dropped.",
+          "F15: Their son has expressed frustration with their concerns and accused them of not trusting him.",
+          "F16: The festival dates coincide with a significant family event that their son had previously agreed to attend."
+        ],
+        "rules": [
+          "R13: Discovered concerns about designated supervisors fundamentally undermine supervision-based compromise solutions.",
+          "R14: Teenager resistance and accusatory responses raise concerns about judgment and pressure susceptibility.",
+          "R15: Competing family obligations create legitimate alternative justifications for difficult permission decisions."
+        ],
+        "preferences": [
+          "P9: Supervisor reliability concerns typically nullify otherwise acceptable arrangement compromises.",
+          "P10: Family commitment expectations generally take precedence over social opportunities when directly conflicting."
+        ],
+        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F17: Their son has sincerely apologized for his reaction and suggested his parents chaperone the group themselves by staying nearby.",
+          "F18: The family event has been rescheduled due to an unexpected venue issue.",
+          "F19: Other parents from their community with similar-aged teens have organized a parent supervision rotation for the festival."
+        ],
+        "rules": [
+          "R16: Teenager acknowledgment of inappropriate reactions strongly indicates emotional maturity relevant to independence readiness.",
+          "R17: Parental presence compromises balance independence opportunities with supervision requirements.",
+          "R18: Community supervision approaches distribute responsibility while maintaining safety oversight."
+        ],
+        "preferences": [
+          "P11: Mature conflict resolution demonstrates developmental readiness that often outweighs specific situational concerns.",
+          "P12: Organized parental oversight systems frequently satisfy safety requirements while preserving appropriate independence experiences."
+        ],
+        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "label": true
+      }
+    ]
+  },
+  {
       "facts": [
         "F1: Olivia is a 34-year-old working professional who has decided to reduce her sugar intake to improve her overall health.",
         "F2: She began by substituting sugary snacks and drinks with healthier alternatives such as fruits and herbal teas.",
