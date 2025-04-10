@@ -1,434 +1,787 @@
-{
-  "healthcare": [
-    {
-      "facts": [
-        "F1: Patient A (Cardiology) presents with chest pain and ST-elevation on ECG.",
-        "F2: Patient A is diagnosed with acute myocardial infarction."
-      ],
-      "rules": [
-        "R1: Immediate reperfusion therapy (PCI) is indicated for acute MI.",
-        "R2: If the patient has contraindications (e.g., recent bleeding), thrombolytic therapy should be considered with caution."
-      ],
-      "preferences": [
-        "P1: Patient A prefers non-invasive approaches when possible."
-      ],
-      "question": "It is true that Patient A should be taken immediately for PCI.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Further assessment reveals a history of recent gastrointestinal bleeding and unstable blood pressure.",
-            "F4: These factors suggest high procedural risk."
-          ],
-          "rules": [
-            "R3: In the presence of recent bleeding and instability, immediate PCI may be deferred in favor of stabilization.",
-            "R4: However, if instability persists, life-saving PCI is prioritized."
-          ],
-          "preferences": [
-            "P2: Given the risks, stabilization is preferred over immediate invasive procedures."
-          ],
-          "question": "It is true that the current evidence supports deferring PCI for stabilization.",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: The patient is stabilized with medical therapy and bleeding is controlled.",
-            "F6: Repeat assessment shows persistent ST-elevation."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that PCI should now be performed after stabilization?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient B (Oncology) is diagnosed with advanced non-small cell lung cancer.",
-        "F2: Standard therapy involves platinum-based chemotherapy."
-      ],
-      "rules": [
-        "R1: For advanced lung cancer, platinum-based chemotherapy is first-line treatment.",
-        "R2: If biomarkers indicate high PD-L1 expression, immunotherapy may be more beneficial."
-      ],
-      "preferences": [
-        "P1: Patient B prefers treatments with fewer side effects."
-      ],
-      "question": "It is true that Patient B should receive platinum-based chemotherapy.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Biomarker testing reveals high PD-L1 expression.",
-            "F4: Patient B shows poor tolerance to chemotherapy side effects."
-          ],
-          "rules": [
-            "R3: High PD-L1 expression favors immunotherapy over chemotherapy.",
-            "R4: Immunotherapy has a better side effect profile."
-          ],
-          "preferences": [
-            "P2: Patient B's desire for fewer side effects supports immunotherapy."
-          ],
-          "question": "It is true that immunotherapy should be chosen over chemotherapy?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: A clinical trial offering combination therapy is available.",
-            "F6: Combination therapy has higher efficacy but increased side effects."
-          ],
-          "rules": [
-            "R5: Combination therapy may be considered if its benefits outweigh the risks."
-          ],
-          "preferences": [],
-          "question": "It is true that Patient B might benefit from combination therapy despite increased side effects?",
-          "label": false
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient C (Endocrinology) is newly diagnosed with type 2 diabetes.",
-        "F2: Patient C's HbA1c is significantly elevated."
-      ],
-      "rules": [
-        "R1: Metformin is the first-line treatment for type 2 diabetes.",
-        "R2: Metformin should be avoided if there is severe renal impairment."
-      ],
-      "preferences": [
-        "P1: Patient C strongly prefers oral medications over injectables."
-      ],
-      "question": "It is true that Patient C should start metformin therapy.",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Initial renal tests are borderline normal with no history of kidney disease.",
-            "F4: The patient's overall kidney function is acceptable."
-          ],
-          "rules": [
-            "R3: With borderline renal function, metformin may be used under close monitoring."
-          ],
-          "preferences": [
-            "P2: Preference for oral medications supports using metformin."
-          ],
-          "question": "It is true that metformin can be administered safely?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: Follow-up tests show a decline in renal function; eGFR drops below 45 ml/min."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that the treatment plan must be adjusted because metformin is now contraindicated?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient D (Emergency Medicine) is brought to the ED with severe blunt trauma.",
-        "F2: The patient's vital signs are unstable."
-      ],
-      "rules": [
-        "R1: In severe trauma with instability, rapid surgical intervention is indicated.",
-        "R2: If the patient is too unstable, damage control resuscitation should be initiated first."
-      ],
-      "preferences": [
-        "P1: Patient D prioritizes immediate life-saving measures over definitive surgery."
-      ],
-      "question": "It is true that Patient D should be taken immediately to the operating room.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Initial resuscitation temporarily stabilizes blood pressure.",
-            "F4: Imaging confirms internal bleeding requiring surgical intervention."
-          ],
-          "rules": [
-            "R3: When imaging confirms internal bleeding, surgery cannot be further delayed.",
-            "R4: However, if the patient is marginally stable, additional resuscitation is warranted."
-          ],
-          "preferences": [
-            "P2: Given the risks, further resuscitation is preferred over immediate surgery."
-          ],
-          "question": "It is true that surgery should be postponed until the patient is more stable?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: After further resuscitation, the patient becomes stable enough for surgery."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that the patient can now safely undergo surgery?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient E (Pulmonology) presents with severe shortness of breath and hypoxemia.",
-        "F2: Chest X-ray reveals diffuse infiltrates consistent with ARDS."
-      ],
-      "rules": [
-        "R1: In ARDS, lung-protective ventilation with moderate PEEP is essential.",
-        "R2: High PEEP can improve oxygenation but increases the risk of barotrauma."
-      ],
-      "preferences": [
-        "P1: The family of Patient E prefers minimizing ventilator-related complications."
-      ],
-      "question": "It is true that Patient E should be ventilated with high PEEP settings.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Arterial blood gas shows worsening oxygenation despite moderate PEEP.",
-            "F4: No signs of barotrauma are present on initial imaging."
-          ],
-          "rules": [
-            "R3: In refractory hypoxemia without barotrauma, an increase in PEEP may be considered."
-          ],
-          "preferences": [
-            "P2: In this case, improving oxygenation takes priority over the risk of barotrauma."
-          ],
-          "question": "It is true that increasing PEEP is advisable under these circumstances?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: Following an increase in PEEP, lung compliance decreases and signs of early barotrauma appear.",
-            "F6: Follow-up imaging confirms these changes."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that ventilator settings must be re-adjusted to avoid further injury?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient F (Hematology) is diagnosed with severe anemia due to chronic kidney disease.",
-        "F2: Standard treatment includes erythropoiesis-stimulating agents (ESAs)."
-      ],
-      "rules": [
-        "R1: ESAs are indicated to improve hemoglobin levels in CKD-related anemia.",
-        "R2: ESAs increase the risk of thrombotic events."
-      ],
-      "preferences": [
-        "P1: Patient F prefers to minimize the risk of thrombosis even if hemoglobin improvement is slower."
-      ],
-      "question": "It is true that Patient F should be started on standard-dose ESAs.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Patient F has a prior history of venous thromboembolism.",
-            "F4: A lower-dose ESA regimen is available as an alternative."
-          ],
-          "rules": [
-            "R3: In patients with thrombotic history, a lower-dose ESA regimen is preferred.",
-            "R4: However, lower dosing may delay hemoglobin improvement."
-          ],
-          "preferences": [
-            "P2: Patient F's desire to reduce thrombotic risk overrides the need for rapid improvement."
-          ],
-          "question": "It is true that a lower-dose ESA regimen should be preferred?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: After 4 weeks, hemoglobin shows minimal improvement.",
-            "F6: The patient remains at moderate risk for thrombosis."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that increasing the ESA dose to standard levels may now be considered?",
-          "label": false
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient G (Neurology) presents with acute stroke symptoms.",
-        "F2: Brain imaging confirms an ischemic event."
-      ],
-      "rules": [
-        "R1: Intravenous thrombolysis is recommended within 4.5 hours for ischemic stroke.",
-        "R2: Patients with high bleeding risk should be excluded from thrombolysis."
-      ],
-      "preferences": [
-        "P1: Patient G's family prefers aggressive stroke intervention if safely applicable."
-      ],
-      "question": "It is true that Patient G should receive intravenous thrombolysis.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Time since symptom onset is 3 hours.",
-            "F4: Laboratory tests show elevated bleeding markers."
-          ],
-          "rules": [
-            "R3: Elevated bleeding markers contraindicate thrombolysis.",
-            "R4: Exceptions may be considered if benefits clearly outweigh risks."
-          ],
-          "preferences": [
-            "P2: Given the short onset time, caution is advised but the risk remains significant."
-          ],
-          "question": "It is true that thrombolysis should be withheld due to bleeding risk?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: Follow-up imaging shows no intracranial hemorrhage.",
-            "F6: Bleeding markers normalize after supportive care."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that thrombolysis can now be safely administered?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient H (Gastroenterology) presents with acute pancreatitis symptoms.",
-        "F2: Elevated serum amylase and lipase levels confirm the diagnosis."
-      ],
-      "rules": [
-        "R1: Standard management of acute pancreatitis is supportive care with fluids and pain control.",
-        "R2: Early enteral feeding is recommended if the patient remains stable."
-      ],
-      "preferences": [
-        "P1: Patient H prefers to avoid invasive procedures."
-      ],
-      "question": "It is true that Patient H should be managed with supportive care alone.",
-      "label": true,
-      "rounds": [
-        {
-          "facts": [
-            "F3: The patient develops hypotension despite fluid resuscitation.",
-            "F4: CT imaging suggests necrotizing pancreatitis."
-          ],
-          "rules": [
-            "R3: In necrotizing pancreatitis with hemodynamic instability, supportive care alone is inadequate.",
-            "R4: Aggressive intervention is indicated."
-          ],
-          "preferences": [
-            "P2: Life-threatening instability overrides the preference to avoid invasive procedures."
-          ],
-          "question": "It is true that supportive care alone is no longer sufficient?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: The patient undergoes minimally invasive necrosectomy.",
-            "F6: Post-procedure, the patient stabilizes."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that the chosen intervention improved patient outcomes?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient I (Critical Care) is admitted to the ICU with septic shock.",
-        "F2: Broad-spectrum antibiotics and vasopressors are initiated."
-      ],
-      "rules": [
-        "R1: Early goal-directed therapy is critical in septic shock.",
-        "R2: Fluid resuscitation must be balanced to avoid overload."
-      ],
-      "preferences": [
-        "P1: Patient I's family emphasizes minimizing long-term organ damage."
-      ],
-      "question": "It is true that Patient I should receive aggressive fluid resuscitation immediately.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Echocardiography shows reduced ejection fraction.",
-            "F4: Excessive fluids may worsen pulmonary edema."
-          ],
-          "rules": [
-            "R3: In patients with compromised cardiac function, cautious fluid management is warranted.",
-            "R4: Insufficient fluid resuscitation increases mortality."
-          ],
-          "preferences": [
-            "P2: Given the cardiac findings, a conservative fluid strategy is preferred."
-          ],
-          "question": "It is true that a conservative fluid strategy should be employed?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: Vasopressor support is titrated to maintain target mean arterial pressure.",
-            "F6: The patient's hemodynamics improve gradually."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that the balanced approach has stabilized Patient I?",
-          "label": true
-        }
-      ]
-    },
-    {
-      "facts": [
-        "F1: Patient J (Infectious Diseases) presents with high fever, severe body aches, and warning signs of dengue hemorrhagic fever.",
-        "F2: Laboratory tests confirm severe dengue with thrombocytopenia."
-      ],
-      "rules": [
-        "R1: In severe dengue, aggressive fluid hydration is generally recommended.",
-        "R2: However, if signs of capillary leak or pulmonary edema appear, fluid management should be cautious."
-      ],
-      "preferences": [
-        "P1: Patient J prefers to avoid complications related to fluid overload."
-      ],
-      "question": "It is true that Patient J should receive aggressive fluid hydration.",
-      "label": false,
-      "rounds": [
-        {
-          "facts": [
-            "F3: Hematocrit levels are rising and there are signs of capillary leak.",
-            "F4: Early indications suggest risk of pulmonary edema."
-          ],
-          "rules": [
-            "R3: A rising hematocrit and capillary leak contraindicate aggressive hydration.",
-            "R4: Cautious fluid management is required in the presence of leakage."
-          ],
-          "preferences": [
-            "P2: Avoiding pulmonary edema is prioritized over aggressive hydration."
-          ],
-          "question": "It is true that aggressive hydration should be withheld in favor of caution?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F5: The patient remains hypotensive despite cautious hydration.",
-            "F6: A fluid bolus is considered to stabilize blood pressure."
-          ],
-          "rules": [
-            "R5: In hypotensive patients, a controlled fluid bolus may be required even during cautious management."
-          ],
-          "preferences": [],
-          "question": "It is true that a fluid bolus is indicated to stabilize the patient?",
-          "label": true
-        },
-        {
-          "facts": [
-            "F7: Follow-up shows stable vital signs and improved hematocrit levels.",
-            "F8: The patient shows no signs of pulmonary edema after the bolus."
-          ],
-          "rules": [],
-          "preferences": [],
-          "question": "It is true that the current management strategy is effective?",
-          "label": true
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "facts": [
+      "F1: Patient A (Cardiology) presents with chest pain and ST-elevation on ECG.",
+      "F2: Patient A is diagnosed with acute myocardial infarction."
+    ],
+    "rules": [
+      "R1: Immediate reperfusion therapy (PCI) is indicated for acute MI.",
+      "R2: If the patient has contraindications (e.g., recent bleeding), thrombolytic therapy should be considered with caution."
+    ],
+    "preferences": [
+      "P1: Patient A prefers non-invasive approaches when possible."
+    ],
+    "question": "It is true that Patient A should be taken immediately for PCI.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Further assessment reveals a history of recent gastrointestinal bleeding and unstable blood pressure.",
+          "F4: These factors suggest high procedural risk."
+        ],
+        "rules": [
+          "R3: In the presence of recent bleeding and instability, immediate PCI may be deferred in favor of stabilization.",
+          "R4: However, if instability persists, life-saving PCI is prioritized."
+        ],
+        "preferences": [
+          "P2: Given the risks, stabilization is preferred over immediate invasive procedures."
+        ],
+        "question": "It is true that the current evidence supports deferring PCI for stabilization.",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: The patient is stabilized with medical therapy and bleeding is controlled.",
+          "F6: Repeat assessment shows persistent ST-elevation."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that PCI should now be performed after stabilization?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F7: During PCI, minor vascular complications occur which are promptly managed.",
+          "F8: Post-procedure, Patient A shows gradual improvement."
+        ],
+        "rules": [
+          "R5: If complications occur during PCI, prompt management may lead to an overall favorable outcome."
+        ],
+        "preferences": [],
+        "question": "It is true that despite the complications, the overall treatment outcome is acceptable?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: Post-PCI, serum creatinine rises, suggesting contrast-induced nephropathy.",
+          "F10: Urine output remains adequate."
+        ],
+        "rules": [
+          "R6: Contrast nephropathy requires IV hydration and nephrotoxic avoidance.",
+          "R7: If renal function declines further, dialysis may be needed."
+        ],
+        "preferences": [
+          "P3: Patient A wishes to avoid dialysis if possible."
+        ],
+        "question": "It is true that contrast-induced nephropathy necessitates immediate dialysis?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F11: Aggressive IV hydration improves renal function.",
+          "F12: Cardiac function remains stable."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the patient's overall prognosis is now favorable?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient B (Oncology) is diagnosed with advanced non-small cell lung cancer.",
+      "F2: Standard therapy involves platinum-based chemotherapy."
+    ],
+    "rules": [
+      "R1: For advanced lung cancer, platinum-based chemotherapy is first-line treatment.",
+      "R2: If biomarkers indicate high PD-L1 expression, immunotherapy may be more beneficial."
+    ],
+    "preferences": [
+      "P1: Patient B prefers treatments with fewer side effects."
+    ],
+    "question": "It is true that Patient B should receive platinum-based chemotherapy.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Biomarker testing reveals high PD-L1 expression.",
+          "F4: Patient B shows poor tolerance to chemotherapy side effects."
+        ],
+        "rules": [
+          "R3: High PD-L1 expression favors immunotherapy over chemotherapy.",
+          "R4: Immunotherapy has a better side effect profile."
+        ],
+        "preferences": [
+          "P2: Patient B’s desire for fewer side effects supports immunotherapy."
+        ],
+        "question": "It is true that immunotherapy should be chosen over chemotherapy?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: A clinical trial offering combination therapy is available.",
+          "F6: Combination therapy has higher efficacy but increased side effects."
+        ],
+        "rules": [
+          "R5: Combination therapy may be considered if its benefits outweigh the risks."
+        ],
+        "preferences": [],
+        "question": "It is true that Patient B might benefit from combination therapy despite increased side effects?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F7: After a trial period, Patient B experiences a partial response to immunotherapy.",
+          "F8: Mild side effects are observed that are tolerable."
+        ],
+        "rules": [
+          "R6: If immunotherapy yields a partial response with tolerable side effects, continuation is recommended."
+        ],
+        "preferences": [],
+        "question": "It is true that the current immunotherapy regimen should be continued?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: New liver metastases are detected on follow-up imaging.",
+          "F10: PD-L1 remains high, but tumor burden increases."
+        ],
+        "rules": [
+          "R7: Progressive disease on immunotherapy may warrant adding targeted therapy.",
+          "R8: Liver metastases require additional monitoring for hepatic toxicity."
+        ],
+        "preferences": [
+          "P3: Patient B still prioritizes quality of life over aggressive therapy."
+        ],
+        "question": "It is true that targeted therapy should now be added to the regimen?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: Patient develops immune-related hepatitis.",
+          "F12: Liver enzymes are 3x upper limit of normal."
+        ],
+        "rules": [
+          "R9: Immune-related hepatitis requires holding immunotherapy and starting steroids."
+        ],
+        "preferences": [],
+        "question": "It is true that immunotherapy should be temporarily halted?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient C (Endocrinology) is newly diagnosed with type 2 diabetes.",
+      "F2: Patient C's HbA1c is significantly elevated."
+    ],
+    "rules": [
+      "R1: Metformin is the first-line treatment for type 2 diabetes.",
+      "R2: Metformin should be avoided if there is severe renal impairment."
+    ],
+    "preferences": [
+      "P1: Patient C strongly prefers oral medications over injectables."
+    ],
+    "question": "It is true that Patient C should start metformin therapy.",
+    "label": true,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Initial renal tests are borderline normal with no history of kidney disease.",
+          "F4: The patient's overall kidney function is acceptable."
+        ],
+        "rules": [
+          "R3: With borderline renal function, metformin may be used under close monitoring."
+        ],
+        "preferences": [
+          "P2: Preference for oral medications supports using metformin."
+        ],
+        "question": "It is true that metformin can be administered safely?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: Follow-up tests show a decline in renal function; eGFR drops below 45 ml/min."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the treatment plan must be adjusted because metformin is now contraindicated?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F6: An alternative oral hypoglycemic agent with a better renal safety profile is available.",
+          "F7: The alternative has been approved for use in patients with reduced renal function."
+        ],
+        "rules": [
+          "R4: When metformin is contraindicated, switching to the alternative is recommended."
+        ],
+        "preferences": [],
+        "question": "It is true that Patient C should be switched to the alternative therapy?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: Patient reports fatigue and nausea; ketones are elevated.",
+          "F9: Blood glucose is normal (euglycemic DKA risk)."
+        ],
+        "rules": [
+          "R5: SGLT2 inhibitors require monitoring for euglycemic DKA.",
+          "R6: Patient education on DKA symptoms is critical."
+        ],
+        "preferences": [
+          "P3: Patient C worries about DKA but wants to avoid insulin."
+        ],
+        "question": "It is true that the SGLT2 inhibitor should be discontinued immediately?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F10: With hydration and insulin, ketosis resolves.",
+          "F11: HbA1c drops to 7.2%."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the treatment plan is effective despite the DKA risk?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient D (Emergency Medicine) is brought to the ED with severe blunt trauma.",
+      "F2: The patient's vital signs are unstable."
+    ],
+    "rules": [
+      "R1: In severe trauma with instability, rapid surgical intervention is indicated.",
+      "R2: If the patient is too unstable, damage control resuscitation should be initiated first."
+    ],
+    "preferences": [
+      "P1: Patient D prioritizes immediate life-saving measures over definitive surgery."
+    ],
+    "question": "It is true that Patient D should be taken immediately to the operating room.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Initial resuscitation temporarily stabilizes blood pressure.",
+          "F4: Imaging confirms internal bleeding requiring surgical intervention."
+        ],
+        "rules": [
+          "R3: When imaging confirms internal bleeding, surgery cannot be further delayed.",
+          "R4: However, if the patient is marginally stable, additional resuscitation is warranted."
+        ],
+        "preferences": [
+          "P2: Given the risks, further resuscitation is preferred over immediate surgery."
+        ],
+        "question": "It is true that surgery should be postponed until the patient is more stable?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: After further resuscitation, the patient becomes stable enough for surgery."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the patient can now safely undergo surgery?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F6: Post-surgery, the patient develops a mild infection at the incision site.",
+          "F7: Early antibiotic therapy is initiated."
+        ],
+        "rules": [
+          "R5: Mild post-operative infections should be managed with timely antibiotic administration."
+        ],
+        "preferences": [],
+        "question": "It is true that the early intervention will likely lead to full recovery?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F8: The infection worsens despite antibiotics, requiring debridement.",
+          "F9: Cultures reveal multidrug-resistant bacteria."
+        ],
+        "rules": [
+          "R6: Resistant infections may require broader-spectrum antibiotics or surgical intervention."
+        ],
+        "preferences": [
+          "P3: Patient D’s family prefers aggressive infection control."
+        ],
+        "question": "It is true that surgical debridement is now necessary?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F10: After debridement and adjusted antibiotics, the infection resolves.",
+          "F11: The patient is discharged to rehabilitation."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the long-term prognosis is favorable?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient E (Pulmonology) presents with severe shortness of breath and hypoxemia.",
+      "F2: Chest X-ray reveals diffuse infiltrates consistent with ARDS."
+    ],
+    "rules": [
+      "R1: In ARDS, lung-protective ventilation with moderate PEEP is essential.",
+      "R2: High PEEP can improve oxygenation but increases the risk of barotrauma."
+    ],
+    "preferences": [
+      "P1: The family of Patient E prefers minimizing ventilator-related complications."
+    ],
+    "question": "It is true that Patient E should be ventilated with high PEEP settings.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Arterial blood gas shows worsening oxygenation despite moderate PEEP.",
+          "F4: No signs of barotrauma are present on initial imaging."
+        ],
+        "rules": [
+          "R3: In refractory hypoxemia without barotrauma, an increase in PEEP may be considered."
+        ],
+        "preferences": [
+          "P2: In this case, improving oxygenation takes priority over the risk of barotrauma."
+        ],
+        "question": "It is true that increasing PEEP is advisable under these circumstances?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: Following an increase in PEEP, lung compliance decreases and early signs of barotrauma appear.",
+          "F6: Follow-up imaging confirms these changes."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that ventilator settings must be re-adjusted to avoid further injury?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F7: After adjustment, oxygenation improves and no further signs of barotrauma are seen.",
+          "F8: The patient remains hemodynamically stable."
+        ],
+        "rules": [
+          "R4: Once ventilator settings are optimized, continued monitoring ensures sustained improvement."
+        ],
+        "preferences": [],
+        "question": "It is true that the current management strategy is effective long-term?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: The patient develops a ventilator-associated pneumonia (VAP).",
+          "F10: Sputum cultures grow Pseudomonas aeruginosa."
+        ],
+        "rules": [
+          "R5: VAP requires prompt antibiotic therapy and reevaluation of ventilator settings."
+        ],
+        "preferences": [
+          "P3: The family wishes to minimize further complications."
+        ],
+        "question": "It is true that antibiotics should be initiated immediately?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: With targeted antibiotics, the pneumonia resolves.",
+          "F12: The patient is successfully weaned from the ventilator."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the patient has recovered adequately for extubation?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient F (Hematology) is diagnosed with severe anemia due to chronic kidney disease.",
+      "F2: Standard treatment includes erythropoiesis-stimulating agents (ESAs)."
+    ],
+    "rules": [
+      "R1: ESAs are indicated to improve hemoglobin levels in CKD-related anemia.",
+      "R2: ESAs increase the risk of thrombotic events."
+    ],
+    "preferences": [
+      "P1: Patient F prefers to minimize the risk of thrombosis even if hemoglobin improvement is slower."
+    ],
+    "question": "It is true that Patient F should be started on standard-dose ESAs.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Patient F has a prior history of venous thromboembolism.",
+          "F4: A lower-dose ESA regimen is available as an alternative."
+        ],
+        "rules": [
+          "R3: In patients with thrombotic history, a lower-dose ESA regimen is preferred.",
+          "R4: However, lower dosing may delay hemoglobin improvement."
+        ],
+        "preferences": [
+          "P2: Patient F's desire to reduce thrombotic risk overrides the need for rapid improvement."
+        ],
+        "question": "It is true that a lower-dose ESA regimen should be preferred?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: After 4 weeks, hemoglobin shows minimal improvement.",
+          "F6: The patient remains at moderate risk for thrombosis."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that increasing the ESA dose to standard levels may now be considered?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F7: Subsequent testing indicates a slight improvement with low-dose therapy, but not enough to meet target hemoglobin levels.",
+          "F8: Additional supportive measures are implemented."
+        ],
+        "rules": [
+          "R5: If supportive measures fail to achieve target hemoglobin, escalation of ESA dose may be warranted."
+        ],
+        "preferences": [],
+        "question": "It is true that the current ESA dosage should be maintained rather than escalated?",
+        "label": false
+      },
+      {
+        "facts": [
+          "F9: Patient F develops new-onset hypertension attributed to ESA therapy.",
+          "F10: Blood pressure is poorly controlled despite antihypertensives."
+        ],
+        "rules": [
+          "R6: ESA-induced hypertension may necessitate dose reduction or discontinuation."
+        ],
+        "preferences": [
+          "P3: Patient F prioritizes cardiovascular safety over hemoglobin targets."
+        ],
+        "question": "It is true that ESA therapy should be stopped due to hypertension?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: After ESA discontinuation, hemoglobin stabilizes at a suboptimal level.",
+          "F12: The patient is referred for iron infusion therapy."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that iron infusion is a reasonable alternative?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient G (Neurology) presents with acute stroke symptoms.",
+      "F2: Brain imaging confirms an ischemic event."
+    ],
+    "rules": [
+      "R1: Intravenous thrombolysis is recommended within 4.5 hours for ischemic stroke.",
+      "R2: Patients with high bleeding risk should be excluded from thrombolysis."
+    ],
+    "preferences": [
+      "P1: Patient G's family prefers aggressive stroke intervention if safely applicable."
+    ],
+    "question": "It is true that Patient G should receive intravenous thrombolysis.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Time since symptom onset is 3 hours.",
+          "F4: Laboratory tests show elevated bleeding markers."
+        ],
+        "rules": [
+          "R3: Elevated bleeding markers contraindicate thrombolysis.",
+          "R4: Exceptions may be considered if benefits clearly outweigh risks."
+        ],
+        "preferences": [
+          "P2: Given the short onset time, caution is advised but the risk remains significant."
+        ],
+        "question": "It is true that thrombolysis should be withheld due to bleeding risk?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: Follow-up imaging shows no intracranial hemorrhage.",
+          "F6: Bleeding markers normalize after supportive care."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that thrombolysis can now be safely administered?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F7: Post-thrombolysis, the patient shows significant neurological improvement.",
+          "F8: Ongoing monitoring confirms no rebleeding."
+        ],
+        "rules": [
+          "R5: Positive post-thrombolysis outcomes reinforce the decision to proceed cautiously."
+        ],
+        "preferences": [],
+        "question": "It is true that the overall management was successful?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: The patient develops a fever and elevated white blood cell count.",
+          "F10: Lumbar puncture rules out meningitis."
+        ],
+        "rules": [
+          "R6: Post-stroke fever may be due to aspiration pneumonia or systemic inflammation."
+        ],
+        "preferences": [
+          "P3: The family wishes to avoid unnecessary antibiotics."
+        ],
+        "question": "It is true that antibiotics should be withheld until a source is identified?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: Chest X-ray confirms aspiration pneumonia.",
+          "F12: Antibiotics are initiated with clinical improvement."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the infection was appropriately managed?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient H (Gastroenterology) presents with acute pancreatitis symptoms.",
+      "F2: Elevated serum amylase and lipase levels confirm the diagnosis."
+    ],
+    "rules": [
+      "R1: Standard management of acute pancreatitis is supportive care with fluids and pain control.",
+      "R2: Early enteral feeding is recommended if the patient remains stable."
+    ],
+    "preferences": [
+      "P1: Patient H prefers to avoid invasive procedures."
+    ],
+    "question": "It is true that Patient H should be managed with supportive care alone.",
+    "label": true,
+    "rounds": [
+      {
+        "facts": [
+          "F3: The patient develops hypotension despite fluid resuscitation.",
+          "F4: CT imaging suggests necrotizing pancreatitis."
+        ],
+        "rules": [
+          "R3: In necrotizing pancreatitis with hemodynamic instability, supportive care alone is inadequate.",
+          "R4: Aggressive intervention is indicated."
+        ],
+        "preferences": [
+          "P2: Life-threatening instability overrides the preference to avoid invasive procedures."
+        ],
+        "question": "It is true that supportive care alone is no longer sufficient?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: The patient undergoes minimally invasive necrosectomy.",
+          "F6: Post-procedure, the patient stabilizes."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the chosen intervention improved patient outcomes?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F7: Long-term follow-up indicates improved pancreatic function and reduced pain.",
+          "F8: Nutritional status has gradually normalized."
+        ],
+        "rules": [
+          "R5: Successful necrosectomy should lead to overall clinical improvement and recovery."
+        ],
+        "preferences": [],
+        "question": "It is true that the long-term prognosis is favorable?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: Patient H develops new-onset diabetes mellitus due to pancreatic damage.",
+          "F10: HbA1c is elevated at 8.0%."
+        ],
+        "rules": [
+          "R6: Post-pancreatitis diabetes requires glycemic management similar to type 2 diabetes."
+        ],
+        "preferences": [
+          "P3: Patient H still prefers oral medications over insulin."
+        ],
+        "question": "It is true that metformin should be initiated for glycemic control?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: With metformin and dietary changes, HbA1c drops to 7.2%.",
+          "F12: No further pancreatic complications occur."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the diabetes management plan is effective?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient I (Critical Care) is admitted to the ICU with septic shock.",
+      "F2: Broad-spectrum antibiotics and vasopressors are initiated."
+    ],
+    "rules": [
+      "R1: Early goal-directed therapy is critical in septic shock.",
+      "R2: Fluid resuscitation must be balanced to avoid overload."
+    ],
+    "preferences": [
+      "P1: Patient I's family emphasizes minimizing long-term organ damage."
+    ],
+    "question": "It is true that Patient I should receive aggressive fluid resuscitation immediately.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Echocardiography shows reduced ejection fraction.",
+          "F4: Excessive fluids may worsen pulmonary edema."
+        ],
+        "rules": [
+          "R3: In patients with compromised cardiac function, cautious fluid management is warranted.",
+          "R4: Insufficient fluid resuscitation increases mortality."
+        ],
+        "preferences": [
+          "P2: Given the cardiac findings, a conservative fluid strategy is preferred."
+        ],
+        "question": "It is true that a conservative fluid strategy should be employed?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: Vasopressor support is titrated to maintain target mean arterial pressure.",
+          "F6: The patient's hemodynamics improve gradually."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the balanced approach has stabilized Patient I?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F7: Subsequent laboratory markers show improved perfusion and reduced lactate levels.",
+          "F8: The patient's renal function stabilizes."
+        ],
+        "rules": [
+          "R5: Improvements in laboratory markers confirm effective resuscitation."
+        ],
+        "preferences": [],
+        "question": "It is true that the overall management has led to clinical improvement?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: Blood cultures return positive for multidrug-resistant bacteria.",
+          "F10: Current antibiotics are ineffective against the identified pathogen."
+        ],
+        "rules": [
+          "R6: Antibiotics must be adjusted based on culture results to avoid treatment failure."
+        ],
+        "preferences": [
+          "P3: The family agrees to escalate antibiotics despite potential side effects."
+        ],
+        "question": "It is true that the antibiotic regimen should be changed immediately?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: With adjusted antibiotics, the infection clears.",
+          "F12: The patient is weaned off vasopressors and extubated."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the sepsis has resolved adequately for ICU discharge?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "F1: Patient J (Infectious Diseases) presents with high fever, severe body aches, and warning signs of dengue hemorrhagic fever.",
+      "F2: Laboratory tests confirm severe dengue with thrombocytopenia."
+    ],
+    "rules": [
+      "R1: In severe dengue, aggressive fluid hydration is generally recommended.",
+      "R2: However, if signs of capillary leak or pulmonary edema appear, fluid management should be cautious."
+    ],
+    "preferences": [
+      "P1: Patient J prefers to avoid complications related to fluid overload."
+    ],
+    "question": "It is true that Patient J should receive aggressive fluid hydration.",
+    "label": false,
+    "rounds": [
+      {
+        "facts": [
+          "F3: Hematocrit levels are rising and there are signs of capillary leak.",
+          "F4: Early indications suggest risk of pulmonary edema."
+        ],
+        "rules": [
+          "R3: A rising hematocrit and capillary leak contraindicate aggressive hydration.",
+          "R4: Cautious fluid management is required in the presence of leakage."
+        ],
+        "preferences": [
+          "P2: Avoiding pulmonary edema is prioritized over aggressive hydration."
+        ],
+        "question": "It is true that aggressive hydration should be withheld in favor of caution?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F5: The patient remains hypotensive despite cautious hydration.",
+          "F6: A controlled fluid bolus is administered to stabilize blood pressure."
+        ],
+        "rules": [
+          "R5: In hypotensive patients, a controlled fluid bolus may be required even during cautious management."
+        ],
+        "preferences": [],
+        "question": "It is true that a fluid bolus is indicated to stabilize the patient?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F7: Follow-up shows stable vital signs and improved hematocrit levels.",
+          "F8: The patient exhibits no signs of pulmonary edema post-bolus."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the current management strategy is effective?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F9: The patient's condition improves further over the next 48 hours.",
+          "F10: Platelet count begins to recover."
+        ],
+        "rules": [
+          "R6: Ongoing improvement and rising platelets indicate recovery from dengue hemorrhagic fever."
+        ],
+        "preferences": [],
+        "question": "It is true that the prognosis for Patient J is now favorable?",
+        "label": true
+      },
+      {
+        "facts": [
+          "F11: Patient J develops secondary bacterial infection.",
+          "F12: Antibiotics are initiated promptly."
+        ],
+        "rules": [
+          "R7: Secondary infections in dengue require prompt antibiotic therapy."
+        ],
+        "preferences": [
+          "P3: Patient J wishes to avoid prolonged hospitalization."
+        ],
+        "question": "It is true that outpatient oral antibiotics would suffice for this infection?",
+        "label": false
+      }
+    ]
+  }
+]
