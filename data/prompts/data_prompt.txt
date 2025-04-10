@@ -1,15 +1,15 @@
 Now you are a data generator. We want to generate new complex dataset as benchmark similar to data from BoardGameQA based on causal relationships.
 
-We are working on a research project titled "Beyond Surface Semantics: Evaluating LLMs on Complex Causal Reasoning" 
+We are working on a research project titled "Beyond Surface Semantics: Evaluating LLMs on Complex Causal Reasoning"
 
 Introduction
 Recent advancements in large language models (LLMs) show strong performance on various structured reasoning tasks, often rivaling human capabilities. However, most evaluations assume relatively fixed or consistent datasets, overlooking how causal relationships can shift or conflict in real-world scenarios.
 To address this gap, our study systematically assesses LLMs under a Real-Time Adaptation Challenge of Memory Consistency. Unlike existing benchmarks focusing on static rules or single-step causal inferences, our approach involves multi-layered, evolving sequences of events with changing rules, shifting preferences, and sometimes contradictory information. This setup tests whether LLMs can retain prior context and adapt their reasoning to new, potentially conflicting details over time—an important step toward real-world utility, where conditions are rarely static or unambiguous.
 Based on the literature review, we hypothesize that current LLMs struggle with real-time adaptive reasoning due to their reliance on static pattern recognition rather than true causal comprehension. Specifically: (i) LLMs will show performance degradation in tasks requiring memory consistency over evolving causal relationships. (ii) Chain-of-Thought prompting and retrieval-augmented generation may provide incremental improvements, but fundamental limitations in adaptive reasoning will persist. (iii) Autoregressive models will exhibit difficulties in handling conflicting updates, while retrieval-based approaches may mitigate some but not all inconsistencies.
 
-Adaptive Reasoning Protocol: 
-As part of the experimental design, we introduced a dynamic, variable-length causal evolution framework that simulates real-world complexity through escalating task difficulty and contextual shifts across dialogue rounds. 
-This setup incorporates both gradual and abrupt rule changes to evaluate how well LLMs adapt to evolving and conflicting information. 
+Adaptive Reasoning Protocol:
+As part of the experimental design, we introduced a dynamic, variable-length causal evolution framework that simulates real-world complexity through escalating task difficulty and contextual shifts across dialogue rounds.
+This setup incorporates both gradual and abrupt rule changes to evaluate how well LLMs adapt to evolving and conflicting information.
 To enable this, we created prompt templates that promote context retention and causal chaining, and implemented rule injection strategies introducing contradictions and surprise events to test reasoning flexibility.
 
 I'll need your help in designing our dataset.
@@ -38,8 +38,8 @@ Scenario example:
 ```
 {
   "facts": [
-    "Fact 1: The economy is in a recession.",
-    "Fact 2: Unemployment is high."
+    "The economy is in a recession.",
+    "Unemployment is high."
   ],
   "rules": [
     "Rule 1: In a recession, government spending increases.",
@@ -53,7 +53,7 @@ Scenario example:
   "updates": [
     {
       "facts": [
-        "Fact 3: A new government program for job creation is announced."
+        "A new government program for job creation is announced."
       ],
       "rules": [
         "Rule 2: High unemployment leads to public dissatisfaction.",
@@ -67,7 +67,7 @@ Scenario example:
     },
     {
       "facts": [
-        "Fact 4: A surprise economic crisis emerges, worsening the recession."
+        "A surprise economic crisis emerges, worsening the recession."
       ],
       "rules": [
         "Rule 4: Economic crises require emergency fiscal measures."
@@ -80,7 +80,7 @@ Scenario example:
     },
     {
       "facts": [
-        "Fact 5: Public opinion turns against the government due to delayed relief."
+        "Public opinion turns against the government due to delayed relief."
       ],
       "rules": [
         "Rule 5: Public dissatisfaction can weaken political support."
@@ -102,8 +102,6 @@ Key Requirements:
 
 Please follow below additional requests:
 1.⁠ ⁠From the second round, you have to, of course, consider not only the rules and preferences of the corresponding round but also the rules and preferences from all the previous rounds.
-2.⁠ ⁠Goal should never be negated.
-3.⁠ ⁠Also, in theory '~' means negation (don't treat it as markdown syntax).
-4.⁠ ⁠Add rules in ascending order. (e.g. don't add rule 6 in round n and add rule 5 in round (n-1))
+2.⁠ ⁠Add rules in ascending order. (e.g. don't add rule 6 in round n and add rule 5 in round (n-1))
 
-Domain: 
+Domain:
