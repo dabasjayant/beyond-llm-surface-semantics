@@ -10,7 +10,7 @@ class PromptGenerator:
 
   def get_history(self):
     return self.history
-  
+
   def delete_history(self):
     self.history = ''
 
@@ -26,13 +26,13 @@ class PromptGenerator:
     prompt += '\nRules:\n'
     for rule in data['rules']:
       prompt += f'- {rule}\n'
-    
+
     # Add preferences to the prompt
     prompt += '\nPreferences:\n'
     for preference in data['preferences']:
       prompt += f'- {preference}\n'
-    
+
     # Add the question
-    prompt += f'\nQuestion: {data['question']}\n'
+    prompt += f"\nQuestion: {data['question']}\n"
 
     return prompt
