@@ -1,10 +1,10 @@
 [
   {
     "facts": [
-      "F1: The Coastal Protection Act requires a 30% reduction in industrial emissions by 2030.",
-      "F2: Senator Blackwood represents a state with significant coastal tourism.",
-      "F3: Senator Blackwood's campaign received substantial funding from traditional energy companies.",
-      "F4: Senator Blackwood has previously supported incremental environmental regulation."
+      "The Coastal Protection Act requires a 30% reduction in industrial emissions by 2030.",
+      "Senator Blackwood represents a state with significant coastal tourism.",
+      "Senator Blackwood's campaign received substantial funding from traditional energy companies.",
+      "Senator Blackwood has previously supported incremental environmental regulation."
     ],
     "rules": [
       "R1: Senators typically prioritize economic interests of their major campaign donors.",
@@ -20,8 +20,8 @@
     "rounds": [
       {
         "facts": [
-          "F5: An economic analysis projects the Coastal Protection Act would reduce tourism revenue in coastal regions by 8% during the initial implementation period.",
-          "F6: Traditional energy companies in Senator Blackwood's state have announced a joint transition plan compatible with the Act's requirements."
+          "An economic analysis projects the Coastal Protection Act would reduce tourism revenue in coastal regions by 8% during the initial implementation period.",
+          "Traditional energy companies in Senator Blackwood's state have announced a joint transition plan compatible with the Act's requirements."
         ],
         "rules": [
           "R1: Senators typically prioritize economic interests of their major campaign donors unless donors adapt their positions.",
@@ -35,9 +35,9 @@
       },
       {
         "facts": [
-          "F7: A revised analysis shows implementation costs would disproportionately affect small businesses in coastal communities.",
-          "F8: Senator Blackwood recently launched a 'Small Business Protection Initiative'.",
-          "F9: An amendment to provide transition subsidies for small businesses was rejected in committee."
+          "A revised analysis shows implementation costs would disproportionately affect small businesses in coastal communities.",
+          "Senator Blackwood recently launched a 'Small Business Protection Initiative'.",
+          "An amendment to provide transition subsidies for small businesses was rejected in committee."
         ],
         "rules": [
           "R5: Politicians generally oppose legislation contradicting their recent public initiatives.",
@@ -52,9 +52,9 @@
       },
       {
         "facts": [
-          "F10: A last-minute revision to the Coastal Protection Act includes tax credits specifically for small coastal businesses during the transition period.",
-          "F11: The tax credits are projected to offset 85% of implementation costs for qualifying businesses.",
-          "F12: Senator Blackwood's office issued a statement praising the revision as 'responsive to community needs'."
+          "A last-minute revision to the Coastal Protection Act includes tax credits specifically for small coastal businesses during the transition period.",
+          "The tax credits are projected to offset 85% of implementation costs for qualifying businesses.",
+          "Senator Blackwood's office issued a statement praising the revision as 'responsive to community needs'."
         ],
         "rules": [
           "R7: Revisions addressing previously stated objections typically restore original voting intentions.",
@@ -68,9 +68,9 @@
       },
       {
         "facts": [
-          "F13: The tax credit implementation requires a separate appropriations vote not guaranteed to pass.",
-          "F14: Senator Blackwood's party leadership has issued a statement opposing the Act as 'insufficient without guaranteed funding'.",
-          "F15: Senator Blackwood faces re-election in 8 months."
+          "The tax credit implementation requires a separate appropriations vote not guaranteed to pass.",
+          "Senator Blackwood's party leadership has issued a statement opposing the Act as 'insufficient without guaranteed funding'.",
+          "Senator Blackwood faces re-election in 8 months."
         ],
         "rules": [
           "R9: Conditional benefits dependent on uncertain future actions reduce their weight in current decision-making.",
@@ -88,10 +88,10 @@
   },
   {
     "facts": [
-      "F1: The Educational Opportunity Act would increase federal funding for public schools by 15%.",
-      "F2: The Act also provides tax credits for private school tuition.",
-      "F3: Representative Jordan has consistently supported public education funding increases.",
-      "F4: Representative Jordan's district contains predominantly public school students."
+      "The Educational Opportunity Act would increase federal funding for public schools by 15%.",
+      "The Act also provides tax credits for private school tuition.",
+      "Representative Jordan has consistently supported public education funding increases.",
+      "Representative Jordan's district contains predominantly public school students."
     ],
     "rules": [
       "R1: Representatives typically support legislation that increases resources for their constituents' primary educational institutions.",
@@ -107,9 +107,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Analysis shows the private school tax credits would cost 40% of the total budget allocation for the Act.",
-          "F6: Public school administrators in Jordan's district have criticized the bill as 'diverting essential resources'.",
-          "F7: Three major teachers' unions have announced opposition to the Act."
+          "Analysis shows the private school tax credits would cost 40% of the total budget allocation for the Act.",
+          "Public school administrators in Jordan's district have criticized the bill as 'diverting essential resources'.",
+          "Three major teachers' unions have announced opposition to the Act."
         ],
         "rules": [
           "R4: Representatives typically align with positions taken by their professional constituency groups.",
@@ -124,9 +124,9 @@
       },
       {
         "facts": [
-          "F8: An amendment has reduced the private school tax credit portion to 20% of the total allocation.",
-          "F9: The amendment also added accountability measures requiring private schools receiving credits to meet public education standards.",
-          "F10: Public school funding would now increase by 18% under the revised Act."
+          "An amendment has reduced the private school tax credit portion to 20% of the total allocation.",
+          "The amendment also added accountability measures requiring private schools receiving credits to meet public education standards.",
+          "Public school funding would now increase by 18% under the revised Act."
         ],
         "rules": [
           "R6: Amendments addressing primary criticisms typically shift opposition to support.",
@@ -141,9 +141,9 @@
       },
       {
         "facts": [
-          "F11: Implementation analysis reveals the accountability standards would not take effect until after a 3-year 'transition period'.",
-          "F12: Two neighboring districts implemented similar delayed-accountability programs that resulted in significant public school enrollment decreases.",
-          "F13: Representative Jordan previously sponsored legislation requiring immediate accountability for all education funding."
+          "Implementation analysis reveals the accountability standards would not take effect until after a 3-year 'transition period'.",
+          "Two neighboring districts implemented similar delayed-accountability programs that resulted in significant public school enrollment decreases.",
+          "Representative Jordan previously sponsored legislation requiring immediate accountability for all education funding."
         ],
         "rules": [
           "R8: Past legislative sponsorship demonstrates core policy priorities.",
@@ -159,9 +159,9 @@
       },
       {
         "facts": [
-          "F14: A bipartisan amendment has eliminated the transition period, requiring immediate accountability implementation.",
-          "F15: The amendment includes additional monitoring funding to ensure compliance.",
-          "F16: The largest teachers' union in Jordan's district has shifted to a neutral position on the bill."
+          "A bipartisan amendment has eliminated the transition period, requiring immediate accountability implementation.",
+          "The amendment includes additional monitoring funding to ensure compliance.",
+          "The largest teachers' union in Jordan's district has shifted to a neutral position on the bill."
         ],
         "rules": [
           "R10: Neutral positions from previously opposing stakeholders remove their weight from decision calculations.",
@@ -176,9 +176,9 @@
       },
       {
         "facts": [
-          "F17: Final budgetary analysis shows compliance monitoring is funded at only 30% of recommended levels.",
-          "F18: The bill now includes a provision allowing religious schools exemption from certain accountability measures.",
-          "F19: Representative Jordan has previously opposed any religious exemptions in education policy."
+          "Final budgetary analysis shows compliance monitoring is funded at only 30% of recommended levels.",
+          "The bill now includes a provision allowing religious schools exemption from certain accountability measures.",
+          "Representative Jordan has previously opposed any religious exemptions in education policy."
         ],
         "rules": [
           "R12: Underfunded compliance mechanisms effectively nullify accountability requirements in practice.",
@@ -195,10 +195,10 @@
   },
   {
     "facts": [
-      "F1: The Medical Cost Transparency Act requires hospitals to publish all procedure costs.",
-      "F2: Governor Lin's state has the third-highest healthcare costs nationally.",
-      "F3: Governor Lin campaigned on healthcare affordability.",
-      "F4: The state medical association opposes the transparency requirements."
+      "The Medical Cost Transparency Act requires hospitals to publish all procedure costs.",
+      "Governor Lin's state has the third-highest healthcare costs nationally.",
+      "Governor Lin campaigned on healthcare affordability.",
+      "The state medical association opposes the transparency requirements."
     ],
     "rules": [
       "R1: Governors typically support legislation aligned with campaign priorities.",
@@ -214,9 +214,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Implementation analysis projects initial compliance costs of $45 million for hospitals statewide.",
-          "F6: The state budget includes only $15 million for implementation assistance.",
-          "F7: Three rural hospitals have announced they may close if required to absorb compliance costs."
+          "Implementation analysis projects initial compliance costs of $45 million for hospitals statewide.",
+          "The state budget includes only $15 million for implementation assistance.",
+          "Three rural hospitals have announced they may close if required to absorb compliance costs."
         ],
         "rules": [
           "R4: Politicians typically avoid policies that may reduce essential services in vulnerable areas.",
@@ -232,9 +232,9 @@
       },
       {
         "facts": [
-          "F8: An amendment has created a tiered implementation schedule, giving rural hospitals 3 additional years to comply.",
-          "F9: The amendment includes a hardship waiver process for financially vulnerable facilities.",
-          "F10: A consumer advocacy coalition representing 500,000 state residents has launched a campaign supporting the bill."
+          "An amendment has created a tiered implementation schedule, giving rural hospitals 3 additional years to comply.",
+          "The amendment includes a hardship waiver process for financially vulnerable facilities.",
+          "A consumer advocacy coalition representing 500,000 state residents has launched a campaign supporting the bill."
         ],
         "rules": [
           "R6: Tiered implementation schedules mitigate short-term resource constraints.",
@@ -250,9 +250,9 @@
       },
       {
         "facts": [
-          "F11: The final version includes a last-minute amendment restricting use of transparency data in insurance negotiations.",
-          "F12: Economic analysis shows this restriction would reduce projected consumer savings by 60%.",
-          "F13: The amendment was sponsored by legislators who received significant campaign contributions from insurance companies."
+          "The final version includes a last-minute amendment restricting use of transparency data in insurance negotiations.",
+          "Economic analysis shows this restriction would reduce projected consumer savings by 60%.",
+          "The amendment was sponsored by legislators who received significant campaign contributions from insurance companies."
         ],
         "rules": [
           "R9: Effectiveness reductions beyond 50% substantially change the evaluation of policy measures.",
@@ -268,9 +268,9 @@
       },
       {
         "facts": [
-          "F14: The state legislature has voted to remove the insurance negotiation restriction.",
-          "F15: A transitional funding package allocating additional $20 million for implementation has been approved.",
-          "F16: A recent poll shows 68% of state residents support the amended transparency measure."
+          "The state legislature has voted to remove the insurance negotiation restriction.",
+          "A transitional funding package allocating additional $20 million for implementation has been approved.",
+          "A recent poll shows 68% of state residents support the amended transparency measure."
         ],
         "rules": [
           "R12: Supermajority public support significantly increases likelihood of executive approval.",
@@ -287,10 +287,10 @@
   },
   {
     "facts": [
-      "F1: The Justice System Reform Act proposes eliminating mandatory minimum sentences for non-violent offenses.",
-      "F2: Mayor Chen's city has severe prison overcrowding issues.",
-      "F3: Mayor Chen previously supported a local initiative for alternative sentencing.",
-      "F4: The city police union has historically opposed sentencing reform."
+      "The Justice System Reform Act proposes eliminating mandatory minimum sentences for non-violent offenses.",
+      "Mayor Chen's city has severe prison overcrowding issues.",
+      "Mayor Chen previously supported a local initiative for alternative sentencing.",
+      "The city police union has historically opposed sentencing reform."
     ],
     "rules": [
       "R1: Municipal leaders support reforms addressing infrastructure capacity issues.",
@@ -306,9 +306,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: A recent violent crime incident involving a previously convicted offender has received extensive media coverage.",
-          "F6: Public safety polling indicates a 12% increase in citizen concern about crime.",
-          "F7: The Justice System Reform Act applies retroactively, potentially releasing current inmates."
+          "A recent violent crime incident involving a previously convicted offender has received extensive media coverage.",
+          "Public safety polling indicates a 12% increase in citizen concern about crime.",
+          "The Justice System Reform Act applies retroactively, potentially releasing current inmates."
         ],
         "rules": [
           "R4: Politicians typically avoid endorsing reforms perceived as reducing public safety during periods of heightened safety concerns.",
@@ -324,9 +324,9 @@
       },
       {
         "facts": [
-          "F8: Analysis shows retroactive application would only affect non-violent offenders with exemplary prison records.",
-          "F9: The city budget director has released figures showing $8 million in annual savings from reduced incarceration costs.",
-          "F10: Mayor Chen's administration has a budget shortfall requiring significant cuts to city services."
+          "Analysis shows retroactive application would only affect non-violent offenders with exemplary prison records.",
+          "The city budget director has released figures showing $8 million in annual savings from reduced incarceration costs.",
+          "Mayor Chen's administration has a budget shortfall requiring significant cuts to city services."
         ],
         "rules": [
           "R7: Fiscal impact data significantly influences municipal positions on state and federal policies.",
@@ -342,9 +342,9 @@
       },
       {
         "facts": [
-          "F11: The state prosecutors' association releases data suggesting 35% of technical 'non-violent' offenses involved threatening behavior.",
-          "F12: Three city council members have publicly opposed the Act, citing victim rights concerns.",
-          "F13: Mayor Chen's approval rating has declined 7 points in the past month."
+          "The state prosecutors' association releases data suggesting 35% of technical 'non-violent' offenses involved threatening behavior.",
+          "Three city council members have publicly opposed the Act, citing victim rights concerns.",
+          "Mayor Chen's approval rating has declined 7 points in the past month."
         ],
         "rules": [
           "R9: Statistical challenges to reform classification systems reduce confidence in affected policies.",
@@ -360,9 +360,9 @@
       },
       {
         "facts": [
-          "F14: An amendment has narrowed the definition of 'non-violent' offenses to exclude any threatening behavior.",
-          "F15: The amended Act requires victim notification and input for any resentencing considerations.",
-          "F16: Two of the opposing council members now support the revised version."
+          "An amendment has narrowed the definition of 'non-violent' offenses to exclude any threatening behavior.",
+          "The amended Act requires victim notification and input for any resentencing considerations.",
+          "Two of the opposing council members now support the revised version."
         ],
         "rules": [
           "R12: Definitions addressing specific criticism points substantially mitigate opposition reasons.",
@@ -378,9 +378,9 @@
       },
       {
         "facts": [
-          "F17: The police union has announced a vote of no confidence in Mayor Chen over the potential endorsement.",
-          "F18: The mayor's election opponent has launched advertisements criticizing 'soft on crime' policies.",
-          "F19: The city's largest newspaper editorial board has urged caution on justice reform during 'uncertain times'."
+          "The police union has announced a vote of no confidence in Mayor Chen over the potential endorsement.",
+          "The mayor's election opponent has launched advertisements criticizing 'soft on crime' policies.",
+          "The city's largest newspaper editorial board has urged caution on justice reform during 'uncertain times'."
         ],
         "rules": [
           "R15: No-confidence votes from key stakeholders create significant political liability.",
@@ -398,10 +398,10 @@
   },
   {
     "facts": [
-      "F1: The Farm Sustainability Act provides subsidies for transitioning to organic farming practices.",
-      "F2: Representative Wilson represents a district where 40% of employment relates to agriculture.",
-      "F3: Conventional farming methods dominate in Wilson's district.",
-      "F4: Representative Wilson has previously supported agricultural innovation grants."
+      "The Farm Sustainability Act provides subsidies for transitioning to organic farming practices.",
+      "Representative Wilson represents a district where 40% of employment relates to agriculture.",
+      "Conventional farming methods dominate in Wilson's district.",
+      "Representative Wilson has previously supported agricultural innovation grants."
     ],
     "rules": [
       "R1: Representatives support legislation benefiting economically significant district industries.",
@@ -417,9 +417,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Transition cost analysis shows initial 3-year revenue decreases before organic premium benefits.",
-          "F6: Only 15% of the transition subsidies would apply to the specific crops grown in Wilson's district.",
-          "F7: The district's largest agricultural cooperative has announced opposition to the Act."
+          "Transition cost analysis shows initial 3-year revenue decreases before organic premium benefits.",
+          "Only 15% of the transition subsidies would apply to the specific crops grown in Wilson's district.",
+          "The district's largest agricultural cooperative has announced opposition to the Act."
         ],
         "rules": [
           "R4: Short-term revenue impacts receive greater weight than long-term projections in political calculations.",
@@ -435,9 +435,9 @@
       },
       {
         "facts": [
-          "F8: An amendment has added specific subsidies for the transition of specialty crops dominant in Wilson's district.",
-          "F9: The amendment provides bridge funding covering 70% of transition costs during the initial revenue decline period.",
-          "F10: Three neighboring districts implementing similar programs reported 22% average agricultural revenue increases within 4 years."
+          "An amendment has added specific subsidies for the transition of specialty crops dominant in Wilson's district.",
+          "The amendment provides bridge funding covering 70% of transition costs during the initial revenue decline period.",
+          "Three neighboring districts implementing similar programs reported 22% average agricultural revenue increases within 4 years."
         ],
         "rules": [
           "R7: Amendments targeting district-specific concerns significantly increase support likelihood.",
@@ -453,9 +453,9 @@
       },
       {
         "facts": [
-          "F11: Certification requirements in the Act would exclude a traditional farming practice culturally significant to 30% of district farmers.",
-          "F12: The district's Historical Agricultural Association has begun a campaign against the 'erasure of farming heritage'.",
-          "F13: Wilson's family has practiced traditional farming methods for four generations."
+          "Certification requirements in the Act would exclude a traditional farming practice culturally significant to 30% of district farmers.",
+          "The district's Historical Agricultural Association has begun a campaign against the 'erasure of farming heritage'.",
+          "Wilson's family has practiced traditional farming methods for four generations."
         ],
         "rules": [
           "R10: Cultural and heritage considerations carry significant weight in agricultural policy positions.",
@@ -471,9 +471,9 @@
       },
       {
         "facts": [
-          "F14: A cultural heritage exemption has been added allowing traditional practices to receive partial certification.",
-          "F15: The district's largest farming equipment dealer has announced plans to open an organic transition support center creating 150 jobs.",
-          "F16: A survey shows 62% of district farmers now express interest in transition options with adequate support."
+          "A cultural heritage exemption has been added allowing traditional practices to receive partial certification.",
+          "The district's largest farming equipment dealer has announced plans to open an organic transition support center creating 150 jobs.",
+          "A survey shows 62% of district farmers now express interest in transition options with adequate support."
         ],
         "rules": [
           "R13: Cultural exemptions neutralize heritage-based opposition.",
@@ -491,10 +491,10 @@
   },
   {
     "facts": [
-      "F1: The Multilateral Trade Cooperation Agreement would reduce tariffs on manufactured goods by an average of 18%.",
-      "F2: Senator Hayes represents a state with both manufacturing and agricultural sectors.",
-      "F3: Senator Hayes has historically supported free trade policies.",
-      "F4: The agreement does not significantly address agricultural trade barriers."
+      "The Multilateral Trade Cooperation Agreement would reduce tariffs on manufactured goods by an average of 18%.",
+      "Senator Hayes represents a state with both manufacturing and agricultural sectors.",
+      "Senator Hayes has historically supported free trade policies.",
+      "The agreement does not significantly address agricultural trade barriers."
     ],
     "rules": [
       "R1: Senators typically support policies aligned with their historical voting record.",
@@ -510,9 +510,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Economic analysis shows the tariff reductions would likely increase manufacturing imports to Hayes' state by 24%.",
-          "F6: The state manufacturing alliance projects potential job losses of 3,800 positions within two years.",
-          "F7: Manufacturing employment in Hayes' state has declined 12% over the past decade."
+          "Economic analysis shows the tariff reductions would likely increase manufacturing imports to Hayes' state by 24%.",
+          "The state manufacturing alliance projects potential job losses of 3,800 positions within two years.",
+          "Manufacturing employment in Hayes' state has declined 12% over the past decade."
         ],
         "rules": [
           "R4: Import competition threatening local employment significantly reduces support for trade liberalization.",
@@ -528,9 +528,9 @@
       },
       {
         "facts": [
-          "F8: A supplemental workforce transition program providing $240 million for affected communities has been added.",
-          "F9: The agreement now includes provisions increasing export opportunities for high-value manufacturing subsectors dominant in Hayes' state.",
-          "F10: Economic reassessment projects net job creation of 1,200 positions over five years with the new provisions."
+          "A supplemental workforce transition program providing $240 million for affected communities has been added.",
+          "The agreement now includes provisions increasing export opportunities for high-value manufacturing subsectors dominant in Hayes' state.",
+          "Economic reassessment projects net job creation of 1,200 positions over five years with the new provisions."
         ],
         "rules": [
           "R7: Transition assistance programs mitigate employment loss concerns proportional to their funding adequacy.",
@@ -546,9 +546,9 @@
       },
       {
         "facts": [
-          "F11: A key manufacturing employer in Hayes' state has announced plans to relocate production overseas if the agreement passes.",
-          "F12: The employer provides 4,500 jobs and accounts for 8% of the state's manufacturing tax base.",
-          "F13: The company's CEO has made direct appeals to Senator Hayes opposing ratification."
+          "A key manufacturing employer in Hayes' state has announced plans to relocate production overseas if the agreement passes.",
+          "The employer provides 4,500 jobs and accounts for 8% of the state's manufacturing tax base.",
+          "The company's CEO has made direct appeals to Senator Hayes opposing ratification."
         ],
         "rules": [
           "R10: Specific large employer impacts receive greater weight than general sector projections.",
@@ -564,9 +564,9 @@
       },
       {
         "facts": [
-          "F14: Investigation reveals the manufacturer was already planning overseas relocation regardless of the agreement.",
-          "F15: A provision has been added creating a specialized manufacturing innovation hub in Hayes' state.",
-          "F16: The hub includes $180 million in federal funding and is projected to create 3,000 advanced manufacturing jobs."
+          "Investigation reveals the manufacturer was already planning overseas relocation regardless of the agreement.",
+          "A provision has been added creating a specialized manufacturing innovation hub in Hayes' state.",
+          "The hub includes $180 million in federal funding and is projected to create 3,000 advanced manufacturing jobs."
         ],
         "rules": [
           "R13: Misleading stakeholder claims significantly reduce their influence when exposed.",
@@ -582,9 +582,9 @@
       },
       {
         "facts": [
-          "F17: The agreement's final version contains a last-minute provision reducing environmental regulations on imported goods.",
-          "F18: Senator Hayes chairs the Environmental Protection Committee and has championed emissions standards.",
-          "F19: Environmental advocacy groups have launched an intensive campaign against the 'regulatory rollback' agreement."
+          "The agreement's final version contains a last-minute provision reducing environmental regulations on imported goods.",
+          "Senator Hayes chairs the Environmental Protection Committee and has championed emissions standards.",
+          "Environmental advocacy groups have launched an intensive campaign against the 'regulatory rollback' agreement."
         ],
         "rules": [
           "R16: Provisions contradicting core committee responsibilities create significant conflicts for chairs.",
@@ -602,10 +602,10 @@
   },
   {
     "facts": [
-      "F1: The Data Protection Framework would establish consent requirements for personal data collection.",
-      "F2: Representative Morgan has advocated for consumer privacy protections in previous sessions.",
-      "F3: Several technology companies with offices in Morgan's district oppose strict consent requirements.",
-      "F4: Morgan's district has a higher-than-average concentration of technology workers."
+      "The Data Protection Framework would establish consent requirements for personal data collection.",
+      "Representative Morgan has advocated for consumer privacy protections in previous sessions.",
+      "Several technology companies with offices in Morgan's district oppose strict consent requirements.",
+      "Morgan's district has a higher-than-average concentration of technology workers."
     ],
     "rules": [
       "R1: Representatives typically maintain consistency with their previous advocacy positions.",
@@ -621,9 +621,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Industry analysis projects compliance costs would reduce technology sector hiring by 12% annually.",
-          "F6: Technology jobs in Morgan's district average 186% of median district wages.",
-          "F7: A technology industry association has offered to support a modified version with graduated implementation."
+          "Industry analysis projects compliance costs would reduce technology sector hiring by 12% annually.",
+          "Technology jobs in Morgan's district average 186% of median district wages.",
+          "A technology industry association has offered to support a modified version with graduated implementation."
         ],
         "rules": [
           "R4: High-wage job impacts receive premium weighting in policy evaluations.",
@@ -639,9 +639,9 @@
       },
       {
         "facts": [
-          "F8: A revised Framework includes the graduated implementation schedule suggested by industry.",
-          "F9: The revision maintains core consent requirements while extending compliance deadlines.",
-          "F10: Consumer advocacy groups have endorsed the revised approach as 'pragmatic progress'."
+          "A revised Framework includes the graduated implementation schedule suggested by industry.",
+          "The revision maintains core consent requirements while extending compliance deadlines.",
+          "Consumer advocacy groups have endorsed the revised approach as 'pragmatic progress'."
         ],
         "rules": [
           "R7: Implementation timeline modifications preserve policy goals while mitigating economic disruption.",
@@ -657,9 +657,9 @@
       },
       {
         "facts": [
-          "F11: Security researchers have identified significant enforcement loopholes in the implementation language.",
-          "F12: The district's consumer protection bureau estimates 40% of data collection practices could continue without meaningful consent under the loopholes.",
-          "F13: Representative Morgan recently stated that 'effective enforcement' is essential for privacy protection."
+          "Security researchers have identified significant enforcement loopholes in the implementation language.",
+          "The district's consumer protection bureau estimates 40% of data collection practices could continue without meaningful consent under the loopholes.",
+          "Representative Morgan recently stated that 'effective enforcement' is essential for privacy protection."
         ],
         "rules": [
           "R10: Implementation language defects substantially reduce policy effectiveness evaluations.",
@@ -675,9 +675,9 @@
       },
       {
         "facts": [
-          "F14: A bipartisan amendment has closed the identified enforcement loopholes.",
-          "F15: The technology industry association has withdrawn support following the enforcement modifications.",
-          "F16: Public polling shows 73% of district voters support 'strong privacy protections with reasonable implementation timelines.'"
+          "A bipartisan amendment has closed the identified enforcement loopholes.",
+          "The technology industry association has withdrawn support following the enforcement modifications.",
+          "Public polling shows 73% of district voters support 'strong privacy protections with reasonable implementation timelines.'"
         ],
         "rules": [
           "R13: Public opinion exceeding 70% substantially influences representative positions.",
@@ -693,9 +693,9 @@
       },
       {
         "facts": [
-          "F17: The largest technology employer in the district has announced it would relocate its headquarters if the framework passes.",
-          "F18: This company employs 8,500 people in the district with an average salary of $124,000.",
-          "F19: Local economic analysis projects a 3.8% district-wide economic contraction if relocation occurs."
+          "The largest technology employer in the district has announced it would relocate its headquarters if the framework passes.",
+          "This company employs 8,500 people in the district with an average salary of $124,000.",
+          "Local economic analysis projects a 3.8% district-wide economic contraction if relocation occurs."
         ],
         "rules": [
           "R16: Specific large employer threats create immediate economic risk assessments.",
@@ -711,9 +711,9 @@
       },
       {
         "facts": [
-          "F20: Investigation reveals the company's relocation plans were already in progress before the legislation.",
-          "F21: Three mid-sized technology companies have announced expansion plans citing 'regulatory certainty' under the framework.",
-          "F22: The expansions would create an estimated 5,200 new technology jobs within the district over 3 years."
+          "Investigation reveals the company's relocation plans were already in progress before the legislation.",
+          "Three mid-sized technology companies have announced expansion plans citing 'regulatory certainty' under the framework.",
+          "The expansions would create an estimated 5,200 new technology jobs within the district over 3 years."
         ],
         "rules": [
           "R19: Preexisting business decisions falsely attributed to policy positions are removed from decision calculations.",
@@ -731,10 +731,10 @@
   },
   {
     "facts": [
-      "F1: The Urban Mobility Initiative would fund public transit expansion in metropolitan areas.",
-      "F2: Mayor Rodriguez's city has significant traffic congestion problems.",
-      "F3: Previous transit projects in the city have experienced budget overruns.",
-      "F4: The initiative requires 30% matching funds from participating cities."
+      "The Urban Mobility Initiative would fund public transit expansion in metropolitan areas.",
+      "Mayor Rodriguez's city has significant traffic congestion problems.",
+      "Previous transit projects in the city have experienced budget overruns.",
+      "The initiative requires 30% matching funds from participating cities."
     ],
     "rules": [
       "R1: Mayors typically support federal funding for local infrastructure priorities.",
@@ -750,9 +750,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: City budget analysis shows the matching requirement would require 8% of annual discretionary funds.",
-          "F6: A recent ballot measure to increase local transportation funding failed by 5 percentage points.",
-          "F7: The city council's budget committee has expressed concerns about new financial commitments."
+          "City budget analysis shows the matching requirement would require 8% of annual discretionary funds.",
+          "A recent ballot measure to increase local transportation funding failed by 5 percentage points.",
+          "The city council's budget committee has expressed concerns about new financial commitments."
         ],
         "rules": [
           "R4: Failed ballot measures indicate limits on public willingness to fund specific priorities.",
@@ -768,9 +768,9 @@
       },
       {
         "facts": [
-          "F8: Traffic congestion costs to the local economy are estimated at $218 million annually.",
-          "F9: The initiative has been modified to phase matching requirements over 5 years.",
-          "F10: The city's Chamber of Commerce has offered to help raise private contributions for matching funds."
+          "Traffic congestion costs to the local economy are estimated at $218 million annually.",
+          "The initiative has been modified to phase matching requirements over 5 years.",
+          "The city's Chamber of Commerce has offered to help raise private contributions for matching funds."
         ],
         "rules": [
           "R7: Quantified economic costs strengthen infrastructure investment justifications.",
@@ -786,9 +786,9 @@
       },
       {
         "facts": [
-          "F11: Environmental assessment shows the proposed transit corridor would displace 120 affordable housing units.",
-          "F12: The city faces a severe affordable housing shortage with a 1.2% vacancy rate.",
-          "F13: Housing advocacy groups have organized protests against the transit plan."
+          "Environmental assessment shows the proposed transit corridor would displace 120 affordable housing units.",
+          "The city faces a severe affordable housing shortage with a 1.2% vacancy rate.",
+          "Housing advocacy groups have organized protests against the transit plan."
         ],
         "rules": [
           "R10: Housing impacts create significant political complications for infrastructure projects.",
@@ -804,9 +804,9 @@
       },
       {
         "facts": [
-          "F14: Project engineers have developed an alternative route preserving all existing housing.",
-          "F15: The housing coalition has endorsed the revised plan and offered implementation partnerships.",
-          "F16: The alternative would increase project costs by 12% but still provide 89% of original congestion relief."
+          "Project engineers have developed an alternative route preserving all existing housing.",
+          "The housing coalition has endorsed the revised plan and offered implementation partnerships.",
+          "The alternative would increase project costs by 12% but still provide 89% of original congestion relief."
         ],
         "rules": [
           "R13: Technical adaptations addressing primary opposition points can restore original support patterns.",
@@ -822,9 +822,9 @@
       },
       {
         "facts": [
-          "F17: Preliminary soil testing reveals contamination requiring environmental remediation along the alternative route.",
-          "F18: Remediation would delay the project by approximately 18 months.",
-          "F19: The federal funding allocation expires if not utilized within 24 months of approval."
+          "Preliminary soil testing reveals contamination requiring environmental remediation along the alternative route.",
+          "Remediation would delay the project by approximately 18 months.",
+          "The federal funding allocation expires if not utilized within 24 months of approval."
         ],
         "rules": [
           "R16: Environmental remediation requirements create substantial uncertainty for project timelines.",
@@ -840,9 +840,9 @@
       },
       {
         "facts": [
-          "F20: Federal administrators have indicated willingness to extend the funding window given the specific circumstances.",
-          "F21: A local university has offered technical assistance for accelerated remediation approaches.",
-          "F22: State environmental officials have proposed an expedited review process for the project."
+          "Federal administrators have indicated willingness to extend the funding window given the specific circumstances.",
+          "A local university has offered technical assistance for accelerated remediation approaches.",
+          "State environmental officials have proposed an expedited review process for the project."
         ],
         "rules": [
           "R19: Administrative flexibility on deadlines removes expiration constraints from decision calculations.",
@@ -860,10 +860,10 @@
   },
   {
     "facts": [
-      "F1: The Electoral Access Act would expand early voting periods to 14 days before elections.",
-      "F2: Commissioner Park oversees election administration in a county with historically long polling place lines.",
-      "F3: Commissioner Park previously implemented a weekend voting pilot program that increased turnout by 8%.",
-      "F4: The county has limited staff resources for extended election administration."
+      "The Electoral Access Act would expand early voting periods to 14 days before elections.",
+      "Commissioner Park oversees election administration in a county with historically long polling place lines.",
+      "Commissioner Park previously implemented a weekend voting pilot program that increased turnout by 8%.",
+      "The county has limited staff resources for extended election administration."
     ],
     "rules": [
       "R1: Election administrators generally support measures addressing documented problems in their jurisdictions.",
@@ -879,9 +879,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Budget analysis shows implementation would require hiring 28 additional temporary staff.",
-          "F6: The county council has announced a hiring freeze due to revenue shortfalls.",
-          "F7: State funding would cover only 35% of the estimated implementation costs."
+          "Budget analysis shows implementation would require hiring 28 additional temporary staff.",
+          "The county council has announced a hiring freeze due to revenue shortfalls.",
+          "State funding would cover only 35% of the estimated implementation costs."
         ],
         "rules": [
           "R4: Hiring freezes create significant barriers to staff-intensive policy implementation.",
@@ -897,9 +897,9 @@
       },
       {
         "facts": [
-          "F8: A civic organization coalition has offered to provide 40 trained volunteers to supplement staff.",
-          "F9: The state election board has authorized a flexible implementation allowing rotating voting locations.",
-          "F10: Analysis shows rotating locations would reduce staffing needs by 40% while serving 85% of voters."
+          "A civic organization coalition has offered to provide 40 trained volunteers to supplement staff.",
+          "The state election board has authorized a flexible implementation allowing rotating voting locations.",
+          "Analysis shows rotating locations would reduce staffing needs by 40% while serving 85% of voters."
         ],
         "rules": [
           "R7: Volunteer support substantially reduces staffing requirement concerns.",
@@ -915,9 +915,9 @@
       },
       {
         "facts": [
-          "F11: County legal counsel has raised concerns about volunteer access to voter registration systems.",
-          "F12: State law prohibits non-government employees from accessing voter databases.",
-          "F13: System access is required for 65% of early voting administrative functions."
+          "County legal counsel has raised concerns about volunteer access to voter registration systems.",
+          "State law prohibits non-government employees from accessing voter databases.",
+          "System access is required for 65% of early voting administrative functions."
         ],
         "rules": [
           "R10: Legal compliance requirements supersede administrative flexibility.",
@@ -933,9 +933,9 @@
       },
       {
         "facts": [
-          "F14: The state legislature has amended regulations to allow supervised volunteer assistance for specific functions.",
-          "F15: The county has received a special implementation grant of $175,000 from a national election administration foundation.",
-          "F16: Voter advocacy groups have filed a legal petition arguing current wait times violate accessibility requirements."
+          "The state legislature has amended regulations to allow supervised volunteer assistance for specific functions.",
+          "The county has received a special implementation grant of $175,000 from a national election administration foundation.",
+          "Voter advocacy groups have filed a legal petition arguing current wait times violate accessibility requirements."
         ],
         "rules": [
           "R13: Regulatory amendments removing legal barriers restore original policy assessment.",
@@ -951,9 +951,9 @@
       },
       {
         "facts": [
-          "F17: Implementation timeline analysis shows staff training cannot be completed before the next major election.",
-          "F18: Partial implementation would create inconsistent voting access across the county.",
-          "F19: The county's IT security office has identified data protection vulnerabilities in rapid deployment."
+          "Implementation timeline analysis shows staff training cannot be completed before the next major election.",
+          "Partial implementation would create inconsistent voting access across the county.",
+          "The county's IT security office has identified data protection vulnerabilities in rapid deployment."
         ],
         "rules": [
           "R16: Election administrators prioritize consistency and security above access expansion.",
@@ -969,9 +969,9 @@
       },
       {
         "facts": [
-          "F20: A phased implementation plan would begin with secure functions while delaying vulnerable processes.",
-          "F21: The election administration foundation has offered technical security consultants at no cost to the county.",
-          "F22: Four neighboring counties have successfully implemented similar phased approaches."
+          "A phased implementation plan would begin with secure functions while delaying vulnerable processes.",
+          "The election administration foundation has offered technical security consultants at no cost to the county.",
+          "Four neighboring counties have successfully implemented similar phased approaches."
         ],
         "rules": [
           "R19: Phased implementation addressing security priorities balances access and integrity concerns.",
@@ -989,10 +989,10 @@
   },
   {
     "facts": [
-      "F1: The Clean Energy Transition Act mandates 50% renewable energy by 2030.",
-      "F2: Governor Torres' state currently generates 22% of electricity from renewable sources.",
-      "F3: The state has significant natural gas production employing approximately 28,000 workers.",
-      "F4: Governor Torres campaigned on both economic development and environmental protection."
+      "The Clean Energy Transition Act mandates 50% renewable energy by 2030.",
+      "Governor Torres' state currently generates 22% of electricity from renewable sources.",
+      "The state has significant natural gas production employing approximately 28,000 workers.",
+      "Governor Torres campaigned on both economic development and environmental protection."
     ],
     "rules": [
       "R1: Governors balance economic impacts against environmental goals in energy policy decisions.",
@@ -1008,9 +1008,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Economic impact analysis projects the renewable mandate would create 34,000 new energy sector jobs.",
-          "F6: Renewable energy projects would be distributed across economically distressed counties.",
-          "F7: Three major renewable developers have committed to hiring and retraining current energy workers."
+          "Economic impact analysis projects the renewable mandate would create 34,000 new energy sector jobs.",
+          "Renewable energy projects would be distributed across economically distressed counties.",
+          "Three major renewable developers have committed to hiring and retraining current energy workers."
         ],
         "rules": [
           "R4: Net positive job creation significantly influences energy transition positions.",
@@ -1026,9 +1026,9 @@
       },
       {
         "facts": [
-          "F8: Implementation analysis shows the transition would increase average energy costs by 18% during the adjustment period.",
-          "F9: The state has the third-highest energy poverty rate nationally, with 22% of households spending over 10% of income on energy.",
-          "F10: Consumer advocacy groups have launched a campaign against the 'regressive energy tax'."
+          "Implementation analysis shows the transition would increase average energy costs by 18% during the adjustment period.",
+          "The state has the third-highest energy poverty rate nationally, with 22% of households spending over 10% of income on energy.",
+          "Consumer advocacy groups have launched a campaign against the 'regressive energy tax'."
         ],
         "rules": [
           "R7: Energy affordability concerns substantially influence energy policy positions.",
@@ -1044,9 +1044,9 @@
       },
       {
         "facts": [
-          "F11: An amendment has added energy bill subsidies for low-income households during the transition period.",
-          "F12: The subsidies would cap energy costs at 6% of income for qualifying households.",
-          "F13: A major natural gas producer has announced support for the amended act, citing diversification strategies."
+          "An amendment has added energy bill subsidies for low-income households during the transition period.",
+          "The subsidies would cap energy costs at 6% of income for qualifying households.",
+          "A major natural gas producer has announced support for the amended act, citing diversification strategies."
         ],
         "rules": [
           "R10: Targeted protection for vulnerable populations substantially addresses affordability concerns.",
@@ -1062,9 +1062,9 @@
       },
       {
         "facts": [
-          "F14: Grid reliability analysis identifies potential shortfalls during peak demand periods under the mandate.",
-          "F15: The state experienced three major blackouts in the past decade during extreme weather events.",
-          "F16: The reliability assessment recommends a 10-year rather than 8-year transition to ensure grid stability."
+          "Grid reliability analysis identifies potential shortfalls during peak demand periods under the mandate.",
+          "The state experienced three major blackouts in the past decade during extreme weather events.",
+          "The reliability assessment recommends a 10-year rather than 8-year transition to ensure grid stability."
         ],
         "rules": [
           "R13: Grid reliability concerns fundamentally affect energy policy positions.",
@@ -1080,9 +1080,9 @@
       },
       {
         "facts": [
-          "F17: The timeline has been extended to 10 years with intermediate benchmarks as recommended.",
-          "F18: An emergency reliability provision allows temporary standard adjustments during grid emergencies.",
-          "F19: Four neighboring states have adopted coordinated renewable standards to enable regional grid balancing."
+          "The timeline has been extended to 10 years with intermediate benchmarks as recommended.",
+          "An emergency reliability provision allows temporary standard adjustments during grid emergencies.",
+          "Four neighboring states have adopted coordinated renewable standards to enable regional grid balancing."
         ],
         "rules": [
           "R16: Extended timelines aligned with technical recommendations substantially address implementation concerns.",
@@ -1098,9 +1098,9 @@
       },
       {
         "facts": [
-          "F20: Federal policy changes have reduced renewable energy tax incentives affecting project economics.",
-          "F21: Updated economic analysis shows the transition would require $840 million in state subsidies to remain viable.",
-          "F22: The state faces a projected budget deficit for the next three fiscal years."
+          "Federal policy changes have reduced renewable energy tax incentives affecting project economics.",
+          "Updated economic analysis shows the transition would require $840 million in state subsidies to remain viable.",
+          "The state faces a projected budget deficit for the next three fiscal years."
         ],
         "rules": [
           "R19: External policy changes requiring substantial unplanned state funding fundamentally alter economic assessments.",
@@ -1116,9 +1116,9 @@
       },
       {
         "facts": [
-          "F23: A public-private partnership model has been developed reducing direct state costs to $240 million.",
-          "F24: The partnership includes performance-based metrics ensuring return on public investment.",
-          "F25: Economic projections show the partnership approach would generate $175 million in new tax revenue annually by year five."
+          "A public-private partnership model has been developed reducing direct state costs to $240 million.",
+          "The partnership includes performance-based metrics ensuring return on public investment.",
+          "Economic projections show the partnership approach would generate $175 million in new tax revenue annually by year five."
         ],
         "rules": [
           "R22: Public-private approaches substantially reduce fiscal impact concerns for large initiatives.",
