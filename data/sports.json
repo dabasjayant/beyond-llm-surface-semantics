@@ -18,7 +18,7 @@
       ],
       "question": "Will Team Nexus advance to the second round of the tournament?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "Team Nexus's star player has reported wrist pain and will play with a wrist brace in the tournament.",
@@ -130,7 +130,7 @@
       ],
       "question": "Will Team Phantom reach the quarterfinals of the GGL Championship?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "The GGL Championship's first round will use a best-of-one format instead of the traditional best-of-three.",
@@ -260,7 +260,7 @@
       ],
       "question": "Will Team Supernova win the upcoming CTS Major tournament?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "Team Supernova's captain and shot-caller has announced a 2-week vacation during the critical practice period.",
@@ -388,7 +388,7 @@
       ],
       "question": "Will Team Eclipse integrate the AI positioning system for the upcoming championship?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "During scrimmage testing, three core players expressed concerns about the system overriding their intuitive flanking decisions.",
@@ -454,7 +454,7 @@
       ],
       "question": "Will Team Crimson Strike adopt the early aggression tactic in the upcoming major tournament?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "Initial scrimmages with the early aggression tactic revealed disorganized starts and uncoordinated team play during the first five minutes.",
@@ -515,7 +515,7 @@
     ],
     "question": "It is true that Team X should adjust their formation to counter high pressing?",
     "label": true,
-    "rounds": [      {
+    "updates": [      {
         "facts": [          "Team Y substitutes a speedy winger to intensify their press.",
           "Team X's midfield appears stretched."
         ],
@@ -570,7 +570,7 @@
     ],
     "question": "It is true that Team A should adjust their rotation to protect the star player?",
     "label": true,
-    "rounds": [      {
+    "updates": [      {
         "facts": [          "The coach substitutes the star with a reliable defensive specialist.",
           "Defensive performance improves, forcing 2 turnovers in the subsequent minute."
         ],
@@ -625,7 +625,7 @@
     ],
     "question": "It is true that Player X should adjust his game plan in the second set?",
     "label": true,
-    "rounds": [      {
+    "updates": [      {
         "facts": [          "In the second set, Player X introduces well-timed drop shots and defensive lobs.",
           "Player Y starts anticipating drop shots and moves forward consistently."
         ],
@@ -680,7 +680,7 @@
     ],
     "question": "It is true that Team Z should prioritize deep sideline passes in this scenario?",
     "label": true,
-    "rounds": [      {
+    "updates": [      {
         "facts": [          "Team Z initiates a quick short pass that preserves time, but the defense adjusts to cover the sidelines.",
           "Analysis indicates that short passes yield lower yardage gains."
         ],
@@ -734,7 +734,7 @@
     ],
     "question": "It is true that the goal should be disallowed?",
     "label": false,
-    "rounds": [      {
+    "updates": [      {
         "facts": [          "VAR review shows that the forward's hand made accidental contact.",
           "The ball maintained its momentum toward the goal."
         ],

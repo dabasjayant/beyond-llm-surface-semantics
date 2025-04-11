@@ -16,7 +16,7 @@
       ],
       "question": "Will Alex engage in a long-term mindfulness practice program?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "One month after the workshop, Alex reported a moderate reduction in his stress levels.",
@@ -85,7 +85,7 @@
     ],
     "question": "Will Thomas maintain his exercise program for at least six months?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Thomas has joined a workplace wellness program that offers $50 monthly incentives for meeting exercise goals.",
@@ -196,7 +196,7 @@
     ],
     "question": "Will Olivia purchase the electric vehicle within the next month?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "The dealership has offered Olivia a financing option of $550 monthly payments for 72 months.",
@@ -307,7 +307,7 @@
     ],
     "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Marcus has learned that the position includes provisions for four paid visits home annually.",
@@ -418,7 +418,7 @@
     ],
     "question": "Will Alex successfully quit smoking for at least 6 months this time?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Alex's partner has also decided to quit smoking simultaneously and suggested they support each other.",
@@ -547,7 +547,7 @@
     ],
     "question": "Will Noah pass the advanced statistics course this semester?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Noah has joined a statistics study group that meets twice weekly for 2-hour sessions.",
@@ -658,7 +658,7 @@
     ],
     "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Sophia's company has announced a restructuring that includes potential layoffs in the marketing department.",
@@ -769,7 +769,7 @@
     ],
     "question": "Will Daniel and Leila allow their son to attend the music festival?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Their son has presented a detailed plan including transportation, accommodations, emergency contacts, and check-in schedule.",
@@ -879,7 +879,7 @@
       ],
       "question": "Will Olivia consistently reduce her sugary food consumption over the next six months?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "After one month, Olivia reported an increase in her daily energy levels and a slight improvement in her concentration at work.",
@@ -947,7 +947,7 @@
       ],
       "question": "Will Derek continue his morning running routine over the next year?",
       "label": true,
-      "rounds": [
+      "updates": [
         {
           "facts": [
             "After two weeks, Derek reported consistently feeling more energetic in the mornings and noted a reduction in midday fatigue.",

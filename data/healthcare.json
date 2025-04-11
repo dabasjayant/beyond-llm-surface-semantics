@@ -13,7 +13,7 @@
     ],
     "question": "It is true that Patient A should be taken immediately for PCI.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Further assessment reveals a history of recent gastrointestinal bleeding and unstable blood pressure.",
@@ -92,7 +92,7 @@
     ],
     "question": "It is true that Patient B should receive platinum-based chemotherapy.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Biomarker testing reveals high PD-L1 expression.",
@@ -175,7 +175,7 @@
     ],
     "question": "It is true that Patient C should start metformin therapy.",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Initial renal tests are borderline normal with no history of kidney disease.",
@@ -252,7 +252,7 @@
     ],
     "question": "It is true that Patient D should be taken immediately to the operating room.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Initial resuscitation temporarily stabilizes blood pressure.",
@@ -329,7 +329,7 @@
     ],
     "question": "It is true that Patient E should be ventilated with high PEEP settings.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Arterial blood gas shows worsening oxygenation despite moderate PEEP.",
@@ -406,7 +406,7 @@
     ],
     "question": "It is true that Patient F should be started on standard-dose ESAs.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Patient F has a prior history of venous thromboembolism.",
@@ -484,7 +484,7 @@
     ],
     "question": "It is true that Patient G should receive intravenous thrombolysis.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Time since symptom onset is 3 hours.",
@@ -562,7 +562,7 @@
     ],
     "question": "It is true that Patient H should be managed with supportive care alone.",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "The patient develops hypotension despite fluid resuscitation.",
@@ -640,7 +640,7 @@
     ],
     "question": "It is true that Patient I should receive aggressive fluid resuscitation immediately.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Echocardiography shows reduced ejection fraction.",
@@ -718,7 +718,7 @@
     ],
     "question": "It is true that Patient J should receive aggressive fluid hydration.",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Hematocrit levels are rising and there are signs of capillary leak.",
