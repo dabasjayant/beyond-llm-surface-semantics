@@ -17,7 +17,7 @@
     ],
     "question": "Will Senator Blackwood vote for the Coastal Protection Act?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "An economic analysis projects the Coastal Protection Act would reduce tourism revenue in coastal regions by 8% during the initial implementation period.",
@@ -104,7 +104,7 @@
     ],
     "question": "Will Representative Jordan vote in favor of the Educational Opportunity Act?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Analysis shows the private school tax credits would cost 40% of the total budget allocation for the Act.",
@@ -211,7 +211,7 @@
     ],
     "question": "Will Governor Lin sign the Medical Cost Transparency Act?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Implementation analysis projects initial compliance costs of $45 million for hospitals statewide.",
@@ -303,7 +303,7 @@
     ],
     "question": "Will Mayor Chen publicly endorse the Justice System Reform Act?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "A recent violent crime incident involving a previously convicted offender has received extensive media coverage.",
@@ -414,7 +414,7 @@
     ],
     "question": "Will Representative Wilson vote for the Farm Sustainability Act?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Transition cost analysis shows initial 3-year revenue decreases before organic premium benefits.",
@@ -507,7 +507,7 @@
     ],
     "question": "Will Senator Hayes vote to ratify the Multilateral Trade Cooperation Agreement?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Economic analysis shows the tariff reductions would likely increase manufacturing imports to Hayes' state by 24%.",
@@ -618,7 +618,7 @@
     ],
     "question": "Will Representative Morgan support the Data Protection Framework?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Industry analysis projects compliance costs would reduce technology sector hiring by 12% annually.",
@@ -747,7 +747,7 @@
     ],
     "question": "Will Mayor Rodriguez apply for the Urban Mobility Initiative funding?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "City budget analysis shows the matching requirement would require 8% of annual discretionary funds.",
@@ -876,7 +876,7 @@
     ],
     "question": "Will Commissioner Park support implementing the Electoral Access Act in the county?",
     "label": true,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Budget analysis shows implementation would require hiring 28 additional temporary staff.",
@@ -1005,7 +1005,7 @@
     ],
     "question": "Will Governor Torres support the Clean Energy Transition Act?",
     "label": false,
-    "rounds": [
+    "updates": [
       {
         "facts": [
           "Economic impact analysis projects the renewable mandate would create 34,000 new energy sector jobs.",
