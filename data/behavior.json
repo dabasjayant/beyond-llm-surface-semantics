@@ -1,9 +1,9 @@
 [
   {
       "facts": [
-        "F1: Alex is a 35-year-old professional who has expressed a desire to improve his work-life balance.",
-        "F2: He recently attended a mindfulness workshop and reported initial insights on stress reduction.",
-        "F3: Research in human behavior indicates that positive firsthand experiences with mindfulness techniques tend to encourage lasting practice."
+        "Alex is a 35-year-old professional who has expressed a desire to improve his work-life balance.",
+        "He recently attended a mindfulness workshop and reported initial insights on stress reduction.",
+        "Research in human behavior indicates that positive firsthand experiences with mindfulness techniques tend to encourage lasting practice."
       ],
       "rules": [
         "R1: Individuals are more likely to sustain behavioral changes when they observe tangible benefits.",
@@ -19,9 +19,9 @@
       "rounds": [
         {
           "facts": [
-            "F4: One month after the workshop, Alex reported a moderate reduction in his stress levels.",
-            "F5: Close colleagues noticed subtle yet positive behavioral changes in Alex.",
-            "F6: A follow-up evaluation revealed that the mindfulness techniques helped him adopt healthier daily routines."
+            "One month after the workshop, Alex reported a moderate reduction in his stress levels.",
+            "Close colleagues noticed subtle yet positive behavioral changes in Alex.",
+            "A follow-up evaluation revealed that the mindfulness techniques helped him adopt healthier daily routines."
           ],
           "rules": [
             "R4: Observable improvements and positive peer acknowledgment are key drivers for continuing new behaviors.",
@@ -35,9 +35,9 @@
         },
         {
           "facts": [
-            "F7: A recent highly stressful incident at work led to a temporary spike in Alex's anxiety levels.",
-            "F8: Despite the incident, Alex used mindfulness techniques as a first-response to manage his reaction.",
-            "F9: Some psychologists caution that extreme stress can prompt reversion to old, less effective coping mechanisms."
+            "A recent highly stressful incident at work led to a temporary spike in Alex's anxiety levels.",
+            "Despite the incident, Alex used mindfulness techniques as a first-response to manage his reaction.",
+            "Some psychologists caution that extreme stress can prompt reversion to old, less effective coping mechanisms."
           ],
           "rules": [
             "R6: In acute stress situations, individuals may rely on familiar coping mechanisms unless the new habit is well-established.",
@@ -51,9 +51,9 @@
         },
         {
           "facts": [
-            "F10: Six-month follow-up surveys show that Alex's regular mindfulness practice has significantly reduced his tendency to revert to stress-based behaviors.",
-            "F11: Alex has begun sharing his mindfulness experiences on social media, garnering supportive feedback from a broader community.",
-            "F12: His sustained improvements in work-life balance and overall well-being have been noted by his professional network."
+            "Six-month follow-up surveys show that Alex's regular mindfulness practice has significantly reduced his tendency to revert to stress-based behaviors.",
+            "Alex has begun sharing his mindfulness experiences on social media, garnering supportive feedback from a broader community.",
+            "His sustained improvements in work-life balance and overall well-being have been noted by his professional network."
           ],
           "rules": [
             "R8: Longitudinal evidence of behavioral change is decisive in confirming the adoption of a new habit.",
@@ -69,10 +69,10 @@
   },
   {
     "facts": [
-      "F1: Thomas has been advised by his doctor to begin a regular exercise program to address his borderline high blood pressure.",
-      "F2: Thomas has purchased a 12-month gym membership at a facility near his workplace.",
-      "F3: Thomas has verbally committed to his spouse that he will exercise three times per week.",
-      "F4: Thomas has historically abandoned new health initiatives within 4-6 weeks."
+      "Thomas has been advised by his doctor to begin a regular exercise program to address his borderline high blood pressure.",
+      "Thomas has purchased a 12-month gym membership at a facility near his workplace.",
+      "Thomas has verbally committed to his spouse that he will exercise three times per week.",
+      "Thomas has historically abandoned new health initiatives within 4-6 weeks."
     ],
     "rules": [
       "R1: Financial commitments increase the likelihood of sustained behavior change.",
@@ -88,9 +88,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Thomas has joined a workplace wellness program that offers $50 monthly incentives for meeting exercise goals.",
-          "F6: Thomas's spouse has agreed to exercise with him twice weekly.",
-          "F7: Thomas has scheduled exercise sessions in his calendar as recurring appointments."
+          "Thomas has joined a workplace wellness program that offers $50 monthly incentives for meeting exercise goals.",
+          "Thomas's spouse has agreed to exercise with him twice weekly.",
+          "Thomas has scheduled exercise sessions in his calendar as recurring appointments."
         ],
         "rules": [
           "R4: Financial incentives that provide immediate rewards increase adherence to health behavior changes.",
@@ -106,9 +106,9 @@
       },
       {
         "facts": [
-          "F8: Thomas's workplace has announced a restructuring requiring him to commute an additional 30 minutes each way.",
-          "F9: The wellness program incentive has been reduced to $25 monthly due to budget constraints.",
-          "F10: Thomas missed four scheduled exercise sessions in the past two weeks."
+          "Thomas's workplace has announced a restructuring requiring him to commute an additional 30 minutes each way.",
+          "The wellness program incentive has been reduced to $25 monthly due to budget constraints.",
+          "Thomas missed four scheduled exercise sessions in the past two weeks."
         ],
         "rules": [
           "R7: Time constraints are the most commonly cited barrier to maintaining exercise programs.",
@@ -124,9 +124,9 @@
       },
       {
         "facts": [
-          "F11: Thomas has received results from recent medical tests showing his blood pressure has increased to clinical hypertension levels.",
-          "F12: Thomas has adjusted his schedule to exercise during lunch breaks at his workplace gym.",
-          "F13: Thomas's doctor has discussed potential medication requirements if lifestyle changes are not implemented."
+          "Thomas has received results from recent medical tests showing his blood pressure has increased to clinical hypertension levels.",
+          "Thomas has adjusted his schedule to exercise during lunch breaks at his workplace gym.",
+          "Thomas's doctor has discussed potential medication requirements if lifestyle changes are not implemented."
         ],
         "rules": [
           "R10: Concrete evidence of health deterioration significantly increases health behavior compliance.",
@@ -142,9 +142,9 @@
       },
       {
         "facts": [
-          "F14: Thomas's spouse has injured their knee and can no longer participate in exercise sessions.",
-          "F15: Thomas has been assigned a major project at work with deadlines that require occasional overtime.",
-          "F16: Thomas has missed the past five scheduled exercise sessions."
+          "Thomas's spouse has injured their knee and can no longer participate in exercise sessions.",
+          "Thomas has been assigned a major project at work with deadlines that require occasional overtime.",
+          "Thomas has missed the past five scheduled exercise sessions."
         ],
         "rules": [
           "R13: Loss of exercise companionship reduces program adherence by approximately 40%.",
@@ -160,9 +160,9 @@
       },
       {
         "facts": [
-          "F17: Thomas has been prescribed blood pressure medication by his doctor with notable side effects.",
-          "F18: Thomas has hired a personal trainer who provides accountability through twice-weekly sessions.",
-          "F19: Thomas has found a substitute exercise partner in a coworker with similar health goals."
+          "Thomas has been prescribed blood pressure medication by his doctor with notable side effects.",
+          "Thomas has hired a personal trainer who provides accountability through twice-weekly sessions.",
+          "Thomas has found a substitute exercise partner in a coworker with similar health goals."
         ],
         "rules": [
           "R16: Experiencing medication side effects increases motivation for lifestyle modifications by an average of 60%.",
@@ -180,10 +180,10 @@
   },
   {
     "facts": [
-      "F1: Olivia is considering purchasing a new electric vehicle priced at $45,000.",
-      "F2: Olivia currently owns a 10-year-old gas-powered car with increasing maintenance costs.",
-      "F3: Olivia has researched electric vehicles for 3 months and identified this specific model as her preference.",
-      "F4: Olivia's annual income is $85,000 with monthly discretionary funds of approximately $800."
+      "Olivia is considering purchasing a new electric vehicle priced at $45,000.",
+      "Olivia currently owns a 10-year-old gas-powered car with increasing maintenance costs.",
+      "Olivia has researched electric vehicles for 3 months and identified this specific model as her preference.",
+      "Olivia's annual income is $85,000 with monthly discretionary funds of approximately $800."
     ],
     "rules": [
       "R1: Major purchase decisions typically require the financial capacity to maintain regular payments without exceeding 15% of monthly income.",
@@ -199,9 +199,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: The dealership has offered Olivia a financing option of $550 monthly payments for 72 months.",
-          "F6: Olivia's current vehicle has broken down twice in the past month, requiring $1,200 in repairs.",
-          "F7: A government tax incentive program has just been announced, offering $7,500 rebates on electric vehicle purchases."
+          "The dealership has offered Olivia a financing option of $550 monthly payments for 72 months.",
+          "Olivia's current vehicle has broken down twice in the past month, requiring $1,200 in repairs.",
+          "A government tax incentive program has just been announced, offering $7,500 rebates on electric vehicle purchases."
         ],
         "rules": [
           "R4: Vehicle reliability issues that impact daily functioning accelerate replacement timelines.",
@@ -217,9 +217,9 @@
       },
       {
         "facts": [
-          "F8: Olivia has discovered the tax incentive requires waiting 6-8 weeks for reimbursement after purchase.",
-          "F9: Olivia's employer has announced possible layoffs in her department within the next quarter.",
-          "F10: The dealership has a limited inventory and cannot guarantee availability beyond the current month."
+          "Olivia has discovered the tax incentive requires waiting 6-8 weeks for reimbursement after purchase.",
+          "Olivia's employer has announced possible layoffs in her department within the next quarter.",
+          "The dealership has a limited inventory and cannot guarantee availability beyond the current month."
         ],
         "rules": [
           "R7: Job insecurity typically delays major financial commitments by 6-12 months.",
@@ -235,9 +235,9 @@
       },
       {
         "facts": [
-          "F11: Olivia's employer has confirmed her position is secure and not affected by the layoffs.",
-          "F12: The dealership has offered an additional $3,000 discount if Olivia purchases within two weeks.",
-          "F13: Olivia's mechanic has advised her current vehicle needs a transmission replacement estimated at $3,800."
+          "Olivia's employer has confirmed her position is secure and not affected by the layoffs.",
+          "The dealership has offered an additional $3,000 discount if Olivia purchases within two weeks.",
+          "Olivia's mechanic has advised her current vehicle needs a transmission replacement estimated at $3,800."
         ],
         "rules": [
           "R10: Repair costs exceeding 50% of a vehicle's value typically trigger replacement decisions.",
@@ -253,9 +253,9 @@
       },
       {
         "facts": [
-          "F14: Olivia has discovered the electric vehicle model has been recalled twice in the past year for battery issues.",
-          "F15: A new model with improved range and features will be released in three months at a similar price point.",
-          "F16: Olivia's current vehicle has been repaired and the mechanic believes it should function reliably for another 6-8 months."
+          "Olivia has discovered the electric vehicle model has been recalled twice in the past year for battery issues.",
+          "A new model with improved range and features will be released in three months at a similar price point.",
+          "Olivia's current vehicle has been repaired and the mechanic believes it should function reliably for another 6-8 months."
         ],
         "rules": [
           "R13: Safety and reliability concerns reduce purchase likelihood for specific models by approximately 65%.",
@@ -271,9 +271,9 @@
       },
       {
         "facts": [
-          "F17: The manufacturer has addressed the recall issues and extended the battery warranty to 10 years with free replacement.",
-          "F18: The dealership has only one vehicle left in stock and has received multiple inquiries about it.",
-          "F19: Olivia's car has developed new electrical problems affecting its reliability for her daily commute."
+          "The manufacturer has addressed the recall issues and extended the battery warranty to 10 years with free replacement.",
+          "The dealership has only one vehicle left in stock and has received multiple inquiries about it.",
+          "Olivia's car has developed new electrical problems affecting its reliability for her daily commute."
         ],
         "rules": [
           "R16: Extended warranties mitigate approximately 80% of reliability concerns in purchase decisions.",
@@ -291,10 +291,10 @@
   },
   {
     "facts": [
-      "F1: Marcus and Jamie have been dating for eight months.",
-      "F2: Marcus has been offered a prestigious job opportunity requiring relocation to another country for two years.",
-      "F3: Jamie has a established career in their current city that would be difficult to continue remotely.",
-      "F4: Marcus and Jamie have discussed marriage as a future possibility but have made no formal commitments."
+      "Marcus and Jamie have been dating for eight months.",
+      "Marcus has been offered a prestigious job opportunity requiring relocation to another country for two years.",
+      "Jamie has a established career in their current city that would be difficult to continue remotely.",
+      "Marcus and Jamie have discussed marriage as a future possibility but have made no formal commitments."
     ],
     "rules": [
       "R1: Relationships under one year typically have lower resilience to long-distance arrangements than more established relationships.",
@@ -310,9 +310,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Marcus has learned that the position includes provisions for four paid visits home annually.",
-          "F6: Jamie has expressed willingness to attempt a long-distance relationship.",
-          "F7: Three of Marcus's colleagues have maintained successful relationships through similar international assignments."
+          "Marcus has learned that the position includes provisions for four paid visits home annually.",
+          "Jamie has expressed willingness to attempt a long-distance relationship.",
+          "Three of Marcus's colleagues have maintained successful relationships through similar international assignments."
         ],
         "rules": [
           "R4: Regular in-person contact significantly increases the viability of long-distance relationships.",
@@ -328,9 +328,9 @@
       },
       {
         "facts": [
-          "F8: Marcus's previous relationship ended due to career-related relocation and prolonged separation.",
-          "F9: Jamie has revealed plans to pursue a graduate degree that would require intensive time commitment for the next two years.",
-          "F10: The job opportunity's salary would allow Marcus to eliminate his substantial student debt within 18 months."
+          "Marcus's previous relationship ended due to career-related relocation and prolonged separation.",
+          "Jamie has revealed plans to pursue a graduate degree that would require intensive time commitment for the next two years.",
+          "The job opportunity's salary would allow Marcus to eliminate his substantial student debt within 18 months."
         ],
         "rules": [
           "R7: Past relationship disappointments with similar causes create heightened caution about similar situations.",
@@ -346,9 +346,9 @@
       },
       {
         "facts": [
-          "F11: Marcus and Jamie have discovered that Jamie's graduate program offers study abroad options at a university near Marcus's potential job location.",
-          "F12: Marcus's company has offered to provide housing that could accommodate both Marcus and Jamie.",
-          "F13: Jamie's family has expressed strong disapproval of potentially relocating for a relationship without marriage."
+          "Marcus and Jamie have discovered that Jamie's graduate program offers study abroad options at a university near Marcus's potential job location.",
+          "Marcus's company has offered to provide housing that could accommodate both Marcus and Jamie.",
+          "Jamie's family has expressed strong disapproval of potentially relocating for a relationship without marriage."
         ],
         "rules": [
           "R10: Synchronistic opportunities that address major obstacles typically shift decision outcomes.",
@@ -364,9 +364,9 @@
       },
       {
         "facts": [
-          "F14: Jamie has learned that the foreign study option would delay graduation by an additional year.",
-          "F15: Marcus has discovered the position would require 60% travel throughout the region, limiting time together even if Jamie relocated.",
-          "F16: Marcus and Jamie have had three significant relationship conflicts in the past month while discussing the potential move."
+          "Jamie has learned that the foreign study option would delay graduation by an additional year.",
+          "Marcus has discovered the position would require 60% travel throughout the region, limiting time together even if Jamie relocated.",
+          "Marcus and Jamie have had three significant relationship conflicts in the past month while discussing the potential move."
         ],
         "rules": [
           "R13: Educational timeline extensions typically decrease willingness to modify academic plans for relationship factors.",
@@ -382,9 +382,9 @@
       },
       {
         "facts": [
-          "F17: Marcus's current employer has offered a promotion with only 15% less compensation than the international position.",
-          "F18: Marcus and Jamie have attended relationship counseling and developed improved communication strategies.",
-          "F19: The international employer has reduced the travel requirement to 30% and offered to review after six months."
+          "Marcus's current employer has offered a promotion with only 15% less compensation than the international position.",
+          "Marcus and Jamie have attended relationship counseling and developed improved communication strategies.",
+          "The international employer has reduced the travel requirement to 30% and offered to review after six months."
         ],
         "rules": [
           "R16: Local alternatives within 20% of compensation value significantly reduce the attractiveness of relocation opportunities.",
@@ -402,10 +402,10 @@
   },
   {
     "facts": [
-      "F1: Alex has been smoking one pack of cigarettes daily for 12 years.",
-      "F2: Alex has attempted to quit smoking three times in the past five years, with the longest smoke-free period lasting 6 weeks.",
-      "F3: Alex's doctor has recently informed them that early signs of respiratory issues are developing.",
-      "F4: Alex's health insurance now offers a smoking cessation program with free nicotine replacement therapy."
+      "Alex has been smoking one pack of cigarettes daily for 12 years.",
+      "Alex has attempted to quit smoking three times in the past five years, with the longest smoke-free period lasting 6 weeks.",
+      "Alex's doctor has recently informed them that early signs of respiratory issues are developing.",
+      "Alex's health insurance now offers a smoking cessation program with free nicotine replacement therapy."
     ],
     "rules": [
       "R1: Health warning events typically increase motivation for behavior change by approximately 40% in the short term.",
@@ -421,9 +421,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Alex's partner has also decided to quit smoking simultaneously and suggested they support each other.",
-          "F6: Alex has joined a weekly smoking cessation support group at a local community center.",
-          "F7: Alex has informed friends and family about the quit attempt, creating social accountability."
+          "Alex's partner has also decided to quit smoking simultaneously and suggested they support each other.",
+          "Alex has joined a weekly smoking cessation support group at a local community center.",
+          "Alex has informed friends and family about the quit attempt, creating social accountability."
         ],
         "rules": [
           "R4: Partner co-quitting increases success rates by approximately 35% compared to solo attempts.",
@@ -439,9 +439,9 @@
       },
       {
         "facts": [
-          "F8: Alex's partner has relapsed after three weeks and resumed smoking at home.",
-          "F9: Alex has experienced significant withdrawal symptoms including irritability and difficulty concentrating at work.",
-          "F10: Alex has begun socializing more frequently with colleagues who smoke during break periods."
+          "Alex's partner has relapsed after three weeks and resumed smoking at home.",
+          "Alex has experienced significant withdrawal symptoms including irritability and difficulty concentrating at work.",
+          "Alex has begun socializing more frequently with colleagues who smoke during break periods."
         ],
         "rules": [
           "R7: Partner relapse increases the quit failure rate by approximately 60% in cohabiting relationships.",
@@ -457,9 +457,9 @@
       },
       {
         "facts": [
-          "F11: Alex has requested and received a prescription for medication that reduces nicotine cravings.",
-          "F12: Alex has switched to a different department at work where fewer colleagues smoke.",
-          "F13: Alex's respiratory symptoms have noticeably improved after four weeks without smoking."
+          "Alex has requested and received a prescription for medication that reduces nicotine cravings.",
+          "Alex has switched to a different department at work where fewer colleagues smoke.",
+          "Alex's respiratory symptoms have noticeably improved after four weeks without smoking."
         ],
         "rules": [
           "R10: Pharmacological interventions reduce relapse risk by approximately 50% compared to willpower-only approaches.",
@@ -475,9 +475,9 @@
       },
       {
         "facts": [
-          "F14: Alex has experienced a major family crisis requiring extended time with relatives who smoke heavily.",
-          "F15: Alex has reported significant side effects from the cessation medication and stopped taking it.",
-          "F16: Alex has missed three consecutive support group meetings due to the family situation."
+          "Alex has experienced a major family crisis requiring extended time with relatives who smoke heavily.",
+          "Alex has reported significant side effects from the cessation medication and stopped taking it.",
+          "Alex has missed three consecutive support group meetings due to the family situation."
         ],
         "rules": [
           "R13: Acute stress events trigger relapse in approximately 65% of recent quitters when combined with environmental cues.",
@@ -493,9 +493,9 @@
       },
       {
         "facts": [
-          "F17: Alex attended an intensive three-day relapse prevention workshop after smoking two cigarettes during the family crisis.",
-          "F18: Alex's doctor has prescribed an alternative medication with fewer side effects.",
-          "F19: Alex has recruited a quit buddy from the support group who is available for 24/7 text support during craving episodes."
+          "Alex attended an intensive three-day relapse prevention workshop after smoking two cigarettes during the family crisis.",
+          "Alex's doctor has prescribed an alternative medication with fewer side effects.",
+          "Alex has recruited a quit buddy from the support group who is available for 24/7 text support during craving episodes."
         ],
         "rules": [
           "R16: Early intervention following minimal relapse prevents complete behavior reversion in approximately 70% of cases.",
@@ -511,9 +511,9 @@
       },
       {
         "facts": [
-          "F20: Alex's workplace has announced a stressful reorganization with potential layoffs.",
-          "F21: Alex's partner has suggested they could save money by purchasing cigarettes instead of the more expensive medication.",
-          "F22: Alex has begun experiencing insomnia, a common withdrawal effect that can persist for months."
+          "Alex's workplace has announced a stressful reorganization with potential layoffs.",
+          "Alex's partner has suggested they could save money by purchasing cigarettes instead of the more expensive medication.",
+          "Alex has begun experiencing insomnia, a common withdrawal effect that can persist for months."
         ],
         "rules": [
           "R19: Job insecurity increases relapse rates by approximately 55% during the acute stress period.",
@@ -531,10 +531,10 @@
   },
   {
     "facts": [
-      "F1: Noah is a second-year university student with a current GPA of 2.7 out of 4.0.",
-      "F2: Noah has enrolled in an advanced statistics course that has a 40% historical failure rate.",
-      "F3: Noah scored a C- in the prerequisite introductory statistics course last semester.",
-      "F4: Noah typically studies alone for approximately 5 hours per week per course."
+      "Noah is a second-year university student with a current GPA of 2.7 out of 4.0.",
+      "Noah has enrolled in an advanced statistics course that has a 40% historical failure rate.",
+      "Noah scored a C- in the prerequisite introductory statistics course last semester.",
+      "Noah typically studies alone for approximately 5 hours per week per course."
     ],
     "rules": [
       "R1: Performance in prerequisite courses predicts performance in advanced courses with approximately 70% accuracy.",
@@ -550,9 +550,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Noah has joined a statistics study group that meets twice weekly for 2-hour sessions.",
-          "F6: Noah has increased individual study time to 8 hours weekly for this course.",
-          "F7: Noah has met with the professor during office hours to discuss effective study strategies."
+          "Noah has joined a statistics study group that meets twice weekly for 2-hour sessions.",
+          "Noah has increased individual study time to 8 hours weekly for this course.",
+          "Noah has met with the professor during office hours to discuss effective study strategies."
         ],
         "rules": [
           "R4: Collaborative study groups increase pass rates by approximately 25% in challenging quantitative courses.",
@@ -568,9 +568,9 @@
       },
       {
         "facts": [
-          "F8: Noah scored a D on the first major exam, which constitutes 25% of the final grade.",
-          "F9: Noah has been offered an opportunity to work on an additional project for up to 10% extra credit.",
-          "F10: Noah's attendance at study group sessions has dropped to approximately 50% due to conflicts with a part-time job."
+          "Noah scored a D on the first major exam, which constitutes 25% of the final grade.",
+          "Noah has been offered an opportunity to work on an additional project for up to 10% extra credit.",
+          "Noah's attendance at study group sessions has dropped to approximately 50% due to conflicts with a part-time job."
         ],
         "rules": [
           "R7: Performance on first major assessments predicts final course outcomes with approximately 65% accuracy.",
@@ -586,9 +586,9 @@
       },
       {
         "facts": [
-          "F11: Noah has hired a statistics tutor for weekly one-on-one sessions focused on areas of weakness.",
-          "F12: Noah has negotiated reduced hours at work to prioritize academics for the remainder of the semester.",
-          "F13: The professor has announced that the final exam will be weighted more heavily (40%) than originally planned (30%)."
+          "Noah has hired a statistics tutor for weekly one-on-one sessions focused on areas of weakness.",
+          "Noah has negotiated reduced hours at work to prioritize academics for the remainder of the semester.",
+          "The professor has announced that the final exam will be weighted more heavily (40%) than originally planned (30%)."
         ],
         "rules": [
           "R10: Personalized tutoring improves subject performance by approximately 30% in challenging quantitative subjects.",
@@ -604,9 +604,9 @@
       },
       {
         "facts": [
-          "F14: Noah has been diagnosed with mononucleosis, causing two weeks of missed classes during the critical mid-semester period.",
-          "F15: The professor has declined to offer make-up assessments for a missed mid-term exam worth 20% of the final grade.",
-          "F16: Noah's tutor has reported difficulty maintaining consistent progress due to Noah's health-related absences."
+          "Noah has been diagnosed with mononucleosis, causing two weeks of missed classes during the critical mid-semester period.",
+          "The professor has declined to offer make-up assessments for a missed mid-term exam worth 20% of the final grade.",
+          "Noah's tutor has reported difficulty maintaining consistent progress due to Noah's health-related absences."
         ],
         "rules": [
           "R13: Extended illness-related absences during critical learning periods reduce course performance by approximately 35% on average.",
@@ -622,9 +622,9 @@
       },
       {
         "facts": [
-          "F17: Noah has petitioned for and received medical accommodation allowing extended deadlines and a make-up mid-term exam.",
-          "F18: Noah has obtained comprehensive notes from study group members for all missed lectures.",
-          "F19: The professor has provided Noah with additional practice problems focusing on the missed content areas."
+          "Noah has petitioned for and received medical accommodation allowing extended deadlines and a make-up mid-term exam.",
+          "Noah has obtained comprehensive notes from study group members for all missed lectures.",
+          "The professor has provided Noah with additional practice problems focusing on the missed content areas."
         ],
         "rules": [
           "R16: Formal academic accommodations for documented medical issues neutralize approximately 80% of absence-related performance deficits.",
@@ -642,10 +642,10 @@
   },
   {
     "facts": [
-      "F1: Sophia has worked as a marketing manager at the same company for eight years.",
-      "F2: Sophia has been taking evening classes in web development for the past year.",
-      "F3: Sophia feels increasingly dissatisfied with her current career path and lacks growth opportunities.",
-      "F4: Sophia has built a small portfolio of web projects but has no professional experience in the field."
+      "Sophia has worked as a marketing manager at the same company for eight years.",
+      "Sophia has been taking evening classes in web development for the past year.",
+      "Sophia feels increasingly dissatisfied with her current career path and lacks growth opportunities.",
+      "Sophia has built a small portfolio of web projects but has no professional experience in the field."
     ],
     "rules": [
       "R1: Career transitions become more challenging as individuals spend more time in their original field.",
@@ -661,9 +661,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Sophia's company has announced a restructuring that includes potential layoffs in the marketing department.",
-          "F6: A former colleague has offered Sophia contract work on a small web development project.",
-          "F7: Sophia has sufficient savings to cover living expenses for four months without income."
+          "Sophia's company has announced a restructuring that includes potential layoffs in the marketing department.",
+          "A former colleague has offered Sophia contract work on a small web development project.",
+          "Sophia has sufficient savings to cover living expenses for four months without income."
         ],
         "rules": [
           "R4: External career threats significantly increase willingness to pursue alternative paths.",
@@ -679,9 +679,9 @@
       },
       {
         "facts": [
-          "F8: Sophia's position has been confirmed as secure in the restructuring, with a modest salary increase.",
-          "F9: The contract work has revealed significant gaps in Sophia's practical development knowledge.",
-          "F10: Sophia's partner has expressed concerns about financial stability if she changes careers."
+          "Sophia's position has been confirmed as secure in the restructuring, with a modest salary increase.",
+          "The contract work has revealed significant gaps in Sophia's practical development knowledge.",
+          "Sophia's partner has expressed concerns about financial stability if she changes careers."
         ],
         "rules": [
           "R7: Renewed security and recognition in current positions typically diminish transition motivation.",
@@ -697,9 +697,9 @@
       },
       {
         "facts": [
-          "F11: Sophia has been invited to join an intensive web development bootcamp with job placement services.",
-          "F12: Sophia's company has denied her request for a part-time schedule to accommodate additional training.",
-          "F13: Several bootcamp graduates have shared success stories of transitioning to development roles within three months."
+          "Sophia has been invited to join an intensive web development bootcamp with job placement services.",
+          "Sophia's company has denied her request for a part-time schedule to accommodate additional training.",
+          "Several bootcamp graduates have shared success stories of transitioning to development roles within three months."
         ],
         "rules": [
           "R10: Structured transition programs with placement support substantially increase career change success.",
@@ -715,9 +715,9 @@
       },
       {
         "facts": [
-          "F14: The bootcamp requires a substantial upfront payment that would deplete most of Sophia's savings.",
-          "F15: Sophia's current employer has announced a new digital marketing initiative that includes web development components.",
-          "F16: Sophia's partner has unexpectedly lost their job and is beginning a job search."
+          "The bootcamp requires a substantial upfront payment that would deplete most of Sophia's savings.",
+          "Sophia's current employer has announced a new digital marketing initiative that includes web development components.",
+          "Sophia's partner has unexpectedly lost their job and is beginning a job search."
         ],
         "rules": [
           "R13: High financial commitments to career transitions increase hesitation during periods of household financial uncertainty.",
@@ -733,9 +733,9 @@
       },
       {
         "facts": [
-          "F17: Sophia has discovered a part-time web development training program that offers deferred payment until employment.",
-          "F18: Sophia's partner has secured a new position with higher compensation than their previous job.",
-          "F19: Sophia's manager has assigned her primarily to administrative tasks following her expression of interest in the digital initiative."
+          "Sophia has discovered a part-time web development training program that offers deferred payment until employment.",
+          "Sophia's partner has secured a new position with higher compensation than their previous job.",
+          "Sophia's manager has assigned her primarily to administrative tasks following her expression of interest in the digital initiative."
         ],
         "rules": [
           "R16: Accessible training options that reduce financial barriers reignite transition considerations.",
@@ -753,10 +753,10 @@
   },
   {
     "facts": [
-      "F1: Daniel and Leila's 16-year-old son has asked permission to attend a weekend music festival three hours away.",
-      "F2: Their son has maintained good grades and followed household rules consistently over the past year.",
-      "F3: The festival will be attended by several of their son's friends, but no parents will be present in their group.",
-      "F4: This would be their son's first overnight trip without adult family members or school supervision."
+      "Daniel and Leila's 16-year-old son has asked permission to attend a weekend music festival three hours away.",
+      "Their son has maintained good grades and followed household rules consistently over the past year.",
+      "The festival will be attended by several of their son's friends, but no parents will be present in their group.",
+      "This would be their son's first overnight trip without adult family members or school supervision."
     ],
     "rules": [
       "R1: Parents typically grant increased independence to teenagers who demonstrate consistent responsibility.",
@@ -772,9 +772,9 @@
     "rounds": [
       {
         "facts": [
-          "F5: Their son has presented a detailed plan including transportation, accommodations, emergency contacts, and check-in schedule.",
-          "F6: One of the friends attending is a responsible 18-year-old whom the parents know and trust.",
-          "F7: The festival has a strong security presence and clear safety protocols for attendees."
+          "Their son has presented a detailed plan including transportation, accommodations, emergency contacts, and check-in schedule.",
+          "One of the friends attending is a responsible 18-year-old whom the parents know and trust.",
+          "The festival has a strong security presence and clear safety protocols for attendees."
         ],
         "rules": [
           "R4: Thorough planning by teenagers demonstrates maturity that significantly increases parental confidence.",
@@ -790,9 +790,9 @@
       },
       {
         "facts": [
-          "F8: Daniel and Leila have discovered concerning social media posts showing drug use at previous iterations of this festival.",
-          "F9: Their son has never broken their trust regarding substance use before but has never been in such an environment.",
-          "F10: The parents of two other teens in the friend group have decided not to allow their children to attend."
+          "Daniel and Leila have discovered concerning social media posts showing drug use at previous iterations of this festival.",
+          "Their son has never broken their trust regarding substance use before but has never been in such an environment.",
+          "The parents of two other teens in the friend group have decided not to allow their children to attend."
         ],
         "rules": [
           "R7: Evidence of concerning activities at venues strongly impacts parental permission regardless of child's history.",
@@ -808,9 +808,9 @@
       },
       {
         "facts": [
-          "F11: The festival organizers have published comprehensive information about their zero-tolerance drug policy and enforcement measures.",
-          "F12: Their son has proposed a compromise where he will attend only during daytime hours and stay overnight at a hotel with his friend's older brother, a college student they know well.",
-          "F13: The parents who previously refused permission are reconsidering based on the daytime-only attendance option."
+          "The festival organizers have published comprehensive information about their zero-tolerance drug policy and enforcement measures.",
+          "Their son has proposed a compromise where he will attend only during daytime hours and stay overnight at a hotel with his friend's older brother, a college student they know well.",
+          "The parents who previously refused permission are reconsidering based on the daytime-only attendance option."
         ],
         "rules": [
           "R10: Transparent venue policies with enforcement mechanisms reduce but don't eliminate specific risk concerns.",
@@ -826,9 +826,9 @@
       },
       {
         "facts": [
-          "F14: Daniel and Leila have learned that the older brother chaperone has previously been arrested for providing alcohol to minors, though the charge was later dropped.",
-          "F15: Their son has expressed frustration with their concerns and accused them of not trusting him.",
-          "F16: The festival dates coincide with a significant family event that their son had previously agreed to attend."
+          "Daniel and Leila have learned that the older brother chaperone has previously been arrested for providing alcohol to minors, though the charge was later dropped.",
+          "Their son has expressed frustration with their concerns and accused them of not trusting him.",
+          "The festival dates coincide with a significant family event that their son had previously agreed to attend."
         ],
         "rules": [
           "R13: Discovered concerns about designated supervisors fundamentally undermine supervision-based compromise solutions.",
@@ -844,9 +844,9 @@
       },
       {
         "facts": [
-          "F17: Their son has sincerely apologized for his reaction and suggested his parents chaperone the group themselves by staying nearby.",
-          "F18: The family event has been rescheduled due to an unexpected venue issue.",
-          "F19: Other parents from their community with similar-aged teens have organized a parent supervision rotation for the festival."
+          "Their son has sincerely apologized for his reaction and suggested his parents chaperone the group themselves by staying nearby.",
+          "The family event has been rescheduled due to an unexpected venue issue.",
+          "Other parents from their community with similar-aged teens have organized a parent supervision rotation for the festival."
         ],
         "rules": [
           "R16: Teenager acknowledgment of inappropriate reactions strongly indicates emotional maturity relevant to independence readiness.",
@@ -864,9 +864,9 @@
   },
   {
       "facts": [
-        "F1: Olivia is a 34-year-old working professional who has decided to reduce her sugar intake to improve her overall health.",
-        "F2: She began by substituting sugary snacks and drinks with healthier alternatives such as fruits and herbal teas.",
-        "F3: Research in human behavior indicates that gradual dietary changes, when paired with observable health improvements, tend to be sustainable."
+        "Olivia is a 34-year-old working professional who has decided to reduce her sugar intake to improve her overall health.",
+        "She began by substituting sugary snacks and drinks with healthier alternatives such as fruits and herbal teas.",
+        "Research in human behavior indicates that gradual dietary changes, when paired with observable health improvements, tend to be sustainable."
       ],
       "rules": [
         "R1: Individuals are more likely to maintain dietary changes if they experience immediate improvements in energy and mood.",
@@ -882,9 +882,9 @@
       "rounds": [
         {
           "facts": [
-            "F4: After one month, Olivia reported an increase in her daily energy levels and a slight improvement in her concentration at work.",
-            "F5: She managed to decrease her sugary snack intake by 40%, as tracked in her food journal.",
-            "F6: Some initial cravings occurred during late evenings, but these were infrequent and short-lived."
+            "After one month, Olivia reported an increase in her daily energy levels and a slight improvement in her concentration at work.",
+            "She managed to decrease her sugary snack intake by 40%, as tracked in her food journal.",
+            "Some initial cravings occurred during late evenings, but these were infrequent and short-lived."
           ],
           "rules": [
             "R4: Early visible improvements in health outcomes strongly motivate individuals to continue with dietary changes.",
@@ -898,9 +898,9 @@
         },
         {
           "facts": [
-            "F7: At the three-month mark, Olivia’s food journal indicated a consistent 60% reduction in sugary foods compared to her baseline.",
-            "F8: Her family and close friends noticed her improved mood and increased participation in physical activities.",
-            "F9: In response to occasional cravings, Olivia began experimenting with low-sugar dessert recipes, which helped sustain her progress."
+            "At the three-month mark, Olivia’s food journal indicated a consistent 60% reduction in sugary foods compared to her baseline.",
+            "Her family and close friends noticed her improved mood and increased participation in physical activities.",
+            "In response to occasional cravings, Olivia began experimenting with low-sugar dessert recipes, which helped sustain her progress."
           ],
           "rules": [
             "R6: Progressive reductions in sugar intake, coupled with adaptive strategies, reinforce long-term dietary change.",
@@ -914,9 +914,9 @@
         },
         {
           "facts": [
-            "F10: At the six-month milestone, Olivia’s health assessments show improved blood sugar levels and enhanced overall well-being.",
-            "F11: She has integrated structured meal planning into her weekly routine and periodically reviews her progress with a nutrition coach.",
-            "F12: Olivia has become a role model in her social circle, often sharing her healthy recipes and success stories, which further reinforces her commitment."
+            "At the six-month milestone, Olivia’s health assessments show improved blood sugar levels and enhanced overall well-being.",
+            "She has integrated structured meal planning into her weekly routine and periodically reviews her progress with a nutrition coach.",
+            "Olivia has become a role model in her social circle, often sharing her healthy recipes and success stories, which further reinforces her commitment."
           ],
           "rules": [
             "R8: Long-term positive health outcomes and regular professional monitoring are strong indicators of sustained behavioral change.",
@@ -932,9 +932,9 @@
   },
   {
       "facts": [
-        "F1: Derek is a 29-year-old technology professional who recently decided to adopt a morning running routine to manage his stress levels.",
-        "F2: Within the first week, he experienced noticeable improvements in his energy and a reduction in his overall stress.",
-        "F3: Studies in human behavior indicate that early positive physical and mental health benefits can prompt individuals to maintain new exercise routines."
+        "Derek is a 29-year-old technology professional who recently decided to adopt a morning running routine to manage his stress levels.",
+        "Within the first week, he experienced noticeable improvements in his energy and a reduction in his overall stress.",
+        "Studies in human behavior indicate that early positive physical and mental health benefits can prompt individuals to maintain new exercise routines."
       ],
       "rules": [
         "R1: Individuals are more likely to continue with new physical activities if they observe tangible improvements in both health and mood.",
@@ -950,9 +950,9 @@
       "rounds": [
         {
           "facts": [
-            "F4: After two weeks, Derek reported consistently feeling more energetic in the mornings and noted a reduction in midday fatigue.",
-            "F5: Although he occasionally struggled with waking up early, he successfully adjusted his bedtime to mitigate these issues.",
-            "F6: A close friend joined him for weekend runs, providing additional motivation and accountability."
+            "After two weeks, Derek reported consistently feeling more energetic in the mornings and noted a reduction in midday fatigue.",
+            "Although he occasionally struggled with waking up early, he successfully adjusted his bedtime to mitigate these issues.",
+            "A close friend joined him for weekend runs, providing additional motivation and accountability."
           ],
           "rules": [
             "R4: Noticeable improvements in energy and mood significantly increase the likelihood of long-term adherence to an exercise routine.",
@@ -966,9 +966,9 @@
         },
         {
           "facts": [
-            "F7: At the two-month mark, Derek had established a fixed sleep schedule, which allowed him to run consistently every morning.",
-            "F8: He was invited to join a local running group, further increasing his accountability and engagement with his new routine.",
-            "F9: Recent health assessments indicated improved cardiovascular fitness and lower stress markers."
+            "At the two-month mark, Derek had established a fixed sleep schedule, which allowed him to run consistently every morning.",
+            "He was invited to join a local running group, further increasing his accountability and engagement with his new routine.",
+            "Recent health assessments indicated improved cardiovascular fitness and lower stress markers."
           ],
           "rules": [
             "R6: Regular scheduling paired with community engagement is a strong predictor of sustaining a new exercise habit.",
@@ -982,9 +982,9 @@
         },
         {
           "facts": [
-            "F10: After six months, Derek has seamlessly integrated his morning run into his daily routine without significant disruptions.",
-            "F11: He has taken on a mentorship role in the local running group, guiding new members and deepening his own commitment.",
-            "F12: Continuous improvements in both physical health and mental clarity, reinforced by positive feedback from those he mentors, have further motivated him to continue."
+            "After six months, Derek has seamlessly integrated his morning run into his daily routine without significant disruptions.",
+            "He has taken on a mentorship role in the local running group, guiding new members and deepening his own commitment.",
+            "Continuous improvements in both physical health and mental clarity, reinforced by positive feedback from those he mentors, have further motivated him to continue."
           ],
           "rules": [
             "R8: Long-term habit maintenance is greatly enhanced when an individual assumes a role that contributes to the community.",

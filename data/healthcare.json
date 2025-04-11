@@ -1,8 +1,8 @@
 [
   {
     "facts": [
-      "F1: Patient A (Cardiology) presents with chest pain and ST-elevation on ECG.",
-      "F2: Patient A is diagnosed with acute myocardial infarction."
+      "Patient A (Cardiology) presents with chest pain and ST-elevation on ECG.",
+      "Patient A is diagnosed with acute myocardial infarction."
     ],
     "rules": [
       "R1: Immediate reperfusion therapy (PCI) is indicated for acute MI.",
@@ -16,8 +16,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Further assessment reveals a history of recent gastrointestinal bleeding and unstable blood pressure.",
-          "F4: These factors suggest high procedural risk."
+          "Further assessment reveals a history of recent gastrointestinal bleeding and unstable blood pressure.",
+          "These factors suggest high procedural risk."
         ],
         "rules": [
           "R3: In the presence of recent bleeding and instability, immediate PCI may be deferred in favor of stabilization.",
@@ -31,8 +31,8 @@
       },
       {
         "facts": [
-          "F5: The patient is stabilized with medical therapy and bleeding is controlled.",
-          "F6: Repeat assessment shows persistent ST-elevation."
+          "The patient is stabilized with medical therapy and bleeding is controlled.",
+          "Repeat assessment shows persistent ST-elevation."
         ],
         "rules": [],
         "preferences": [],
@@ -41,8 +41,8 @@
       },
       {
         "facts": [
-          "F7: During PCI, minor vascular complications occur which are promptly managed.",
-          "F8: Post-procedure, Patient A shows gradual improvement."
+          "During PCI, minor vascular complications occur which are promptly managed.",
+          "Post-procedure, Patient A shows gradual improvement."
         ],
         "rules": [
           "R5: If complications occur during PCI, prompt management may lead to an overall favorable outcome."
@@ -53,8 +53,8 @@
       },
       {
         "facts": [
-          "F9: Post-PCI, serum creatinine rises, suggesting contrast-induced nephropathy.",
-          "F10: Urine output remains adequate."
+          "Post-PCI, serum creatinine rises, suggesting contrast-induced nephropathy.",
+          "Urine output remains adequate."
         ],
         "rules": [
           "R6: Contrast nephropathy requires IV hydration and nephrotoxic avoidance.",
@@ -68,8 +68,8 @@
       },
       {
         "facts": [
-          "F11: Aggressive IV hydration improves renal function.",
-          "F12: Cardiac function remains stable."
+          "Aggressive IV hydration improves renal function.",
+          "Cardiac function remains stable."
         ],
         "rules": [],
         "preferences": [],
@@ -80,8 +80,8 @@
   },
   {
     "facts": [
-      "F1: Patient B (Oncology) is diagnosed with advanced non-small cell lung cancer.",
-      "F2: Standard therapy involves platinum-based chemotherapy."
+      "Patient B (Oncology) is diagnosed with advanced non-small cell lung cancer.",
+      "Standard therapy involves platinum-based chemotherapy."
     ],
     "rules": [
       "R1: For advanced lung cancer, platinum-based chemotherapy is first-line treatment.",
@@ -95,8 +95,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Biomarker testing reveals high PD-L1 expression.",
-          "F4: Patient B shows poor tolerance to chemotherapy side effects."
+          "Biomarker testing reveals high PD-L1 expression.",
+          "Patient B shows poor tolerance to chemotherapy side effects."
         ],
         "rules": [
           "R3: High PD-L1 expression favors immunotherapy over chemotherapy.",
@@ -110,8 +110,8 @@
       },
       {
         "facts": [
-          "F5: A clinical trial offering combination therapy is available.",
-          "F6: Combination therapy has higher efficacy but increased side effects."
+          "A clinical trial offering combination therapy is available.",
+          "Combination therapy has higher efficacy but increased side effects."
         ],
         "rules": [
           "R5: Combination therapy may be considered if its benefits outweigh the risks."
@@ -122,8 +122,8 @@
       },
       {
         "facts": [
-          "F7: After a trial period, Patient B experiences a partial response to immunotherapy.",
-          "F8: Mild side effects are observed that are tolerable."
+          "After a trial period, Patient B experiences a partial response to immunotherapy.",
+          "Mild side effects are observed that are tolerable."
         ],
         "rules": [
           "R6: If immunotherapy yields a partial response with tolerable side effects, continuation is recommended."
@@ -134,8 +134,8 @@
       },
       {
         "facts": [
-          "F9: New liver metastases are detected on follow-up imaging.",
-          "F10: PD-L1 remains high, but tumor burden increases."
+          "New liver metastases are detected on follow-up imaging.",
+          "PD-L1 remains high, but tumor burden increases."
         ],
         "rules": [
           "R7: Progressive disease on immunotherapy may warrant adding targeted therapy.",
@@ -149,8 +149,8 @@
       },
       {
         "facts": [
-          "F11: Patient develops immune-related hepatitis.",
-          "F12: Liver enzymes are 3x upper limit of normal."
+          "Patient develops immune-related hepatitis.",
+          "Liver enzymes are 3x upper limit of normal."
         ],
         "rules": [
           "R9: Immune-related hepatitis requires holding immunotherapy and starting steroids."
@@ -163,8 +163,8 @@
   },
   {
     "facts": [
-      "F1: Patient C (Endocrinology) is newly diagnosed with type 2 diabetes.",
-      "F2: Patient C's HbA1c is significantly elevated."
+      "Patient C (Endocrinology) is newly diagnosed with type 2 diabetes.",
+      "Patient C's HbA1c is significantly elevated."
     ],
     "rules": [
       "R1: Metformin is the first-line treatment for type 2 diabetes.",
@@ -178,8 +178,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Initial renal tests are borderline normal with no history of kidney disease.",
-          "F4: The patient's overall kidney function is acceptable."
+          "Initial renal tests are borderline normal with no history of kidney disease.",
+          "The patient's overall kidney function is acceptable."
         ],
         "rules": [
           "R3: With borderline renal function, metformin may be used under close monitoring."
@@ -192,7 +192,7 @@
       },
       {
         "facts": [
-          "F5: Follow-up tests show a decline in renal function; eGFR drops below 45 ml/min."
+          "Follow-up tests show a decline in renal function; eGFR drops below 45 ml/min."
         ],
         "rules": [],
         "preferences": [],
@@ -201,8 +201,8 @@
       },
       {
         "facts": [
-          "F6: An alternative oral hypoglycemic agent with a better renal safety profile is available.",
-          "F7: The alternative has been approved for use in patients with reduced renal function."
+          "An alternative oral hypoglycemic agent with a better renal safety profile is available.",
+          "The alternative has been approved for use in patients with reduced renal function."
         ],
         "rules": [
           "R4: When metformin is contraindicated, switching to the alternative is recommended."
@@ -213,8 +213,8 @@
       },
       {
         "facts": [
-          "F8: Patient reports fatigue and nausea; ketones are elevated.",
-          "F9: Blood glucose is normal (euglycemic DKA risk)."
+          "Patient reports fatigue and nausea; ketones are elevated.",
+          "Blood glucose is normal (euglycemic DKA risk)."
         ],
         "rules": [
           "R5: SGLT2 inhibitors require monitoring for euglycemic DKA.",
@@ -228,8 +228,8 @@
       },
       {
         "facts": [
-          "F10: With hydration and insulin, ketosis resolves.",
-          "F11: HbA1c drops to 7.2%."
+          "With hydration and insulin, ketosis resolves.",
+          "HbA1c drops to 7.2%."
         ],
         "rules": [],
         "preferences": [],
@@ -240,8 +240,8 @@
   },
   {
     "facts": [
-      "F1: Patient D (Emergency Medicine) is brought to the ED with severe blunt trauma.",
-      "F2: The patient's vital signs are unstable."
+      "Patient D (Emergency Medicine) is brought to the ED with severe blunt trauma.",
+      "The patient's vital signs are unstable."
     ],
     "rules": [
       "R1: In severe trauma with instability, rapid surgical intervention is indicated.",
@@ -255,8 +255,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Initial resuscitation temporarily stabilizes blood pressure.",
-          "F4: Imaging confirms internal bleeding requiring surgical intervention."
+          "Initial resuscitation temporarily stabilizes blood pressure.",
+          "Imaging confirms internal bleeding requiring surgical intervention."
         ],
         "rules": [
           "R3: When imaging confirms internal bleeding, surgery cannot be further delayed.",
@@ -270,7 +270,7 @@
       },
       {
         "facts": [
-          "F5: After further resuscitation, the patient becomes stable enough for surgery."
+          "After further resuscitation, the patient becomes stable enough for surgery."
         ],
         "rules": [],
         "preferences": [],
@@ -279,8 +279,8 @@
       },
       {
         "facts": [
-          "F6: Post-surgery, the patient develops a mild infection at the incision site.",
-          "F7: Early antibiotic therapy is initiated."
+          "Post-surgery, the patient develops a mild infection at the incision site.",
+          "Early antibiotic therapy is initiated."
         ],
         "rules": [
           "R5: Mild post-operative infections should be managed with timely antibiotic administration."
@@ -291,8 +291,8 @@
       },
       {
         "facts": [
-          "F8: The infection worsens despite antibiotics, requiring debridement.",
-          "F9: Cultures reveal multidrug-resistant bacteria."
+          "The infection worsens despite antibiotics, requiring debridement.",
+          "Cultures reveal multidrug-resistant bacteria."
         ],
         "rules": [
           "R6: Resistant infections may require broader-spectrum antibiotics or surgical intervention."
@@ -305,8 +305,8 @@
       },
       {
         "facts": [
-          "F10: After debridement and adjusted antibiotics, the infection resolves.",
-          "F11: The patient is discharged to rehabilitation."
+          "After debridement and adjusted antibiotics, the infection resolves.",
+          "The patient is discharged to rehabilitation."
         ],
         "rules": [],
         "preferences": [],
@@ -317,8 +317,8 @@
   },
   {
     "facts": [
-      "F1: Patient E (Pulmonology) presents with severe shortness of breath and hypoxemia.",
-      "F2: Chest X-ray reveals diffuse infiltrates consistent with ARDS."
+      "Patient E (Pulmonology) presents with severe shortness of breath and hypoxemia.",
+      "Chest X-ray reveals diffuse infiltrates consistent with ARDS."
     ],
     "rules": [
       "R1: In ARDS, lung-protective ventilation with moderate PEEP is essential.",
@@ -332,8 +332,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Arterial blood gas shows worsening oxygenation despite moderate PEEP.",
-          "F4: No signs of barotrauma are present on initial imaging."
+          "Arterial blood gas shows worsening oxygenation despite moderate PEEP.",
+          "No signs of barotrauma are present on initial imaging."
         ],
         "rules": [
           "R3: In refractory hypoxemia without barotrauma, an increase in PEEP may be considered."
@@ -346,8 +346,8 @@
       },
       {
         "facts": [
-          "F5: Following an increase in PEEP, lung compliance decreases and early signs of barotrauma appear.",
-          "F6: Follow-up imaging confirms these changes."
+          "Following an increase in PEEP, lung compliance decreases and early signs of barotrauma appear.",
+          "Follow-up imaging confirms these changes."
         ],
         "rules": [],
         "preferences": [],
@@ -356,8 +356,8 @@
       },
       {
         "facts": [
-          "F7: After adjustment, oxygenation improves and no further signs of barotrauma are seen.",
-          "F8: The patient remains hemodynamically stable."
+          "After adjustment, oxygenation improves and no further signs of barotrauma are seen.",
+          "The patient remains hemodynamically stable."
         ],
         "rules": [
           "R4: Once ventilator settings are optimized, continued monitoring ensures sustained improvement."
@@ -368,8 +368,8 @@
       },
       {
         "facts": [
-          "F9: The patient develops a ventilator-associated pneumonia (VAP).",
-          "F10: Sputum cultures grow Pseudomonas aeruginosa."
+          "The patient develops a ventilator-associated pneumonia (VAP).",
+          "Sputum cultures grow Pseudomonas aeruginosa."
         ],
         "rules": [
           "R5: VAP requires prompt antibiotic therapy and reevaluation of ventilator settings."
@@ -382,8 +382,8 @@
       },
       {
         "facts": [
-          "F11: With targeted antibiotics, the pneumonia resolves.",
-          "F12: The patient is successfully weaned from the ventilator."
+          "With targeted antibiotics, the pneumonia resolves.",
+          "The patient is successfully weaned from the ventilator."
         ],
         "rules": [],
         "preferences": [],
@@ -394,8 +394,8 @@
   },
   {
     "facts": [
-      "F1: Patient F (Hematology) is diagnosed with severe anemia due to chronic kidney disease.",
-      "F2: Standard treatment includes erythropoiesis-stimulating agents (ESAs)."
+      "Patient F (Hematology) is diagnosed with severe anemia due to chronic kidney disease.",
+      "Standard treatment includes erythropoiesis-stimulating agents (ESAs)."
     ],
     "rules": [
       "R1: ESAs are indicated to improve hemoglobin levels in CKD-related anemia.",
@@ -409,8 +409,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Patient F has a prior history of venous thromboembolism.",
-          "F4: A lower-dose ESA regimen is available as an alternative."
+          "Patient F has a prior history of venous thromboembolism.",
+          "A lower-dose ESA regimen is available as an alternative."
         ],
         "rules": [
           "R3: In patients with thrombotic history, a lower-dose ESA regimen is preferred.",
@@ -424,8 +424,8 @@
       },
       {
         "facts": [
-          "F5: After 4 weeks, hemoglobin shows minimal improvement.",
-          "F6: The patient remains at moderate risk for thrombosis."
+          "After 4 weeks, hemoglobin shows minimal improvement.",
+          "The patient remains at moderate risk for thrombosis."
         ],
         "rules": [],
         "preferences": [],
@@ -434,8 +434,8 @@
       },
       {
         "facts": [
-          "F7: Subsequent testing indicates a slight improvement with low-dose therapy, but not enough to meet target hemoglobin levels.",
-          "F8: Additional supportive measures are implemented."
+          "Subsequent testing indicates a slight improvement with low-dose therapy, but not enough to meet target hemoglobin levels.",
+          "Additional supportive measures are implemented."
         ],
         "rules": [
           "R5: If supportive measures fail to achieve target hemoglobin, escalation of ESA dose may be warranted."
@@ -446,8 +446,8 @@
       },
       {
         "facts": [
-          "F9: Patient F develops new-onset hypertension attributed to ESA therapy.",
-          "F10: Blood pressure is poorly controlled despite antihypertensives."
+          "Patient F develops new-onset hypertension attributed to ESA therapy.",
+          "Blood pressure is poorly controlled despite antihypertensives."
         ],
         "rules": [
           "R6: ESA-induced hypertension may necessitate dose reduction or discontinuation."
@@ -460,8 +460,8 @@
       },
       {
         "facts": [
-          "F11: After ESA discontinuation, hemoglobin stabilizes at a suboptimal level.",
-          "F12: The patient is referred for iron infusion therapy."
+          "After ESA discontinuation, hemoglobin stabilizes at a suboptimal level.",
+          "The patient is referred for iron infusion therapy."
         ],
         "rules": [],
         "preferences": [],
@@ -472,8 +472,8 @@
   },
   {
     "facts": [
-      "F1: Patient G (Neurology) presents with acute stroke symptoms.",
-      "F2: Brain imaging confirms an ischemic event."
+      "Patient G (Neurology) presents with acute stroke symptoms.",
+      "Brain imaging confirms an ischemic event."
     ],
     "rules": [
       "R1: Intravenous thrombolysis is recommended within 4.5 hours for ischemic stroke.",
@@ -487,8 +487,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Time since symptom onset is 3 hours.",
-          "F4: Laboratory tests show elevated bleeding markers."
+          "Time since symptom onset is 3 hours.",
+          "Laboratory tests show elevated bleeding markers."
         ],
         "rules": [
           "R3: Elevated bleeding markers contraindicate thrombolysis.",
@@ -502,8 +502,8 @@
       },
       {
         "facts": [
-          "F5: Follow-up imaging shows no intracranial hemorrhage.",
-          "F6: Bleeding markers normalize after supportive care."
+          "Follow-up imaging shows no intracranial hemorrhage.",
+          "Bleeding markers normalize after supportive care."
         ],
         "rules": [],
         "preferences": [],
@@ -512,8 +512,8 @@
       },
       {
         "facts": [
-          "F7: Post-thrombolysis, the patient shows significant neurological improvement.",
-          "F8: Ongoing monitoring confirms no rebleeding."
+          "Post-thrombolysis, the patient shows significant neurological improvement.",
+          "Ongoing monitoring confirms no rebleeding."
         ],
         "rules": [
           "R5: Positive post-thrombolysis outcomes reinforce the decision to proceed cautiously."
@@ -524,8 +524,8 @@
       },
       {
         "facts": [
-          "F9: The patient develops a fever and elevated white blood cell count.",
-          "F10: Lumbar puncture rules out meningitis."
+          "The patient develops a fever and elevated white blood cell count.",
+          "Lumbar puncture rules out meningitis."
         ],
         "rules": [
           "R6: Post-stroke fever may be due to aspiration pneumonia or systemic inflammation."
@@ -538,8 +538,8 @@
       },
       {
         "facts": [
-          "F11: Chest X-ray confirms aspiration pneumonia.",
-          "F12: Antibiotics are initiated with clinical improvement."
+          "Chest X-ray confirms aspiration pneumonia.",
+          "Antibiotics are initiated with clinical improvement."
         ],
         "rules": [],
         "preferences": [],
@@ -550,8 +550,8 @@
   },
   {
     "facts": [
-      "F1: Patient H (Gastroenterology) presents with acute pancreatitis symptoms.",
-      "F2: Elevated serum amylase and lipase levels confirm the diagnosis."
+      "Patient H (Gastroenterology) presents with acute pancreatitis symptoms.",
+      "Elevated serum amylase and lipase levels confirm the diagnosis."
     ],
     "rules": [
       "R1: Standard management of acute pancreatitis is supportive care with fluids and pain control.",
@@ -565,8 +565,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: The patient develops hypotension despite fluid resuscitation.",
-          "F4: CT imaging suggests necrotizing pancreatitis."
+          "The patient develops hypotension despite fluid resuscitation.",
+          "CT imaging suggests necrotizing pancreatitis."
         ],
         "rules": [
           "R3: In necrotizing pancreatitis with hemodynamic instability, supportive care alone is inadequate.",
@@ -580,8 +580,8 @@
       },
       {
         "facts": [
-          "F5: The patient undergoes minimally invasive necrosectomy.",
-          "F6: Post-procedure, the patient stabilizes."
+          "The patient undergoes minimally invasive necrosectomy.",
+          "Post-procedure, the patient stabilizes."
         ],
         "rules": [],
         "preferences": [],
@@ -590,8 +590,8 @@
       },
       {
         "facts": [
-          "F7: Long-term follow-up indicates improved pancreatic function and reduced pain.",
-          "F8: Nutritional status has gradually normalized."
+          "Long-term follow-up indicates improved pancreatic function and reduced pain.",
+          "Nutritional status has gradually normalized."
         ],
         "rules": [
           "R5: Successful necrosectomy should lead to overall clinical improvement and recovery."
@@ -602,8 +602,8 @@
       },
       {
         "facts": [
-          "F9: Patient H develops new-onset diabetes mellitus due to pancreatic damage.",
-          "F10: HbA1c is elevated at 8.0%."
+          "Patient H develops new-onset diabetes mellitus due to pancreatic damage.",
+          "HbA1c is elevated at 8.0%."
         ],
         "rules": [
           "R6: Post-pancreatitis diabetes requires glycemic management similar to type 2 diabetes."
@@ -616,8 +616,8 @@
       },
       {
         "facts": [
-          "F11: With metformin and dietary changes, HbA1c drops to 7.2%.",
-          "F12: No further pancreatic complications occur."
+          "With metformin and dietary changes, HbA1c drops to 7.2%.",
+          "No further pancreatic complications occur."
         ],
         "rules": [],
         "preferences": [],
@@ -628,8 +628,8 @@
   },
   {
     "facts": [
-      "F1: Patient I (Critical Care) is admitted to the ICU with septic shock.",
-      "F2: Broad-spectrum antibiotics and vasopressors are initiated."
+      "Patient I (Critical Care) is admitted to the ICU with septic shock.",
+      "Broad-spectrum antibiotics and vasopressors are initiated."
     ],
     "rules": [
       "R1: Early goal-directed therapy is critical in septic shock.",
@@ -643,8 +643,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Echocardiography shows reduced ejection fraction.",
-          "F4: Excessive fluids may worsen pulmonary edema."
+          "Echocardiography shows reduced ejection fraction.",
+          "Excessive fluids may worsen pulmonary edema."
         ],
         "rules": [
           "R3: In patients with compromised cardiac function, cautious fluid management is warranted.",
@@ -658,8 +658,8 @@
       },
       {
         "facts": [
-          "F5: Vasopressor support is titrated to maintain target mean arterial pressure.",
-          "F6: The patient's hemodynamics improve gradually."
+          "Vasopressor support is titrated to maintain target mean arterial pressure.",
+          "The patient's hemodynamics improve gradually."
         ],
         "rules": [],
         "preferences": [],
@@ -668,8 +668,8 @@
       },
       {
         "facts": [
-          "F7: Subsequent laboratory markers show improved perfusion and reduced lactate levels.",
-          "F8: The patient's renal function stabilizes."
+          "Subsequent laboratory markers show improved perfusion and reduced lactate levels.",
+          "The patient's renal function stabilizes."
         ],
         "rules": [
           "R5: Improvements in laboratory markers confirm effective resuscitation."
@@ -680,8 +680,8 @@
       },
       {
         "facts": [
-          "F9: Blood cultures return positive for multidrug-resistant bacteria.",
-          "F10: Current antibiotics are ineffective against the identified pathogen."
+          "Blood cultures return positive for multidrug-resistant bacteria.",
+          "Current antibiotics are ineffective against the identified pathogen."
         ],
         "rules": [
           "R6: Antibiotics must be adjusted based on culture results to avoid treatment failure."
@@ -694,8 +694,8 @@
       },
       {
         "facts": [
-          "F11: With adjusted antibiotics, the infection clears.",
-          "F12: The patient is weaned off vasopressors and extubated."
+          "With adjusted antibiotics, the infection clears.",
+          "The patient is weaned off vasopressors and extubated."
         ],
         "rules": [],
         "preferences": [],
@@ -706,8 +706,8 @@
   },
   {
     "facts": [
-      "F1: Patient J (Infectious Diseases) presents with high fever, severe body aches, and warning signs of dengue hemorrhagic fever.",
-      "F2: Laboratory tests confirm severe dengue with thrombocytopenia."
+      "Patient J (Infectious Diseases) presents with high fever, severe body aches, and warning signs of dengue hemorrhagic fever.",
+      "Laboratory tests confirm severe dengue with thrombocytopenia."
     ],
     "rules": [
       "R1: In severe dengue, aggressive fluid hydration is generally recommended.",
@@ -721,8 +721,8 @@
     "rounds": [
       {
         "facts": [
-          "F3: Hematocrit levels are rising and there are signs of capillary leak.",
-          "F4: Early indications suggest risk of pulmonary edema."
+          "Hematocrit levels are rising and there are signs of capillary leak.",
+          "Early indications suggest risk of pulmonary edema."
         ],
         "rules": [
           "R3: A rising hematocrit and capillary leak contraindicate aggressive hydration.",
@@ -736,8 +736,8 @@
       },
       {
         "facts": [
-          "F5: The patient remains hypotensive despite cautious hydration.",
-          "F6: A controlled fluid bolus is administered to stabilize blood pressure."
+          "The patient remains hypotensive despite cautious hydration.",
+          "A controlled fluid bolus is administered to stabilize blood pressure."
         ],
         "rules": [
           "R5: In hypotensive patients, a controlled fluid bolus may be required even during cautious management."
@@ -748,8 +748,8 @@
       },
       {
         "facts": [
-          "F7: Follow-up shows stable vital signs and improved hematocrit levels.",
-          "F8: The patient exhibits no signs of pulmonary edema post-bolus."
+          "Follow-up shows stable vital signs and improved hematocrit levels.",
+          "The patient exhibits no signs of pulmonary edema post-bolus."
         ],
         "rules": [],
         "preferences": [],
@@ -758,8 +758,8 @@
       },
       {
         "facts": [
-          "F9: The patient's condition improves further over the next 48 hours.",
-          "F10: Platelet count begins to recover."
+          "The patient's condition improves further over the next 48 hours.",
+          "Platelet count begins to recover."
         ],
         "rules": [
           "R6: Ongoing improvement and rising platelets indicate recovery from dengue hemorrhagic fever."
@@ -770,8 +770,8 @@
       },
       {
         "facts": [
-          "F11: Patient J develops secondary bacterial infection.",
-          "F12: Antibiotics are initiated promptly."
+          "Patient J develops secondary bacterial infection.",
+          "Antibiotics are initiated promptly."
         ],
         "rules": [
           "R7: Secondary infections in dengue require prompt antibiotic therapy."

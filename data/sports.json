@@ -1,10 +1,10 @@
 [
   {
       "facts": [
-        "F1: Team Nexus has won their last 5 tournament matches with an average kill-death ratio of 2.1.",
-        "F2: The upcoming tournament uses a double-elimination bracket format.",
-        "F3: Team Nexus has a 75% win rate against their first-round opponent, Team Specter.",
-        "F4: Team Nexus recently signed a new support player who has increased their objective control rate by 15%."
+        "Team Nexus has won their last 5 tournament matches with an average kill-death ratio of 2.1.",
+        "The upcoming tournament uses a double-elimination bracket format.",
+        "Team Nexus has a 75% win rate against their first-round opponent, Team Specter.",
+        "Team Nexus recently signed a new support player who has increased their objective control rate by 15%."
       ],
       "rules": [
         "R1: Teams with win streaks exceeding 3 matches typically maintain momentum in early tournament rounds.",
@@ -21,9 +21,9 @@
       "rounds": [
         {
           "facts": [
-            "F5: Team Nexus's star player has reported wrist pain and will play with a wrist brace in the tournament.",
-            "F6: Team Specter has been boot camping for two weeks specifically to counter Team Nexus's playstyle.",
-            "F7: The tournament meta favors aggressive early-game strategies, which Team Specter specializes in."
+            "Team Nexus's star player has reported wrist pain and will play with a wrist brace in the tournament.",
+            "Team Specter has been boot camping for two weeks specifically to counter Team Nexus's playstyle.",
+            "The tournament meta favors aggressive early-game strategies, which Team Specter specializes in."
           ],
           "rules": [
             "R5: Player injuries reducing mechanical performance by 20% or more significantly impact team win probability.",
@@ -39,9 +39,9 @@
         },
         {
           "facts": [
-            "F8: Team Nexus has adjusted their strategy to focus on mid-game teamfights rather than early aggression.",
-            "F9: The new support player has prior experience playing against Team Specter's roster in amateur leagues.",
-            "F10: Team Nexus's injured star player has been cleared to play without a wrist brace after successful treatment."
+            "Team Nexus has adjusted their strategy to focus on mid-game teamfights rather than early aggression.",
+            "The new support player has prior experience playing against Team Specter's roster in amateur leagues.",
+            "Team Nexus's injured star player has been cleared to play without a wrist brace after successful treatment."
           ],
           "rules": [
             "R8: Strategic adaptations that avoid direct confrontation with opponent strengths increase win probability by 30%.",
@@ -57,9 +57,9 @@
         },
         {
           "facts": [
-            "F11: The tournament organizer has announced a last-minute change to patch 14.8, which significantly nerfs Team Nexus's preferred champions.",
-            "F12: Team Nexus has had only 48 hours to practice on the tournament patch.",
-            "F13: Analysis shows the patch changes reduce the effectiveness of mid-game teamfight compositions by 35%."
+            "The tournament organizer has announced a last-minute change to patch 14.8, which significantly nerfs Team Nexus's preferred champions.",
+            "Team Nexus has had only 48 hours to practice on the tournament patch.",
+            "Analysis shows the patch changes reduce the effectiveness of mid-game teamfight compositions by 35%."
           ],
           "rules": [
             "R11: Patch changes targeting a team's core strategy reduce their win probability proportional to the strategy's centrality.",
@@ -75,9 +75,9 @@
         },
         {
           "facts": [
-            "F14: Team Nexus's coaching staff has prepared multiple alternate strategies on previous patches that are viable in the new meta.",
-            "F15: Team Specter's key jungler has been diagnosed with food poisoning and will be replaced by their substitute player.",
-            "F16: Team Nexus has historically performed 40% better against teams using substitute players."
+            "Team Nexus's coaching staff has prepared multiple alternate strategies on previous patches that are viable in the new meta.",
+            "Team Specter's key jungler has been diagnosed with food poisoning and will be replaced by their substitute player.",
+            "Team Nexus has historically performed 40% better against teams using substitute players."
           ],
           "rules": [
             "R14: Pre-prepared alternate strategies reduce adaptation time requirements by 50%.",
@@ -93,9 +93,9 @@
         },
         {
           "facts": [
-            "F17: Tournament officials have ruled that all matches must be played on local network rather than tournament realm due to technical issues.",
-            "F18: Team Nexus has a 30% lower win rate in local network environments compared to online play.",
-            "F19: Team Specter's substitute jungler is their former starting player who left on good terms and maintains practice with the team."
+            "Tournament officials have ruled that all matches must be played on local network rather than tournament realm due to technical issues.",
+            "Team Nexus has a 30% lower win rate in local network environments compared to online play.",
+            "Team Specter's substitute jungler is their former starting player who left on good terms and maintains practice with the team."
           ],
           "rules": [
             "R17: Performance environment changes impact teams differently based on their practice conditions.",
@@ -113,10 +113,10 @@
   },
   {
       "facts": [
-        "F1: The Global Gaming League (GGL) Championship has announced a $2 million prize pool for this year's tournament.",
-        "F2: Teams must qualify through regional tournaments or maintain a top 8 ranking in the world leaderboard.",
-        "F3: Team Phantom currently ranks 9th globally but has won their regional qualifier tournament.",
-        "F4: Team Phantom recently recruited a former world champion as their new coach."
+        "The Global Gaming League (GGL) Championship has announced a $2 million prize pool for this year's tournament.",
+        "Teams must qualify through regional tournaments or maintain a top 8 ranking in the world leaderboard.",
+        "Team Phantom currently ranks 9th globally but has won their regional qualifier tournament.",
+        "Team Phantom recently recruited a former world champion as their new coach."
       ],
       "rules": [
         "R1: Regional qualifier winners receive automatic invitations to the GGL Championship regardless of global ranking.",
@@ -133,9 +133,9 @@
       "rounds": [
         {
           "facts": [
-            "F5: The GGL Championship's first round will use a best-of-one format instead of the traditional best-of-three.",
-            "F6: Team Phantom has been seeded against the 2nd ranked team globally, Team Dynasty, in the first round.",
-            "F7: Team Phantom has a 15% win rate against top 5 teams in single-game matches."
+            "The GGL Championship's first round will use a best-of-one format instead of the traditional best-of-three.",
+            "Team Phantom has been seeded against the 2nd ranked team globally, Team Dynasty, in the first round.",
+            "Team Phantom has a 15% win rate against top 5 teams in single-game matches."
           ],
           "rules": [
             "R5: Best-of-one formats increase upset potential but favor higher-ranked teams overall.",
@@ -151,9 +151,9 @@
         },
         {
           "facts": [
-            "F8: GGL has revised the format to best-of-three for all rounds after multiple teams protested.",
-            "F9: Team Dynasty's star player has visa issues and may miss the first week of competition.",
-            "F10: Team Phantom has a 40% win rate in best-of-three matches against top 5 teams when those teams are missing a starting player."
+            "GGL has revised the format to best-of-three for all rounds after multiple teams protested.",
+            "Team Dynasty's star player has visa issues and may miss the first week of competition.",
+            "Team Phantom has a 40% win rate in best-of-three matches against top 5 teams when those teams are missing a starting player."
           ],
           "rules": [
             "R8: Format changes to best-of-three increase the importance of strategic depth and coaching.",
@@ -169,9 +169,9 @@
         },
         {
           "facts": [
-            "F11: Team Dynasty's management has secured an emergency visa for their star player, who will arrive in time for the match.",
-            "F12: The tournament meta has shifted toward aggressive early-game compositions, which is contrary to Team Phantom's preferred playstyle.",
-            "F13: Team Phantom's coach has limited experience with the current meta, having been inactive for the past two seasons."
+            "Team Dynasty's management has secured an emergency visa for their star player, who will arrive in time for the match.",
+            "The tournament meta has shifted toward aggressive early-game compositions, which is contrary to Team Phantom's preferred playstyle.",
+            "Team Phantom's coach has limited experience with the current meta, having been inactive for the past two seasons."
           ],
           "rules": [
             "R11: Teams playing against their preferred meta style suffer a 30% performance penalty.",
@@ -187,9 +187,9 @@
         },
         {
           "facts": [
-            "F14: Team Phantom has been secretly practicing innovative counter-meta strategies during their boot camp.",
-            "F15: The championship's first-round matches will be played on a surprise patch that nerfs several of Team Dynasty's core champions.",
-            "F16: Statistical analysis shows Team Phantom performs 50% better when employing unexpected strategies against higher-ranked opponents."
+            "Team Phantom has been secretly practicing innovative counter-meta strategies during their boot camp.",
+            "The championship's first-round matches will be played on a surprise patch that nerfs several of Team Dynasty's core champions.",
+            "Statistical analysis shows Team Phantom performs 50% better when employing unexpected strategies against higher-ranked opponents."
           ],
           "rules": [
             "R14: Innovative strategies that directly counter the expected meta provide a 40% performance boost in their first implementation.",
@@ -205,9 +205,9 @@
         },
         {
           "facts": [
-            "F17: An anonymous source has leaked Team Phantom's counter-strategies to several teams, including Team Dynasty.",
-            "F18: Team Dynasty has devoted their final 48 hours of preparation exclusively to countering Team Phantom's planned approach.",
-            "F19: Historically, teams who have had their strategies leaked lose 80% of matches against prepared opponents."
+            "An anonymous source has leaked Team Phantom's counter-strategies to several teams, including Team Dynasty.",
+            "Team Dynasty has devoted their final 48 hours of preparation exclusively to countering Team Phantom's planned approach.",
+            "Historically, teams who have had their strategies leaked lose 80% of matches against prepared opponents."
           ],
           "rules": [
             "R17: Strategy leaks eliminate surprise advantages and typically result in the leaked strategy becoming a disadvantage.",
@@ -223,9 +223,9 @@
         },
         {
           "facts": [
-            "F20: Team Phantom identified the source of the leak and intentionally fed misinformation as a double-bluff.",
-            "F21: Team Phantom has prepared a completely different set of strategies that specifically exploit the counters Team Dynasty is likely to employ.",
-            "F22: Team Dynasty has committed significant practice time to countering strategies Team Phantom does not intend to use."
+            "Team Phantom identified the source of the leak and intentionally fed misinformation as a double-bluff.",
+            "Team Phantom has prepared a completely different set of strategies that specifically exploit the counters Team Dynasty is likely to employ.",
+            "Team Dynasty has committed significant practice time to countering strategies Team Phantom does not intend to use."
           ],
           "rules": [
             "R20: Double-bluff strategies provide a 70% advantage when opponents commit significant resources to countering decoy strategies.",
@@ -243,10 +243,10 @@
   },
   {
       "facts": [
-        "F1: Celestial Tournament Series (CTS) has announced its next major event will use a new battle royale game called 'Apex Legends: Evolution'.",
-        "F2: Team Supernova is currently the #1 ranked team in the previous version of the game with 85% win rate in tournaments.",
-        "F3: The new game version introduces a class-based character system that significantly changes gameplay mechanics.",
-        "F4: Teams have been given 30 days to practice on the new version before the tournament begins."
+        "Celestial Tournament Series (CTS) has announced its next major event will use a new battle royale game called 'Apex Legends: Evolution'.",
+        "Team Supernova is currently the #1 ranked team in the previous version of the game with 85% win rate in tournaments.",
+        "The new game version introduces a class-based character system that significantly changes gameplay mechanics.",
+        "Teams have been given 30 days to practice on the new version before the tournament begins."
       ],
       "rules": [
         "R1: Teams with superior mechanical skills typically adapt to new game versions within 14-21 days.",
@@ -263,9 +263,9 @@
       "rounds": [
         {
           "facts": [
-            "F5: Team Supernova's captain and shot-caller has announced a 2-week vacation during the critical practice period.",
-            "F6: Competing teams have been secretly practicing on beta versions of the new game for the past month.",
-            "F7: Analysis shows that Team Supernova's dominant strategy in the previous version is completely ineffective in the new game."
+            "Team Supernova's captain and shot-caller has announced a 2-week vacation during the critical practice period.",
+            "Competing teams have been secretly practicing on beta versions of the new game for the past month.",
+            "Analysis shows that Team Supernova's dominant strategy in the previous version is completely ineffective in the new game."
           ],
           "rules": [
             "R5: Teams missing key strategic leaders during practice periods experience a 35% reduction in adaptation speed.",
@@ -281,9 +281,9 @@
         },
         {
           "facts": [
-            "F8: Team Supernova has hired an expert coach who specialized in the exact type of class-based systems introduced in the new game.",
-            "F9: The tournament format has been changed to include a group stage before elimination rounds, giving teams more competitive matches to adapt.",
-            "F10: Team Supernova's players have been participating in remote strategy sessions despite their captain's absence."
+            "Team Supernova has hired an expert coach who specialized in the exact type of class-based systems introduced in the new game.",
+            "The tournament format has been changed to include a group stage before elimination rounds, giving teams more competitive matches to adapt.",
+            "Team Supernova's players have been participating in remote strategy sessions despite their captain's absence."
           ],
           "rules": [
             "R8: Expert coaching in relevant systems can reduce adaptation time by up to 50%.",
@@ -299,9 +299,9 @@
         },
         {
           "facts": [
-            "F11: A major balance patch will be applied one week before the tournament, significantly altering the effectiveness of several character classes.",
-            "F12: Team Supernova's coach specializes in the character classes most negatively affected by the balance changes.",
-            "F13: Three of Team Supernova's players have expressed frustration with the constant changes and have reduced their practice schedules."
+            "A major balance patch will be applied one week before the tournament, significantly altering the effectiveness of several character classes.",
+            "Team Supernova's coach specializes in the character classes most negatively affected by the balance changes.",
+            "Three of Team Supernova's players have expressed frustration with the constant changes and have reduced their practice schedules."
           ],
           "rules": [
             "R11: Pre-tournament patches requiring strategic readjustment disadvantage teams already behind on adaptation.",
@@ -317,9 +317,9 @@
         },
         {
           "facts": [
-            "F14: Team Supernova's captain has returned early from vacation after seeing the balance patch notes.",
-            "F15: The team has executed a successful 72-hour bootcamp focusing exclusively on the post-patch meta.",
-            "F16: Statistical analysis shows that the balance changes actually favor Team Supernova's natural playstyle from previous games."
+            "Team Supernova's captain has returned early from vacation after seeing the balance patch notes.",
+            "The team has executed a successful 72-hour bootcamp focusing exclusively on the post-patch meta.",
+            "Statistical analysis shows that the balance changes actually favor Team Supernova's natural playstyle from previous games."
           ],
           "rules": [
             "R14: Intensive bootcamps can provide the equivalent of 7 days of normal practice.",
@@ -335,9 +335,9 @@
         },
         {
           "facts": [
-            "F17: The tournament organizer has announced all matches will be played on LAN rather than online.",
-            "F18: Team Supernova has historically performed 40% worse in LAN environments compared to online competition.",
-            "F19: Two competing teams have significantly more LAN experience in battle royale formats."
+            "The tournament organizer has announced all matches will be played on LAN rather than online.",
+            "Team Supernova has historically performed 40% worse in LAN environments compared to online competition.",
+            "Two competing teams have significantly more LAN experience in battle royale formats."
           ],
           "rules": [
             "R17: First-time LAN performers experience a 25-35% performance decrease due to environmental factors and pressure.",
@@ -353,9 +353,9 @@
         },
         {
           "facts": [
-            "F20: Team Supernova has secured the tournament venue for three days of pre-event practice to acclimate to the LAN environment.",
-            "F21: The tournament organizer has implemented soundproof booths, eliminating many of the environmental factors that previously affected Team Supernova.",
-            "F22: Analysis of recent Team Supernova scrimmages shows they have developed innovative tactics that counter the expected tournament meta."
+            "Team Supernova has secured the tournament venue for three days of pre-event practice to acclimate to the LAN environment.",
+            "The tournament organizer has implemented soundproof booths, eliminating many of the environmental factors that previously affected Team Supernova.",
+            "Analysis of recent Team Supernova scrimmages shows they have developed innovative tactics that counter the expected tournament meta."
           ],
           "rules": [
             "R20: Pre-event venue access reduces environmental adaptation requirements by 80%.",
@@ -373,9 +373,9 @@
   },
   {
       "facts": [
-        "F1: Team Eclipse has dominated their league using aggressive map rotations and flanking maneuvers.",
-        "F2: A new AI-powered positioning analysis system can identify optimal map positioning in real-time.",
-        "F3: Initial testing suggests the system could improve situational awareness by approximately 15%."
+        "Team Eclipse has dominated their league using aggressive map rotations and flanking maneuvers.",
+        "A new AI-powered positioning analysis system can identify optimal map positioning in real-time.",
+        "Initial testing suggests the system could improve situational awareness by approximately 15%."
       ],
       "rules": [
         "R1: Teams typically adopt new technologies that enhance their existing strategic strengths.",
@@ -391,8 +391,8 @@
       "rounds": [
         {
           "facts": [
-            "F4: During scrimmage testing, three core players expressed concerns about the system overriding their intuitive flanking decisions.",
-            "F5: The team captain reported feeling distracted by the system's recommendations during critical moments."
+            "During scrimmage testing, three core players expressed concerns about the system overriding their intuitive flanking decisions.",
+            "The team captain reported feeling distracted by the system's recommendations during critical moments."
           ],
           "rules": [
             "R4: Technologies that conflict with players' instinctive gameplay are typically rejected regardless of theoretical benefits.",
@@ -406,8 +406,8 @@
         },
         {
           "facts": [
-            "F6: The system developers have implemented a configurable threshold that only shows recommendations for high-impact situations.",
-            "F7: Team Eclipse's coach has customized the system to specifically enhance their signature flanking strategies rather than replace them."
+            "The system developers have implemented a configurable threshold that only shows recommendations for high-impact situations.",
+            "Team Eclipse's coach has customized the system to specifically enhance their signature flanking strategies rather than replace them."
           ],
           "rules": [
             "R6: Customizable technology that enhances rather than replaces player decision-making significantly increases adoption likelihood.",
@@ -421,9 +421,9 @@
         },
         {
           "facts": [
-            "F8: The team's main rivals have recently lost two consecutive tournaments after implementing similar AI systems.",
-            "F9: While most Team Eclipse players now appreciate the customized implementation, their star player remains vocal about preferring complete autonomy.",
-            "F10: The tournament organizer has announced stricter time limits between matches, reducing the team's traditional strategic planning sessions."
+            "The team's main rivals have recently lost two consecutive tournaments after implementing similar AI systems.",
+            "While most Team Eclipse players now appreciate the customized implementation, their star player remains vocal about preferring complete autonomy.",
+            "The tournament organizer has announced stricter time limits between matches, reducing the team's traditional strategic planning sessions."
           ],
           "rules": [
             "R8: Visible failures of similar technologies by competitors significantly influence adoption decisions regardless of implementation differences.",
@@ -439,9 +439,9 @@
   },
   {
       "facts": [
-        "F1: Team Crimson Strike is renowned for its strong late-game comebacks.",
-        "F2: The coaching staff has proposed integrating an early aggression tactic to disrupt opponents from the start.",
-        "F3: Preliminary simulations show that adopting this tactic could provide a 20% kill advantage during the early rounds."
+        "Team Crimson Strike is renowned for its strong late-game comebacks.",
+        "The coaching staff has proposed integrating an early aggression tactic to disrupt opponents from the start.",
+        "Preliminary simulations show that adopting this tactic could provide a 20% kill advantage during the early rounds."
       ],
       "rules": [
         "R1: Teams usually stick to strategies that have reliably secured wins in the past.",
@@ -457,8 +457,8 @@
       "rounds": [
         {
           "facts": [
-            "F4: Initial scrimmages with the early aggression tactic revealed disorganized starts and uncoordinated team play during the first five minutes.",
-            "F5: Several veteran players voiced strong concerns about the tactic's reliability under high-pressure conditions."
+            "Initial scrimmages with the early aggression tactic revealed disorganized starts and uncoordinated team play during the first five minutes.",
+            "Several veteran players voiced strong concerns about the tactic's reliability under high-pressure conditions."
           ],
           "rules": [
             "R4: Early scrimmage performance is a key indicator of a tactic's viability, particularly in high-stakes scenarios.",
@@ -472,8 +472,8 @@
         },
         {
           "facts": [
-            "F6: Subsequent scrimmages introduced adjusted timing for initiating the aggression, resulting in improved team coordination.",
-            "F7: Revised simulation metrics now indicate an 18% early round kill advantage with a reduction in coordination issues."
+            "Subsequent scrimmages introduced adjusted timing for initiating the aggression, resulting in improved team coordination.",
+            "Revised simulation metrics now indicate an 18% early round kill advantage with a reduction in coordination issues."
           ],
           "rules": [
             "R6: Tactical adjustments that address early disorganization can redeem previous experimental shortcomings.",
@@ -487,9 +487,9 @@
         },
         {
           "facts": [
-            "F8: Recent analytic reports highlight a growing meta trend where opponents are increasingly vulnerable during early game aggression.",
-            "F9: The newest recruits on the team have quickly adapted to the modified early aggression tactic, showing significant skill improvements.",
-            "F10: Overall practice sessions now report higher win rates with the tactic, despite some lingering skepticism from a minority of veteran players."
+            "Recent analytic reports highlight a growing meta trend where opponents are increasingly vulnerable during early game aggression.",
+            "The newest recruits on the team have quickly adapted to the modified early aggression tactic, showing significant skill improvements.",
+            "Overall practice sessions now report higher win rates with the tactic, despite some lingering skepticism from a minority of veteran players."
           ],
           "rules": [
             "R8: Exploiting opponent vulnerabilities is a crucial factor in determining strategic effectiveness.",
@@ -503,6 +503,288 @@
           "label": true
         }
       ]
-    }
-
+    },
+    {
+    "facts": [      "In a soccer match, Team X leads 1-0 in the 80th minute.",
+      "Team Y is known for high pressing and quick transitions."
+    ],
+    "rules": [      "R1: When leading late, teams should prioritize defensive stability.",
+      "R2: High-pressing opponents are vulnerable to counterattacks."
+    ],
+    "preferences": [      "P1: Team X's coach favors controlled counterattacks over full defensive play."
+    ],
+    "question": "It is true that Team X should adjust their formation to counter high pressing?",
+    "label": true,
+    "rounds": [      {
+        "facts": [          "Team Y substitutes a speedy winger to intensify their press.",
+          "Team X's midfield appears stretched."
+        ],
+        "rules": [          "R3: Intense pressing leaves gaps that can be exploited by quick transitions.",
+          "R4: Overcommitting defensively may limit counterattack opportunities."
+        ],
+        "preferences": [          "P2: A balanced approach is prioritized over an overly defensive formation."
+        ],
+        "question": "It is true that Team X should maintain a balanced formation rather than go ultra-defensive?",
+        "label": true
+      },
+      {
+        "facts": [          "Advanced analysis shows counterattacks have a 65% success rate in similar matches.",
+          "Opponent data reveals vulnerabilities on the break."
+        ],
+        "rules": [          "R5: Exploiting counterattacks can shift momentum in favor of the leading team."
+        ],
+        "preferences": [],
+        "question": "It is true that a balanced formation increases counterattacking opportunities?",
+        "label": true
+      },
+      {
+        "facts": [          "In the 75th minute, Team X initiates a controlled counterattack creating a goal-scoring chance.",
+          "The opportunity is narrowly missed, raising concerns about defensive balance."
+        ],
+        "rules": [          "R6: Successfully converting counterattacks is critical in late-game scenarios."
+        ],
+        "preferences": [],
+        "question": "It is true that missing the counterattack opportunity can cost the team momentum?",
+        "label": true
+      },
+      {
+        "facts": [          "With 5 minutes remaining, Team Y's pressing intensifies further.",
+          "The coach of Team X calls for quick transitions and slight tactical tweaks."
+        ],
+        "rules": [          "R7: Quick transitions under pressure are essential to neutralize an aggressive press."
+        ],
+        "preferences": [],
+        "question": "It is true that quick transitions are vital in the final minutes to maintain the lead?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [      "In a basketball game, Team A trails by 7 points with 3 minutes remaining.",
+      "The star player is in foul trouble, limiting defensive options."
+    ],
+    "rules": [      "R1: Trailing teams must increase defensive intensity to force turnovers.",
+      "R2: Managing foul count is critical to keep key players in the game."
+    ],
+    "preferences": [      "P1: The coach prefers balancing player rotation to protect the star while maintaining competitiveness."
+    ],
+    "question": "It is true that Team A should adjust their rotation to protect the star player?",
+    "label": true,
+    "rounds": [      {
+        "facts": [          "The coach substitutes the star with a reliable defensive specialist.",
+          "Defensive performance improves, forcing 2 turnovers in the subsequent minute."
+        ],
+        "rules": [          "R3: Substituting to manage foul trouble can maintain defensive performance.",
+          "R4: Excessive rotations may disrupt team chemistry."
+        ],
+        "preferences": [          "P2: Balancing defensive intensity with roster stability is key."
+        ],
+        "question": "It is true that the defensive improvement justifies the substitution?",
+        "label": true
+      },
+      {
+        "facts": [          "However, the opposing team capitalizes on turnovers, scoring fast-break points.",
+          "Team A's offensive rhythm begins to wane."
+        ],
+        "rules": [          "R5: Over-rotating can negatively impact offensive transitions."
+        ],
+        "preferences": [],
+        "question": "It is true that over-rotation might hurt the team's offensive momentum?",
+        "label": true
+      },
+      {
+        "facts": [          "With 1 minute remaining, the coach calls a timeout to set up a final play.",
+          "During the timeout, adjustments focus on minimizing turnovers and quick ball movement."
+        ],
+        "rules": [          "R6: Timeouts offer an opportunity to recalibrate strategy and player roles."
+        ],
+        "preferences": [],
+        "question": "It is true that the timeout was crucial for the final play design?",
+        "label": true
+      },
+      {
+        "facts": [          "In the final play, Team A executes a mixed strategy of short passes and quick drives, securing a tie and sending the game into overtime.",
+          "Post-game analysis highlights the importance of player rotation and situational adjustments."
+        ],
+        "rules": [          "R7: Mixed strategies can optimize both defense and offense in clutch moments."
+        ],
+        "preferences": [],
+        "question": "It is true that the strategic adjustments were pivotal in turning the game around?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [      "In a tennis match, Player X loses the first set 1-6 due to unforced aggressive errors.",
+      "Player Y is strong from the baseline but vulnerable at the net."
+    ],
+    "rules": [      "R1: A decisive first-set loss indicates a need for tactical adjustments.",
+      "R2: Exploiting an opponent's specific weaknesses can be key to a comeback."
+    ],
+    "preferences": [      "P1: The coach advises Player X to diversify shot selection and tactical approaches."
+    ],
+    "question": "It is true that Player X should adjust his game plan in the second set?",
+    "label": true,
+    "rounds": [      {
+        "facts": [          "In the second set, Player X introduces well-timed drop shots and defensive lobs.",
+          "Player Y starts anticipating drop shots and moves forward consistently."
+        ],
+        "rules": [          "R3: Effective drop shots disrupt baseline consistency.",
+          "R4: Overusing drop shots may become predictable and counterproductive."
+        ],
+        "preferences": [          "P2: A balanced mix of shots is preferred to keep the opponent guessing."
+        ],
+        "question": "It is true that diversifying shot selection is beneficial for a comeback?",
+        "label": true
+      },
+      {
+        "facts": [          "Mid-match statistics show an improvement in winners and a drop in unforced errors by Player X.",
+          "Player Y slightly adjusts his position to counter the new tactics."
+        ],
+        "rules": [          "R5: Statistical improvements support the viability of tactical changes."
+        ],
+        "preferences": [],
+        "question": "It is true that the changes are yielding positive results?",
+        "label": true
+      },
+      {
+        "facts": [          "In the third set, Player Y shifts to a more aggressive net-rushing strategy to neutralize drop shots.",
+          "This new tactic creates gaps in Player Y's defense that Player X starts to exploit."
+        ],
+        "rules": [          "R6: Adapting to the opponent's changes is key to sustaining momentum."
+        ],
+        "preferences": [],
+        "question": "It is true that Player X must further vary his tactics to sustain the momentum?",
+        "label": true
+      },
+      {
+        "facts": [          "In the final games, an unexpected drop shot wins a critical point, shifting the match momentum decisively in favor of Player X.",
+          "The final set becomes highly competitive with momentum swings."
+        ],
+        "rules": [          "R7: A crucial point win through unexpected plays can be a turning point in the match."
+        ],
+        "preferences": [],
+        "question": "It is true that the momentum shift increases Player X's chance of winning the match?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [      "In an NFL game, Team Z trails by 4 points with 2 minutes left and no timeouts.",
+      "The opponent's secondary has been weak against deep sideline passes."
+    ],
+    "rules": [      "R1: Hurry-up offenses conserve time and force defensive adjustments.",
+      "R2: Deep sideline passes stop the clock but require precision."
+    ],
+    "preferences": [      "P1: Team Z's coach favors aggressive, time-saving plays in critical moments."
+    ],
+    "question": "It is true that Team Z should prioritize deep sideline passes in this scenario?",
+    "label": true,
+    "rounds": [      {
+        "facts": [          "Team Z initiates a quick short pass that preserves time, but the defense adjusts to cover the sidelines.",
+          "Analysis indicates that short passes yield lower yardage gains."
+        ],
+        "rules": [          "R3: Quick passes help conserve clock time but may not yield significant field position gains."
+        ],
+        "preferences": [],
+        "question": "It is true that short passes are time-efficient despite limited yardage?",
+        "label": true
+      },
+      {
+        "facts": [          "Advanced metrics show a high completion rate on deep sideline passes for Team Z.",
+          "Potential for a touchdown on a deep pass is statistically significant."
+        ],
+        "rules": [          "R4: High deep pass completion supports an aggressive play strategy."
+        ],
+        "preferences": [],
+        "question": "It is true that the high completion rate justifies a deep pass strategy?",
+        "label": true
+      },
+      {
+        "facts": [          "With 45 seconds remaining, Team Z faces a critical decision on play-calling.",
+          "The defense is showing signs of fatigue and miscommunication."
+        ],
+        "rules": [          "R5: In crunch time, mixing deep and short passes can keep the defense off balance."
+        ],
+        "preferences": [          "P2: A balanced offensive approach is favored to avoid predictability."
+        ],
+        "question": "It is true that a mixed strategy can optimize offensive gains under pressure?",
+        "label": true
+      },
+      {
+        "facts": [          "In the final play, Team Z executes a deep sideline pass that results in a first down.",
+          "The momentum shifts as a field goal is successfully attempted thereafter."
+        ],
+        "rules": [          "R6: A successful deep pass in critical situations can turn the game around."
+        ],
+        "preferences": [],
+        "question": "It is true that the deep pass was pivotal in securing the win?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [      "In a soccer match, Team X scored a goal after an apparent handball by their forward.",
+      "The on-field referee allowed the goal."
+    ],
+    "rules": [      "R1: If an intentional handball occurs before a goal, the goal must be disallowed.",
+      "R2: If the handball is accidental, the goal stands."
+    ],
+    "preferences": [      "P1: Video review is preferred to clarify accidental contact."
+    ],
+    "question": "It is true that the goal should be disallowed?",
+    "label": false,
+    "rounds": [      {
+        "facts": [          "VAR review shows that the forward's hand made accidental contact.",
+          "The ball maintained its momentum toward the goal."
+        ],
+        "rules": [          "R3: Accidental handballs do not warrant disallowing the goal.",
+          "R4: The decision should favor the benefit of doubt in case of accidental contact."
+        ],
+        "preferences": [          "P2: R3 is preferred over R1 when video evidence clearly shows no intent."
+        ],
+        "question": "It is true that the goal should stand?",
+        "label": true
+      },
+      {
+        "facts": [          "The coach challenges the call based on potential rule misinterpretation.",
+          "Additional video angles confirm the accidental nature."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the goal remains valid after review?",
+        "label": true
+      },
+      {
+        "facts": [          "Post-match analysis indicates minimal impact on game strategy.",
+          "Both teams accept the VAR decision."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the final decision maintained match integrity?",
+        "label": true
+      },
+      {
+        "facts": [          "The league announces a post-match review of the VAR protocol for handball incidents.",
+          "Coaches propose clearer guidelines for intentional vs. accidental handballs."
+        ],
+        "rules": [          "R5: Post-match reviews may lead to protocol updates if ambiguity persists."
+        ],
+        "preferences": [          "P3: Transparency in VAR decisions is prioritized for future matches."
+        ],
+        "question": "It is true that the incident will prompt rule clarifications?",
+        "label": true
+      },
+      {
+        "facts": [          "The governing body releases updated handball guidelines emphasizing 'natural position'.",
+          "Teams are required to attend workshops on the new interpretation."
+        ],
+        "rules": [],
+        "preferences": [],
+        "question": "It is true that the changes will reduce future controversies?",
+        "label": true
+      }
+    ]
+  }  
 ]
+
