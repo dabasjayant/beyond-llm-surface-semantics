@@ -17,7 +17,7 @@ class DepthSensitiveLoss(nn.Module):
         # log-likelihood terms
         log_preds = torch.log(y_pred + self.epsilon)
         log_one_minus = torch.log(1 - y_pred + self.epsilon)
-
+        
         bce = - (y_true * log_preds + (1 - y_true) * log_one_minus)
         weighted_bce = depth_weights * bce  # shape (B, N)
         return weighted_bce.mean()
