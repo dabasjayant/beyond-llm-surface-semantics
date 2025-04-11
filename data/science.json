@@ -1,0 +1,691 @@
+[
+  {
+    "facts": [
+      "We have a green plant with chlorophyll.",
+      "The plant is exposed to direct sunlight.",
+      "The environment has sufficient water and carbon dioxide."
+    ],
+    "rules": [
+      "Rule 1: If a plant has chlorophyll, receives sunlight, and has both water and carbon dioxide, then it will produce oxygen.",
+      "Rule 2: If a plant does not receive enough sunlight or is in an environment lacking water or carbon dioxide, it will not produce oxygen."
+    ],
+    "preferences": [],
+    "question": "Does the plant produce oxygen under these initial conditions?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "A large object has moved to block the direct sunlight, creating heavy shade around the plant."
+        ],
+        "rules": [
+          "Rule 3: If a plant is heavily shaded so that sunlight is mostly blocked, it cannot complete photosynthesis effectively."
+        ],
+        "preferences": [],
+        "question": "Based on these settings, does the plant still produce oxygen?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The shade is partially translucent, allowing some filtered sunlight to pass through."
+        ],
+        "rules": [
+          "Rule 4: If a plant receives partial sunlight (though less intense), it may still produce oxygen, albeit at a reduced rate."
+        ],
+        "preferences": [
+          "Rule 4 is preferred over Rule 1."
+        ],
+        "question": "In these settings, does the plant produce oxygen?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The weather has become extremely cold, dropping to near freezing temperatures.",
+          "Ice crystals have formed on the plant's leaves."
+        ],
+        "rules": [
+          "Rule 5: Plant enzymes function optimally within certain temperature ranges.",
+          "Rule 6: At near-freezing temperatures, enzymatic reactions in photosynthesis slow dramatically or stop completely."
+        ],
+        "preferences": [
+          "Rule 6 is preferred over Rule 4 when evaluating photosynthesis in extreme temperatures."
+        ],
+        "question": "In these settings, will the plant still produce oxygen?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A person has just eaten a meal containing carbohydrates, proteins, and fats.",
+      "The food has entered the stomach.",
+      "Gastric juices containing hydrochloric acid and pepsin are being secreted."
+    ],
+    "rules": [
+      "Rule 1: In the stomach, protein digestion begins with pepsin breaking down proteins into smaller peptides.",
+      "Rule 2: Carbohydrate digestion primarily occurs in the mouth and small intestine, not in the stomach.",
+      "Rule 3: Fat digestion primarily occurs in the small intestine with the help of bile from the liver."
+    ],
+    "preferences": [],
+    "question": "Is protein digestion occurring in the stomach?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The person has a condition that reduces pepsin production by 90%.",
+          "The stomach pH is normal (between 1.5 and 3.5)."
+        ],
+        "rules": [
+          "Rule 2: Carbohydrate digestion primarily occurs in the mouth and small intestine, with minimal digestion in the stomach.",
+          "Rule 4: Without sufficient pepsin, protein digestion in the stomach is severely limited."
+        ],
+        "preferences": [],
+        "question": "Is significant protein digestion occurring in the stomach?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The person has taken medication that neutralizes stomach acid, raising the pH to 7.0.",
+          "The food has been in the stomach for 30 minutes."
+        ],
+        "rules": [
+          "Rule 5: Pepsin is only active in acidic environments (pH below 6.5).",
+          "Rule 6: Even without active protein digestion, the stomach will still mechanically break down food through muscular contractions."
+        ],
+        "preferences": [
+          "Rule 5 is preferred over Rule 1 when determining if protein digestion occurs."
+        ],
+        "question": "Is protein digestion occurring in the stomach?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The food has now moved into the small intestine.",
+          "Pancreatic enzymes and bile have been released into the small intestine.",
+          "The pH in the small intestine is approximately 8.0."
+        ],
+        "rules": [
+          "Rule 7: Pancreatic enzymes digest proteins, carbohydrates, and fats in the small intestine.",
+          "Rule 8: Bile emulsifies fats, making them more accessible to pancreatic lipase.",
+          "Rule 9: The slightly alkaline environment of the small intestine is optimal for pancreatic enzyme activity."
+        ],
+        "preferences": [],
+        "question": "Is fat digestion occurring in the small intestine?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "We have a simple circuit with a battery, wires, and a light bulb.",
+      "The battery is new and fully charged.",
+      "All components are properly connected in a complete loop."
+    ],
+    "rules": [
+      "Rule 1: If a circuit is complete (has no breaks), electrons can flow from the negative terminal of the battery through the circuit and back to the positive terminal.",
+      "Rule 2: If electrons flow through a light bulb filament, the filament heats up and produces light.",
+      "Rule 3: If there is a break anywhere in the circuit, electrons cannot flow."
+    ],
+    "preferences": [],
+    "question": "Will the light bulb illuminate?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "A switch has been added to the circuit and is currently in the open position.",
+          "The rest of the circuit remains properly connected."
+        ],
+        "rules": [
+          "Rule 4: An open switch creates a gap in the circuit, preventing the flow of electrons."
+        ],
+        "preferences": [
+          "Rule 4 is preferred over Rule 1 when a switch is present in the circuit."
+        ],
+        "question": "With the switch in the open position, will the light bulb illuminate?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The switch has now been closed.",
+          "A second light bulb has been added to the circuit in parallel with the first light bulb."
+        ],
+        "rules": [
+          "Rule 5: In a parallel circuit, electrons can flow through multiple paths.",
+          "Rule 6: If one light bulb burns out in a parallel circuit, the other bulbs will still illuminate.",
+          "Rule 3: If there is a break anywhere in a branch of a parallel circuit, electrons can still flow through other complete branches."
+        ],
+        "preferences": [],
+        "question": "If one light bulb burns out, will the other light bulb still illuminate?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The circuit has been reconfigured to place both light bulbs in series instead of parallel.",
+          "Both light bulbs are working and the switch remains closed.",
+          "A voltmeter shows the battery's voltage has decreased to 50% of its original value."
+        ],
+        "rules": [
+          "Rule 7: In a series circuit, electrons must flow through each component sequentially, with only one path available.",
+          "Rule 8: If one component in a series circuit fails, the entire circuit is broken.",
+          "Rule 9: Light bulbs require a minimum voltage to illuminate. Below this threshold, they will not produce visible light."
+        ],
+        "preferences": [
+          "Rule 8 is preferred over Rule 6 when components are arranged in series."
+        ],
+        "question": "If one light bulb burns out in this series configuration, will the other light bulb still illuminate?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A tomato plant is growing in a garden.",
+      "The plant receives exactly 6 hours of direct sunlight daily.",
+      "The soil moisture level is measured at 60%."
+    ],
+    "rules": [
+      "Rule 1: Plants require a minimum of 4 hours of direct sunlight for photosynthesis to provide adequate energy for fruit production.",
+      "Rule 2: Tomato plants specifically require both adequate sunlight and soil moisture between 40-70% to produce fruit."
+    ],
+    "preferences": [],
+    "question": "Will this tomato plant produce fruit?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The tomato plant has been infected with a mild fungal disease affecting 30% of its leaves.",
+          "The temperature has been consistently above 95°F (35°C) for the past week."
+        ],
+        "rules": [
+          "Rule 3: When temperatures exceed 90°F (32°C), tomato plants cannot set fruit regardless of other conditions, until temperatures return to normal range."
+        ],
+        "preferences": [
+          "Rule 3 is preferred over Rule 1 when determining fruit production in extreme temperatures.",
+          "Rule 3 is preferred over Rule 2 when determining fruit production in extreme temperatures."
+        ],
+        "question": "Will the tomato plant produce fruit under these new conditions?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The temperature has dropped to 75°F (24°C).",
+          "A shade cloth has been installed that filters 40% of the direct sunlight.",
+          "The soil moisture has increased to 80% due to recent rain."
+        ],
+        "rules": [
+          "Rule 4: Filtered sunlight through shade cloth is only 70% as effective as direct sunlight for photosynthesis."
+        ],
+        "preferences": [
+          "Rule 2 is preferred over Rule 1 when soil moisture exceeds the optimal range."
+        ],
+        "question": "Will the tomato plant produce fruit now?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A drainage system has been installed, bringing the soil moisture back to 65%.",
+          "Half of the shade cloth has been removed, now filtering only 20% of the direct sunlight.",
+          "The fungal disease has spread to affect 60% of the plant's leaves."
+        ],
+        "rules": [
+          "Rule 3: When temperatures exceed 90°F (32°C) or when more than 50% of a plant's leaves are diseased, tomato plants cannot set fruit regardless of other conditions."
+        ],
+        "preferences": [
+          "Rule 3 is preferred over Rule 2 when leaf disease exceeds 50%."
+        ],
+        "question": "With these newest conditions, will the tomato plant produce fruit?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "We have a reversible chemical reaction: N₂(g) + 3H₂(g) ⇌ 2NH₃(g) + heat",
+      "The reaction has reached equilibrium in a sealed container.",
+      "The initial temperature is 450°C and pressure is 200 atm."
+    ],
+    "rules": [
+      "Rule 1: At equilibrium, the rates of forward and reverse reactions are equal, resulting in constant concentrations of reactants and products.",
+      "Rule 2: According to Le Chatelier's Principle, if a system at equilibrium is disturbed, the equilibrium will shift to counteract the disturbance.",
+      "Rule 3: Exothermic reactions (which release heat) favor the forward reaction at lower temperatures and the reverse reaction at higher temperatures."
+    ],
+    "preferences": [],
+    "question": "Is the concentration of ammonia (NH₃) stable at these initial conditions?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The temperature of the reaction vessel has been increased to 550°C.",
+          "All other conditions remain the same."
+        ],
+        "rules": [
+          "Rule 4: For the reaction N₂ + 3H₂ ⇌ 2NH₃ + heat, increasing temperature favors the endothermic direction (backward reaction)."
+        ],
+        "preferences": [
+          "Rule 4 is preferred over Rule 1 when temperature changes occur in an equilibrium system."
+        ],
+        "question": "Will the concentration of ammonia (NH₃) increase with this temperature change?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Additional hydrogen gas (H₂) is injected into the reaction vessel, doubling its concentration.",
+          "Temperature remains at 550°C."
+        ],
+        "rules": [
+          "Rule 5: According to Le Chatelier's Principle, adding more of a reactant will shift the equilibrium toward the products."
+        ],
+        "preferences": [
+          "Rule 5 is preferred over Rule 4 when both reactant concentration and temperature effects are present."
+        ],
+        "question": "In these settings, will the ammonia (NH₃) concentration increase?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A catalyst (iron) has been added to the reaction vessel.",
+          "All other conditions (increased H₂ concentration and 550°C temperature) remain the same."
+        ],
+        "rules": [
+          "Rule 6: Catalysts increase the rate of both forward and reverse reactions equally without affecting the position of equilibrium."
+        ],
+        "preferences": [],
+        "question": "Will the addition of the iron catalyst change the equilibrium concentration of ammonia (NH₃)?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The pressure in the vessel has been increased to 300 atm by reducing the volume.",
+          "The reaction involves 4 moles of gas as reactants (N₂ + 3H₂) but only 2 moles of gas as products (2NH₃)."
+        ],
+        "rules": [
+          "Rule 7: According to Le Chatelier's Principle, increasing pressure favors the reaction that produces fewer moles of gas.",
+          "Rule 8: For reactions with different numbers of gas molecules on each side, pressure changes from volume reduction will shift equilibrium toward the side with fewer gas molecules."
+        ],
+        "preferences": [
+          "Rule 7 is preferred over Rule 6 when pressure changes occur in a catalyzed reaction.",
+          "Rule 8 is preferred over Rule 5 when both increased reactant concentration and pressure effects are present."
+        ],
+        "question": "Now, will the concentration of ammonia (NH₃) increase further?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A copper wire is shaped into a circular loop with a radius of 5 cm.",
+      "The loop is placed in a region with a uniform magnetic field of 0.2 Tesla pointing perpendicular to the plane of the loop.",
+      "The loop is stationary relative to the magnetic field."
+    ],
+    "rules": [
+      "Rule 1: A changing magnetic field through a conductive loop induces an electromotive force (EMF).",
+      "Rule 2: If a conductive loop is stationary in a constant magnetic field, no current is induced."
+    ],
+    "preferences": [],
+    "question": "Is there an induced current in the copper loop under the initial conditions?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "The loop is now being rotated at a constant rate of 60 rpm around an axis that lies in the plane of the loop.",
+          "The magnetic field strength remains constant at 0.2 Tesla."
+        ],
+        "rules": [
+          "Rule 3: Rotating a loop in a constant magnetic field changes the magnetic flux through the loop over time.",
+          "Rule 4: The magnitude of induced EMF is proportional to the rate of change of magnetic flux according to Faraday's Law."
+        ],
+        "preferences": [
+          "Rule 3 is preferred over Rule 2 when the loop is in motion relative to the field."
+        ],
+        "question": "Is there an induced current in the rotating copper loop?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The loop rotation has stopped, but now the magnetic field strength is oscillating sinusoidally between 0.1 and 0.3 Tesla at a frequency of 2 Hz.",
+          "The loop is again stationary relative to the magnetic field direction."
+        ],
+        "rules": [
+          "Rule 5: A magnetic field that changes in strength over time creates a changing magnetic flux through a stationary loop.",
+          "Rule 2: If a conductive loop is stationary in a constant magnetic field, no current is induced."
+        ],
+        "preferences": [
+          "Rule 5 is preferred over Rule 2 when the magnetic field strength is time-variant."
+        ],
+        "question": "Is there an induced current in the stationary copper loop with the oscillating magnetic field strength?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The oscillating magnetic field now has a frequency of 0 Hz (the field is constant at 0.2 Tesla).",
+          "The loop is now being moved at constant velocity of 2 m/s perpendicular to the magnetic field lines, exiting the field region entirely."
+        ],
+        "rules": [
+          "Rule 6: A conductive loop moving with constant velocity through a uniform magnetic field experiences an increasing then decreasing magnetic flux while entering or exiting the field.",
+          "Rule 7: Within a uniform magnetic field region, a loop moving at constant velocity parallel to the field lines experiences no change in magnetic flux."
+        ],
+        "preferences": [
+          "Rule 6 is preferred over Rule 7 when determining if flux changes occur while entering or exiting a field.",
+          "Rule 6 is preferred over Rule 2 when the loop is moving relative to the spatial boundaries of the field."
+        ],
+        "question": "Is there an induced current in the loop as it moves with constant velocity out of the magnetic field region?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The loop has been replaced by a solid copper disk that rotates around its central axis at 120 rpm.",
+          "The magnetic field is uniform at 0.2 Tesla and parallel to the axis of rotation (perpendicular to the disk)."
+        ],
+        "rules": [
+          "Rule 8: In a conducting disk rotating in a magnetic field parallel to the rotation axis, current paths form radially within the disk (the homopolar generator effect).",
+          "Rule 9: Induced EMF requires a complete circuit path for current to flow.",
+          "Rule 3: Rotating a conductor in a constant magnetic field changes the magnetic flux through different sections of the conductor over time."
+        ],
+        "preferences": [
+          "Rule 8 is preferred over Rule 3 when the conductor is a solid disk rather than a loop.",
+          "Rule 9 is preferred over Rule 8 when determining if current will actually flow."
+        ],
+        "question": "Is there an induced current within the rotating copper disk?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The copper disk is now stationary.",
+          "The magnetic field is now rotating around the axis perpendicular to the disk at 120 rpm while maintaining its strength of 0.2 Tesla.",
+          "The disk has been sliced radially, creating a small insulating gap from the center to the edge."
+        ],
+        "rules": [
+          "Rule 10: A rotating magnetic field induces eddy currents in a stationary conductor.",
+          "Rule 11: Radial slices in a conducting disk interrupt the circular path of eddy currents, reducing their magnitude.",
+          "Rule 12: When examining a system, the relative motion between the conductor and magnetic field determines the electromagnetic induction effects."
+        ],
+        "preferences": [
+          "Rule 12 is preferred over Rules 10 and 11 when assessing the system's reference frame.",
+          "Rule 11 is preferred over Rule 10 when the conductor has insulating breaks.",
+          "Rule 9 is preferred over all other rules when determining if a complete circuit exists."
+        ],
+        "question": "With the radial cut in the stationary disk and the rotating magnetic field, is there still an induced current in the disk?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Two pea plants are being crossed for an experiment.",
+      "Plant A has genotype TT for height (tall) and Pp for pod color (mixed green/yellow).",
+      "Plant B has genotype Tt for height (tall) and pp for pod color (yellow)."
+    ],
+    "rules": [
+      "Rule 1: Genes come in different forms called alleles, represented by letters (T/t or P/p).",
+      "Rule 2: Capital letters represent dominant alleles; lowercase letters represent recessive alleles.",
+      "Rule 3: An organism with two identical alleles (TT or tt) is homozygous for that trait.",
+      "Rule 4: An organism with two different alleles (Tt) is heterozygous for that trait.",
+      "Rule 5: Dominant alleles mask the expression of recessive alleles in the phenotype."
+    ],
+    "preferences": [],
+    "question": "Will Plant A produce any pea plants with short height if self-pollinated?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Plant A and Plant B are crossed, producing F1 offspring.",
+          "Punnett square analysis shows the F1 generation has the following possible genotypes: TT Pp, TT pp, Tt Pp, Tt pp."
+        ],
+        "rules": [
+          "Rule 6: For complete dominance inheritance, organisms with at least one dominant allele (T or P) express the dominant trait.",
+          "Rule 7: Recessive traits only appear in the phenotype when both alleles are recessive (tt or pp)."
+        ],
+        "preferences": [],
+        "question": "Will more than 25% of the F1 offspring have yellow pods?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Two of the F1 offspring (both with genotype Tt Pp) are crossed with each other.",
+          "This produces F2 offspring with various genotype combinations.",
+          "A new trait for flower position is introduced, where A is axial (dominant) and a is terminal (recessive).",
+          "Both F1 parents are heterozygous (Aa) for flower position."
+        ],
+        "rules": [
+          "Rule 8: When tracking multiple traits, each trait segregates independently according to Mendel's Law of Independent Assortment.",
+          "Rule 9: The probability of specific multi-trait genotypes can be calculated by multiplying the individual probabilities for each trait."
+        ],
+        "preferences": [
+          "Rule 8 is preferred over Rule 7 when calculating probabilities for multiple traits."
+        ],
+        "question": "Is there less than a 7% chance of an F2 offspring having short height, yellow pods, and terminal flowers?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A new trait for seed texture is being studied, where R represents round seeds (dominant) and r represents wrinkled seeds (recessive).",
+          "One of the F2 plants has wrinkled seeds (rr) and is crossed with a plant with round seeds.",
+          "The cross produces 10 plants with round seeds and 0 plants with wrinkled seeds."
+        ],
+        "rules": [
+          "Rule 10: A test cross can determine if an organism with a dominant phenotype is homozygous or heterozygous.",
+          "Rule 11: If all offspring show the dominant phenotype, the parent with the dominant trait is likely homozygous.",
+          "Rule 12: If approximately half the offspring show the recessive phenotype, the parent with the dominant trait is heterozygous."
+        ],
+        "preferences": [
+          "Rule 11 is preferred over Rule 10 when all offspring show the dominant trait.",
+          "Rule 12 is preferred over Rule 10 when some offspring show the recessive trait."
+        ],
+        "question": "Is the round-seeded parent plant most likely heterozygous (Rr)?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A different trait for flower color shows incomplete dominance.",
+          "Plants with RR genotype have red flowers, plants with WW genotype have white flowers.",
+          "Plants with RW genotype have pink flowers (a blend of red and white).",
+          "A pink-flowered plant (RW) is crossed with a white-flowered plant (WW)."
+        ],
+        "rules": [
+          "Rule 13: With incomplete dominance, heterozygous individuals (RW) display a phenotype that is intermediate between the two homozygous phenotypes.",
+          "Rule 14: With incomplete dominance, the ratio of phenotypes in offspring directly matches the ratio of genotypes.",
+          "Rule 5: Dominant alleles mask the expression of recessive alleles in the phenotype."
+        ],
+        "preferences": [
+          "Rule 13 is preferred over Rule 5 for traits showing incomplete dominance.",
+          "Rule 14 is preferred over Rule 6 for traits showing incomplete dominance."
+        ],
+        "question": "Will any of the offspring from this cross have red flowers?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A chemical reaction is taking place in a laboratory setting.",
+      "The reaction is exothermic, releasing heat as it proceeds."
+    ],
+    "rules": [
+      "Rule 1: Exothermic reactions release energy to the surroundings.",
+      "Rule 2: Higher temperatures generally increase reaction rates."
+    ],
+    "preferences": [
+      "Preference 1: The experiment should be completed within 30 minutes."
+    ],
+    "question": "Should the laboratory technician cool the reaction vessel?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "The reaction is producing a gas as a byproduct.",
+          "The reaction vessel is sealed."
+        ],
+        "rules": [
+          "Rule 3: Gases expand when heated, increasing pressure in sealed containers."
+        ],
+        "preferences": [
+          "Preference 2: Laboratory safety is the highest priority."
+        ],
+        "question": "Should the laboratory technician cool the reaction vessel now?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A catalyst is available that can accelerate the reaction rate at lower temperatures."
+        ],
+        "rules": [
+          "Rule 4: Catalysts reduce activation energy without being consumed in the reaction."
+        ],
+        "preferences": [
+          "Preference 2: Laboratory safety is the highest priority.",
+          "Preference 3: Use of minimum resources is preferred."
+        ],
+        "question": "Should the laboratory technician add the catalyst and maintain lower temperature?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The product of the reaction begins to decompose when temperatures exceed 45°C.",
+          "The current reaction temperature is approaching 40°C."
+        ],
+        "rules": [
+          "Rule 5: Chemical products can undergo secondary reactions at certain temperature thresholds."
+        ],
+        "preferences": [
+          "Preference 3: Use of minimum resources is preferred.",
+          "Preference 4: Product yield should be maximized."
+        ],
+        "question": "Given the risk of product decomposition, should the technician add both the catalyst and implement cooling?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A forest ecosystem has a balanced population of deer and wolves.",
+      "There is adequate vegetation to support the current deer population."
+    ],
+    "rules": [
+      "Rule 1: Predators like wolves control prey populations like deer.",
+      "Rule 2: Prey populations affect vegetation levels through consumption."
+    ],
+    "preferences": [
+      "Preference 1: The ecosystem should maintain biodiversity."
+    ],
+    "question": "Will removing wolves from this ecosystem benefit the overall health of the forest?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Hunters have reduced the wolf population by 70% over one year.",
+          "The deer population has increased by 50% in the same period."
+        ],
+        "rules": [
+          "Rule 3: Rapid population growth can lead to resource depletion."
+        ],
+        "preferences": [
+          "Preference 1: The ecosystem should maintain biodiversity.",
+          "Preference 2: Prevention of ecosystem collapse is essential."
+        ],
+        "question": "Should wildlife managers reintroduce wolves to the ecosystem?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Vegetation in the forest has decreased by 40% due to deer overgrazing.",
+          "Several plant species are becoming rare in the ecosystem."
+        ],
+        "rules": [
+          "Rule 4: Loss of plant diversity can trigger cascading ecological effects."
+        ],
+        "preferences": [
+          "Preference 3: Minimal human intervention is preferred when possible."
+        ],
+        "question": "If wolf reintroduction is delayed, should controlled hunting of deer be implemented?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A severe drought has affected the region, reducing plant growth.",
+          "Water sources in the forest are diminishing."
+        ],
+        "rules": [
+          "Rule 5: Environmental stressors compound the effects of ecological imbalance."
+        ],
+        "preferences": [
+          "Preference 3: Minimal human intervention is preferred when possible.",
+          "Preference 4: Immediate action is necessary in crisis situations."
+        ],
+        "question": "Given the drought, should both wolf reintroduction and deer population control be implemented simultaneously?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A plant species has two alleles for flower color: red (R) and white (r).",
+      "Red is dominant over white."
+    ],
+    "rules": [
+      "Rule 1: Dominant alleles mask the expression of recessive alleles.",
+      "Rule 2: Organisms inherit one allele from each parent."
+    ],
+    "preferences": [
+      "Preference 1: Predict the most likely phenotypic outcome."
+    ],
+    "question": "If we cross two heterozygous plants (Rr), what proportion of offspring will have red flowers?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "New research shows that this plant species actually has incomplete dominance for flower color.",
+          "Heterozygous plants (Rr) produce pink flowers instead of red."
+        ],
+        "rules": [
+          "Rule 3: With incomplete dominance, heterozygotes show an intermediate phenotype."
+        ],
+        "preferences": [
+          "Preference 2: Update predictions based on new scientific evidence."
+        ],
+        "question": "If we cross two heterozygous plants (Rr) with pink flowers, what proportion of offspring will have pink flowers?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A third allele (R') for orange flower color is discovered in the population.",
+          "The dominance hierarchy is R > R' > r."
+        ],
+        "rules": [
+          "Rule 4: Multiple alleles increase the possible genotype combinations."
+        ],
+        "preferences": [
+          "Preference 3: Consider all possible genetic combinations."
+        ],
+        "question": "If a heterozygous red plant (RR') is crossed with a heterozygous orange plant (R'r), what proportion of offspring will have white flowers?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The flower color gene is linked to a gene for drought resistance.",
+          "The red allele (R) is linked to low drought resistance."
+        ],
+        "rules": [
+          "Rule 5: Linked genes tend to be inherited together unless crossing over occurs."
+        ],
+        "preferences": [
+          "Preference 4: Practical applications should be considered."
+        ],
+        "question": "For agricultural purposes in dry regions, should farmers select for plants with white or orange flowers?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Environmental factors like soil pH can modify flower color expression.",
+          "Acidic soil can cause red flowers to appear more purple."
+        ],
+        "rules": [
+          "Rule 6: Gene expression can be influenced by environmental conditions."
+        ],
+        "preferences": [
+          "Preference 5: Distinguish between genetic and environmental factors."
+        ],
+        "question": "If a farmer wants consistent flower color regardless of soil conditions, which genotype should be selected?",
+        "label": true
+      }
+    ]
+  }
+]
