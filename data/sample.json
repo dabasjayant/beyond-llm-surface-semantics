@@ -1,0 +1,85 @@
+{
+  "politics": [
+    [
+      {
+        "round": 1,
+        "predicted": true,
+        "actual": true
+      },
+      {
+        "round": 2,
+        "predicted": true,
+        "actual": true
+      },
+      { 
+        "round": 3,
+        "predicted": false,
+        "actual": true
+      },
+      {
+        "round": 4,
+        "predicted": true,
+        "actual": false
+      },
+      {
+        "round": 5,
+        "predicted": false,
+        "actual": false
+      }
+    ],
+    [
+      {
+        "round": 1,
+        "predicted": true,
+        "actual": true
+      },
+      {
+        "round": 2,
+        "predicted": true,
+        "actual": false
+      },
+      { 
+        "round": 3,
+        "predicted": false,
+        "actual": false
+      },
+      {
+        "round": 4,
+        "predicted": false,
+        "actual": true
+      },
+      {
+        "round": 5,
+        "predicted": false,
+        "actual": false
+      }
+    ],
+    [
+      {
+        "round": 1,
+        "predicted": true,
+        "actual": true
+      },
+      {
+        "round": 2,
+        "predicted": true,
+        "actual": true
+      },
+      { 
+        "round": 3,
+        "predicted": false,
+        "actual": true
+      },
+      {
+        "round": 4,
+        "predicted": true,
+        "actual": false
+      },
+      {
+        "round": 5,
+        "predicted": false,
+        "actual": false
+      }
+    ]
+  ]
+}
