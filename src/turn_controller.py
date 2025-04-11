@@ -1,7 +1,9 @@
 from typing import Dict
 
-from builder.data_loader import DataLoader
-from builder.prompt_generator import PromptGenerator
+from src.builder.data_loader import DataLoader
+from src.builder.prompt_generator import PromptGenerator
+
+from src.model.inference import ModelInference
 
 class TurnController:
   def __init__(self, domain_path: Dict[str, str]):
@@ -11,6 +13,7 @@ class TurnController:
     # Load data
     self.data = self.data_loader.get_data()
 
+  def run_scenario(self):
     # For each domain:
     for domain, scenarios in self.data.items():
       # For each scenario
