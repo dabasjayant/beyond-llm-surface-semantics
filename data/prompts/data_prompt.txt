@@ -1,0 +1,107 @@
+Now you are a data generator. We want to generate new complex dataset as benchmark similar to data from BoardGameQA based on causal relationships.
+
+We are working on a research project titled "Beyond Surface Semantics: Evaluating LLMs on Complex Causal Reasoning"
+
+Introduction
+Recent advancements in large language models (LLMs) show strong performance on various structured reasoning tasks, often rivaling human capabilities. However, most evaluations assume relatively fixed or consistent datasets, overlooking how causal relationships can shift or conflict in real-world scenarios.
+To address this gap, our study systematically assesses LLMs under a Real-Time Adaptation Challenge of Memory Consistency. Unlike existing benchmarks focusing on static rules or single-step causal inferences, our approach involves multi-layered, evolving sequences of events with changing rules, shifting preferences, and sometimes contradictory information. This setup tests whether LLMs can retain prior context and adapt their reasoning to new, potentially conflicting details over time—an important step toward real-world utility, where conditions are rarely static or unambiguous.
+Based on the literature review, we hypothesize that current LLMs struggle with real-time adaptive reasoning due to their reliance on static pattern recognition rather than true causal comprehension. Specifically: (i) LLMs will show performance degradation in tasks requiring memory consistency over evolving causal relationships. (ii) Chain-of-Thought prompting and retrieval-augmented generation may provide incremental improvements, but fundamental limitations in adaptive reasoning will persist. (iii) Autoregressive models will exhibit difficulties in handling conflicting updates, while retrieval-based approaches may mitigate some but not all inconsistencies.
+
+Adaptive Reasoning Protocol:
+As part of the experimental design, we introduced a dynamic, variable-length causal evolution framework that simulates real-world complexity through escalating task difficulty and contextual shifts across dialogue rounds.
+This setup incorporates both gradual and abrupt rule changes to evaluate how well LLMs adapt to evolving and conflicting information.
+To enable this, we created prompt templates that promote context retention and causal chaining, and implemented rule injection strategies introducing contradictions and surprise events to test reasoning flexibility.
+
+I'll need your help in designing our dataset.
+
+Task Description:
+We are creating challenging scenario with greater complexity that will more effectively test the limits of LLMs on adaptive reasoning. It'll test reasoning flexibility and memory consistency over multiple updates. Each update should involve changes to the scenario by adding or modifying facts, rules, or preferences. These updates should introduce complexity and challenge reasoning over time. The number of updates must vary between 3 and 7, with at least one scenario for each depth (3, 4, 5, 6, 7 updates).
+
+Objectives:
+- Rule Injection: Introduce contradictions, surprise events, or unexpected rule changes in each update to test reasoning flexibility.
+- Memory Consistency: Evaluate how well information is remembered and applied consistently across updates.
+- Causal Relationships: The scenarios must be logically consistent, with correct cause-and-effect relationships between facts, rules, and preferences.
+
+Guidelines:
+- Facts: Can only be added. They should provide critical information and evolve with each update.
+- Rules: Can be added or modified. They should be logically consistent with the facts presented and reflect realistic causal changes.
+- Preferences: Can be updated or added based on the changing context of the scenario.
+- Question: This may stay the same or change between updates. It should always be relevant to the facts and rules presented.
+- Label: Represents the ground-truth answer to the question for that update, based on the current facts, rules, and preferences.
+
+Update Structure:
+- Updates: The number of updates should vary from 3 to 7, with each scenario covering at least one of each depth (3, 4, 5, 6, 7 updates). Each update introduces new facts, changes to rules, or updates preferences.
+- Changes per Update: Ensure each update introduces at least one change (fact, rule, or preference).
+- Causal Validity: Ensure that changes follow logical causal relationships—new facts should have clear consequences, and rule changes should logically follow from earlier updates.
+
+Scenario example:
+```
+{
+  "facts": [
+    "The economy is in a recession.",
+    "Unemployment is high."
+  ],
+  "rules": [
+    "Rule 1: In a recession, government spending increases.",
+    "Rule 2: High unemployment leads to public dissatisfaction."
+  ],
+  "preferences": [
+    "Preference 1: Policy focus should be on job creation."
+  ],
+  "question": "What should the government do to improve the economy?",
+  "label": true,
+  "updates": [
+    {
+      "facts": [
+        "A new government program for job creation is announced."
+      ],
+      "rules": [
+        "Rule 2: High unemployment leads to public dissatisfaction.",
+        "Rule 3: New job creation programs will reduce unemployment."
+      ],
+      "preferences": [
+        "Preference 1: The government should prioritize infrastructure projects."
+      ],
+      "question": "How should the policy be adjusted based on the new announcement?",
+      "label": true
+    },
+    {
+      "facts": [
+        "A surprise economic crisis emerges, worsening the recession."
+      ],
+      "rules": [
+        "Rule 4: Economic crises require emergency fiscal measures."
+      ],
+      "preferences": [
+        "Preference 2: Immediate aid to struggling industries is necessary."
+      ],
+      "question": "What action should be taken in response to the economic crisis?",
+      "label": false
+    },
+    {
+      "facts": [
+        "Public opinion turns against the government due to delayed relief."
+      ],
+      "rules": [
+        "Rule 5: Public dissatisfaction can weaken political support."
+      ],
+      "preferences": [
+        "Preference 3: The government should offer direct relief to citizens."
+      ],
+      "question": "How should the government restore public confidence?",
+      "label": true
+    }
+  ]
+}
+```
+
+Key Requirements:
+- Depths: For each depth (3, 4, 5, 6, and 7 updates), create at least one scenario that matches the required number of updates and introduces appropriate changes at each step.
+- Complexity: Scenarios should be complex, involving a dynamic interplay between facts, rules, and preferences, with causal relationships that follow logical patterns across updates. We want to create scenarios that humans are able to solve using their causal understanding but LLMs like ChatGPT, Gemini might find them challenging to test the limits of LLMs on adaptive reasoning.
+- Correctness: Ensure that the causal relationships are accurate and logically consistent—changes in facts or rules should align with the overall scenario's progression.
+
+Please follow below additional requests:
+1.⁠ ⁠From the second round, you have to, of course, consider not only the rules and preferences of the corresponding round but also the rules and preferences from all the previous rounds.
+2.⁠ ⁠Add rules in ascending order. (e.g. don't add rule 6 in round n and add rule 5 in round (n-1))
+
+Domain:
