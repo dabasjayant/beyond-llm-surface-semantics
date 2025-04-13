@@ -3,10 +3,10 @@ class PromptGenerator:
     self.history = ''
 
   def create_history(self, prompt, output):
-    self.history = f'Our conversation history: \n\n[User]: \n{prompt} \n\n[Your answer]: \n{output} \n\n\n'
+    self.history = f'Our conversation history: \n\n[User]: \n{prompt} \n\n{output} \n\n\n'
 
   def update_history(self, prompt, output):
-    self.history = self.history + f'[User]: \n{prompt} \n\n[Your answer]: \n{output} \n\n\n'
+    self.history = f'{prompt} \n\n{output} \n\n\n'
 
   def get_history(self):
     return self.history
@@ -15,7 +15,7 @@ class PromptGenerator:
     self.history = ''
 
   def generate_prompt(self, data, is_update=False):
-    prompt = 'Updated information:\n\n' if is_update else 'Answer the following question based on the given facts, rules, and preferences. Provide a true or false answer (binary cross-entropy).\n\n'
+    prompt = self.history + '\n\nUpdated information:\n\n' if is_update else ''
 
     # Add facts to the prompt
     prompt += 'Facts:\n'
@@ -32,7 +32,10 @@ class PromptGenerator:
     for preference in data['preferences']:
       prompt += f'- {preference}\n'
 
+    prompt += '\nAnswer the below question as "yes" or "no" based on the given facts, rules, and preferences. Output should always start with "Answer: yes" or "Answer: no" and then explanation.\n'
+    prompt += '\nExample: output should always be in the format "Answer: yes" or "Answer: no"\n'
+
     # Add the question
-    prompt += f"\nQuestion: {data['question']}\n"
+    prompt += f"\nQuestion: Is this correct (yes or no)? {data['question']}\n\n"
 
     return prompt
