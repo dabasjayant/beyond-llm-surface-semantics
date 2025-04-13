@@ -21,7 +21,7 @@ class ModelInference:
     self.device = 0 if torch.cuda.is_available() or torch.backends.mps.is_available() else None
     self.model.to(self.device)
 
-  def chat(self, message, max_new_tokens=5):
+  def chat(self, message, max_new_tokens=120):
     inputs = self.tokenizer(message, return_tensors='pt').to(self.device)
     outputs = self.model.generate(
       **inputs, 
@@ -31,19 +31,34 @@ class ModelInference:
     response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
     return response[len(message):].strip().lower()
   
-  def get_sentiment(self, text: str) -> int:
-    try:
-      nltk.data.find('sentiment/vader_lexicon.zip')
-    except LookupError:
-      nltk.download('vader_lexicon')
-    text = text.lower().strip()
-    sid = SentimentIntensityAnalyzer()
-    scores = sid.polarity_scores(text)
+  def get_label(self, text: str) -> int:
+    test_args = TrainingArguments(
+        output_dir='checkpoints/test',
+        do_train=False,
+        do_eval=True,
+    )
+    model=BertForSequenceClassification.from_pretrained(directory)
+    # try:
+    #   nltk.data.find('sentiment/vader_lexicon.zip')
+    # except LookupError:
+    #   nltk.download('vader_lexicon')
+    # text = text.lower().strip()
+    # sid = SentimentIntensityAnalyzer()
+    # scores = sid.polarity_scores(text)
 
-    if scores['pos'] > scores['neg']:
-      return 1
-    elif scores['pos'] < scores['neg']:
-      return 0
-    else:
-      return 1 if scores['compound'] >= 0.05 else 0
+    # if scores['pos'] > scores['neg']:
+    #   return {
+    #     'probability': scores['pos'],
+    #     'y_pred': 1
+    #   }
+    # elif scores['pos'] < scores['neg']:
+    #   return {
+    #     'probability': scores['neg'],
+    #     'y_pred': 0
+    #   }
+    # else:
+    #   return {
+    #     'probability': scores['compound'],
+    #     'y_pred': 1 if scores['compound'] >= 0.05 else 0
+    #   }
     
