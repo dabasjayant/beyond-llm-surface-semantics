@@ -32,7 +32,7 @@ class PromptGenerator:
     for preference in data['preferences']:
       prompt += f'- {preference}\n'
 
-    prompt += '\nAnswer the below question as "yes" or "no" based on the given facts, rules, and preferences. Output should always start with "Answer: yes" or "Answer: no" and then explanation.\n'
+    prompt += '\nAnswer the below question as "yes" or "no" based on the given facts, rules, and preferences. Output should always start with "Answer: yes" or "Answer: no".\n'
     prompt += '\nExample: output should always be in the format "Answer: yes" or "Answer: no"\n'
 
     # Add the question
