@@ -18,7 +18,7 @@ class TurnController:
 
     # Load data
     self.data = self.data_loader.get_data()
-    self.fieldnames = ['domain', 'scenario', 'round', 'predicted', 'actual']
+    self.fieldnames = ['domain', 'scenario', 'round', 'classifier_output', 'predicted', 'actual', 'response']
     self.results = []
 
     self.output_path = 'outputs/output.csv'
@@ -33,13 +33,16 @@ class TurnController:
         
         # Run base prompt
         response = self.model.chat(prompt)
-        output = self.model.get_sentiment(response)
+        # output = self.model.get_sentiment(response)
+        output = self.model.evaluate_response(response)
         self.results.append({
           'domain': domain,
           'scenario': i+1,
           'round': 1,
-          'predicted': output,
-          'actual': 1 if scenario['label'] else 0
+          'classifier_output': dict(list(output.items())[:2]),
+          'predicted': output['Bestlabel'],
+          'actual': 1 if scenario['label'] else 0,
+          'response': response
         })
         
         self.prompt_generator.create_history(prompt, response)
@@ -50,13 +53,16 @@ class TurnController:
           
           # Run update prompt
           response = self.model.chat(prompt)
-          output = self.model.get_sentiment(response)
+          # output = self.model.get_sentiment(response)
+          output = self.model.evaluate_response(response)
           self.results.append({
             'domain': domain,
             'scenario': i+1,
             'round': j+2,
-            'predicted': output,
-            'actual': 1 if update['label'] else 0
+            'classifier_output': dict(list(output.items())[:2]),
+            'predicted': output['Bestlabel'],
+            'actual': 1 if update['label'] else 0,
+            'response': response
           })
           
           self.prompt_generator.update_history(prompt, response)
