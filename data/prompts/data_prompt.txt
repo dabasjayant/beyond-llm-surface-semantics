@@ -30,9 +30,11 @@ Guidelines:
 - Label: Represents the ground-truth answer to the question for that update, based on the current facts, rules, and preferences.
 
 Update Structure:
-- Updates: The number of updates should vary from 3 to 7, with each scenario covering at least one of each depth (3, 4, 5, 6, 7 updates). Each update introduces new facts, changes to rules, or updates preferences.
+- Updates: The number of updates should vary from 3 to 7, with each domain covering two scenarios of each depth (3, 4, 5, 6, 7 updates). Each update introduces new facts, changes to rules, or updates preferences.
 - Changes per Update: Ensure each update introduces at least one change (fact, rule, or preference).
 - Causal Validity: Ensure that changes follow logical causal relationships—new facts should have clear consequences, and rule changes should logically follow from earlier updates.
+
+Generate 10 scenarios based on the requirements covering two scenarios of each depth (3, 4, 5, 6, 7 updates).
 
 Scenario example:
 ```
@@ -104,4 +106,4 @@ Please follow below additional requests:
 1.⁠ ⁠From the second round, you have to, of course, consider not only the rules and preferences of the corresponding round but also the rules and preferences from all the previous rounds.
 2.⁠ ⁠Add rules in ascending order. (e.g. don't add rule 6 in round n and add rule 5 in round (n-1))
 
-Domain:
+Domain: 
