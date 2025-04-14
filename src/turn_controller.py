@@ -33,7 +33,6 @@ class TurnController:
         
         # Run base prompt
         response = self.model.chat(prompt)
-        # output = self.model.get_sentiment(response)
         output = self.model.evaluate_response(response)
         self.results.append({
           'domain': domain,
@@ -53,7 +52,6 @@ class TurnController:
           
           # Run update prompt
           response = self.model.chat(prompt)
-          # output = self.model.get_sentiment(response)
           output = self.model.evaluate_response(response)
           self.results.append({
             'domain': domain,

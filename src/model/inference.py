@@ -57,19 +57,4 @@ class ModelInference:
         'Bestlabel': best_label_value
     }
   
-  def get_sentiment(self, text: str) -> int:
-    try:
-      nltk.data.find('sentiment/vader_lexicon.zip')
-    except LookupError:
-      nltk.download('vader_lexicon')
-    text = text.lower().strip()
-    sid = SentimentIntensityAnalyzer()
-    scores = sid.polarity_scores(text)
-
-    if scores['pos'] > scores['neg']:
-      return 1
-    elif scores['pos'] < scores['neg']:
-      return 0
-    else:
-      return 1 if scores['compound'] >= 0.05 else 0
     
