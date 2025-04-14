@@ -30,11 +30,11 @@ Guidelines:
 - Label: Represents the ground-truth answer to the question for that update, based on the current facts, rules, and preferences.
 
 Update Structure:
-- Updates: The number of updates should vary from 3 to 7, with each domain covering two scenarios of each depth (3, 4, 5, 6, 7 updates). Each update introduces new facts, changes to rules, or updates preferences.
+- Updates: The number of updates should vary from 3 to 7, with each domain covering two scenarios of each depth (4, 5, 6, 7, 8). Each update introduces new facts, changes to rules, or updates preferences.
 - Changes per Update: Ensure each update introduces at least one change (fact, rule, or preference).
 - Causal Validity: Ensure that changes follow logical causal relationships—new facts should have clear consequences, and rule changes should logically follow from earlier updates.
 
-Generate 10 scenarios based on the requirements covering two scenarios of each depth (3, 4, 5, 6, 7 updates).
+Generate 10 scenarios based on the requirements covering two scenarios of each depth (4, 5, 6, 7, 8).
 
 Scenario example:
 ```
@@ -98,7 +98,7 @@ Scenario example:
 ```
 
 Key Requirements:
-- Depths: For each depth (3, 4, 5, 6, and 7 updates), create at least one scenario that matches the required number of updates and introduces appropriate changes at each step.
+- Depths: For each depth (4, 5, 6, 7, and 8), create two scenario that matches the required number of updates and introduces appropriate changes at each step.
 - Complexity: Scenarios should be complex, involving a dynamic interplay between facts, rules, and preferences, with causal relationships that follow logical patterns across updates. We want to create scenarios that humans are able to solve using their causal understanding but LLMs like ChatGPT, Gemini might find them challenging to test the limits of LLMs on adaptive reasoning.
 - Correctness: Ensure that the causal relationships are accurate and logically consistent—changes in facts or rules should align with the overall scenario's progression.
 
@@ -106,4 +106,4 @@ Please follow below additional requests:
 1.⁠ ⁠From the second round, you have to, of course, consider not only the rules and preferences of the corresponding round but also the rules and preferences from all the previous rounds.
 2.⁠ ⁠Add rules in ascending order. (e.g. don't add rule 6 in round n and add rule 5 in round (n-1))
 
-Domain: 
+Domain: healthcare
