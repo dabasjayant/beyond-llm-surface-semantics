@@ -1,786 +1,1031 @@
 [
   {
     "facts": [
-      "Patient A (Cardiology) presents with chest pain and ST-elevation on ECG.",
-      "Patient A is diagnosed with acute myocardial infarction."
+      "Hospital A has experienced a surge in emergency room visits.",
+      "The hospital is facing staffing shortages across all departments."
     ],
     "rules": [
-      "R1: Immediate reperfusion therapy (PCI) is indicated for acute MI.",
-      "R2: If the patient has contraindications (e.g., recent bleeding), thrombolytic therapy should be considered with caution."
+      "Rule 1: Hospitals must maintain a minimum nurse-to-patient ratio for patient safety.",
+      "Rule 2: Staffing shortages require resource reallocation."
     ],
     "preferences": [
-      "P1: Patient A prefers non-invasive approaches when possible."
+      "Preference 1: Patient care quality should not be compromised."
     ],
-    "question": "It is true that Patient A should be taken immediately for PCI.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Further assessment reveals a history of recent gastrointestinal bleeding and unstable blood pressure.",
-          "These factors suggest high procedural risk."
-        ],
-        "rules": [
-          "R3: In the presence of recent bleeding and instability, immediate PCI may be deferred in favor of stabilization.",
-          "R4: However, if instability persists, life-saving PCI is prioritized."
-        ],
-        "preferences": [
-          "P2: Given the risks, stabilization is preferred over immediate invasive procedures."
-        ],
-        "question": "It is true that the current evidence supports deferring PCI for stabilization.",
-        "label": true
-      },
-      {
-        "facts": [
-          "The patient is stabilized with medical therapy and bleeding is controlled.",
-          "Repeat assessment shows persistent ST-elevation."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that PCI should now be performed after stabilization?",
-        "label": true
-      },
-      {
-        "facts": [
-          "During PCI, minor vascular complications occur which are promptly managed.",
-          "Post-procedure, Patient A shows gradual improvement."
-        ],
-        "rules": [
-          "R5: If complications occur during PCI, prompt management may lead to an overall favorable outcome."
-        ],
-        "preferences": [],
-        "question": "It is true that despite the complications, the overall treatment outcome is acceptable?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Post-PCI, serum creatinine rises, suggesting contrast-induced nephropathy.",
-          "Urine output remains adequate."
-        ],
-        "rules": [
-          "R6: Contrast nephropathy requires IV hydration and nephrotoxic avoidance.",
-          "R7: If renal function declines further, dialysis may be needed."
-        ],
-        "preferences": [
-          "P3: Patient A wishes to avoid dialysis if possible."
-        ],
-        "question": "It is true that contrast-induced nephropathy necessitates immediate dialysis?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Aggressive IV hydration improves renal function.",
-          "Cardiac function remains stable."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the patient's overall prognosis is now favorable?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient B (Oncology) is diagnosed with advanced non-small cell lung cancer.",
-      "Standard therapy involves platinum-based chemotherapy."
-    ],
-    "rules": [
-      "R1: For advanced lung cancer, platinum-based chemotherapy is first-line treatment.",
-      "R2: If biomarkers indicate high PD-L1 expression, immunotherapy may be more beneficial."
-    ],
-    "preferences": [
-      "P1: Patient B prefers treatments with fewer side effects."
-    ],
-    "question": "It is true that Patient B should receive platinum-based chemotherapy.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Biomarker testing reveals high PD-L1 expression.",
-          "Patient B shows poor tolerance to chemotherapy side effects."
-        ],
-        "rules": [
-          "R3: High PD-L1 expression favors immunotherapy over chemotherapy.",
-          "R4: Immunotherapy has a better side effect profile."
-        ],
-        "preferences": [
-          "P2: Patient B’s desire for fewer side effects supports immunotherapy."
-        ],
-        "question": "It is true that immunotherapy should be chosen over chemotherapy?",
-        "label": true
-      },
-      {
-        "facts": [
-          "A clinical trial offering combination therapy is available.",
-          "Combination therapy has higher efficacy but increased side effects."
-        ],
-        "rules": [
-          "R5: Combination therapy may be considered if its benefits outweigh the risks."
-        ],
-        "preferences": [],
-        "question": "It is true that Patient B might benefit from combination therapy despite increased side effects?",
-        "label": false
-      },
-      {
-        "facts": [
-          "After a trial period, Patient B experiences a partial response to immunotherapy.",
-          "Mild side effects are observed that are tolerable."
-        ],
-        "rules": [
-          "R6: If immunotherapy yields a partial response with tolerable side effects, continuation is recommended."
-        ],
-        "preferences": [],
-        "question": "It is true that the current immunotherapy regimen should be continued?",
-        "label": true
-      },
-      {
-        "facts": [
-          "New liver metastases are detected on follow-up imaging.",
-          "PD-L1 remains high, but tumor burden increases."
-        ],
-        "rules": [
-          "R7: Progressive disease on immunotherapy may warrant adding targeted therapy.",
-          "R8: Liver metastases require additional monitoring for hepatic toxicity."
-        ],
-        "preferences": [
-          "P3: Patient B still prioritizes quality of life over aggressive therapy."
-        ],
-        "question": "It is true that targeted therapy should now be added to the regimen?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Patient develops immune-related hepatitis.",
-          "Liver enzymes are 3x upper limit of normal."
-        ],
-        "rules": [
-          "R9: Immune-related hepatitis requires holding immunotherapy and starting steroids."
-        ],
-        "preferences": [],
-        "question": "It is true that immunotherapy should be temporarily halted?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient C (Endocrinology) is newly diagnosed with type 2 diabetes.",
-      "Patient C's HbA1c is significantly elevated."
-    ],
-    "rules": [
-      "R1: Metformin is the first-line treatment for type 2 diabetes.",
-      "R2: Metformin should be avoided if there is severe renal impairment."
-    ],
-    "preferences": [
-      "P1: Patient C strongly prefers oral medications over injectables."
-    ],
-    "question": "It is true that Patient C should start metformin therapy.",
+    "question": "Should Hospital A hire temporary staff to address the surge?",
     "label": true,
     "updates": [
       {
         "facts": [
-          "Initial renal tests are borderline normal with no history of kidney disease.",
-          "The patient's overall kidney function is acceptable."
+          "Hospital A's budget for the quarter is nearly depleted.",
+          "The surge is primarily in non-critical cases."
         ],
         "rules": [
-          "R3: With borderline renal function, metformin may be used under close monitoring."
+          "Rule 3: Budget constraints limit hiring capabilities."
         ],
         "preferences": [
-          "P2: Preference for oral medications supports using metformin."
+          "Preference 1: Patient care quality should not be compromised.",
+          "Preference 2: Financial stability of the hospital must be maintained."
         ],
-        "question": "It is true that metformin can be administered safely?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Follow-up tests show a decline in renal function; eGFR drops below 45 ml/min."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the treatment plan must be adjusted because metformin is now contraindicated?",
-        "label": true
-      },
-      {
-        "facts": [
-          "An alternative oral hypoglycemic agent with a better renal safety profile is available.",
-          "The alternative has been approved for use in patients with reduced renal function."
-        ],
-        "rules": [
-          "R4: When metformin is contraindicated, switching to the alternative is recommended."
-        ],
-        "preferences": [],
-        "question": "It is true that Patient C should be switched to the alternative therapy?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Patient reports fatigue and nausea; ketones are elevated.",
-          "Blood glucose is normal (euglycemic DKA risk)."
-        ],
-        "rules": [
-          "R5: SGLT2 inhibitors require monitoring for euglycemic DKA.",
-          "R6: Patient education on DKA symptoms is critical."
-        ],
-        "preferences": [
-          "P3: Patient C worries about DKA but wants to avoid insulin."
-        ],
-        "question": "It is true that the SGLT2 inhibitor should be discontinued immediately?",
+        "question": "Should Hospital A hire temporary staff to address the surge?",
         "label": false
       },
       {
         "facts": [
-          "With hydration and insulin, ketosis resolves.",
-          "HbA1c drops to 7.2%."
+          "A neighboring hospital has offered to lend staff for two weeks.",
+          "The state health department has allocated emergency funds to Hospital A."
         ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the treatment plan is effective despite the DKA risk?",
+        "rules": [
+          "Rule 4: External staff must undergo accelerated credentialing for temporary assignments."
+        ],
+        "preferences": [
+          "Preference 1: Patient care quality should not be compromised.",
+          "Preference 2: Financial stability of the hospital must be maintained.",
+          "Preference 3: Solutions that don't require extensive administrative processes are preferred."
+        ],
+        "question": "Should Hospital A accept the neighboring hospital's staff offer?",
         "label": true
+      },
+      {
+        "facts": [
+          "Three staff members borrowed from the neighboring hospital tested positive for a contagious illness.",
+          "Hospital A's emergency room visits have increased by another 15%."
+        ],
+        "rules": [
+          "Rule 5: Staff with contagious illnesses must be quarantined immediately."
+        ],
+        "preferences": [
+          "Preference 1: Patient care quality should not be compromised.",
+          "Preference 2: Financial stability of the hospital must be maintained.",
+          "Preference 3: Solutions that don't require extensive administrative processes are preferred.",
+          "Preference 4: Staff and patient safety is the highest priority."
+        ],
+        "question": "Should Hospital A continue using borrowed staff from the neighboring hospital?",
+        "label": false
       }
     ]
   },
   {
     "facts": [
-      "Patient D (Emergency Medicine) is brought to the ED with severe blunt trauma.",
-      "The patient's vital signs are unstable."
+      "A new experimental treatment for chronic pain has shown promising results in clinical trials.",
+      "The treatment has not yet received full regulatory approval."
     ],
     "rules": [
-      "R1: In severe trauma with instability, rapid surgical intervention is indicated.",
-      "R2: If the patient is too unstable, damage control resuscitation should be initiated first."
+      "Rule 1: Experimental treatments require informed consent from patients.",
+      "Rule 2: Physicians must disclose all known risks and benefits."
     ],
     "preferences": [
-      "P1: Patient D prioritizes immediate life-saving measures over definitive surgery."
+      "Preference 1: Patients with severe chronic pain need immediate relief options."
     ],
-    "question": "It is true that Patient D should be taken immediately to the operating room.",
+    "question": "Should the experimental treatment be offered to patients with severe chronic pain?",
     "label": false,
     "updates": [
       {
         "facts": [
-          "Initial resuscitation temporarily stabilizes blood pressure.",
-          "Imaging confirms internal bleeding requiring surgical intervention."
+          "The regulatory body has granted conditional approval for patients who have exhausted all other options.",
+          "Insurance companies will not cover the cost of the experimental treatment."
         ],
         "rules": [
-          "R3: When imaging confirms internal bleeding, surgery cannot be further delayed.",
-          "R4: However, if the patient is marginally stable, additional resuscitation is warranted."
+          "Rule 3: Conditionally approved treatments can be administered under specific monitoring protocols."
         ],
         "preferences": [
-          "P2: Given the risks, further resuscitation is preferred over immediate surgery."
+          "Preference 1: Patients with severe chronic pain need immediate relief options.",
+          "Preference 2: Treatment accessibility should not be limited by financial constraints."
         ],
-        "question": "It is true that surgery should be postponed until the patient is more stable?",
+        "question": "Should the hospital establish a program to offer the experimental treatment?",
         "label": true
       },
       {
         "facts": [
-          "After further resuscitation, the patient becomes stable enough for surgery."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the patient can now safely undergo surgery?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Post-surgery, the patient develops a mild infection at the incision site.",
-          "Early antibiotic therapy is initiated."
+          "Two patients who received the treatment experienced severe adverse reactions.",
+          "A pharmaceutical company has offered to subsidize the treatment costs for eligible patients."
         ],
         "rules": [
-          "R5: Mild post-operative infections should be managed with timely antibiotic administration."
-        ],
-        "preferences": [],
-        "question": "It is true that the early intervention will likely lead to full recovery?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The infection worsens despite antibiotics, requiring debridement.",
-          "Cultures reveal multidrug-resistant bacteria."
-        ],
-        "rules": [
-          "R6: Resistant infections may require broader-spectrum antibiotics or surgical intervention."
+          "Rule 4: Adverse reactions must be reported to the regulatory body within 48 hours."
         ],
         "preferences": [
-          "P3: Patient D’s family prefers aggressive infection control."
+          "Preference 1: Patients with severe chronic pain need immediate relief options.",
+          "Preference 2: Treatment accessibility should not be limited by financial constraints.",
+          "Preference 3: Patient safety outweighs treatment accessibility."
         ],
-        "question": "It is true that surgical debridement is now necessary?",
-        "label": true
-      },
-      {
-        "facts": [
-          "After debridement and adjusted antibiotics, the infection resolves.",
-          "The patient is discharged to rehabilitation."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the long-term prognosis is favorable?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient E (Pulmonology) presents with severe shortness of breath and hypoxemia.",
-      "Chest X-ray reveals diffuse infiltrates consistent with ARDS."
-    ],
-    "rules": [
-      "R1: In ARDS, lung-protective ventilation with moderate PEEP is essential.",
-      "R2: High PEEP can improve oxygenation but increases the risk of barotrauma."
-    ],
-    "preferences": [
-      "P1: The family of Patient E prefers minimizing ventilator-related complications."
-    ],
-    "question": "It is true that Patient E should be ventilated with high PEEP settings.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Arterial blood gas shows worsening oxygenation despite moderate PEEP.",
-          "No signs of barotrauma are present on initial imaging."
-        ],
-        "rules": [
-          "R3: In refractory hypoxemia without barotrauma, an increase in PEEP may be considered."
-        ],
-        "preferences": [
-          "P2: In this case, improving oxygenation takes priority over the risk of barotrauma."
-        ],
-        "question": "It is true that increasing PEEP is advisable under these circumstances?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Following an increase in PEEP, lung compliance decreases and early signs of barotrauma appear.",
-          "Follow-up imaging confirms these changes."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that ventilator settings must be re-adjusted to avoid further injury?",
-        "label": true
-      },
-      {
-        "facts": [
-          "After adjustment, oxygenation improves and no further signs of barotrauma are seen.",
-          "The patient remains hemodynamically stable."
-        ],
-        "rules": [
-          "R4: Once ventilator settings are optimized, continued monitoring ensures sustained improvement."
-        ],
-        "preferences": [],
-        "question": "It is true that the current management strategy is effective long-term?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The patient develops a ventilator-associated pneumonia (VAP).",
-          "Sputum cultures grow Pseudomonas aeruginosa."
-        ],
-        "rules": [
-          "R5: VAP requires prompt antibiotic therapy and reevaluation of ventilator settings."
-        ],
-        "preferences": [
-          "P3: The family wishes to minimize further complications."
-        ],
-        "question": "It is true that antibiotics should be initiated immediately?",
-        "label": true
-      },
-      {
-        "facts": [
-          "With targeted antibiotics, the pneumonia resolves.",
-          "The patient is successfully weaned from the ventilator."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the patient has recovered adequately for extubation?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient F (Hematology) is diagnosed with severe anemia due to chronic kidney disease.",
-      "Standard treatment includes erythropoiesis-stimulating agents (ESAs)."
-    ],
-    "rules": [
-      "R1: ESAs are indicated to improve hemoglobin levels in CKD-related anemia.",
-      "R2: ESAs increase the risk of thrombotic events."
-    ],
-    "preferences": [
-      "P1: Patient F prefers to minimize the risk of thrombosis even if hemoglobin improvement is slower."
-    ],
-    "question": "It is true that Patient F should be started on standard-dose ESAs.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Patient F has a prior history of venous thromboembolism.",
-          "A lower-dose ESA regimen is available as an alternative."
-        ],
-        "rules": [
-          "R3: In patients with thrombotic history, a lower-dose ESA regimen is preferred.",
-          "R4: However, lower dosing may delay hemoglobin improvement."
-        ],
-        "preferences": [
-          "P2: Patient F's desire to reduce thrombotic risk overrides the need for rapid improvement."
-        ],
-        "question": "It is true that a lower-dose ESA regimen should be preferred?",
-        "label": true
-      },
-      {
-        "facts": [
-          "After 4 weeks, hemoglobin shows minimal improvement.",
-          "The patient remains at moderate risk for thrombosis."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that increasing the ESA dose to standard levels may now be considered?",
+        "question": "Should the hospital continue offering the experimental treatment?",
         "label": false
       },
       {
         "facts": [
-          "Subsequent testing indicates a slight improvement with low-dose therapy, but not enough to meet target hemoglobin levels.",
-          "Additional supportive measures are implemented."
+          "Further investigation revealed the adverse reactions were due to a drug interaction, not the treatment itself.",
+          "A new screening protocol has been developed to identify patients at risk for the interaction."
         ],
         "rules": [
-          "R5: If supportive measures fail to achieve target hemoglobin, escalation of ESA dose may be warranted."
-        ],
-        "preferences": [],
-        "question": "It is true that the current ESA dosage should be maintained rather than escalated?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Patient F develops new-onset hypertension attributed to ESA therapy.",
-          "Blood pressure is poorly controlled despite antihypertensives."
-        ],
-        "rules": [
-          "R6: ESA-induced hypertension may necessitate dose reduction or discontinuation."
+          "Rule 5: Modified treatment protocols require additional consent from ongoing patients."
         ],
         "preferences": [
-          "P3: Patient F prioritizes cardiovascular safety over hemoglobin targets."
+          "Preference 1: Patients with severe chronic pain need immediate relief options.",
+          "Preference 2: Treatment accessibility should not be limited by financial constraints.",
+          "Preference 3: Patient safety outweighs treatment accessibility.",
+          "Preference 4: Evidence-based modifications to treatment protocols are encouraged."
         ],
-        "question": "It is true that ESA therapy should be stopped due to hypertension?",
-        "label": true
-      },
-      {
-        "facts": [
-          "After ESA discontinuation, hemoglobin stabilizes at a suboptimal level.",
-          "The patient is referred for iron infusion therapy."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that iron infusion is a reasonable alternative?",
+        "question": "Should the hospital resume the experimental treatment program with the new screening protocol?",
         "label": true
       }
     ]
   },
   {
     "facts": [
-      "Patient G (Neurology) presents with acute stroke symptoms.",
-      "Brain imaging confirms an ischemic event."
+      "A rural community clinic is experiencing a shortage of primary care physicians.",
+      "Telehealth services are available but underutilized in the community."
     ],
     "rules": [
-      "R1: Intravenous thrombolysis is recommended within 4.5 hours for ischemic stroke.",
-      "R2: Patients with high bleeding risk should be excluded from thrombolysis."
+      "Rule 1: All patients must have access to primary care services within reasonable timeframes.",
+      "Rule 2: Telehealth services must comply with state licensing regulations."
     ],
     "preferences": [
-      "P1: Patient G's family prefers aggressive stroke intervention if safely applicable."
+      "Preference 1: In-person care is preferred for comprehensive health assessments."
     ],
-    "question": "It is true that Patient G should receive intravenous thrombolysis.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Time since symptom onset is 3 hours.",
-          "Laboratory tests show elevated bleeding markers."
-        ],
-        "rules": [
-          "R3: Elevated bleeding markers contraindicate thrombolysis.",
-          "R4: Exceptions may be considered if benefits clearly outweigh risks."
-        ],
-        "preferences": [
-          "P2: Given the short onset time, caution is advised but the risk remains significant."
-        ],
-        "question": "It is true that thrombolysis should be withheld due to bleeding risk?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Follow-up imaging shows no intracranial hemorrhage.",
-          "Bleeding markers normalize after supportive care."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that thrombolysis can now be safely administered?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Post-thrombolysis, the patient shows significant neurological improvement.",
-          "Ongoing monitoring confirms no rebleeding."
-        ],
-        "rules": [
-          "R5: Positive post-thrombolysis outcomes reinforce the decision to proceed cautiously."
-        ],
-        "preferences": [],
-        "question": "It is true that the overall management was successful?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The patient develops a fever and elevated white blood cell count.",
-          "Lumbar puncture rules out meningitis."
-        ],
-        "rules": [
-          "R6: Post-stroke fever may be due to aspiration pneumonia or systemic inflammation."
-        ],
-        "preferences": [
-          "P3: The family wishes to avoid unnecessary antibiotics."
-        ],
-        "question": "It is true that antibiotics should be withheld until a source is identified?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Chest X-ray confirms aspiration pneumonia.",
-          "Antibiotics are initiated with clinical improvement."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the infection was appropriately managed?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient H (Gastroenterology) presents with acute pancreatitis symptoms.",
-      "Elevated serum amylase and lipase levels confirm the diagnosis."
-    ],
-    "rules": [
-      "R1: Standard management of acute pancreatitis is supportive care with fluids and pain control.",
-      "R2: Early enteral feeding is recommended if the patient remains stable."
-    ],
-    "preferences": [
-      "P1: Patient H prefers to avoid invasive procedures."
-    ],
-    "question": "It is true that Patient H should be managed with supportive care alone.",
+    "question": "Should the clinic expand its telehealth services to address the physician shortage?",
     "label": true,
     "updates": [
       {
         "facts": [
-          "The patient develops hypotension despite fluid resuscitation.",
-          "CT imaging suggests necrotizing pancreatitis."
+          "Recent surveys show that 60% of the community lacks reliable internet access.",
+          "The nearest hospital is 45 miles away from the community."
         ],
         "rules": [
-          "R3: In necrotizing pancreatitis with hemodynamic instability, supportive care alone is inadequate.",
-          "R4: Aggressive intervention is indicated."
+          "Rule 3: Healthcare solutions must be accessible to all community members regardless of technological capabilities."
         ],
         "preferences": [
-          "P2: Life-threatening instability overrides the preference to avoid invasive procedures."
+          "Preference 1: In-person care is preferred for comprehensive health assessments.",
+          "Preference 2: Solutions should address immediate healthcare needs while working toward long-term sustainability."
         ],
-        "question": "It is true that supportive care alone is no longer sufficient?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The patient undergoes minimally invasive necrosectomy.",
-          "Post-procedure, the patient stabilizes."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the chosen intervention improved patient outcomes?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Long-term follow-up indicates improved pancreatic function and reduced pain.",
-          "Nutritional status has gradually normalized."
-        ],
-        "rules": [
-          "R5: Successful necrosectomy should lead to overall clinical improvement and recovery."
-        ],
-        "preferences": [],
-        "question": "It is true that the long-term prognosis is favorable?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Patient H develops new-onset diabetes mellitus due to pancreatic damage.",
-          "HbA1c is elevated at 8.0%."
-        ],
-        "rules": [
-          "R6: Post-pancreatitis diabetes requires glycemic management similar to type 2 diabetes."
-        ],
-        "preferences": [
-          "P3: Patient H still prefers oral medications over insulin."
-        ],
-        "question": "It is true that metformin should be initiated for glycemic control?",
-        "label": true
-      },
-      {
-        "facts": [
-          "With metformin and dietary changes, HbA1c drops to 7.2%.",
-          "No further pancreatic complications occur."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the diabetes management plan is effective?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient I (Critical Care) is admitted to the ICU with septic shock.",
-      "Broad-spectrum antibiotics and vasopressors are initiated."
-    ],
-    "rules": [
-      "R1: Early goal-directed therapy is critical in septic shock.",
-      "R2: Fluid resuscitation must be balanced to avoid overload."
-    ],
-    "preferences": [
-      "P1: Patient I's family emphasizes minimizing long-term organ damage."
-    ],
-    "question": "It is true that Patient I should receive aggressive fluid resuscitation immediately.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Echocardiography shows reduced ejection fraction.",
-          "Excessive fluids may worsen pulmonary edema."
-        ],
-        "rules": [
-          "R3: In patients with compromised cardiac function, cautious fluid management is warranted.",
-          "R4: Insufficient fluid resuscitation increases mortality."
-        ],
-        "preferences": [
-          "P2: Given the cardiac findings, a conservative fluid strategy is preferred."
-        ],
-        "question": "It is true that a conservative fluid strategy should be employed?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Vasopressor support is titrated to maintain target mean arterial pressure.",
-          "The patient's hemodynamics improve gradually."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the balanced approach has stabilized Patient I?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Subsequent laboratory markers show improved perfusion and reduced lactate levels.",
-          "The patient's renal function stabilizes."
-        ],
-        "rules": [
-          "R5: Improvements in laboratory markers confirm effective resuscitation."
-        ],
-        "preferences": [],
-        "question": "It is true that the overall management has led to clinical improvement?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Blood cultures return positive for multidrug-resistant bacteria.",
-          "Current antibiotics are ineffective against the identified pathogen."
-        ],
-        "rules": [
-          "R6: Antibiotics must be adjusted based on culture results to avoid treatment failure."
-        ],
-        "preferences": [
-          "P3: The family agrees to escalate antibiotics despite potential side effects."
-        ],
-        "question": "It is true that the antibiotic regimen should be changed immediately?",
-        "label": true
-      },
-      {
-        "facts": [
-          "With adjusted antibiotics, the infection clears.",
-          "The patient is weaned off vasopressors and extubated."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the sepsis has resolved adequately for ICU discharge?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Patient J (Infectious Diseases) presents with high fever, severe body aches, and warning signs of dengue hemorrhagic fever.",
-      "Laboratory tests confirm severe dengue with thrombocytopenia."
-    ],
-    "rules": [
-      "R1: In severe dengue, aggressive fluid hydration is generally recommended.",
-      "R2: However, if signs of capillary leak or pulmonary edema appear, fluid management should be cautious."
-    ],
-    "preferences": [
-      "P1: Patient J prefers to avoid complications related to fluid overload."
-    ],
-    "question": "It is true that Patient J should receive aggressive fluid hydration.",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Hematocrit levels are rising and there are signs of capillary leak.",
-          "Early indications suggest risk of pulmonary edema."
-        ],
-        "rules": [
-          "R3: A rising hematocrit and capillary leak contraindicate aggressive hydration.",
-          "R4: Cautious fluid management is required in the presence of leakage."
-        ],
-        "preferences": [
-          "P2: Avoiding pulmonary edema is prioritized over aggressive hydration."
-        ],
-        "question": "It is true that aggressive hydration should be withheld in favor of caution?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The patient remains hypotensive despite cautious hydration.",
-          "A controlled fluid bolus is administered to stabilize blood pressure."
-        ],
-        "rules": [
-          "R5: In hypotensive patients, a controlled fluid bolus may be required even during cautious management."
-        ],
-        "preferences": [],
-        "question": "It is true that a fluid bolus is indicated to stabilize the patient?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Follow-up shows stable vital signs and improved hematocrit levels.",
-          "The patient exhibits no signs of pulmonary edema post-bolus."
-        ],
-        "rules": [],
-        "preferences": [],
-        "question": "It is true that the current management strategy is effective?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The patient's condition improves further over the next 48 hours.",
-          "Platelet count begins to recover."
-        ],
-        "rules": [
-          "R6: Ongoing improvement and rising platelets indicate recovery from dengue hemorrhagic fever."
-        ],
-        "preferences": [],
-        "question": "It is true that the prognosis for Patient J is now favorable?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Patient J develops secondary bacterial infection.",
-          "Antibiotics are initiated promptly."
-        ],
-        "rules": [
-          "R7: Secondary infections in dengue require prompt antibiotic therapy."
-        ],
-        "preferences": [
-          "P3: Patient J wishes to avoid prolonged hospitalization."
-        ],
-        "question": "It is true that outpatient oral antibiotics would suffice for this infection?",
+        "question": "Should the clinic still prioritize telehealth expansion given the internet access issues?",
         "label": false
+      },
+      {
+        "facts": [
+          "A local technology company has offered to establish community internet hubs for telehealth access.",
+          "Two neighboring clinics have agreed to send physicians for rotating in-person visits twice weekly."
+        ],
+        "rules": [
+          "Rule 4: Community partnerships must maintain patient privacy and comply with healthcare regulations."
+        ],
+        "preferences": [
+          "Preference 1: In-person care is preferred for comprehensive health assessments.",
+          "Preference 2: Solutions should address immediate healthcare needs while working toward long-term sustainability.",
+          "Preference 3: Local resources and partnerships should be leveraged when possible."
+        ],
+        "question": "Should the clinic implement both the internet hub solution and rotating physician visits?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The technology company's internet hubs have been delayed by equipment shortages.",
+          "One of the neighboring clinics has withdrawn from the rotating physician agreement due to staffing issues."
+        ],
+        "rules": [
+          "Rule 5: Contingency plans must be developed for essential healthcare services."
+        ],
+        "preferences": [
+          "Preference 1: In-person care is preferred for comprehensive health assessments.",
+          "Preference 2: Solutions should address immediate healthcare needs while working toward long-term sustainability.",
+          "Preference 3: Local resources and partnerships should be leveraged when possible.",
+          "Preference 4: Consistency in care provider relationships improves patient outcomes."
+        ],
+        "question": "Should the clinic hire a full-time nurse practitioner to compensate for the reduced physician visits?",
+        "label": true
+      },
+      {
+        "facts": [
+          "State regulations have been updated to expand the scope of practice for nurse practitioners.",
+          "A federal grant for rural healthcare has become available, but applications close in two weeks."
+        ],
+        "rules": [
+          "Rule 6: Grant applications require documented evidence of community healthcare needs and proposed solutions."
+        ],
+        "preferences": [
+          "Preference 1: In-person care is preferred for comprehensive health assessments.",
+          "Preference 2: Solutions should address immediate healthcare needs while working toward long-term sustainability.",
+          "Preference 3: Local resources and partnerships should be leveraged when possible.",
+          "Preference 4: Consistency in care provider relationships improves patient outcomes.",
+          "Preference 5: External funding should be pursued when it aligns with community healthcare goals."
+        ],
+        "question": "Should the clinic prioritize hiring additional nurse practitioners over applying for the federal grant?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A new antibiotic-resistant infection has been identified in several hospital patients.",
+      "The infection spreads through direct contact and contaminated surfaces."
+    ],
+    "rules": [
+      "Rule 1: Infection control protocols must be implemented immediately upon identification of contagious pathogens.",
+      "Rule 2: Healthcare workers must use appropriate personal protective equipment when treating infected patients."
+    ],
+    "preferences": [
+      "Preference 1: Patient isolation should be minimized when possible for psychological well-being."
+    ],
+    "question": "Should all patients with the infection be moved to a dedicated isolation ward?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The hospital has limited isolation rooms available.",
+          "The infection has been identified in patients across four different departments."
+        ],
+        "rules": [
+          "Rule 3: When isolation resources are limited, risk stratification must be used to prioritize highest-risk cases."
+        ],
+        "preferences": [
+          "Preference 1: Patient isolation should be minimized when possible for psychological well-being.",
+          "Preference 2: Containing the spread of the infection is the highest priority."
+        ],
+        "question": "Should the hospital convert an entire wing into a temporary isolation area?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Converting the wing would require postponing 35 scheduled surgeries.",
+          "A specialized disinfection protocol has been shown to reduce surface contamination by 90%."
+        ],
+        "rules": [
+          "Rule 4: Non-emergency procedures may be postponed during infection outbreaks if necessary."
+        ],
+        "preferences": [
+          "Preference 1: Patient isolation should be minimized when possible for psychological well-being.",
+          "Preference 2: Containing the spread of the infection is the highest priority.",
+          "Preference 3: Disruption to scheduled care should be minimized."
+        ],
+        "question": "Should the hospital implement the specialized disinfection protocol instead of converting the wing?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Three healthcare workers have now tested positive for the infection despite using standard PPE.",
+          "A shortage of specialized PPE is expected within the next week."
+        ],
+        "rules": [
+          "Rule 5: Staff who test positive must be furloughed until medically cleared to return."
+        ],
+        "preferences": [
+          "Preference 1: Patient isolation should be minimized when possible for psychological well-being.",
+          "Preference 2: Containing the spread of the infection is the highest priority.",
+          "Preference 3: Disruption to scheduled care should be minimized.",
+          "Preference 4: Healthcare worker safety cannot be compromised."
+        ],
+        "question": "Should the hospital request emergency PPE supplies from the regional healthcare coalition?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A research laboratory has developed a rapid test that can detect the infection within 30 minutes.",
+          "The test is experimental but has shown 95% accuracy in preliminary studies."
+        ],
+        "rules": [
+          "Rule 6: Experimental diagnostic tests require emergency use authorization during outbreaks."
+        ],
+        "preferences": [
+          "Preference 1: Patient isolation should be minimized when possible for psychological well-being.",
+          "Preference 2: Containing the spread of the infection is the highest priority.",
+          "Preference 3: Disruption to scheduled care should be minimized.",
+          "Preference 4: Healthcare worker safety cannot be compromised.",
+          "Preference 5: Rapid identification of cases improves containment efforts."
+        ],
+        "question": "Should the hospital apply for emergency authorization to use the experimental rapid test?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A regional hospital network is implementing a new electronic health record (EHR) system.",
+      "The current EHR system is outdated and lacks interoperability with other healthcare facilities."
+    ],
+    "rules": [
+      "Rule 1: Patient data must be securely transferred from the old system to the new system.",
+      "Rule 2: Healthcare providers must receive training on the new EHR system."
+    ],
+    "preferences": [
+      "Preference 1: Minimal disruption to patient care during the transition."
+    ],
+    "question": "Should the hospital implement the new EHR system all at once or in phases?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Several critical departments have expressed concern about the learning curve for the new system.",
+          "The vendor offers a 15% discount if implementation occurs network-wide within 60 days."
+        ],
+        "rules": [
+          "Rule 3: Department heads must sign off on readiness before implementation in their areas."
+        ],
+        "preferences": [
+          "Preference 1: Minimal disruption to patient care during the transition.",
+          "Preference 2: Cost efficiency is important for the hospital network's financial health."
+        ],
+        "question": "Should the hospital prioritize the discount by implementing the system quickly across all departments?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A pilot implementation in the outpatient clinic revealed several software bugs affecting medication ordering.",
+          "The vendor has promised fixes within 14 days but cannot guarantee all issues will be resolved."
+        ],
+        "rules": [
+          "Rule 4: Patient safety issues identified during system implementation must be resolved before continuing rollout."
+        ],
+        "preferences": [
+          "Preference 1: Minimal disruption to patient care during the transition.",
+          "Preference 2: Cost efficiency is important for the hospital network's financial health.",
+          "Preference 3: Patient safety cannot be compromised for implementation speed."
+        ],
+        "question": "Should the hospital delay the full implementation until all medication ordering bugs are fixed?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The current EHR system experienced a major server failure, resulting in limited access to historical patient data.",
+          "Emergency backup systems have restored basic functionality but with limited features."
+        ],
+        "rules": [
+          "Rule 5: In the event of critical system failures, contingency protocols must be activated."
+        ],
+        "preferences": [
+          "Preference 1: Minimal disruption to patient care during the transition.",
+          "Preference 2: Cost efficiency is important for the hospital network's financial health.",
+          "Preference 3: Patient safety cannot be compromised for implementation speed.",
+          "Preference 4: Access to complete patient records is essential for clinical decision-making."
+        ],
+        "question": "Should the hospital accelerate implementation of the new EHR system despite unresolved bugs?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The vendor has deployed an emergency patch that resolves the critical medication ordering issues.",
+          "Staff from a recently implemented department report 30% faster documentation times after two weeks of use."
+        ],
+        "rules": [
+          "Rule 6: Post-implementation performance metrics must be monitored and evaluated."
+        ],
+        "preferences": [
+          "Preference 1: Minimal disruption to patient care during the transition.",
+          "Preference 2: Cost efficiency is important for the hospital network's financial health.",
+          "Preference 3: Patient safety cannot be compromised for implementation speed.",
+          "Preference 4: Access to complete patient records is essential for clinical decision-making.",
+          "Preference 5: Workflow efficiency improvements should be prioritized."
+        ],
+        "question": "Should the hospital proceed with implementing the new EHR system in the critical care departments?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A competing hospital network experienced a ransomware attack targeting the same EHR vendor.",
+          "Cybersecurity experts have identified potential vulnerabilities in the new system's remote access features."
+        ],
+        "rules": [
+          "Rule 7: Security vulnerabilities must be addressed before enabling affected system components."
+        ],
+        "preferences": [
+          "Preference 1: Minimal disruption to patient care during the transition.",
+          "Preference 2: Cost efficiency is important for the hospital network's financial health.",
+          "Preference 3: Patient safety cannot be compromised for implementation speed.",
+          "Preference 4: Access to complete patient records is essential for clinical decision-making.",
+          "Preference 5: Workflow efficiency improvements should be prioritized.",
+          "Preference 6: Data security must be assured before full implementation."
+        ],
+        "question": "Should the hospital disable remote access features until security vulnerabilities are addressed?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A metropolitan hospital is experiencing severe overcrowding in its emergency department.",
+      "Average wait times have increased to over 6 hours for non-critical patients."
+    ],
+    "rules": [
+      "Rule 1: Patients must be triaged according to medical urgency.",
+      "Rule 2: Emergency departments must maintain capacity for true emergencies."
+    ],
+    "preferences": [
+      "Preference 1: Patient satisfaction is an important metric for hospital performance."
+    ],
+    "question": "Should the hospital implement a fast-track system for minor injuries and illnesses?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The fast-track system requires reassigning two nurses from the main emergency department.",
+          "A community urgent care center recently closed, increasing ER visits by 15%."
+        ],
+        "rules": [
+          "Rule 3: Staffing allocations must maintain minimum safety standards in all areas."
+        ],
+        "preferences": [
+          "Preference 1: Patient satisfaction is an important metric for hospital performance.",
+          "Preference 2: Efficient resource utilization is necessary during capacity constraints."
+        ],
+        "question": "Should the hospital still implement the fast-track system given the staffing impact?",
+        "label": false
+      },
+      {
+        "facts": [
+          "An analysis shows that 40% of ER visits are for conditions that could be treated in primary care settings.",
+          "The hospital has vacant clinic space that could be repurposed temporarily."
+        ],
+        "rules": [
+          "Rule 4: Repurposing clinical spaces requires approval from safety and compliance officers."
+        ],
+        "preferences": [
+          "Preference 1: Patient satisfaction is an important metric for hospital performance.",
+          "Preference 2: Efficient resource utilization is necessary during capacity constraints.",
+          "Preference 3: Innovative solutions to capacity issues are encouraged if they maintain care standards."
+        ],
+        "question": "Should the hospital convert the vacant clinic space into an urgent care center?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The hospital's board has approved funding for five additional nursing positions.",
+          "A pilot telemedicine triage program at a similar hospital reduced unnecessary ER visits by 25%."
+        ],
+        "rules": [
+          "Rule 5: New clinical programs require protocols and staff training before implementation."
+        ],
+        "preferences": [
+          "Preference 1: Patient satisfaction is an important metric for hospital performance.",
+          "Preference 2: Efficient resource utilization is necessary during capacity constraints.",
+          "Preference 3: Innovative solutions to capacity issues are encouraged if they maintain care standards.",
+          "Preference 4: Technology-enabled solutions should be considered when they improve efficiency."
+        ],
+        "question": "Should the hospital prioritize implementing the telemedicine triage program over staffing the urgent care center?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The urgent care center has been operational for one month and has reduced ER wait times by 20%.",
+          "Staff report burnout due to continued high patient volumes across both facilities."
+        ],
+        "rules": [
+          "Rule 6: Employee wellbeing programs must be implemented when staff burnout is identified."
+        ],
+        "preferences": [
+          "Preference 1: Patient satisfaction is an important metric for hospital performance.",
+          "Preference 2: Efficient resource utilization is necessary during capacity constraints.",
+          "Preference 3: Innovative solutions to capacity issues are encouraged if they maintain care standards.",
+          "Preference 4: Technology-enabled solutions should be considered when they improve efficiency.",
+          "Preference 5: Staff wellbeing is essential for sustainable healthcare delivery."
+        ],
+        "question": "Should the hospital reduce operating hours of the urgent care center to address staff burnout?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Three community physician groups have offered to send providers to help staff the urgent care center on a rotating basis.",
+          "The hospital's reputation for patient care has improved since implementing the urgent care solution."
+        ],
+        "rules": [
+          "Rule 7: External providers must be credentialed according to hospital standards."
+        ],
+        "preferences": [
+          "Preference 1: Patient satisfaction is an important metric for hospital performance.",
+          "Preference 2: Efficient resource utilization is necessary during capacity constraints.",
+          "Preference 3: Innovative solutions to capacity issues are encouraged if they maintain care standards.",
+          "Preference 4: Technology-enabled solutions should be considered when they improve efficiency.",
+          "Preference 5: Staff wellbeing is essential for sustainable healthcare delivery.",
+          "Preference 6: Community partnerships that enhance capacity should be pursued."
+        ],
+        "question": "Should the hospital accept the community physician groups' offer to help staff the urgent care center?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A large healthcare system is experiencing medication administration errors across multiple facilities.",
+      "Current medication protocols rely heavily on manual verification processes."
+    ],
+    "rules": [
+      "Rule 1: All medication errors must be reported through the incident reporting system.",
+      "Rule 2: Root cause analysis must be conducted for serious medication errors."
+    ],
+    "preferences": [
+      "Preference 1: Patient safety is the highest priority in medication administration."
+    ],
+    "question": "Should the healthcare system implement an electronic medication administration record (eMAR) system?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The eMAR system costs $3.5 million to implement across all facilities.",
+          "Similar healthcare systems reported a 50% reduction in medication errors after implementing eMAR."
+        ],
+        "rules": [
+          "Rule 3: Capital expenditures exceeding $1 million require board approval and financial impact analysis."
+        ],
+        "preferences": [
+          "Preference 1: Patient safety is the highest priority in medication administration.",
+          "Preference 2: Technology investments should demonstrate clear return on investment."
+        ],
+        "question": "Should the healthcare system proceed with the full eMAR implementation despite the cost?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Nurses at two facilities have expressed concerns about the eMAR system's user interface complexity.",
+          "A pilot implementation at one facility showed a temporary 15% increase in medication administration time."
+        ],
+        "rules": [
+          "Rule 4: New clinical systems must not significantly increase workload for frontline staff."
+        ],
+        "preferences": [
+          "Preference 1: Patient safety is the highest priority in medication administration.",
+          "Preference 2: Technology investments should demonstrate clear return on investment.",
+          "Preference 3: Clinical workflow efficiency should be maintained or improved with new systems."
+        ],
+        "question": "Should the healthcare system modify the implementation timeline to allow for additional training?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The eMAR vendor has offered an updated version with a simplified interface at no additional cost.",
+          "Implementation at three facilities would need to be delayed by two months to accommodate the update."
+        ],
+        "rules": [
+          "Rule 5: System updates must undergo quality assurance testing before deployment."
+        ],
+        "preferences": [
+          "Preference 1: Patient safety is the highest priority in medication administration.",
+          "Preference 2: Technology investments should demonstrate clear return on investment.",
+          "Preference 3: Clinical workflow efficiency should be maintained or improved with new systems.",
+          "Preference 4: User feedback should be incorporated into system implementations when feasible."
+        ],
+        "question": "Should the healthcare system accept the updated version despite the implementation delay?",
+        "label": true
+      },
+      {
+        "facts": [
+          "During quality assurance testing, the updated eMAR system showed incompatibility with the existing pharmacy system.",
+          "A critical medication error occurred at one of the facilities still using the manual system, resulting in a serious patient safety event."
+        ],
+        "rules": [
+          "Rule 6: System integrations must be verified before clinical deployment."
+        ],
+        "preferences": [
+          "Preference 1: Patient safety is the highest priority in medication administration.",
+          "Preference 2: Technology investments should demonstrate clear return on investment.",
+          "Preference 3: Clinical workflow efficiency should be maintained or improved with new systems.",
+          "Preference 4: User feedback should be incorporated into system implementations when feasible.",
+          "Preference 5: Implementation timelines may be accelerated when current systems pose documented safety risks."
+        ],
+        "question": "Should the healthcare system implement the original eMAR version immediately at remaining facilities?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The vendor has developed an integration patch that resolves the compatibility issue with the pharmacy system.",
+          "The integration patch requires an additional two weeks of testing before deployment."
+        ],
+        "rules": [
+          "Rule 7: Emergency protocol changes may be implemented with expedited approval processes."
+        ],
+        "preferences": [
+          "Preference 1: Patient safety is the highest priority in medication administration.",
+          "Preference 2: Technology investments should demonstrate clear return on investment.",
+          "Preference 3: Clinical workflow efficiency should be maintained or improved with new systems.",
+          "Preference 4: User feedback should be incorporated into system implementations when feasible.",
+          "Preference 5: Implementation timelines may be accelerated when current systems pose documented safety risks.",
+          "Preference 6: Temporary manual safeguards are acceptable while technical solutions are finalized."
+        ],
+        "question": "Should the healthcare system implement additional manual safety checks while waiting for the integration patch?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Data from facilities using the original eMAR shows a 40% reduction in medication errors after three months.",
+          "Nursing satisfaction scores regarding medication administration have improved at facilities using the eMAR."
+        ],
+        "rules": [
+          "Rule 8: Performance metrics must be monitored continuously following new system implementations."
+        ],
+        "preferences": [
+          "Preference 1: Patient safety is the highest priority in medication administration.",
+          "Preference 2: Technology investments should demonstrate clear return on investment.",
+          "Preference 3: Clinical workflow efficiency should be maintained or improved with new systems.",
+          "Preference 4: User feedback should be incorporated into system implementations when feasible.",
+          "Preference 5: Implementation timelines may be accelerated when current systems pose documented safety risks.",
+          "Preference 6: Temporary manual safeguards are acceptable while technical solutions are finalized.",
+          "Preference 7: System standardization across facilities improves organizational efficiency."
+        ],
+        "question": "Should the healthcare system proceed with the updated eMAR version for remaining facilities once testing is complete?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A community hospital is located in an area with high rates of diabetes and cardiovascular disease.",
+      "Hospital readmission rates for these conditions exceed the national average."
+    ],
+    "rules": [
+      "Rule 1: Hospitals must implement evidence-based care protocols for chronic disease management.",
+      "Rule 2: Discharge planning must include follow-up care instructions and appointments."
+    ],
+    "preferences": [
+      "Preference 1: Reducing readmission rates is a strategic priority for the hospital."
+    ],
+    "question": "Should the hospital implement a transitional care program for high-risk patients?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The proposed transitional care program requires hiring specialized nurse coordinators.",
+          "Current nursing staff are already experiencing high workloads and turnover."
+        ],
+        "rules": [
+          "Rule 3: Staffing decisions must balance immediate patient care needs with long-term program sustainability."
+        ],
+        "preferences": [
+          "Preference 1: Reducing readmission rates is a strategic priority for the hospital.",
+          "Preference 2: Retention of current clinical staff is essential for care continuity."
+        ],
+        "question": "Should the hospital divert resources to hire specialized nurse coordinators for the transitional care program?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A local foundation has offered a two-year grant to fund the transitional care program.",
+          "Similar programs have shown 30% reductions in readmissions in comparable patient populations."
+        ],
+        "rules": [
+          "Rule 4: Grant-funded programs must have sustainability plans beyond the funding period."
+        ],
+        "preferences": [
+          "Preference 1: Reducing readmission rates is a strategic priority for the hospital.",
+          "Preference 2: Retention of current clinical staff is essential for care continuity.",
+          "Preference 3: External funding opportunities should be leveraged when aligned with hospital priorities."
+        ],
+        "question": "Should the hospital accept the foundation grant to implement the transitional care program?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Initial data shows that patients enrolled in the transitional care program have 25% fewer emergency department visits.",
+          "The program is experiencing difficulty recruiting patients, with only 40% of eligible patients enrolling."
+        ],
+        "rules": [
+          "Rule 5: Program enrollment strategies must respect patient autonomy while encouraging participation."
+        ],
+        "preferences": [
+          "Preference 1: Reducing readmission rates is a strategic priority for the hospital.",
+          "Preference 2: Retention of current clinical staff is essential for care continuity.",
+          "Preference 3: External funding opportunities should be leveraged when aligned with hospital priorities.",
+          "Preference 4: Programs should demonstrate measurable impact on target outcomes."
+        ],
+        "question": "Should the hospital modify the enrollment process to increase patient participation?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A survey of non-enrolled patients reveals transportation difficulties as the primary barrier to participation.",
+          "A local volunteer organization has offered to provide transportation services for program participants."
+        ],
+        "rules": [
+          "Rule 6: Partnership agreements with community organizations must define roles, responsibilities, and liability."
+        ],
+        "preferences": [
+          "Preference 1: Reducing readmission rates is a strategic priority for the hospital.",
+          "Preference 2: Retention of current clinical staff is essential for care continuity.",
+          "Preference 3: External funding opportunities should be leveraged when aligned with hospital priorities.",
+          "Preference 4: Programs should demonstrate measurable impact on target outcomes.",
+          "Preference 5: Addressing social determinants of health improves clinical outcomes."
+        ],
+        "question": "Should the hospital establish a formal partnership with the volunteer organization for transportation services?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The volunteer transportation program has increased program enrollment to 65% of eligible patients.",
+          "Two patients have reported privacy concerns about discussing health information while being transported with other patients."
+        ],
+        "rules": [
+          "Rule 7: Patient privacy must be maintained in all program components."
+        ],
+        "preferences": [
+          "Preference 1: Reducing readmission rates is a strategic priority for the hospital.",
+          "Preference 2: Retention of current clinical staff is essential for care continuity.",
+          "Preference 3: External funding opportunities should be leveraged when aligned with hospital priorities.",
+          "Preference 4: Programs should demonstrate measurable impact on target outcomes.",
+          "Preference 5: Addressing social determinants of health improves clinical outcomes.",
+          "Preference 6: Patient dignity and confidentiality must be preserved."
+        ],
+        "question": "Should the hospital transition to individual transportation services despite higher costs?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The foundation has indicated they cannot extend funding beyond the original two-year period.",
+          "Hospital financial projections show the program will reduce costs by reducing readmissions, but not enough to fully self-fund."
+        ],
+        "rules": [
+          "Rule 8: Programs demonstrating clinical effectiveness must be evaluated for alternative funding mechanisms."
+        ],
+        "preferences": [
+          "Preference 1: Reducing readmission rates is a strategic priority for the hospital.",
+          "Preference 2: Retention of current clinical staff is essential for care continuity.",
+          "Preference 3: External funding opportunities should be leveraged when aligned with hospital priorities.",
+          "Preference 4: Programs should demonstrate measurable impact on target outcomes.",
+          "Preference 5: Addressing social determinants of health improves clinical outcomes.",
+          "Preference 6: Patient dignity and confidentiality must be preserved.",
+          "Preference 7: Proven interventions should be sustained even when requiring internal resource allocation."
+        ],
+        "question": "Should the hospital commit to funding the transitional care program from its operational budget after the grant ends?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A pediatric hospital is experiencing a significant increase in mental health-related emergency department visits.",
+      "The hospital has limited specialized mental health resources for children and adolescents."
+    ],
+    "rules": [
+      "Rule 1: All patients must receive appropriate screening and assessment for mental health concerns.",
+      "Rule 2: Children in crisis must have access to immediate safety interventions."
+    ],
+    "preferences": [
+      "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment."
+    ],
+    "question": "Should the hospital establish a dedicated psychiatric emergency service for pediatric patients?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The nearest inpatient pediatric psychiatric facility is located 90 miles away and has a three-week waiting list.",
+          "The hospital's emergency department is not designed for extended psychiatric observation."
+        ],
+        "rules": [
+          "Rule 3: Facilities must be appropriate for the level of care being provided."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients."
+        ],
+        "question": "Should the hospital convert part of its general pediatric unit for psychiatric observation?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Nursing staff express concerns about lacking specialized training in pediatric psychiatric care.",
+          "A children's mental health foundation has offered to fund training programs for hospital staff."
+        ],
+        "rules": [
+          "Rule 4: Staff must have appropriate training for the populations they serve."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients.",
+          "Preference 3: Staff development in emerging need areas should be prioritized."
+        ],
+        "question": "Should the hospital accept the foundation's offer and implement comprehensive psychiatric training for all pediatric staff?",
+        "label": true
+      },
+      {
+        "facts": [
+          "After initial training, staff report continued discomfort managing patients with severe aggression.",
+          "Three safety incidents have occurred involving patients in psychological distress."
+        ],
+        "rules": [
+          "Rule 5: Safety protocols must address the specific risks associated with the patient population."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients.",
+          "Preference 3: Staff development in emerging need areas should be prioritized.",
+          "Preference 4: Both patient and staff safety must be ensured in all care environments."
+        ],
+        "question": "Should the hospital implement specialized safety protocols for aggressive patients despite concerns about restrictive interventions?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A telehealth psychiatric consultation service has become available for real-time support.",
+          "The converted unit is operating at 95% capacity with an average length of stay of 72 hours."
+        ],
+        "rules": [
+          "Rule 6: Telehealth services must comply with licensure and practice standards."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients.",
+          "Preference 3: Staff development in emerging need areas should be prioritized.",
+          "Preference 4: Both patient and staff safety must be ensured in all care environments.",
+          "Preference 5: Technology solutions should complement but not replace in-person care when needed."
+        ],
+        "question": "Should the hospital implement the telehealth psychiatric consultation service?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Data shows that 40% of mental health admissions are related to suicide attempts or ideation.",
+          "A community mental health center has proposed a joint intensive outpatient program for suicidal youth."
+        ],
+        "rules": [
+          "Rule 7: Suicide prevention programs must follow evidence-based protocols."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients.",
+          "Preference 3: Staff development in emerging need areas should be prioritized.",
+          "Preference 4: Both patient and staff safety must be ensured in all care environments.",
+          "Preference 5: Technology solutions should complement but not replace in-person care when needed.",
+          "Preference 6: Prevention and early intervention reduce the need for crisis services."
+        ],
+        "question": "Should the hospital prioritize the joint intensive outpatient program for suicidal youth?",
+        "label": true
+      },
+      {
+        "facts": [
+          "State regulations have changed, requiring dedicated psychiatric units to meet additional physical plant requirements.",
+          "Retrofitting the converted unit to meet new regulations would cost $1.2 million."
+        ],
+        "rules": [
+          "Rule 8: Healthcare facilities must comply with all regulatory requirements."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients.",
+          "Preference 3: Staff development in emerging need areas should be prioritized.",
+          "Preference 4: Both patient and staff safety must be ensured in all care environments.",
+          "Preference 5: Technology solutions should complement but not replace in-person care when needed.",
+          "Preference 6: Prevention and early intervention reduce the need for crisis services.",
+          "Preference 7: Capital investments should address long-term community needs."
+        ],
+        "question": "Should the hospital invest in retrofitting the unit to meet new psychiatric unit regulations?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Three neighboring hospitals have closed their pediatric units, increasing overall pediatric admissions by 30%.",
+          "The psychiatric observation unit is reducing emergency department boarding times for mental health patients."
+        ],
+        "rules": [
+          "Rule 9: Resource allocation decisions must consider population-level health needs."
+        ],
+        "preferences": [
+          "Preference 1: Children should receive mental healthcare in the least restrictive appropriate environment.",
+          "Preference 2: Geographic proximity to family support systems benefits pediatric patients.",
+          "Preference 3: Staff development in emerging need areas should be prioritized.",
+          "Preference 4: Both patient and staff safety must be ensured in all care environments.",
+          "Preference 5: Technology solutions should complement but not replace in-person care when needed.",
+          "Preference 6: Prevention and early intervention reduce the need for crisis services.",
+          "Preference 7: Capital investments should address long-term community needs.",
+          "Preference 8: Balanced clinical services should be maintained across specialties."
+        ],
+        "question": "Should the hospital expand the psychiatric unit despite increased demand for general pediatric beds?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "A rehabilitation center specializes in spinal cord injury recovery.",
+      "Traditional rehabilitation protocols require in-person therapy sessions."
+    ],
+    "rules": [
+      "Rule 1: All rehabilitation therapies must be evidence-based and appropriate for the patient's condition.",
+      "Rule 2: Patient progress must be documented and measured using standardized assessments."
+    ],
+    "preferences": [
+      "Preference 1: Maximizing functional independence is the primary goal of rehabilitation."
+    ],
+    "question": "Should the rehabilitation center implement virtual reality-based therapy alongside traditional approaches?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "Initial studies show virtual reality therapy improves patient engagement by 35%.",
+          "The virtual reality equipment costs $75,000, with additional maintenance and software licensing fees."
+        ],
+        "rules": [
+          "Rule 3: New therapeutic technologies must demonstrate clinical efficacy before widespread implementation."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes."
+        ],
+        "question": "Should the center purchase virtual reality equipment for all therapy departments?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A six-month pilot program shows improved upper extremity function in patients using virtual reality therapy.",
+          "Therapists report requiring additional training to effectively utilize the virtual reality system."
+        ],
+        "rules": [
+          "Rule 4: Therapists must be properly trained and competent in all therapeutic modalities they administer."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes.",
+          "Preference 3: Therapist comfort and competence with treatment modalities affects quality of care."
+        ],
+        "question": "Should the center expand the virtual reality program to all eligible patients?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Some patients report motion sickness and discomfort with the virtual reality headsets.",
+          "A new version of the equipment with reduced side effects is expected to be released in 8 months."
+        ],
+        "rules": [
+          "Rule 5: Patient comfort and tolerance must be considered in therapy selection."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes.",
+          "Preference 3: Therapist comfort and competence with treatment modalities affects quality of care.",
+          "Preference 4: Patient experience and compliance influence rehabilitation effectiveness."
+        ],
+        "question": "Should the center wait for the new equipment version before expanding the program?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Insurance companies have begun denying coverage for virtual reality therapy, citing insufficient evidence.",
+          "Several patients have offered to self-pay for virtual reality sessions due to perceived benefits."
+        ],
+        "rules": [
+          "Rule 6: Financial barriers should not prevent access to beneficial therapies when possible."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes.",
+          "Preference 3: Therapist comfort and competence with treatment modalities affects quality of care.",
+          "Preference 4: Patient experience and compliance influence rehabilitation effectiveness.",
+          "Preference 5: Financial sustainability of programs must be considered alongside clinical benefits."
+        ],
+        "question": "Should the center offer a self-pay option for virtual reality therapy?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A research university has offered to partner with the center to study virtual reality therapy outcomes.",
+          "The partnership would provide additional equipment and research personnel at no cost to the center."
+        ],
+        "rules": [
+          "Rule 7: Research partnerships must protect patient rights and privacy."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes.",
+          "Preference 3: Therapist comfort and competence with treatment modalities affects quality of care.",
+          "Preference 4: Patient experience and compliance influence rehabilitation effectiveness.",
+          "Preference 5: Financial sustainability of programs must be considered alongside clinical benefits.",
+          "Preference 6: Contributing to evidence-based practice benefits the entire rehabilitation field."
+        ],
+        "question": "Should the center enter into the research partnership for virtual reality therapy?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The research protocol requires patients to commit to three additional hours of therapy weekly.",
+          "Current patient schedules are already intensive, with many reporting fatigue."
+        ],
+        "rules": [
+          "Rule 8: Therapy intensity must be balanced with patient tolerance and recovery needs."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes.",
+          "Preference 3: Therapist comfort and competence with treatment modalities affects quality of care.",
+          "Preference 4: Patient experience and compliance influence rehabilitation effectiveness.",
+          "Preference 5: Financial sustainability of programs must be considered alongside clinical benefits.",
+          "Preference 6: Contributing to evidence-based practice benefits the entire rehabilitation field.",
+          "Preference 7: Patient well-being includes psychological health and appropriate rest periods."
+        ],
+        "question": "Should the center modify the research protocol to reduce additional therapy time?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Preliminary research results show significant improvements in patients using virtual reality therapy.",
+          "A major insurance provider has agreed to cover virtual reality therapy as part of a special arrangement."
+        ],
+        "rules": [
+          "Rule 9: Treatment plans should incorporate the most effective evidence-based interventions available."
+        ],
+        "preferences": [
+          "Preference 1: Maximizing functional independence is the primary goal of rehabilitation.",
+          "Preference 2: Innovative approaches should be considered when they may enhance outcomes.",
+          "Preference 3: Therapist comfort and competence with treatment modalities affects quality of care.",
+          "Preference 4: Patient experience and compliance influence rehabilitation effectiveness.",
+          "Preference 5: Financial sustainability of programs must be considered alongside clinical benefits.",
+          "Preference 6: Contributing to evidence-based practice benefits the entire rehabilitation field.",
+          "Preference 7: Patient well-being includes psychological health and appropriate rest periods.",
+          "Preference 8: Equitable access to effective therapies should be prioritized."
+        ],
+        "question": "Should virtual reality therapy now be incorporated as a standard component of care for all eligible patients?",
+        "label": true
       }
     ]
   }
