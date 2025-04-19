@@ -1,1001 +1,1745 @@
 [
   {
-      "facts": [
-        "Alex is a 35-year-old professional who has expressed a desire to improve his work-life balance.",
-        "He recently attended a mindfulness workshop and reported initial insights on stress reduction.",
-        "Research in human behavior indicates that positive firsthand experiences with mindfulness techniques tend to encourage lasting practice."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to sustain behavioral changes when they observe tangible benefits.",
-        "R2: Social reinforcement from peers and professionals increases the likelihood of continued self-improvement efforts.",
-        "R3: Consistent positive personal experiences with an intervention increase commitment to long-term practice."
-      ],
-      "preferences": [
-        "P1: Direct personal benefits are prioritized over transient external pressures.",
-        "P2: Reinforcement from both professional feedback and peer acknowledgment can further solidify new habits."
-      ],
-      "question": "Will Alex engage in a long-term mindfulness practice program?",
-      "label": true,
-      "updates": [
-        {
-          "facts": [
-            "One month after the workshop, Alex reported a moderate reduction in his stress levels.",
-            "Close colleagues noticed subtle yet positive behavioral changes in Alex.",
-            "A follow-up evaluation revealed that the mindfulness techniques helped him adopt healthier daily routines."
-          ],
-          "rules": [
-            "R4: Observable improvements and positive peer acknowledgment are key drivers for continuing new behaviors.",
-            "R5: Early positive experiences act as a catalyst for deeper commitment to self-improvement practices."
-          ],
-          "preferences": [
-            "P3: When both personal benefits and social recognition are evident, continuation of new behavioral routines is strongly favored."
-          ],
-          "question": "Will Alex engage in a long-term mindfulness practice program?",
-          "label": true
-        },
-        {
-          "facts": [
-            "A recent highly stressful incident at work led to a temporary spike in Alex's anxiety levels.",
-            "Despite the incident, Alex used mindfulness techniques as a first-response to manage his reaction.",
-            "Some psychologists caution that extreme stress can prompt reversion to old, less effective coping mechanisms."
-          ],
-          "rules": [
-            "R6: In acute stress situations, individuals may rely on familiar coping mechanisms unless the new habit is well-established.",
-            "R7: Successful application of mindfulness during stressful periods reinforces its long-term adoption."
-          ],
-          "preferences": [
-            "P4: Although acute stress might challenge new habits, effective immediate coping using the new techniques supports sustainability."
-          ],
-          "question": "Will Alex engage in a long-term mindfulness practice program?",
-          "label": true
-        },
-        {
-          "facts": [
-            "Six-month follow-up surveys show that Alex's regular mindfulness practice has significantly reduced his tendency to revert to stress-based behaviors.",
-            "Alex has begun sharing his mindfulness experiences on social media, garnering supportive feedback from a broader community.",
-            "His sustained improvements in work-life balance and overall well-being have been noted by his professional network."
-          ],
-          "rules": [
-            "R8: Longitudinal evidence of behavioral change is decisive in confirming the adoption of a new habit.",
-            "R9: External social validation through community and professional endorsement reinforces commitment to behavioral changes."
-          ],
-          "preferences": [
-            "P5: When long-term benefits are clearly demonstrated, they override temporary setbacks and initial challenges."
-          ],
-          "question": "Will Alex engage in a long-term mindfulness practice program?",
-          "label": true
-        }
-      ]
-  },
-  {
     "facts": [
-      "Thomas has been advised by his doctor to begin a regular exercise program to address his borderline high blood pressure.",
-      "Thomas has purchased a 12-month gym membership at a facility near his workplace.",
-      "Thomas has verbally committed to his spouse that he will exercise three times per week.",
-      "Thomas has historically abandoned new health initiatives within 4-6 weeks."
+      "Alex is a new employee at a tech company.",
+      "The company has a flexible work policy."
     ],
     "rules": [
-      "R1: Financial commitments increase the likelihood of sustained behavior change.",
-      "R2: Public commitments to close relationships enhance accountability for health behavior change.",
-      "R3: Past behavior patterns strongly predict future behavior consistency unless intervention strategies specifically address historical barriers."
+      "Rule 1: New employees must complete a 3-month probation period.",
+      "Rule 2: Flexible work allows choosing between office and remote work."
     ],
     "preferences": [
-      "P1: Medical necessity can override historical behavior patterns when the consequences are clearly understood.",
-      "P2: Multiple commitment mechanisms enhance probability of success more than any single approach."
+      "Preference 1: Alex prefers to work remotely most days."
     ],
-    "question": "Will Thomas maintain his exercise program for at least six months?",
+    "question": "Should Alex work remotely during the first month?",
     "label": false,
     "updates": [
       {
         "facts": [
-          "Thomas has joined a workplace wellness program that offers $50 monthly incentives for meeting exercise goals.",
-          "Thomas's spouse has agreed to exercise with him twice weekly.",
-          "Thomas has scheduled exercise sessions in his calendar as recurring appointments."
+          "Alex's manager has observed excellent performance in the first month.",
+          "The company is encouraging more in-office collaboration."
         ],
         "rules": [
-          "R4: Financial incentives that provide immediate rewards increase adherence to health behavior changes.",
-          "R5: Exercise with companionship significantly increases program retention rates.",
-          "R6: Implementation intentions (specific plans for when, where, and how to act) increase follow-through on health behaviors."
+          "Rule 3: Employees with excellent performance can request exceptions to standard policies."
         ],
         "preferences": [
-          "P3: Social support mechanisms are more effective than individual commitment strategies.",
-          "P4: Multiple reinforcement systems that address different motivation types can overcome historical behavior patterns."
+          "Preference 1: Alex prefers to work remotely most days.",
+          "Preference 2: Alex's team values face-to-face interaction."
         ],
-        "question": "Will Thomas maintain his exercise program for at least six months?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Thomas's workplace has announced a restructuring requiring him to commute an additional 30 minutes each way.",
-          "The wellness program incentive has been reduced to $25 monthly due to budget constraints.",
-          "Thomas missed four scheduled exercise sessions in the past two weeks."
-        ],
-        "rules": [
-          "R7: Time constraints are the most commonly cited barrier to maintaining exercise programs.",
-          "R8: Reduction in incentives reduces behavioral compliance proportionally to the percentage decrease.",
-          "R9: Missing multiple scheduled health behaviors in succession predicts program abandonment."
-        ],
-        "preferences": [
-          "P5: Practical barriers such as time constraints typically outweigh incentive and social support mechanisms.",
-          "P6: Initial behavior patterns within the first month predict long-term adherence with 70% accuracy."
-        ],
-        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "question": "Should Alex continue working remotely in the second month?",
         "label": false
       },
       {
         "facts": [
-          "Thomas has received results from recent medical tests showing his blood pressure has increased to clinical hypertension levels.",
-          "Thomas has adjusted his schedule to exercise during lunch breaks at his workplace gym.",
-          "Thomas's doctor has discussed potential medication requirements if lifestyle changes are not implemented."
+          "Alex has been diagnosed with a temporary health condition that makes commuting difficult.",
+          "The company has announced a new hybrid work model."
         ],
         "rules": [
-          "R10: Concrete evidence of health deterioration significantly increases health behavior compliance.",
-          "R11: Adaptation of exercise timing to fit current life circumstances increases program adherence.",
-          "R12: Desire to avoid medication is a strong motivator for lifestyle modification compliance."
+          "Rule 4: Medical accommodations supersede standard work policies."
         ],
         "preferences": [
-          "P7: Tangible health concerns outweigh inconvenience factors when consequences are immediate and serious.",
-          "P8: Adaptive strategies that address specific obstacles demonstrate higher success rates than rigid approaches."
+          "Preference 3: The company wants to support employee wellbeing."
         ],
-        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "question": "Should Alex work entirely remotely for the next two weeks?",
         "label": true
       },
       {
         "facts": [
-          "Thomas's spouse has injured their knee and can no longer participate in exercise sessions.",
-          "Thomas has been assigned a major project at work with deadlines that require occasional overtime.",
-          "Thomas has missed the past five scheduled exercise sessions."
+          "Alex's health has improved significantly.",
+          "A critical project deadline is approaching that requires team coordination."
         ],
         "rules": [
-          "R13: Loss of exercise companionship reduces program adherence by approximately 40%.",
-          "R14: Work demands that fluctuate unpredictably disrupt health behavior more than consistent time constraints.",
-          "R15: Consecutive missed sessions beyond four typically indicate pattern collapse rather than temporary disruption."
+          "Rule 5: Project deadlines may require temporary changes to work arrangements."
         ],
         "preferences": [
-          "P9: Work obligations typically take precedence over health behaviors during high-pressure periods.",
-          "P10: Multiple simultaneous disruptions to support systems predict behavior abandonment even when health consequences are understood."
+          "Preference 4: Alex now values both flexibility and team collaboration."
         ],
-        "question": "Will Thomas maintain his exercise program for at least six months?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Thomas has been prescribed blood pressure medication by his doctor with notable side effects.",
-          "Thomas has hired a personal trainer who provides accountability through twice-weekly sessions.",
-          "Thomas has found a substitute exercise partner in a coworker with similar health goals."
-        ],
-        "rules": [
-          "R16: Experiencing medication side effects increases motivation for lifestyle modifications by an average of 60%.",
-          "R17: Professional accountability with financial commitment provides stronger adherence than peer accountability.",
-          "R18: Replacement of lost support systems within 2 weeks prevents complete behavior abandonment."
-        ],
-        "preferences": [
-          "P11: Direct negative experiences with treatment alternatives strongly reinforce health behavior compliance.",
-          "P12: Professional support systems can compensate for most other adherence barriers when consistently applied."
-        ],
-        "question": "Will Thomas maintain his exercise program for at least six months?",
+        "question": "Should Alex work in the office for the project deadline week?",
         "label": true
       }
     ]
   },
   {
     "facts": [
-      "Olivia is considering purchasing a new electric vehicle priced at $45,000.",
-      "Olivia currently owns a 10-year-old gas-powered car with increasing maintenance costs.",
-      "Olivia has researched electric vehicles for 3 months and identified this specific model as her preference.",
-      "Olivia's annual income is $85,000 with monthly discretionary funds of approximately $800."
+      "Maya is a high school student with good grades.",
+      "Maya's school has a strict attendance policy."
     ],
     "rules": [
-      "R1: Major purchase decisions typically require the financial capacity to maintain regular payments without exceeding 15% of monthly income.",
-      "R2: Consumers replace vehicles when maintenance costs exceed 30% of the vehicle's current value within a 12-month period.",
-      "R3: Extended research periods (>2 months) typically indicate serious purchase intent and increase purchase probability."
+      "Rule 1: Students must maintain at least 80% attendance to participate in extracurricular activities.",
+      "Rule 2: Absences with medical documentation are excused."
     ],
     "preferences": [
-      "P1: Financial prudence takes precedence over consumer preferences when monthly payments would exceed available discretionary funds.",
-      "P2: Practical necessity outweighs financial constraints when current solutions become unreliable."
+      "Preference 1: Maya wants to join the debate team, which meets after school twice a week."
     ],
-    "question": "Will Olivia purchase the electric vehicle within the next month?",
-    "label": false,
+    "question": "Should Maya be allowed to join the debate team?",
+    "label": true,
     "updates": [
       {
         "facts": [
-          "The dealership has offered Olivia a financing option of $550 monthly payments for 72 months.",
-          "Olivia's current vehicle has broken down twice in the past month, requiring $1,200 in repairs.",
-          "A government tax incentive program has just been announced, offering $7,500 rebates on electric vehicle purchases."
+          "Maya has missed school for three days due to a family emergency.",
+          "The debate team is preparing for a major competition."
         ],
         "rules": [
-          "R4: Vehicle reliability issues that impact daily functioning accelerate replacement timelines.",
-          "R5: Tax incentives effectively reduce perceived purchase price and increase purchase likelihood.",
-          "R6: Monthly payments below 70% of discretionary funds are typically considered manageable for major purchases."
+          "Rule 3: Family emergencies can be excused with proper documentation."
         ],
         "preferences": [
-          "P3: Immediate financial incentives significantly increase the priority of planned purchases.",
-          "P4: Reliability concerns outweigh short-term financial constraints when daily functioning is impacted."
+          "Preference 2: The debate team coach wants all members to attend all practice sessions."
         ],
-        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "question": "Should Maya continue on the debate team despite missing practices?",
         "label": true
       },
       {
         "facts": [
-          "Olivia has discovered the tax incentive requires waiting 6-8 weeks for reimbursement after purchase.",
-          "Olivia's employer has announced possible layoffs in her department within the next quarter.",
-          "The dealership has a limited inventory and cannot guarantee availability beyond the current month."
+          "Maya's attendance has dropped to 75% due to continued family issues.",
+          "Maya has been contributing to the debate team remotely."
         ],
         "rules": [
-          "R7: Job insecurity typically delays major financial commitments by 6-12 months.",
-          "R8: Delayed financial incentives reduce their immediate impact on purchase decisions by approximately 50%.",
-          "R9: Perceived scarcity increases purchase urgency but is moderated by financial risk assessment."
+          "Rule 4: The principal can grant exceptions to the attendance policy in extraordinary circumstances."
         ],
         "preferences": [
-          "P5: Employment stability concerns override most other purchase factors in decision-making hierarchies.",
-          "P6: Immediate financial security takes precedence over potential future scarcity."
+          "Preference 3: Maya's teammates want her to remain on the team despite absences."
         ],
-        "question": "Will Olivia purchase the electric vehicle within the next month?",
+        "question": "Should Maya be removed from the debate team due to attendance issues?",
         "label": false
       },
       {
         "facts": [
-          "Olivia's employer has confirmed her position is secure and not affected by the layoffs.",
-          "The dealership has offered an additional $3,000 discount if Olivia purchases within two weeks.",
-          "Olivia's mechanic has advised her current vehicle needs a transmission replacement estimated at $3,800."
+          "The school board has implemented a new policy requiring in-person participation for all competitions.",
+          "Maya's family situation has stabilized, but she has missed critical practice sessions."
         ],
         "rules": [
-          "R10: Repair costs exceeding 50% of a vehicle's value typically trigger replacement decisions.",
-          "R11: Immediate discounts have approximately twice the psychological impact of equivalent delayed incentives.",
-          "R12: Confirmation of job security typically restores pre-uncertainty purchasing patterns within 2 weeks."
+          "Rule 5: Students must attend at least 50% of practice sessions to participate in competitions."
         ],
         "preferences": [
-          "P7: Confirmed job security neutralizes employment concern factors in purchase decisions.",
-          "P8: Combined immediate incentives and functional necessity override most remaining financial hesitations."
+          "Preference 4: The debate coach believes in giving students second chances."
         ],
-        "question": "Will Olivia purchase the electric vehicle within the next month?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Olivia has discovered the electric vehicle model has been recalled twice in the past year for battery issues.",
-          "A new model with improved range and features will be released in three months at a similar price point.",
-          "Olivia's current vehicle has been repaired and the mechanic believes it should function reliably for another 6-8 months."
-        ],
-        "rules": [
-          "R13: Safety and reliability concerns reduce purchase likelihood for specific models by approximately 65%.",
-          "R14: Anticipated product improvements within a 3-month window delay purchase decisions in approximately 70% of cases.",
-          "R15: Temporary resolution of immediate necessity reduces purchase urgency proportional to the estimated resolution timeframe."
-        ],
-        "preferences": [
-          "P9: Product quality and safety concerns override financial incentives in purchase hierarchies.",
-          "P10: Anticipated product improvements within a near timeframe (≤3 months) typically delay purchases when current solutions are functional."
-        ],
-        "question": "Will Olivia purchase the electric vehicle within the next month?",
-        "label": false
-      },
-      {
-        "facts": [
-          "The manufacturer has addressed the recall issues and extended the battery warranty to 10 years with free replacement.",
-          "The dealership has only one vehicle left in stock and has received multiple inquiries about it.",
-          "Olivia's car has developed new electrical problems affecting its reliability for her daily commute."
-        ],
-        "rules": [
-          "R16: Extended warranties mitigate approximately 80% of reliability concerns in purchase decisions.",
-          "R17: Genuine scarcity with verification increases purchase urgency by approximately 40%.",
-          "R18: Commute reliability is typically weighted as essential in vehicle purchase decisions for working professionals."
-        ],
-        "preferences": [
-          "P11: Daily function necessities override future product improvement considerations.",
-          "P12: Manufacturer accountability measures significantly reduce the impact of previous quality concerns."
-        ],
-        "question": "Will Olivia purchase the electric vehicle within the next month?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Marcus and Jamie have been dating for eight months.",
-      "Marcus has been offered a prestigious job opportunity requiring relocation to another country for two years.",
-      "Jamie has a established career in their current city that would be difficult to continue remotely.",
-      "Marcus and Jamie have discussed marriage as a future possibility but have made no formal commitments."
-    ],
-    "rules": [
-      "R1: Relationships under one year typically have lower resilience to long-distance arrangements than more established relationships.",
-      "R2: Career advancement opportunities are generally given high priority by individuals in their professional development years (25-35).",
-      "R3: Relationship commitments typically increase in priority relative to their formality and duration."
-    ],
-    "preferences": [
-      "P1: Professional growth opportunities typically take precedence over early-stage relationships without formal commitments.",
-      "P2: Career stability typically outweighs relationship factors unless the relationship has formalized commitments."
-    ],
-    "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Marcus has learned that the position includes provisions for four paid visits home annually.",
-          "Jamie has expressed willingness to attempt a long-distance relationship.",
-          "Three of Marcus's colleagues have maintained successful relationships through similar international assignments."
-        ],
-        "rules": [
-          "R4: Regular in-person contact significantly increases the viability of long-distance relationships.",
-          "R5: Explicit partner support for career decisions increases the likelihood of choosing career advancement.",
-          "R6: Social evidence of success in similar situations increases willingness to attempt challenging relationship arrangements."
-        ],
-        "preferences": [
-          "P3: Mutual support for individual growth typically strengthens relationship foundations when temporary sacrifices are required.",
-          "P4: Viable compromise solutions are typically preferred over binary choose-one decisions in relationship contexts."
-        ],
-        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Marcus's previous relationship ended due to career-related relocation and prolonged separation.",
-          "Jamie has revealed plans to pursue a graduate degree that would require intensive time commitment for the next two years.",
-          "The job opportunity's salary would allow Marcus to eliminate his substantial student debt within 18 months."
-        ],
-        "rules": [
-          "R7: Past relationship disappointments with similar causes create heightened caution about similar situations.",
-          "R8: Parallel intensive commitments can reduce the perceived cost of separation periods in relationships.",
-          "R9: Financial freedom goals within specific timeframes strongly influence major life decisions."
-        ],
-        "preferences": [
-          "P5: Avoiding repeated relationship failure patterns typically takes precedence over new professional opportunities when patterns are recognized.",
-          "P6: Financial stability goals can outweigh relationship considerations when debt burden is significant."
-        ],
-        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Marcus and Jamie have discovered that Jamie's graduate program offers study abroad options at a university near Marcus's potential job location.",
-          "Marcus's company has offered to provide housing that could accommodate both Marcus and Jamie.",
-          "Jamie's family has expressed strong disapproval of potentially relocating for a relationship without marriage."
-        ],
-        "rules": [
-          "R10: Synchronistic opportunities that address major obstacles typically shift decision outcomes.",
-          "R11: Practical support for relocation significantly reduces the perceived cost of relationship transitions.",
-          "R12: Family approval functions as a significant factor in relationship decisions, particularly for major transitions."
-        ],
-        "preferences": [
-          "P7: Coincidental opportunities that solve multiple problems simultaneously typically override previous decision frameworks.",
-          "P8: Practical solutions to logistical challenges take precedence over social approval factors in relationship decisions."
-        ],
-        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Jamie has learned that the foreign study option would delay graduation by an additional year.",
-          "Marcus has discovered the position would require 60% travel throughout the region, limiting time together even if Jamie relocated.",
-          "Marcus and Jamie have had three significant relationship conflicts in the past month while discussing the potential move."
-        ],
-        "rules": [
-          "R13: Educational timeline extensions typically decrease willingness to modify academic plans for relationship factors.",
-          "R14: Anticipated time together is a primary factor in evaluating relationship transition decisions.",
-          "R15: Increased conflict frequency during decision periods predicts relationship stress under the contemplated conditions."
-        ],
-        "preferences": [
-          "P9: Relationship harmony indicators during stress periods outweigh opportunity factors in predicting successful transitions.",
-          "P10: Clear relationship viability concerns typically take precedence over professional advantages when conflict patterns emerge."
-        ],
-        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Marcus's current employer has offered a promotion with only 15% less compensation than the international position.",
-          "Marcus and Jamie have attended relationship counseling and developed improved communication strategies.",
-          "The international employer has reduced the travel requirement to 30% and offered to review after six months."
-        ],
-        "rules": [
-          "R16: Local alternatives within 20% of compensation value significantly reduce the attractiveness of relocation opportunities.",
-          "R17: Proactive relationship maintenance efforts increase confidence in relationship resilience during stress periods.",
-          "R18: Employer flexibility on key obstacles demonstrates potential for ongoing accommodation of relationship needs."
-        ],
-        "preferences": [
-          "P11: Relationship investment through formal improvement processes increases the priority of relationship preservation.",
-          "P12: Reduced differential between competing options decreases willingness to accept relationship disruption."
-        ],
-        "question": "Will Marcus decline the job opportunity to preserve the relationship with Jamie?",
-        "label": true
-      }
-    ]
-  },
-  {
-    "facts": [
-      "Alex has been smoking one pack of cigarettes daily for 12 years.",
-      "Alex has attempted to quit smoking three times in the past five years, with the longest smoke-free period lasting 6 weeks.",
-      "Alex's doctor has recently informed them that early signs of respiratory issues are developing.",
-      "Alex's health insurance now offers a smoking cessation program with free nicotine replacement therapy."
-    ],
-    "rules": [
-      "R1: Health warning events typically increase motivation for behavior change by approximately 40% in the short term.",
-      "R2: Previous quit attempts with relapse reduce confidence in future success by approximately 15% per failed attempt.",
-      "R3: Access to evidence-based cessation resources increases quit success probability by 25-30%."
-    ],
-    "preferences": [
-      "P1: Immediate health concerns typically outweigh habit reinforcement in decision hierarchies.",
-      "P2: Resource accessibility reduces the impact of past failure patterns on new behavior change attempts."
-    ],
-    "question": "Will Alex successfully quit smoking for at least 6 months this time?",
-    "label": false,
-    "updates": [
-      {
-        "facts": [
-          "Alex's partner has also decided to quit smoking simultaneously and suggested they support each other.",
-          "Alex has joined a weekly smoking cessation support group at a local community center.",
-          "Alex has informed friends and family about the quit attempt, creating social accountability."
-        ],
-        "rules": [
-          "R4: Partner co-quitting increases success rates by approximately 35% compared to solo attempts.",
-          "R5: Regular support group participation increases long-term cessation success by approximately 25%.",
-          "R6: Public commitment to behavior change creates accountability mechanisms that increase follow-through likelihood."
-        ],
-        "preferences": [
-          "P3: Social support systems significantly increase the effectiveness of cessation resources.",
-          "P4: Multiple simultaneous support mechanisms can overcome historical relapse patterns."
-        ],
-        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Alex's partner has relapsed after three weeks and resumed smoking at home.",
-          "Alex has experienced significant withdrawal symptoms including irritability and difficulty concentrating at work.",
-          "Alex has begun socializing more frequently with colleagues who smoke during break periods."
-        ],
-        "rules": [
-          "R7: Partner relapse increases the quit failure rate by approximately 60% in cohabiting relationships.",
-          "R8: Withdrawal symptoms that impact work performance predict relapse with 70% accuracy when persistent beyond three weeks.",
-          "R9: Regular exposure to social smoking environments decreases success probability by approximately 45%."
-        ],
-        "preferences": [
-          "P5: Environmental smoking cues typically override support resources when multiple triggers are present simultaneously.",
-          "P6: Daily functional impairment typically outweighs long-term health concerns during intense withdrawal periods."
-        ],
-        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Alex has requested and received a prescription for medication that reduces nicotine cravings.",
-          "Alex has switched to a different department at work where fewer colleagues smoke.",
-          "Alex's respiratory symptoms have noticeably improved after four weeks without smoking."
-        ],
-        "rules": [
-          "R10: Pharmacological interventions reduce relapse risk by approximately 50% compared to willpower-only approaches.",
-          "R11: Environmental modifications that reduce exposure to smoking cues increase success rates by approximately 30%.",
-          "R12: Noticeable health improvements within the first month increase motivation maintenance by approximately 40%."
-        ],
-        "preferences": [
-          "P7: Tangible health improvements typically reinforce commitment more effectively than abstract future health benefits.",
-          "P8: Combined pharmacological and environmental interventions can override the impact of significant social triggers."
-        ],
-        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Alex has experienced a major family crisis requiring extended time with relatives who smoke heavily.",
-          "Alex has reported significant side effects from the cessation medication and stopped taking it.",
-          "Alex has missed three consecutive support group meetings due to the family situation."
-        ],
-        "rules": [
-          "R13: Acute stress events trigger relapse in approximately 65% of recent quitters when combined with environmental cues.",
-          "R14: Discontinuation of pharmacological support increases relapse risk by approximately 70% within two weeks.",
-          "R15: Interruption of support group attendance for more than two consecutive sessions reduces their protective effect by approximately 50%."
-        ],
-        "preferences": [
-          "P9: Acute emotional stress typically overrides accumulated health benefits in behavioral maintenance hierarchies.",
-          "P10: Multiple simultaneous support system disruptions predict relapse with approximately 80% accuracy."
-        ],
-        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Alex attended an intensive three-day relapse prevention workshop after smoking two cigarettes during the family crisis.",
-          "Alex's doctor has prescribed an alternative medication with fewer side effects.",
-          "Alex has recruited a quit buddy from the support group who is available for 24/7 text support during craving episodes."
-        ],
-        "rules": [
-          "R16: Early intervention following minimal relapse prevents complete behavior reversion in approximately 70% of cases.",
-          "R17: Successful medication adjustment after side effect issues restores approximately 80% of the pharmacological benefit.",
-          "R18: 24/7 accessible peer support reduces crisis relapse by approximately 65%."
-        ],
-        "preferences": [
-          "P11: Immediate relapse intervention significantly outweighs the negative impact of minor slips when implemented within 48 hours.",
-          "P12: Crisis-focused support systems specifically designed for high-risk periods take precedence over general support in effectiveness hierarchies."
-        ],
-        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Alex's workplace has announced a stressful reorganization with potential layoffs.",
-          "Alex's partner has suggested they could save money by purchasing cigarettes instead of the more expensive medication.",
-          "Alex has begun experiencing insomnia, a common withdrawal effect that can persist for months."
-        ],
-        "rules": [
-          "R19: Job insecurity increases relapse rates by approximately 55% during the acute stress period.",
-          "R20: Financial pressure combined with partner enabling increases relapse likelihood by approximately 65%.",
-          "R21: Persistent sleep disruption for more than three weeks reduces cognitive resources for impulse control by approximately 40%."
-        ],
-        "preferences": [
-          "P13: Combined financial and employment stress typically outweighs health motivations in behavioral maintenance hierarchies.",
-          "P14: Multiple physiological challenges simultaneous with environmental stressors predict cessation failure with approximately 75% accuracy."
-        ],
-        "question": "Will Alex successfully quit smoking for at least 6 months this time?",
+        "question": "Should Maya be allowed to participate in the upcoming debate competition?",
         "label": false
       }
     ]
   },
   {
     "facts": [
-      "Noah is a second-year university student with a current GPA of 2.7 out of 4.0.",
-      "Noah has enrolled in an advanced statistics course that has a 40% historical failure rate.",
-      "Noah scored a C- in the prerequisite introductory statistics course last semester.",
-      "Noah typically studies alone for approximately 5 hours per week per course."
+      "Jordan is a professional athlete for a major team.",
+      "Jordan has a minor injury that limits performance but isn't serious."
     ],
     "rules": [
-      "R1: Performance in prerequisite courses predicts performance in advanced courses with approximately 70% accuracy.",
-      "R2: Courses with failure rates above 30% typically require study time of 10-15 hours weekly for average students to pass.",
-      "R3: Students with GPAs below 3.0 have approximately 35% lower success rates in high-difficulty courses compared to the general population."
+      "Rule 1: Athletes must pass a physical examination before each game.",
+      "Rule 2: The team doctor has final say on player eligibility."
     ],
     "preferences": [
-      "P1: Previous subject-specific performance typically outweighs general academic performance in predicting course-specific outcomes.",
-      "P2: Study time allocations below recommended levels for challenging courses typically cannot be compensated for by general academic ability."
+      "Preference 1: Jordan wants to play in the upcoming championship game."
     ],
-    "question": "Will Noah pass the advanced statistics course this semester?",
-    "label": false,
+    "question": "Should Jordan be allowed to play in the championship game?",
+    "label": true,
     "updates": [
       {
         "facts": [
-          "Noah has joined a statistics study group that meets twice weekly for 2-hour sessions.",
-          "Noah has increased individual study time to 8 hours weekly for this course.",
-          "Noah has met with the professor during office hours to discuss effective study strategies."
+          "Jordan's injury has worsened after a practice session.",
+          "The team is facing pressure from sponsors to field their star player."
         ],
         "rules": [
-          "R4: Collaborative study groups increase pass rates by approximately 25% in challenging quantitative courses.",
-          "R5: Substantial increases in dedicated study time (>50%) correlate with grade improvements of one letter grade on average.",
-          "R6: Proactive engagement with instructors increases course performance by approximately 15% on average."
+          "Rule 3: Players with moderate to severe injuries must sit out until cleared by two medical professionals."
         ],
         "preferences": [
-          "P3: Multiple complementary learning approaches typically overcome historical performance limitations.",
-          "P4: Proactive learning strategy adjustments predict improved outcomes more reliably than historical performance metrics."
+          "Preference 2: The team coach wants to protect players' long-term health."
         ],
-        "question": "Will Noah pass the advanced statistics course this semester?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Noah scored a D on the first major exam, which constitutes 25% of the final grade.",
-          "Noah has been offered an opportunity to work on an additional project for up to 10% extra credit.",
-          "Noah's attendance at study group sessions has dropped to approximately 50% due to conflicts with a part-time job."
-        ],
-        "rules": [
-          "R7: Performance on first major assessments predicts final course outcomes with approximately 65% accuracy.",
-          "R8: Extra credit opportunities typically improve final grades by 60-70% of their potential value due to variable completion quality.",
-          "R9: Inconsistent participation in study groups reduces their effectiveness by approximately 60%."
-        ],
-        "preferences": [
-          "P5: Early assessment performance typically outweighs study strategy factors when the assessment constitutes a significant portion of the final grade.",
-          "P6: Employment-education conflicts that reduce study resources typically take precedence over supplemental improvement opportunities."
-        ],
-        "question": "Will Noah pass the advanced statistics course this semester?",
+        "question": "Should Jordan play in the championship game despite the worsened injury?",
         "label": false
       },
       {
         "facts": [
-          "Noah has hired a statistics tutor for weekly one-on-one sessions focused on areas of weakness.",
-          "Noah has negotiated reduced hours at work to prioritize academics for the remainder of the semester.",
-          "The professor has announced that the final exam will be weighted more heavily (40%) than originally planned (30%)."
+          "Jordan has sought a second medical opinion that suggests the injury is less severe than the team doctor indicated.",
+          "The championship game is tomorrow."
         ],
         "rules": [
-          "R10: Personalized tutoring improves subject performance by approximately 30% in challenging quantitative subjects.",
-          "R11: Reallocation of time from employment to academics typically yields improved outcomes proportional to the time shifted.",
-          "R12: Increased weighting of final assessments amplifies the impact of preparation strategies implemented after early assessments."
+          "Rule 4: Conflicting medical opinions require resolution by the league's medical committee."
         ],
         "preferences": [
-          "P7: Targeted intervention strategies focused on identified weaknesses typically outweigh poor early performance metrics.",
-          "P8: Resource reallocation demonstrating commitment to academic priorities typically predicts improved performance trajectories."
+          "Preference 3: Jordan is willing to sign a waiver accepting risk of further injury."
         ],
-        "question": "Will Noah pass the advanced statistics course this semester?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Noah has been diagnosed with mononucleosis, causing two weeks of missed classes during the critical mid-semester period.",
-          "The professor has declined to offer make-up assessments for a missed mid-term exam worth 20% of the final grade.",
-          "Noah's tutor has reported difficulty maintaining consistent progress due to Noah's health-related absences."
-        ],
-        "rules": [
-          "R13: Extended illness-related absences during critical learning periods reduce course performance by approximately 35% on average.",
-          "R14: Missed assessments without make-up opportunities create performance deficits that require exceptional performance on remaining assessments.",
-          "R15: Interruptions to tutoring progress reduce its effectiveness by approximately 45% when exceeding one week."
-        ],
-        "preferences": [
-          "P9: Health disruptions to learning continuity typically outweigh prior positive trajectory indicators in performance predictions.",
-          "P10: Missing weighted assessments above 15% of course grade typically cannot be compensated for without exceptional performance or formal accommodations."
-        ],
-        "question": "Will Noah pass the advanced statistics course this semester?",
+        "question": "Should Jordan be allowed to play based on the second opinion?",
         "label": false
       },
       {
         "facts": [
-          "Noah has petitioned for and received medical accommodation allowing extended deadlines and a make-up mid-term exam.",
-          "Noah has obtained comprehensive notes from study group members for all missed lectures.",
-          "The professor has provided Noah with additional practice problems focusing on the missed content areas."
+          "The league's medical committee has determined Jordan's injury poses minimal risk for one game.",
+          "The team's backup player has been performing exceptionally well."
         ],
         "rules": [
-          "R16: Formal academic accommodations for documented medical issues neutralize approximately 80% of absence-related performance deficits.",
-          "R17: Access to comprehensive peer notes recovers approximately 60% of direct instruction benefits.",
-          "R18: Instructor-provided supplemental materials targeted to specific content gaps improve mastery of those areas by approximately 40%."
+          "Rule 5: Even with medical clearance, the coach makes final decisions on the starting lineup."
         ],
         "preferences": [
-          "P11: Institutional accommodations for documented medical issues typically override standard performance prediction metrics.",
-          "P12: Multiple coordinated recovery strategies implemented promptly after health disruptions predict successful course completion with approximately 75% accuracy."
+          "Preference 4: The team management wants to demonstrate loyalty to their star player."
         ],
-        "question": "Will Noah pass the advanced statistics course this semester?",
+        "question": "Should Jordan start in the championship game?",
         "label": true
       }
     ]
   },
   {
     "facts": [
-      "Sophia has worked as a marketing manager at the same company for eight years.",
-      "Sophia has been taking evening classes in web development for the past year.",
-      "Sophia feels increasingly dissatisfied with her current career path and lacks growth opportunities.",
-      "Sophia has built a small portfolio of web projects but has no professional experience in the field."
+      "Raj is a software developer at a small startup.",
+      "Raj accidentally discovered a security vulnerability in the company's main product."
     ],
     "rules": [
-      "R1: Career transitions become more challenging as individuals spend more time in their original field.",
-      "R2: Formal education in a new field significantly increases the viability of career changes.",
-      "R3: Job dissatisfaction is a strong motivator for career changes but is insufficient alone to ensure successful transitions."
+      "Rule 1: Employees must report security vulnerabilities to their direct supervisor.",
+      "Rule 2: The company has a policy of fixing vulnerabilities before public disclosure."
     ],
     "preferences": [
-      "P1: Practical experience in a new field typically carries more weight than theoretical knowledge when seeking employment.",
-      "P2: Career stability concerns often compete with personal fulfillment when considering major professional changes."
+      "Preference 1: Raj believes in responsible disclosure of security issues."
     ],
-    "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
-    "label": false,
+    "question": "Should Raj immediately report the vulnerability to his supervisor?",
+    "label": true,
     "updates": [
       {
         "facts": [
-          "Sophia's company has announced a restructuring that includes potential layoffs in the marketing department.",
-          "A former colleague has offered Sophia contract work on a small web development project.",
-          "Sophia has sufficient savings to cover living expenses for four months without income."
+          "Raj reported the vulnerability, but after two weeks, the company has taken no action.",
+          "The vulnerability could potentially expose customer data."
         ],
         "rules": [
-          "R4: External career threats significantly increase willingness to pursue alternative paths.",
-          "R5: Initial professional opportunities in a new field serve as critical transition bridges.",
-          "R6: Financial safety nets reduce the perceived risk of career transitions."
+          "Rule 3: Industry standards recommend fixing critical vulnerabilities within 30 days."
         ],
         "preferences": [
-          "P3: Job security threats substantially elevate the appeal of previously considered alternative careers.",
-          "P4: Concrete opportunities in a new field typically outweigh the abstract risks of career changes."
+          "Preference 2: Raj is concerned about customer privacy and data protection."
         ],
-        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "question": "Should Raj escalate the issue beyond his supervisor now?",
         "label": true
       },
       {
         "facts": [
-          "Sophia's position has been confirmed as secure in the restructuring, with a modest salary increase.",
-          "The contract work has revealed significant gaps in Sophia's practical development knowledge.",
-          "Sophia's partner has expressed concerns about financial stability if she changes careers."
+          "Raj escalated to the CTO, who acknowledged the issue but cited resource constraints.",
+          "A security conference is coming up where Raj is scheduled to present."
         ],
         "rules": [
-          "R7: Renewed security and recognition in current positions typically diminish transition motivation.",
-          "R8: Skill gap awareness increases hesitation about career changes unless addressed directly.",
-          "R9: Partner concerns about financial stability significantly influence major career decisions."
+          "Rule 4: Employees must get approval before discussing company issues at public events."
         ],
         "preferences": [
-          "P5: Family financial security considerations typically outweigh personal fulfillment when directly in conflict.",
-          "P6: Concrete skill deficiencies delay transition timelines until they can be adequately addressed."
+          "Preference 3: Raj wants to maintain his professional reputation in the security community."
         ],
-        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "question": "Should Raj include this vulnerability in his conference presentation?",
         "label": false
       },
       {
         "facts": [
-          "Sophia has been invited to join an intensive web development bootcamp with job placement services.",
-          "Sophia's company has denied her request for a part-time schedule to accommodate additional training.",
-          "Several bootcamp graduates have shared success stories of transitioning to development roles within three months."
+          "Raj has discovered evidence that the vulnerability has been exploited by hackers.",
+          "The company is planning to release a new version in one month."
         ],
         "rules": [
-          "R10: Structured transition programs with placement support substantially increase career change success.",
-          "R11: Employer inflexibility regarding professional development often accelerates departure decisions.",
-          "R12: Social proof of successful transitions by similar individuals strongly influences decision-making."
+          "Rule 5: Evidence of active exploitation requires immediate notification to affected parties."
         ],
         "preferences": [
-          "P7: Clear pathways to new careers with support systems often override short-term financial stability concerns.",
-          "P8: Demonstrated success of similar individuals provides compelling evidence that can outweigh personal skill doubts."
+          "Preference 4: The company wants to minimize public relations damage."
         ],
-        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
-        "label": true
-      },
-      {
-        "facts": [
-          "The bootcamp requires a substantial upfront payment that would deplete most of Sophia's savings.",
-          "Sophia's current employer has announced a new digital marketing initiative that includes web development components.",
-          "Sophia's partner has unexpectedly lost their job and is beginning a job search."
-        ],
-        "rules": [
-          "R13: High financial commitments to career transitions increase hesitation during periods of household financial uncertainty.",
-          "R14: Hybrid opportunities that blend current expertise with desired new skills are highly attractive alternatives to complete transitions.",
-          "R15: Household job losses create strong pressure to maintain existing stable income sources."
-        ],
-        "preferences": [
-          "P9: Household financial stability nearly always takes precedence during periods of employment uncertainty.",
-          "P10: Opportunities to develop new skills within current roles typically delay complete career transitions."
-        ],
-        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
-        "label": false
-      },
-      {
-        "facts": [
-          "Sophia has discovered a part-time web development training program that offers deferred payment until employment.",
-          "Sophia's partner has secured a new position with higher compensation than their previous job.",
-          "Sophia's manager has assigned her primarily to administrative tasks following her expression of interest in the digital initiative."
-        ],
-        "rules": [
-          "R16: Accessible training options that reduce financial barriers reignite transition considerations.",
-          "R17: Restored household financial stability reopens career transition possibilities.",
-          "R18: Professional devaluation in current roles strongly motivates career changes regardless of company opportunities."
-        ],
-        "preferences": [
-          "P11: Professional respect and meaningful work often outweigh compensation and stability when individuals feel devalued.",
-          "P12: Reduced financial barriers combined with perceived disrespect in current roles create compelling transition incentives."
-        ],
-        "question": "Will Sophia leave her marketing job to pursue a career in web development within the next six months?",
+        "question": "Should Raj disclose the exploitation to customers without company approval?",
         "label": true
       }
     ]
   },
   {
     "facts": [
-      "Daniel and Leila's 16-year-old son has asked permission to attend a weekend music festival three hours away.",
-      "Their son has maintained good grades and followed household rules consistently over the past year.",
-      "The festival will be attended by several of their son's friends, but no parents will be present in their group.",
-      "This would be their son's first overnight trip without adult family members or school supervision."
+      "Priya is a researcher at a university laboratory.",
+      "Priya's experiment has produced unexpected results that contradict her published theory."
     ],
     "rules": [
-      "R1: Parents typically grant increased independence to teenagers who demonstrate consistent responsibility.",
-      "R2: First-time permissions for significant independence milestones create precedents for future requests.",
-      "R3: Parents generally assess peer influence heavily when evaluating unsupervised social opportunities."
+      "Rule 1: Scientific integrity requires reporting accurate results even when unfavorable.",
+      "Rule 2: Research findings must be verified through repeated trials before publication."
     ],
     "preferences": [
-      "P1: Demonstrated maturity through consistent responsibility typically outweighs parental caution about age-appropriate independence.",
-      "P2: Child safety considerations take priority over social development opportunities when substantial uncertainty exists."
+      "Preference 1: Priya wants to maintain her reputation in the scientific community."
     ],
-    "question": "Will Daniel and Leila allow their son to attend the music festival?",
+    "question": "Should Priya immediately announce that her theory might be incorrect?",
     "label": false,
     "updates": [
       {
         "facts": [
-          "Their son has presented a detailed plan including transportation, accommodations, emergency contacts, and check-in schedule.",
-          "One of the friends attending is a responsible 18-year-old whom the parents know and trust.",
-          "The festival has a strong security presence and clear safety protocols for attendees."
+          "Repeated trials have confirmed the anomalous results.",
+          "A competing research team is working on a similar experiment."
         ],
         "rules": [
-          "R4: Thorough planning by teenagers demonstrates maturity that significantly increases parental confidence.",
-          "R5: The presence of trusted older peers creates an informal supervision layer that reduces parental concerns.",
-          "R6: Venue safety measures substantially influence parental comfort with attendance permissions."
+          "Rule 3: Significant scientific discoveries should be submitted to peer-reviewed journals."
         ],
         "preferences": [
-          "P3: Demonstrated planning capacity substantially shifts the balance toward independence permissions.",
-          "P4: Structured safety measures combined with trusted peer presence often satisfies parental protection concerns."
+          "Preference 2: Priya wants to be the first to publish these findings."
         ],
-        "question": "Will Daniel and Leila allow their son to attend the music festival?",
-        "label": true
-      },
-      {
-        "facts": [
-          "Daniel and Leila have discovered concerning social media posts showing drug use at previous iterations of this festival.",
-          "Their son has never broken their trust regarding substance use before but has never been in such an environment.",
-          "The parents of two other teens in the friend group have decided not to allow their children to attend."
-        ],
-        "rules": [
-          "R7: Evidence of concerning activities at venues strongly impacts parental permission regardless of child's history.",
-          "R8: Untested situations carry greater weight in parental decision-making than history-based trust.",
-          "R9: Peer parent decisions often influence parental permission through both social calibration and practical logistics."
-        ],
-        "preferences": [
-          "P5: Substance exposure risk typically overrides independence development considerations in parental decisions.",
-          "P6: Alignment with trusted peer parents often resolves decision ambivalence toward the more cautious position."
-        ],
-        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "question": "Should Priya rush to publish her new findings without thorough peer review?",
         "label": false
       },
       {
         "facts": [
-          "The festival organizers have published comprehensive information about their zero-tolerance drug policy and enforcement measures.",
-          "Their son has proposed a compromise where he will attend only during daytime hours and stay overnight at a hotel with his friend's older brother, a college student they know well.",
-          "The parents who previously refused permission are reconsidering based on the daytime-only attendance option."
+          "The competing team has publicly announced preliminary results similar to Priya's findings.",
+          "A major scientific conference is happening next week."
         ],
         "rules": [
-          "R10: Transparent venue policies with enforcement mechanisms reduce but don't eliminate specific risk concerns.",
-          "R11: Teenager-initiated compromises that address parental concerns demonstrate maturity that increases permission likelihood.",
-          "R12: Adjusted peer parent perspectives often reframe the decision context for ambivalent parents."
+          "Rule 4: Conference presentations should be based on substantially complete research."
         ],
         "preferences": [
-          "P7: Creative solutions that address specific concerns while preserving core experiences often bridge parent-child differences.",
-          "P8: Partial permission arrangements serve as effective testing grounds for increased future independence."
+          "Preference 3: Priya's department head encourages faculty to present at prestigious conferences."
         ],
-        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "question": "Should Priya present her contradictory findings at the conference?",
         "label": true
       },
       {
         "facts": [
-          "Daniel and Leila have learned that the older brother chaperone has previously been arrested for providing alcohol to minors, though the charge was later dropped.",
-          "Their son has expressed frustration with their concerns and accused them of not trusting him.",
-          "The festival dates coincide with a significant family event that their son had previously agreed to attend."
+          "A fundamental flaw has been discovered in the experimental equipment used by both teams.",
+          "The equipment manufacturer has issued a recall notice."
         ],
         "rules": [
-          "R13: Discovered concerns about designated supervisors fundamentally undermine supervision-based compromise solutions.",
-          "R14: Teenager resistance and accusatory responses raise concerns about judgment and pressure susceptibility.",
-          "R15: Competing family obligations create legitimate alternative justifications for difficult permission decisions."
+          "Rule 5: Researchers must disclose equipment failures that might affect results."
         ],
         "preferences": [
-          "P9: Supervisor reliability concerns typically nullify otherwise acceptable arrangement compromises.",
-          "P10: Family commitment expectations generally take precedence over social opportunities when directly conflicting."
+          "Preference 4: Priya wants to protect her graduate students who conducted the experiments."
         ],
-        "question": "Will Daniel and Leila allow their son to attend the music festival?",
-        "label": false
+        "question": "Should Priya retract her conference presentation?",
+        "label": true
       },
       {
         "facts": [
-          "Their son has sincerely apologized for his reaction and suggested his parents chaperone the group themselves by staying nearby.",
-          "The family event has been rescheduled due to an unexpected venue issue.",
-          "Other parents from their community with similar-aged teens have organized a parent supervision rotation for the festival."
+          "New experiments with corrected equipment still produce results contradicting Priya's original theory.",
+          "Priya's research is funded by a grant that was awarded based on her original theory."
         ],
         "rules": [
-          "R16: Teenager acknowledgment of inappropriate reactions strongly indicates emotional maturity relevant to independence readiness.",
-          "R17: Parental presence compromises balance independence opportunities with supervision requirements.",
-          "R18: Community supervision approaches distribute responsibility while maintaining safety oversight."
+          "Rule 6: Grant agreements require disclosure of significant changes to research direction."
         ],
         "preferences": [
-          "P11: Mature conflict resolution demonstrates developmental readiness that often outweighs specific situational concerns.",
-          "P12: Organized parental oversight systems frequently satisfy safety requirements while preserving appropriate independence experiences."
+          "Preference 5: Priya believes the new results actually lead to a more important discovery."
         ],
-        "question": "Will Daniel and Leila allow their son to attend the music festival?",
+        "question": "Should Priya inform her grant providers about the contradictory results?",
         "label": true
       }
     ]
   },
   {
-      "facts": [
-        "Olivia is a 34-year-old working professional who has decided to reduce her sugar intake to improve her overall health.",
-        "She began by substituting sugary snacks and drinks with healthier alternatives such as fruits and herbal teas.",
-        "Research in human behavior indicates that gradual dietary changes, when paired with observable health improvements, tend to be sustainable."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to maintain dietary changes if they experience immediate improvements in energy and mood.",
-        "R2: Consistent meal planning and tracking nutritional intake greatly enhance adherence to new dietary habits.",
-        "R3: Positive reinforcement and social support from family and peers play a significant role in sustaining behavioral changes."
-      ],
-      "preferences": [
-        "P1: Observable health benefits (such as increased energy levels) take precedence over temporary cravings or withdrawal symptoms.",
-        "P2: Encouragement from close social circles can successfully counteract occasional lapses in the dietary change."
-      ],
-      "question": "Will Olivia consistently reduce her sugary food consumption over the next six months?",
-      "label": true,
-      "updates": [
-        {
-          "facts": [
-            "After one month, Olivia reported an increase in her daily energy levels and a slight improvement in her concentration at work.",
-            "She managed to decrease her sugary snack intake by 40%, as tracked in her food journal.",
-            "Some initial cravings occurred during late evenings, but these were infrequent and short-lived."
-          ],
-          "rules": [
-            "R4: Early visible improvements in health outcomes strongly motivate individuals to continue with dietary changes.",
-            "R5: Occasional cravings are normal during the initial phase and do not necessarily predict long-term failure."
-          ],
-          "preferences": [
-            "P3: Minor lapses in consumption are acceptable when overall health benefits and reduction trends are evident."
-          ],
-          "question": "Will Olivia consistently reduce her sugary food consumption over the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "At the three-month mark, Olivia’s food journal indicated a consistent 60% reduction in sugary foods compared to her baseline.",
-            "Her family and close friends noticed her improved mood and increased participation in physical activities.",
-            "In response to occasional cravings, Olivia began experimenting with low-sugar dessert recipes, which helped sustain her progress."
-          ],
-          "rules": [
-            "R6: Progressive reductions in sugar intake, coupled with adaptive strategies, reinforce long-term dietary change.",
-            "R7: Social validation and creative adaptations to dietary challenges further support the sustainability of health-driven behaviors."
-          ],
-          "preferences": [
-            "P4: Effective coping strategies for cravings and positive social feedback are prioritized in evaluating the likelihood of sustained change."
-          ],
-          "question": "Will Olivia consistently reduce her sugary food consumption over the next six months?",
-          "label": true
-        },
-        {
-          "facts": [
-            "At the six-month milestone, Olivia’s health assessments show improved blood sugar levels and enhanced overall well-being.",
-            "She has integrated structured meal planning into her weekly routine and periodically reviews her progress with a nutrition coach.",
-            "Olivia has become a role model in her social circle, often sharing her healthy recipes and success stories, which further reinforces her commitment."
-          ],
-          "rules": [
-            "R8: Long-term positive health outcomes and regular professional monitoring are strong indicators of sustained behavioral change.",
-            "R9: Acting as a role model and receiving ongoing social reinforcement solidifies the commitment to healthy habits."
-          ],
-          "preferences": [
-            "P5: The combination of tangible health benefits, structured planning, and robust social support decisively supports the continuation of reduced sugary intake."
-          ],
-          "question": "Will Olivia consistently reduce her sugary food consumption over the next six months?",
-          "label": true
-        }
-      ]
+    "facts": [
+      "Marcus is a middle school teacher who has noticed one student, Elijah, is struggling academically.",
+      "Elijah has been consistently turning in incomplete assignments."
+    ],
+    "rules": [
+      "Rule 1: Teachers must report students who are at risk of failing to the counseling department.",
+      "Rule 2: Student privacy must be maintained when discussing academic issues with others."
+    ],
+    "preferences": [
+      "Preference 1: Marcus wants to help Elijah improve without singling him out."
+    ],
+    "question": "Should Marcus discuss Elijah's performance with other teachers?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Marcus has learned that Elijah has a difficult home situation affecting his studies.",
+          "The school has a support program for students with challenging home environments."
+        ],
+        "rules": [
+          "Rule 3: Teachers must report suspected home difficulties to the school counselor."
+        ],
+        "preferences": [
+          "Preference 2: Marcus believes in addressing root causes rather than just academic symptoms."
+        ],
+        "question": "Should Marcus refer Elijah to the support program without consulting Elijah first?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Elijah has expressed embarrassment about receiving special attention.",
+          "Marcus has noticed Elijah performs better on collaborative projects."
+        ],
+        "rules": [
+          "Rule 4: Educational accommodations should consider student preferences when possible."
+        ],
+        "preferences": [
+          "Preference 3: Marcus wants to respect Elijah's dignity while still providing necessary support."
+        ],
+        "question": "Should Marcus create more group activities for the entire class to indirectly help Elijah?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Elijah's parent has contacted the school requesting no special accommodations.",
+          "The school principal has asked for an improvement plan for Elijah."
+        ],
+        "rules": [
+          "Rule 5: Parental wishes should be considered but do not override the school's duty of care."
+        ],
+        "preferences": [
+          "Preference 4: Marcus is concerned about institutional constraints limiting his ability to help."
+        ],
+        "question": "Should Marcus implement an individualized improvement plan despite the parent's request?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Elijah has shown significant improvement in collaborative settings.",
+          "End-of-year standardized testing is approaching, which requires individual work."
+        ],
+        "rules": [
+          "Rule 6: Testing accommodations require formal documentation and approval."
+        ],
+        "preferences": [
+          "Preference 5: Marcus wants Elijah to build independent learning skills while maintaining progress."
+        ],
+        "question": "Should Marcus request testing accommodations for Elijah?",
+        "label": true
+      }
+    ]
   },
   {
-      "facts": [
-        "Derek is a 29-year-old technology professional who recently decided to adopt a morning running routine to manage his stress levels.",
-        "Within the first week, he experienced noticeable improvements in his energy and a reduction in his overall stress.",
-        "Studies in human behavior indicate that early positive physical and mental health benefits can prompt individuals to maintain new exercise routines."
-      ],
-      "rules": [
-        "R1: Individuals are more likely to continue with new physical activities if they observe tangible improvements in both health and mood.",
-        "R2: Establishing a consistent daily schedule is crucial for sustaining new exercise habits over the long term.",
-        "R3: Social support and community involvement play a significant role in reinforcing ongoing participation in physical activities."
-      ],
-      "preferences": [
-        "P1: Immediate improvements in well-being take precedence over the initial challenges of adapting to a new routine.",
-        "P2: External encouragement from friends and community groups is prioritized as a key factor in maintaining exercise habits."
-      ],
-      "question": "Will Derek continue his morning running routine over the next year?",
-      "label": true,
-      "updates": [
-        {
-          "facts": [
-            "After two weeks, Derek reported consistently feeling more energetic in the mornings and noted a reduction in midday fatigue.",
-            "Although he occasionally struggled with waking up early, he successfully adjusted his bedtime to mitigate these issues.",
-            "A close friend joined him for weekend runs, providing additional motivation and accountability."
-          ],
-          "rules": [
-            "R4: Noticeable improvements in energy and mood significantly increase the likelihood of long-term adherence to an exercise routine.",
-            "R5: Minor schedule adjustment challenges are acceptable when overall benefits are evident."
-          ],
-          "preferences": [
-            "P3: Early social support and the gradual establishment of a stable sleep schedule together reinforce the continuation of the new habit."
-          ],
-          "question": "Will Derek continue his morning running routine over the next year?",
-          "label": true
-        },
-        {
-          "facts": [
-            "At the two-month mark, Derek had established a fixed sleep schedule, which allowed him to run consistently every morning.",
-            "He was invited to join a local running group, further increasing his accountability and engagement with his new routine.",
-            "Recent health assessments indicated improved cardiovascular fitness and lower stress markers."
-          ],
-          "rules": [
-            "R6: Regular scheduling paired with community engagement is a strong predictor of sustaining a new exercise habit.",
-            "R7: Consistent health improvements and peer accountability strongly reinforce the motivation to stick with the routine."
-          ],
-          "preferences": [
-            "P4: The combination of measurable health benefits and external social commitment is prioritized over occasional challenges."
-          ],
-          "question": "Will Derek continue his morning running routine over the next year?",
-          "label": true
-        },
-        {
-          "facts": [
-            "After six months, Derek has seamlessly integrated his morning run into his daily routine without significant disruptions.",
-            "He has taken on a mentorship role in the local running group, guiding new members and deepening his own commitment.",
-            "Continuous improvements in both physical health and mental clarity, reinforced by positive feedback from those he mentors, have further motivated him to continue."
-          ],
-          "rules": [
-            "R8: Long-term habit maintenance is greatly enhanced when an individual assumes a role that contributes to the community.",
-            "R9: Persistent positive physical and psychological outcomes outweigh occasional minor setbacks, ensuring sustained behavior change."
-          ],
-          "preferences": [
-            "P5: The combined benefits of personal health improvements, community involvement, and mentorship responsibilities decisively support the ongoing commitment to the running routine."
-          ],
-          "question": "Will Derek continue his morning running routine over the next year?",
-          "label": true
-        }
-      ]
-    }
+    "facts": [
+      "Devon is a manager at a retail store with declining sales.",
+      "Corporate headquarters has issued a mandate to cut staff hours by 15%."
+    ],
+    "rules": [
+      "Rule 1: Managers must maintain minimum staffing levels for store security.",
+      "Rule 2: Performance metrics should be the primary factor in scheduling decisions."
+    ],
+    "preferences": [
+      "Preference 1: Devon wants to treat all employees fairly."
+    ],
+    "question": "Should Devon cut hours equally across all staff members?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Several part-time employees are college students who depend on their income for tuition.",
+          "Customer complaints about long checkout lines have increased."
+        ],
+        "rules": [
+          "Rule 3: Customer satisfaction metrics factor into manager performance evaluations."
+        ],
+        "preferences": [
+          "Preference 2: Devon believes maintaining morale is essential during difficult times."
+        ],
+        "question": "Should Devon protect the students' hours at the expense of full-time employees?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A competing store has closed, leading to increased customer traffic.",
+          "Two employees have voluntarily reduced their hours to accommodate personal situations."
+        ],
+        "rules": [
+          "Rule 4: Staffing must be adjusted based on customer traffic patterns."
+        ],
+        "preferences": [
+          "Preference 3: Devon prefers to avoid involuntary hour reductions when possible."
+        ],
+        "question": "Should Devon rescind the hour cuts for the remaining employees?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Corporate has issued a new directive prioritizing sales per labor hour as the key metric.",
+          "Devon's most experienced employees have the highest sales but also the highest wages."
+        ],
+        "rules": [
+          "Rule 5: Managers must prioritize metrics specified in current corporate directives."
+        ],
+        "preferences": [
+          "Preference 4: Devon values long-term employee loyalty and institutional knowledge."
+        ],
+        "question": "Should Devon schedule more hours for the highest-selling employees regardless of wage?",
+        "label": true
+      },
+      {
+        "facts": [
+          "An employee has filed a complaint alleging unfair scheduling practices.",
+          "Store sales have begun to recover, but the labor cut mandate remains in effect."
+        ],
+        "rules": [
+          "Rule 6: Complaints must be addressed through the formal HR process."
+        ],
+        "preferences": [
+          "Preference 5: Devon wants to maintain a reputation as a fair and transparent manager."
+        ],
+        "question": "Should Devon request an exception to the labor cut mandate from corporate?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Aisha is a nurse in a busy hospital emergency department.",
+      "The department is experiencing severe understaffing during the night shift."
+    ],
+    "rules": [
+      "Rule 1: Nurses must not work more than three consecutive 12-hour shifts.",
+      "Rule 2: Patient-to-nurse ratios must not exceed safety guidelines."
+    ],
+    "preferences": [
+      "Preference 1: Aisha prioritizes patient safety above all else."
+    ],
+    "question": "Should Aisha volunteer for a fourth consecutive shift when asked by the supervisor?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "A major accident has brought multiple trauma patients to the emergency department.",
+          "All available staff have been called in, but several are still en route."
+        ],
+        "rules": [
+          "Rule 3: In declared emergencies, standard staffing rules can be temporarily suspended."
+        ],
+        "preferences": [
+          "Preference 2: Aisha is concerned about fatigue affecting her judgment."
+        ],
+        "question": "Should Aisha stay for just a few extra hours until more staff arrive?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Aisha has been working for 14 hours straight, showing signs of exhaustion.",
+          "A less experienced nurse is available to take over Aisha's patients."
+        ],
+        "rules": [
+          "Rule 4: Nurses must self-report when they are too fatigued to safely practice."
+        ],
+        "preferences": [
+          "Preference 3: Aisha is concerned about the less experienced nurse managing complex cases."
+        ],
+        "question": "Should Aisha continue working despite her exhaustion?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Hospital administration has implemented mandatory overtime due to an ongoing staff shortage.",
+          "Aisha has family responsibilities that conflict with the new overtime requirements."
+        ],
+        "rules": [
+          "Rule 5: Employees may request exemptions from mandatory overtime for documented hardships."
+        ],
+        "preferences": [
+          "Preference 4: Aisha feels loyal to her colleagues and doesn't want to increase their burden."
+        ],
+        "question": "Should Aisha request an exemption from the mandatory overtime?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Several nurses have reported dangerous understaffing to the state nursing board.",
+          "Hospital administration has warned that complainants may face scheduling consequences."
+        ],
+        "rules": [
+          "Rule 6: Whistleblower protections legally shield staff who report safety concerns."
+        ],
+        "preferences": [
+          "Preference 5: Aisha values her job security and positive workplace relationships."
+        ],
+        "question": "Should Aisha join the official complaint to the nursing board?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Taylor is a project manager for a software development team.",
+      "The team's current project is behind schedule by two weeks."
+    ],
+    "rules": [
+      "Rule 1: Project delays must be reported to upper management.",
+      "Rule 2: Schedule changes require client approval if they affect delivery dates."
+    ],
+    "preferences": [
+      "Preference 1: Taylor wants to maintain the team's reputation for reliability."
+    ],
+    "question": "Should Taylor immediately inform the client about the delay?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "The delay is due to unexpected technical challenges rather than team performance issues.",
+          "The client has an important product launch scheduled based on the original timeline."
+        ],
+        "rules": [
+          "Rule 3: Teams may implement approved overtime to address critical delays."
+        ],
+        "preferences": [
+          "Preference 2: Taylor is concerned about team burnout from excessive overtime."
+        ],
+        "question": "Should Taylor ask the team to work evenings and weekends to catch up?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Two senior developers have suggested cutting some planned features to meet the deadline.",
+          "The company has a policy of not compromising on quality."
+        ],
+        "rules": [
+          "Rule 4: Feature scope can be adjusted with proper documentation and approvals."
+        ],
+        "preferences": [
+          "Preference 3: Taylor believes the client values all the promised features."
+        ],
+        "question": "Should Taylor propose reducing feature scope to the client?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The client has rejected the proposal to reduce features.",
+          "Upper management has offered additional resources from another team."
+        ],
+        "rules": [
+          "Rule 5: Cross-team resource sharing requires both teams' managers to agree."
+        ],
+        "preferences": [
+          "Preference 4: Taylor prefers working with familiar team members with known capabilities."
+        ],
+        "question": "Should Taylor accept the additional resources from the other team?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The additional team members are struggling to integrate with the existing codebase.",
+          "The project is now three weeks behind schedule."
+        ],
+        "rules": [
+          "Rule 6: Delays exceeding 25% of the project timeline require executive review."
+        ],
+        "preferences": [
+          "Preference 5: Taylor wants to avoid executive involvement if possible."
+        ],
+        "question": "Should Taylor request an executive review of the project?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The executive review has resulted in a new deadline that the team believes is achievable.",
+          "The client has expressed dissatisfaction with the communication about delays."
+        ],
+        "rules": [
+          "Rule 7: Client dissatisfaction requires implementing an enhanced communication plan."
+        ],
+        "preferences": [
+          "Preference 6: Taylor wants to rebuild trust with the client."
+        ],
+        "question": "Should Taylor increase the frequency of client status updates to daily?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Leo is a high school counselor who notices that a student, Jamie, has been missing classes.",
+      "Jamie's academic performance has declined sharply in the past month."
+    ],
+    "rules": [
+      "Rule 1: School policy requires contacting parents after three unexcused absences.",
+      "Rule 2: Counselors must maintain student confidentiality except in cases of harm risk."
+    ],
+    "preferences": [
+      "Preference 1: Leo wants to support Jamie while following school protocols."
+    ],
+    "question": "Should Leo contact Jamie's parents about the absences immediately?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "During a counseling session, Jamie reveals experiencing severe anxiety about school.",
+          "Jamie asks Leo not to tell anyone, especially parents, about the anxiety issues."
+        ],
+        "rules": [
+          "Rule 3: Mental health concerns should be addressed by qualified professionals."
+        ],
+        "preferences": [
+          "Preference 2: Leo believes parental involvement is often helpful for student support."
+        ],
+        "question": "Should Leo honor Jamie's request for confidentiality about the anxiety?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Jamie has started attending classes more regularly after talking with Leo.",
+          "The school has implemented a new mental health screening program."
+        ],
+        "rules": [
+          "Rule 4: Students may opt out of mental health screenings with parental consent."
+        ],
+        "preferences": [
+          "Preference 3: Leo believes Jamie would benefit from the screening program."
+        ],
+        "question": "Should Leo encourage Jamie to participate in the screening program?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Jamie participated in the screening, which indicated moderately severe anxiety.",
+          "The school policy requires parental notification for moderate to severe results."
+        ],
+        "rules": [
+          "Rule 5: Screening results must be shared with parents unless a qualified professional determines it would be harmful."
+        ],
+        "preferences": [
+          "Preference 4: Leo wants to build trust with Jamie through a transparent process."
+        ],
+        "question": "Should Leo inform Jamie's parents about the screening results without discussing it with Jamie first?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Jamie reveals that parental pressure to excel academically is a major source of anxiety.",
+          "Jamie's absence rate has increased again following a parent-teacher conference."
+        ],
+        "rules": [
+          "Rule 6: When home environment contributes to student distress, school resources should be offered as intermediary support."
+        ],
+        "preferences": [
+          "Preference 5: Leo wants to ensure Jamie's academic success while addressing anxiety."
+        ],
+        "question": "Should Leo arrange a mediated meeting with Jamie and parents?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The mediated meeting revealed communication issues in the family.",
+          "Jamie's parents have agreed to family counseling but want Jamie to maintain perfect attendance."
+        ],
+        "rules": [
+          "Rule 7: Accommodation plans can be created for students with documented mental health needs."
+        ],
+        "preferences": [
+          "Preference 6: Leo believes some flexibility would help Jamie's recovery process."
+        ],
+        "question": "Should Leo propose an accommodation plan allowing occasional mental health days for Jamie?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Nadia is a marketing manager reviewing a controversial ad campaign.",
+      "The campaign uses cultural elements that might be considered appropriative."
+    ],
+    "rules": [
+      "Rule 1: Marketing materials must align with company values of respect and inclusion.",
+      "Rule 2: Campaigns must be reviewed by the diversity committee before final approval."
+    ],
+    "preferences": [
+      "Preference 1: Nadia wants to create impactful campaigns that resonate widely."
+    ],
+    "question": "Should Nadia approve the current version of the campaign?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Focus group testing shows mixed responses to the campaign, with some cultural groups expressing discomfort.",
+          "The campaign deadline is approaching quickly."
+        ],
+        "rules": [
+          "Rule 3: Campaigns with mixed focus group responses require additional review."
+        ],
+        "preferences": [
+          "Preference 2: Nadia is concerned about meeting quarterly marketing targets."
+        ],
+        "question": "Should Nadia proceed with the campaign while conducting additional reviews in parallel?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The company has brought in cultural consultants who suggest specific modifications.",
+          "Implementing all suggested changes would delay the campaign by three weeks."
+        ],
+        "rules": [
+          "Rule 4: Consultant recommendations should be given serious consideration in final decisions."
+        ],
+        "preferences": [
+          "Preference 3: Nadia believes some of the consultant suggestions would reduce campaign effectiveness."
+        ],
+        "question": "Should Nadia implement all the consultants' suggested changes?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Social media has picked up on early leaked images from the campaign, causing some controversy.",
+          "The company CEO has asked for a briefing on the situation."
+        ],
+        "rules": [
+          "Rule 5: Public controversies must be addressed through the public relations department."
+        ],
+        "preferences": [
+          "Preference 4: Nadia wants to maintain creative control over the campaign."
+        ],
+        "question": "Should Nadia recommend completely redesigning the campaign from scratch?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The modified campaign has been launched with cultural consultants' approval.",
+          "A small but vocal group is still criticizing the campaign online."
+        ],
+        "rules": [
+          "Rule 6: The company should engage with legitimate criticism in a constructive manner."
+        ],
+        "preferences": [
+          "Preference 5: Nadia believes responding to all criticism can amplify negative attention."
+        ],
+        "question": "Should Nadia recommend acknowledging the criticism publicly?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Campaign metrics show strong overall performance despite the controversy.",
+          "Several employees have expressed discomfort with the campaign."
+        ],
+        "rules": [
+          "Rule 7: Employee concerns about ethical issues must be documented and addressed."
+        ],
+        "preferences": [
+          "Preference 6: Nadia values employee satisfaction and moral alignment."
+        ],
+        "question": "Should Nadia end the campaign early despite its financial success?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Kenji is a restaurant owner in a small town.",
+      "A food critic from a major publication has made a reservation for tomorrow night."
+    ],
+    "rules": [
+      "Rule 1: Restaurants should provide the same quality of service to all guests.",
+      "Rule 2: Special preparations are reasonable for significant business opportunities."
+    ],
+    "preferences": [
+      "Preference 1: Kenji wants to receive a positive review to boost business."
+    ],
+    "question": "Should Kenji make special preparations for the critic's visit?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "Kenji's head chef has called in sick the day of the critic's visit.",
+          "The sous chef is capable but less experienced with the signature dishes."
+        ],
+        "rules": [
+          "Rule 3: Staff should not work when seriously ill, especially in food service."
+        ],
+        "preferences": [
+          "Preference 2: Kenji believes authenticity is part of the restaurant's appeal."
+        ],
+        "question": "Should Kenji ask the head chef to come in despite being sick?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Several regular customers have reservations the same night as the critic.",
+          "The restaurant is fully booked and operating at capacity."
+        ],
+        "rules": [
+          "Rule 4: Established customers should receive recognition for their loyalty."
+        ],
+        "preferences": [
+          "Preference 3: Kenji does not want to alienate regular customers for a one-time visitor."
+        ],
+        "question": "Should Kenji give the critic preferential treatment over regular customers?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The critic has been identified as someone who particularly values authentic local ingredients.",
+          "Kenji's signature dish uses an imported specialty item."
+        ],
+        "rules": [
+          "Rule 5: Menu representations should be honest about ingredient sourcing."
+        ],
+        "preferences": [
+          "Preference 4: Kenji is proud of his carefully selected ingredients regardless of origin."
+        ],
+        "question": "Should Kenji modify the signature dish to use local ingredients instead of the imported specialty item?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The critic has asked questions about sustainable practices during the reservation call.",
+          "Kenji's restaurant has recently implemented some but not all industry-recommended sustainable practices."
+        ],
+        "rules": [
+          "Rule 6: Businesses should be truthful about their sustainability efforts."
+        ],
+        "preferences": [
+          "Preference 5: Kenji wants to present the restaurant in the best possible light."
+        ],
+        "question": "Should Kenji exaggerate the restaurant's sustainability efforts to impress the critic?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The critic's review was mixed, praising the food but criticizing the service as inconsistent.",
+          "Several staff members are upset about the criticism they believe is unfair."
+        ],
+        "rules": [
+          "Rule 7: Professional feedback should be used constructively even when negative."
+        ],
+        "preferences": [
+          "Preference 6: Kenji believes his staff did their best under difficult circumstances."
+        ],
+        "question": "Should Kenji implement service changes based on the critic's feedback?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Sonia is a city council member in a growing suburban area.",
+      "A developer has proposed building a large apartment complex in a predominantly single-family neighborhood."
+    ],
+    "rules": [
+      "Rule 1: Council members must consider both community feedback and city development needs.",
+      "Rule 2: Zoning changes require public hearings and environmental impact studies."
+    ],
+    "preferences": [
+      "Preference 1: Sonia campaigned on increasing affordable housing options."
+    ],
+    "question": "Should Sonia support the apartment complex proposal?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The public hearing revealed strong opposition from current neighborhood residents.",
+          "Housing studies show a critical shortage of affordable rentals in the city."
+        ],
+        "rules": [
+          "Rule 3: Council members should represent constituent interests while considering broader city needs."
+        ],
+        "preferences": [
+          "Preference 2: Sonia values her electoral standing in the neighborhood."
+        ],
+        "question": "Should Sonia continue supporting the apartment proposal despite constituent opposition?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The developer has offered to include 15% affordable units, below the city's goal of 20%.",
+          "Traffic studies indicate the development would significantly increase congestion."
+        ],
+        "rules": [
+          "Rule 4: Development agreements can include provisions for infrastructure improvements."
+        ],
+        "preferences": [
+          "Preference 3: Sonia believes private developers should contribute to public infrastructure costs."
+        ],
+        "question": "Should Sonia push for a higher percentage of affordable units before supporting the proposal?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The developer has agreed to 20% affordable units but reduced the total number of units.",
+          "An environmental study has identified potential issues with stormwater runoff."
+        ],
+        "rules": [
+          "Rule 5: Environmental concerns must be adequately addressed before project approval."
+        ],
+        "preferences": [
+          "Preference 4: Sonia prioritizes environmental protection in development decisions."
+        ],
+        "question": "Should Sonia require additional environmental mitigation measures?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The additional environmental requirements would make the project financially infeasible according to the developer.",
+          "Another council member has proposed a compromise reducing the building height by one story."
+        ],
+        "rules": [
+          "Rule 6: Council decisions should balance multiple competing interests."
+        ],
+        "preferences": [
+          "Preference 5: Sonia wants to find solutions that allow development while addressing concerns."
+        ],
+        "question": "Should Sonia support the compromise proposal?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A community group has filed a legal challenge against the project approval process.",
+          "The city's legal department believes the challenge has merit on procedural grounds."
+        ],
+        "rules": [
+          "Rule 7: Procedural requirements for development approvals must be strictly followed."
+        ],
+        "preferences": [
+          "Preference 6: Sonia wants to avoid costly legal battles that delay housing creation."
+        ],
+        "question": "Should Sonia recommend restarting the approval process to address procedural concerns?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Restarting the process would delay construction by at least six months.",
+          "Housing costs in the city have increased by 12% during the approval process."
+        ],
+        "rules": [
+          "Rule 8: Council members should consider the economic impact of delayed development."
+        ],
+        "preferences": [
+          "Preference 7: Sonia believes addressing the housing shortage is increasingly urgent."
+        ],
+        "question": "Should Sonia advocate for an expedited review process to minimize further delays?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Omar is the principal investigator on a pharmaceutical research study.",
+      "Preliminary results show a drug candidate has moderate efficacy but concerning side effects."
+    ],
+    "rules": [
+      "Rule 1: Research integrity requires accurate reporting of all findings.",
+      "Rule 2: Patient safety must be prioritized in clinical research."
+    ],
+    "preferences": [
+      "Preference 1: Omar wants to develop treatments that help patients with few side effects."
+    ],
+    "question": "Should Omar continue the current phase of the study?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Further analysis suggests the side effects may be less severe in a specific patient subgroup.",
+          "The funding agency is pressuring for continued development of the drug."
+        ],
+        "rules": [
+          "Rule 3: Protocol modifications require ethics committee approval."
+        ],
+        "preferences": [
+          "Preference 2: Omar wants to maintain good relationships with research funders."
+        ],
+        "question": "Should Omar propose modifying the study to focus on the subgroup with fewer side effects?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The ethics committee has approved a modified protocol focusing on the specific subgroup.",
+          "A competing research team has published promising results with a similar compound having fewer side effects."
+        ],
+        "rules": [
+          "Rule 4: Research resources should be allocated to the most promising approaches."
+        ],
+        "preferences": [
+          "Preference 3: Omar has invested significant time and resources in the current compound."
+        ],
+        "question": "Should Omar continue with his modified protocol despite the competing research?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Further investigation reveals that Omar's compound works through a novel mechanism not seen in the competitor's drug.",
+          "Patient advocacy groups are calling for more treatment options, even with side effects."
+        ],
+        "rules": [
+          "Rule 5: Scientific value includes advancing understanding of biological mechanisms."
+        ],
+        "preferences": [
+          "Preference 4: Omar values scientific discovery alongside treatment development."
+        ],
+        "question": "Should Omar refocus the research to emphasize the novel mechanism rather than treatment efficacy?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The mechanistic studies have yielded insights that could lead to designing better compounds.",
+          "The funding agency is reducing support for basic mechanism research in favor of clinical applications."
+        ],
+        "rules": [
+          "Rule 6: Research direction should balance scientific merit and practical applications."
+        ],
+        "preferences": [
+          "Preference 5: Omar believes long-term progress requires understanding fundamental mechanisms."
+        ],
+        "question": "Should Omar seek alternative funding to continue the mechanistic studies?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A pharmaceutical company has offered to fund continued research but wants exclusive rights to any discoveries.",
+          "Omar's university has policies promoting open access to research findings."
+        ],
+        "rules": [
+          "Rule 7: Conflicts between funding source requirements and institutional policies must be disclosed and resolved."
+        ],
+        "preferences": [
+          "Preference 6: Omar values open scientific exchange but needs funding to continue the work."
+        ],
+        "question": "Should Omar accept the pharmaceutical company's funding and terms?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Omar has received a government grant that allows continuing the research with open publication.",
+          "The pharmaceutical company is now offering a collaboration that would accelerate translation to clinical trials."
+        ],
+        "rules": [
+          "Rule 8: Public-private partnerships require specific conflict of interest management."
+        ],
+        "preferences": [
+          "Preference 7: Omar wants to see his research benefit patients as quickly as possible."
+        ],
+        "question": "Should Omar maintain independence with government funding rather than collaborate with the pharmaceutical company?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Lin is a senior engineer at an autonomous vehicle company.",
+      "Lin has discovered a potential safety issue in the object detection system."
+    ],
+    "rules": [
+      "Rule 1: Safety-critical issues must be documented and reported to the safety team.",
+      "Rule 2: Product release timelines should not compromise safety standards."
+    ],
+    "preferences": [
+      "Preference 1: Lin wants to be seen as a team player who helps meet company goals."
+    ],
+    "question": "Should Lin report the issue immediately even though it might delay the upcoming product release?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "The safety issue occurs only in rare edge cases with an estimated 0.01% probability.",
+          "The company has announced the release date to shareholders and customers."
+        ],
+        "rules": [
+          "Rule 3: Known issues must be assessed for severity and probability before determining response."
+        ],
+        "preferences": [
+          "Preference 2: Lin believes that public trust in autonomous vehicles requires near-perfect safety."
+        ],
+        "question": "Should Lin advocate for delaying the release to fix the rare edge case?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The safety team has classified the issue as low priority based on statistical risk assessment.",
+          "Lin has identified a potential quick fix that hasn't been thoroughly tested."
+        ],
+        "rules": [
+          "Rule 4: Code changes require complete testing and validation before implementation."
+        ],
+        "preferences": [
+          "Preference 3: Lin prefers thorough solutions over quick fixes."
+        ],
+        "question": "Should Lin implement the quick fix to meet the release deadline?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Another engineer suggests documenting the issue as a known limitation in the release notes.",
+          "The marketing team has already created materials claiming superior safety performance."
+        ],
+        "rules": [
+          "Rule 5: Product documentation must accurately reflect known limitations."
+        ],
+        "preferences": [
+          "Preference 4: Lin is concerned about potential legal liability if issues are not disclosed."
+        ],
+        "question": "Should Lin insist on including the edge case in the public release notes?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A post-release analysis shows the edge case might be more common than initially estimated.",
+          "A competitor has publicized a similar issue in their system, receiving negative press."
+        ],
+        "rules": [
+          "Rule 6: New information that changes risk assessment requires immediate reevaluation."
+        ],
+        "preferences": [
+          "Preference 5: Lin wants to protect the company's reputation for transparency."
+        ],
+        "question": "Should Lin recommend a public disclosure about the updated risk assessment?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The company has decided to issue a software update addressing the edge case.",
+          "Testing reveals the fix causes a slight performance degradation in normal operation."
+        ],
+        "rules": [
+          "Rule 7: Performance trade-offs must be clearly communicated to users."
+        ],
+        "preferences": [
+          "Preference 6: Lin thinks most users would prioritize safety over marginal performance."
+        ],
+        "question": "Should Lin support releasing the update despite the performance impact?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Some users are reporting that the performance degradation affects their specific use case significantly.",
+          "The engineering team has found a better solution that would take two months to implement properly."
+        ],
+        "rules": [
+          "Rule 8: Users must have the option to choose between software versions based on their needs."
+        ],
+        "preferences": [
+          "Preference 7: Lin believes maintaining a single supported software version simplifies maintenance."
+        ],
+        "question": "Should Lin recommend allowing users to revert to the previous version while waiting for the improved fix?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Elena is the director of a community theater group.",
+      "The theater's main funding grant requires producing plays of cultural significance."
+    ],
+    "rules": [
+      "Rule 1: Play selection must balance artistic merit, audience appeal, and funding requirements.",
+      "Rule 2: The director has final authority on creative decisions."
+    ],
+    "preferences": [
+      "Preference 1: Elena wants to choose plays that challenge both performers and audiences."
+    ],
+    "question": "Should Elena select an experimental new play that meets grant requirements but might have limited audience appeal?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "Ticket pre-sales for the experimental play are significantly lower than projected.",
+          "Several board members have expressed concern about potential financial losses."
+        ],
+        "rules": [
+          "Rule 3: The theater must maintain financial sustainability while pursuing artistic goals."
+        ],
+        "preferences": [
+          "Preference 2: Elena believes in the artistic value of taking risks with programming."
+        ],
+        "question": "Should Elena replace the experimental play with a more commercially reliable option?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A major local business has offered sponsorship if the theater produces a different play.",
+          "The actors have already begun rehearsals for the experimental play."
+        ],
+        "rules": [
+          "Rule 4: Sponsorship agreements must not compromise artistic integrity."
+        ],
+        "preferences": [
+          "Preference 3: Elena feels a responsibility to the actors who committed to the original play."
+        ],
+        "question": "Should Elena accept the sponsorship and change the production?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A renowned critic has expressed interest in reviewing the experimental play.",
+          "The theater needs positive reviews to strengthen future grant applications."
+        ],
+        "rules": [
+          "Rule 5: Artistic decisions should not be made primarily to please critics."
+        ],
+        "preferences": [
+          "Preference 4: Elena wants to build the theater's reputation for innovative work."
+        ],
+        "question": "Should Elena make changes to the production to appeal to the critic's known preferences?",
+        "label": false
+      },
+      {
+        "facts": [
+          "During rehearsals, the cast has identified problematic content in the play that wasn't initially apparent.",
+          "Community standards have shifted since the play was selected."
+        ],
+        "rules": [
+          "Rule 6: The theater should be responsive to evolving social awareness and standards."
+        ],
+        "preferences": [
+          "Preference 5: Elena believes art should provoke discussion about difficult topics."
+        ],
+        "question": "Should Elena modify the problematic content in the play?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The playwright objects to any modifications to the text.",
+          "The licensing agreement gives the playwright approval rights over changes."
+        ],
+        "rules": [
+          "Rule 7: Intellectual property rights and agreements must be respected."
+        ],
+        "preferences": [
+          "Preference 6: Elena values maintaining good relationships with playwrights for future collaborations."
+        ],
+        "question": "Should Elena proceed with modifications despite the playwright's objections?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A community group has announced plans to protest the production.",
+          "Local media is covering the controversy, increasing ticket sales."
+        ],
+        "rules": [
+          "Rule 8: The theater should engage constructively with community concerns."
+        ],
+        "preferences": [
+          "Preference 7: Elena believes theater should create dialogue rather than avoid controversy."
+        ],
+        "question": "Should Elena organize post-show discussions to address the controversial elements?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Dr. Chen is the principal of a high school facing budget cuts.",
+      "The school board has mandated a 10% reduction in staffing or programs."
+    ],
+    "rules": [
+      "Rule 1: Educational quality must be maintained despite budget constraints.",
+      "Rule 2: Staff reductions require consideration of tenure, performance, and program needs."
+    ],
+    "preferences": [
+      "Preference 1: Dr. Chen wants to protect core academic programs."
+    ],
+    "question": "Should Dr. Chen recommend reducing staff rather than cutting programs?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "The arts department has the lowest enrollment but passionate community support.",
+          "Several teachers have volunteered for early retirement."
+        ],
+        "rules": [
+          "Rule 3: Voluntary staff reductions should be prioritized over involuntary ones."
+        ],
+        "preferences": [
+          "Preference 2: Dr. Chen believes arts education is valuable despite lower enrollment."
+        ],
+        "question": "Should Dr. Chen accept all early retirement volunteers even if it disproportionately affects certain departments?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The early retirements only account for 6% of the required reduction.",
+          "The athletics program has high participation but significant operational costs."
+        ],
+        "rules": [
+          "Rule 4: Budget decisions should consider both immediate financial impact and long-term consequences."
+        ],
+        "preferences": [
+          "Preference 3: Dr. Chen recognizes athletics' role in student engagement and college opportunities."
+        ],
+        "question": "Should Dr. Chen reduce athletic program funding to avoid further staff cuts?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A local business has offered to sponsor the athletics program, covering most costs.",
+          "The sponsorship includes naming rights and advertising at school events."
+        ],
+        "rules": [
+          "Rule 5: External partnerships must comply with educational policy and ethical standards."
+        ],
+        "preferences": [
+          "Preference 4: Dr. Chen is concerned about commercial influence in education."
+        ],
+        "question": "Should Dr. Chen accept the athletic sponsorship offer?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Parents have organized to protest potential cuts to advanced placement (AP) courses.",
+          "AP courses serve 15% of students but require specialized teachers with higher salaries."
+        ],
+        "rules": [
+          "Rule 6: Educational opportunities should be equitably distributed among the student population."
+        ],
+        "preferences": [
+          "Preference 5: Dr. Chen believes in challenging high-achieving students while supporting all learners."
+        ],
+        "question": "Should Dr. Chen preserve all AP courses at the expense of other programs?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A neighboring district has proposed sharing specialized teachers for advanced courses.",
+          "The shared teaching arrangement would require schedule coordination and student transportation."
+        ],
+        "rules": [
+          "Rule 7: Inter-district collaborations require formal agreements and school board approval."
+        ],
+        "preferences": [
+          "Preference 6: Dr. Chen prefers solutions that maintain program quality while reducing costs."
+        ],
+        "question": "Should Dr. Chen pursue the teacher-sharing arrangement with the neighboring district?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The teacher's union has filed a grievance about the proposed sharing arrangement.",
+          "State education officials have offered a one-time grant to facilitate innovative cost-saving measures."
+        ],
+        "rules": [
+          "Rule 8: Labor agreements must be honored or renegotiated with proper representation."
+        ],
+        "preferences": [
+          "Preference 7: Dr. Chen wants to maintain positive relationships with the teachers."
+        ],
+        "question": "Should Dr. Chen withdraw the teacher-sharing proposal due to the union grievance?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Enrollment projections show a 15% decline over the next three years.",
+          "The school board is considering long-term consolidation of schools in the district."
+        ],
+        "rules": [
+          "Rule 9: Long-term planning should address systemic challenges rather than just immediate crises."
+        ],
+        "preferences": [
+          "Preference 8: Dr. Chen values the school's identity and community role."
+        ],
+        "question": "Should Dr. Chen support the school consolidation plan?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Miguel is the lead developer of a popular mobile app with millions of users.",
+      "User data shows engagement declining over the past three months."
+    ],
+    "rules": [
+      "Rule 1: Product changes must be data-driven and address user needs.",
+      "Rule 2: Major interface changes require user testing before wide release."
+    ],
+    "preferences": [
+      "Preference 1: Miguel wants to reverse the engagement decline quickly."
+    ],
+    "question": "Should Miguel implement a radical redesign to address declining engagement?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "User surveys indicate confusion about recent feature additions.",
+          "Competitors have implemented similar features with better user satisfaction."
+        ],
+        "rules": [
+          "Rule 3: User feedback should be prioritized in feature development decisions."
+        ],
+        "preferences": [
+          "Preference 2: Miguel takes pride in his team's original design concepts."
+        ],
+        "question": "Should Miguel roll back the recent feature additions?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A small test of interface simplifications showed improved user satisfaction but decreased revenue from in-app purchases.",
+          "The company's financial targets require maintaining current revenue levels."
+        ],
+        "rules": [
+          "Rule 4: Product changes must balance user experience and business sustainability."
+        ],
+        "preferences": [
+          "Preference 3: Miguel believes better user experience leads to long-term loyalty and revenue."
+        ],
+        "question": "Should Miguel implement the interface simplifications despite the revenue impact?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The company's marketing team wants to add more prominent advertisements to increase revenue.",
+          "User feedback consistently rates ads as a major pain point."
+        ],
+        "rules": [
+          "Rule 5: Different departments should collaborate to find solutions that meet multiple objectives."
+        ],
+        "preferences": [
+          "Preference 4: Miguel prioritizes user experience over short-term revenue optimization."
+        ],
+        "question": "Should Miguel agree to add more prominent advertisements?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Data shows that a small subset of power users (5%) generate 30% of engagement.",
+          "Recent changes have particularly dissatisfied these power users."
+        ],
+        "rules": [
+          "Rule 6: Product strategy should consider the varying needs of different user segments."
+        ],
+        "preferences": [
+          "Preference 5: Miguel believes in developing features that benefit the majority of users."
+        ],
+        "question": "Should Miguel prioritize addressing power users' concerns over general improvements?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A new premium subscription model could provide revenue without increasing ads for free users.",
+          "Market research indicates only 2% of users would likely subscribe initially."
+        ],
+        "rules": [
+          "Rule 7: New revenue models require thorough financial projections and risk assessment."
+        ],
+        "preferences": [
+          "Preference 6: Miguel prefers solutions that don't create two tiers of user experience."
+        ],
+        "question": "Should Miguel implement the premium subscription model?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Early adoption of the subscription model is exceeding projections at 4% of users.",
+          "Free users are expressing frustration about perceived preferential treatment of paying users."
+        ],
+        "rules": [
+          "Rule 8: Communication strategies should be developed for significant business model changes."
+        ],
+        "preferences": [
+          "Preference 7: Miguel wants to maintain transparency with all users about business decisions."
+        ],
+        "question": "Should Miguel reduce the feature gap between free and premium versions?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A competitor has offered to acquire the app for a substantial sum.",
+          "The acquiring company has a reputation for monetizing aggressively after acquisitions."
+        ],
+        "rules": [
+          "Rule 9: Acquisition offers must be evaluated based on both financial and strategic implications."
+        ],
+        "preferences": [
+          "Preference 8: Miguel feels responsible for the product experience and team culture he's built."
+        ],
+        "question": "Should Miguel recommend accepting the acquisition offer?",
+        "label": false
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Morgan has been diagnosed with a chronic illness requiring ongoing treatment.",
+      "Two treatment options exist: one is well-established with moderate effectiveness, the other is newer with potentially better outcomes but less long-term data."
+    ],
+    "rules": [
+      "Rule 1: Medical decisions should prioritize patient wellbeing.",
+      "Rule 2: Informed consent requires understanding risks and benefits of all options."
+    ],
+    "preferences": [
+      "Preference 1: Morgan prefers treatments with fewer side effects."
+    ],
+    "question": "Should Morgan choose the newer treatment option?",
+    "label": false,
+    "updates": [
+      {
+        "facts": [
+          "Morgan's insurance will fully cover the established treatment but only partially cover the newer option.",
+          "Morgan's doctor mentions that early research suggests the newer treatment could potentially lead to remission in some patients."
+        ],
+        "rules": [
+          "Rule 3: Financial considerations are valid factors in treatment decisions."
+        ],
+        "preferences": [
+          "Preference 1: Morgan prefers treatments with fewer side effects.",
+          "Preference 2: Morgan values long-term health outcomes over short-term convenience."
+        ],
+        "question": "Should Morgan pursue insurance coverage appeals for the newer treatment?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Morgan joins a patient support group and meets several people who experienced rare but serious side effects from the established treatment.",
+          "New preliminary data shows the newer treatment may be more effective for patients with Morgan's specific genetic profile."
+        ],
+        "rules": [
+          "Rule 4: Anecdotal evidence should be considered alongside clinical data."
+        ],
+        "preferences": [
+          "Preference 3: Morgan wants to make evidence-based decisions rather than fear-based ones."
+        ],
+        "question": "Should Morgan request genetic testing to determine compatibility with the newer treatment?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Genetic testing confirms Morgan has the profile associated with better response to the newer treatment.",
+          "The insurance company approves partial coverage, but Morgan will still have significant out-of-pocket costs."
+        ],
+        "rules": [
+          "Rule 5: Treatment decisions may need to balance optimal and affordable care."
+        ],
+        "preferences": [
+          "Preference 4: Morgan is willing to make financial sacrifices for better health outcomes."
+        ],
+        "question": "Should Morgan proceed with the newer treatment despite the financial burden?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Morgan's family offers financial support to cover treatment costs.",
+          "Accepting support would strain family resources and create a sense of obligation."
+        ],
+        "rules": [
+          "Rule 6: Independence in healthcare decisions includes financial considerations."
+        ],
+        "preferences": [
+          "Preference 5: Morgan values self-sufficiency and dislikes feeling dependent on others."
+        ],
+        "question": "Should Morgan accept the family's financial support for treatment?",
+        "label": false
+      },
+      {
+        "facts": [
+          "A clinical trial opens for an even newer treatment that shows promise for complete remission.",
+          "Participating would mean discontinuing the current treatment plan and potentially being assigned to a placebo group."
+        ],
+        "rules": [
+          "Rule 7: Clinical trials involve uncertainty but contribute to medical knowledge."
+        ],
+        "preferences": [
+          "Preference 6: Morgan is interested in advancing medical research for the benefit of future patients."
+        ],
+        "question": "Should Morgan enroll in the clinical trial?",
+        "label": false
+      },
+      {
+        "facts": [
+          "Morgan's condition worsens unexpectedly, requiring hospitalization.",
+          "The doctor suggests that more aggressive treatment is now needed immediately."
+        ],
+        "rules": [
+          "Rule 8: Acute health crises may necessitate revising previous treatment decisions."
+        ],
+        "preferences": [
+          "Preference 7: Morgan wants to avoid prolonged hospitalization if possible."
+        ],
+        "question": "Should Morgan switch to the most aggressive available treatment option?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The aggressive treatment stabilizes Morgan's condition but causes significant side effects.",
+          "A specialized treatment center in another state offers a comprehensive approach with better side effect management."
+        ],
+        "rules": [
+          "Rule 9: Geographic relocation for treatment introduces social and logistical considerations."
+        ],
+        "preferences": [
+          "Preference 8: Morgan values maintaining connection to local support network."
+        ],
+        "question": "Should Morgan relocate temporarily for specialized treatment?",
+        "label": true
+      }
+    ]
+  },
+  {
+    "facts": [
+      "Chris and Pat have been in a relationship for two years and are considering moving in together.",
+      "Chris has received a job offer in another city that would advance their career significantly."
+    ],
+    "rules": [
+      "Rule 1: Major life decisions in committed relationships should involve mutual consideration.",
+      "Rule 2: Career advancement opportunities can have long-term benefits for both partners."
+    ],
+    "preferences": [
+      "Preference 1: Chris prioritizes career growth at this stage of life."
+    ],
+    "question": "Should Chris accept the job offer in another city?",
+    "label": true,
+    "updates": [
+      {
+        "facts": [
+          "Pat reveals they cannot relocate due to family caregiving responsibilities.",
+          "The job would require Chris to be away at least 5 days a week for the foreseeable future."
+        ],
+        "rules": [
+          "Rule 3: Long-distance arrangements create unique strains on relationships."
+        ],
+        "preferences": [
+          "Preference 1: Chris prioritizes career growth at this stage of life.",
+          "Preference 2: Both partners value maintaining their relationship."
+        ],
+        "question": "Should Chris and Pat attempt a long-distance relationship?",
+        "label": true
+      },
+      {
+        "facts": [
+          "After three months of long-distance, communication problems emerge between Chris and Pat.",
+          "Chris discovers there may be a possibility of remote work after the first year."
+        ],
+        "rules": [
+          "Rule 4: Relationship challenges require mutual problem-solving and compromise."
+        ],
+        "preferences": [
+          "Preference 3: Both partners want to avoid breaking up if possible."
+        ],
+        "question": "Should Chris negotiate for earlier remote work options?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Chris's employer denies the early remote work request but offers increased travel allowance for visits.",
+          "Pat has begun forming a close friendship with a coworker who provides local emotional support."
+        ],
+        "rules": [
+          "Rule 5: Emotional intimacy with others can affect primary relationship dynamics."
+        ],
+        "preferences": [
+          "Preference 4: Chris believes in direct communication about relationship concerns."
+        ],
+        "question": "Should Chris express concerns about Pat's new friendship?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Pat admits to having developed feelings for the coworker but has not acted on them.",
+          "Chris realizes the career advancement has been fulfilling but at a higher personal cost than expected."
+        ],
+        "rules": [
+          "Rule 6: Emotional honesty is essential during relationship difficulties."
+        ],
+        "preferences": [
+          "Preference 5: Both partners value fidelity and commitment."
+        ],
+        "question": "Should Chris and Pat take a relationship break to reassess their priorities?",
+        "label": true
+      },
+      {
+        "facts": [
+          "During the break, Chris is offered a lateral position in their original city with the same company.",
+          "Pat has decided not to pursue a relationship with the coworker after recognizing it was situational."
+        ],
+        "rules": [
+          "Rule 7: Major life transitions provide opportunities to realign priorities."
+        ],
+        "preferences": [
+          "Preference 6: Chris now values relationship stability more than rapid career advancement."
+        ],
+        "question": "Should Chris accept the lateral position to return to the same city as Pat?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The couple reunites, but trust issues persist from the emotional distance during separation.",
+          "Both partners are hesitant about immediately moving in together as originally planned."
+        ],
+        "rules": [
+          "Rule 8: Relationship repair requires intentional rebuilding of trust."
+        ],
+        "preferences": [
+          "Preference 7: Both partners want to make decisions that support long-term relationship health."
+        ],
+        "question": "Should Chris and Pat seek couples therapy to address lingering trust issues?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Therapy helps the couple improve communication, but Chris receives another advancement opportunity requiring travel.",
+          "Pat's family situation has changed, creating more flexibility in their location."
+        ],
+        "rules": [
+          "Rule 9: Healthy relationships adapt to changing circumstances with mutual input."
+        ],
+        "preferences": [
+          "Preference 8: Both partners now prioritize finding solutions that support both relationship and individual goals."
+        ],
+        "question": "Should Chris and Pat create a two-year plan that includes both career advancement and eventual cohabitation?",
+        "label": true
+      }
+    ]
+  }
 ]
