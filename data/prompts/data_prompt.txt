@@ -50,7 +50,7 @@ Scenario example:
   "preferences": [
     "Preference 1: Policy focus should be on job creation."
   ],
-  "question": "Should the government introduce new policy to improve the economy?",
+  "question": "Will the government introduce new policy to improve the economy?",
   "label": true,
   "updates": [
     {
@@ -77,7 +77,7 @@ Scenario example:
       "preferences": [
         "Preference 2: Immediate aid to struggling industries is necessary."
       ],
-      "question": "Should an action be taken in response to the economic crisis?",
+      "question": "Will an action be taken in response to the economic crisis?",
       "label": false
     },
     {
