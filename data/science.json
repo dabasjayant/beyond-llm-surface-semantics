@@ -51,6 +51,37 @@
         ],
         "question": "In these settings, will the plant still produce oxygen?",
         "label": false
+      },
+      {
+        "facts": [
+          "An artificial heat lamp has been installed near the plant, raising the leaf temperature to optimal range (around 25°C).",
+          "The heat lamp also emits wavelengths of light that chlorophyll can absorb."
+        ],
+        "rules": [
+          "Rule 7: Artificial light sources that emit appropriate wavelengths can substitute for sunlight in photosynthesis."
+        ],
+        "preferences": [
+          "Rule 7 supersedes Rule 3 when evaluating light availability.",
+          "Rule 6 is preferred over Rule 4 when evaluating photosynthesis in extreme temperatures."
+        ],
+        "question": "With the addition of the heat lamp, will the plant now produce oxygen despite the outdoor cold and shade?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The concentration of carbon dioxide in the environment has significantly decreased due to nearby construction activities.",
+          "A chemical compound has been accidentally released into the soil that inhibits the plant's ability to absorb water through its roots."
+        ],
+        "rules": [
+          "Rule 8: If any essential component of photosynthesis (light, water, carbon dioxide, chlorophyll, or functional enzymes) is limited or inhibited, the overall process is compromised."
+        ],
+        "preferences": [
+          "Rule 8 takes precedence over Rules 4 and 7 in determining overall photosynthetic capability.",
+          "Rule 7 supersedes Rule 3 when evaluating light availability.",
+          "Rule 6 is preferred over Rule 4 when evaluating photosynthesis in extreme temperatures."
+        ],
+        "question": "Given these additional complications, will the plant produce oxygen even with adequate temperature and artificial light?",
+        "label": false
       }
     ]
   },
@@ -111,6 +142,58 @@
         "preferences": [],
         "question": "Is fat digestion occurring in the small intestine?",
         "label": true
+      },
+      {
+        "facts": [
+          "The person has been diagnosed with gallbladder disease, resulting in decreased bile production.",
+          "Medical tests show bile production is at 25% of normal levels.",
+          "The meal consumed was particularly high in fat content."
+        ],
+        "rules": [
+          "Rule 10: Reduced bile production impairs fat emulsification.",
+          "Rule 11: Without proper emulsification, pancreatic lipase cannot efficiently access fat molecules."
+        ],
+        "preferences": [
+          "Rule 10 and Rule 11 take precedence over Rule 8 when evaluating fat digestion in cases of bile deficiency."
+        ],
+        "question": "Is efficient fat digestion occurring in the small intestine?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The person has taken a digestive enzyme supplement containing lipase.",
+          "The supplement is designed to work in the small intestine's alkaline environment.",
+          "The supplement includes a compound that helps disperse fats without requiring bile."
+        ],
+        "rules": [
+          "Rule 12: Supplemental digestive enzymes can compensate for certain digestive deficiencies.",
+          "Rule 13: Fat dispersing agents can partially substitute for the emulsification function of bile."
+        ],
+        "preferences": [
+          "Rule 12 and Rule 13 modify the constraints imposed by Rules 10 and 11.",
+          "Rule 10 and Rule 11 take precedence over Rule 8 when evaluating fat digestion in cases of bile deficiency."
+        ],
+        "question": "With the supplement, is fat digestion now occurring in the small intestine despite the gallbladder issue?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The food has now reached the large intestine.",
+          "Most nutrients have been absorbed in the small intestine.",
+          "The person has been diagnosed with lactose intolerance, and the meal contained dairy products."
+        ],
+        "rules": [
+          "Rule 14: Lactose intolerance results from insufficient lactase enzyme in the small intestine.",
+          "Rule 15: Undigested lactose reaches the large intestine where bacteria ferment it, producing gas and drawing water into the colon.",
+          "Rule 16: Nutrient absorption in the large intestine is primarily limited to water, some electrolytes, and certain bacterial metabolites."
+        ],
+        "preferences": [
+          "Rule 14 and Rule 15 are specific to lactose digestion and take precedence over general digestion rules when evaluating dairy processing.",
+          "Rule 12 and Rule 13 modify the constraints imposed by Rules 10 and 11.",
+          "Rule 10 and Rule 11 take precedence over Rule 8 when evaluating fat digestion in cases of bile deficiency."
+        ],
+        "question": "Is lactose from the dairy products being properly digested and absorbed in the digestive system?",
+        "label": false
       }
     ]
   },
@@ -173,6 +256,63 @@
         ],
         "question": "If one light bulb burns out in this series configuration, will the other light bulb still illuminate?",
         "label": false
+      },
+      {
+        "facts": [
+          "A resistor has been added to the series circuit to regulate current flow.",
+          "The battery has been replaced, restoring full voltage.",
+          "A variable capacitor has been connected in parallel with one of the light bulbs."
+        ],
+        "rules": [
+          "Rule 10: Resistors limit the flow of current in a circuit according to Ohm's Law (V=IR).",
+          "Rule 11: Capacitors store electrical energy and can continue to power components momentarily after a circuit is broken.",
+          "Rule 12: A capacitor in parallel with a component can provide an alternate path for current flow."
+        ],
+        "preferences": [
+          "Rule 11 and Rule 12 modify the effects of Rule 8 under specific conditions.",
+          "Rule 8 is preferred over Rule 6 when components are arranged in series."
+        ],
+        "question": "If the light bulb without the parallel capacitor burns out, will the other light bulb continue to illuminate momentarily?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The room temperature has dropped significantly, causing condensation on the circuit components.",
+          "Water droplets have formed on the battery terminals and wire connections.",
+          "The light bulbs and capacitor remain functional."
+        ],
+        "rules": [
+          "Rule 13: Water is a conductor but can create unintended paths for current flow.",
+          "Rule 14: Condensation on circuit connections can cause short circuits by providing alternative pathways with less resistance.",
+          "Rule 15: Short circuits bypass components with higher resistance, directing current through the path of least resistance."
+        ],
+        "preferences": [
+          "Rule 14 and Rule 15 take precedence over Rules 5 and 7 when evaluating current flow in wet conditions.",
+          "Rule 11 and Rule 12 modify the effects of Rule 8 under specific conditions.",
+          "Rule 8 is preferred over Rule 6 when components are arranged in series."
+        ],
+        "question": "Will the light bulbs receive their normal intended current with condensation present on the circuit connections?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The circuit has been waterproofed with insulating material.",
+          "A semiconductor diode has been added to the circuit in series with the power source.",
+          "The circuit is now powered by an alternating current (AC) source instead of a battery."
+        ],
+        "rules": [
+          "Rule 16: Semiconductor diodes allow current to flow in only one direction.",
+          "Rule 17: Alternating current periodically reverses direction, unlike direct current from a battery.",
+          "Rule 18: A diode in an AC circuit will block current flow during half of the AC cycle, when current attempts to flow in the reverse direction."
+        ],
+        "preferences": [
+          "Rule 16 and Rule 18 take precedence over Rule 1 when evaluating circuits with diodes and AC power.",
+          "Rule 14 and Rule 15 take precedence over Rules 5 and 7 when evaluating current flow in wet conditions.",
+          "Rule 11 and Rule 12 modify the effects of Rule 8 under specific conditions.",
+          "Rule 8 is preferred over Rule 6 when components are arranged in series."
+        ],
+        "question": "With the diode in place, will the light bulbs remain continuously illuminated when powered by the AC source?",
+        "label": false
       }
     ]
   },
@@ -233,6 +373,78 @@
           "Rule 3 is preferred over Rule 2 when leaf disease exceeds 50%."
         ],
         "question": "With these newest conditions, will the tomato plant produce fruit?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The gardener has applied an effective fungicide that has reduced the leaf disease to 20%.",
+          "A specialized horticultural LED grow light has been installed, providing an additional 4 hours of light equivalent to 80% of natural sunlight.",
+          "A timed irrigation system maintains soil moisture consistently at 60%."
+        ],
+        "rules": [
+          "Rule 5: Artificial grow lights can supplement natural sunlight for photosynthesis, but at reduced efficiency.",
+          "Rule 6: Effective treatment of plant disease can restore a plant's fruit-bearing capacity if other conditions are favorable."
+        ],
+        "preferences": [
+          "Rule 6 is preferred over Rule 3 when disease has been successfully treated.",
+          "Rule 3 is preferred over Rule 2 when leaf disease exceeds 50%."
+        ],
+        "question": "After these interventions, will the tomato plant now produce fruit?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The tomato plant has begun flowering.",
+          "Nighttime temperatures have dropped to 50°F (10°C).",
+          "The plant is showing signs of phosphorus deficiency with purple discoloration on lower leaves."
+        ],
+        "rules": [
+          "Rule 7: Tomato plants require temperatures between 55-75°F (13-24°C) at night for successful pollination and fruit set.",
+          "Rule 8: Phosphorus is essential for flower formation and fruit development in tomato plants."
+        ],
+        "preferences": [
+          "Rule 7 is preferred over Rules 1 and 2 when determining pollination success.",
+          "Rule 8 is preferred over Rule 6 when nutrient deficiencies are present.",
+          "Rule 6 is preferred over Rule 3 when disease has been successfully treated."
+        ],
+        "question": "Given these new developments, will the tomato plant successfully set fruit?",
+        "label": false
+      },
+      {
+        "facts": [
+          "The gardener has installed a small greenhouse covering over the tomato plant that raises nighttime temperatures by 8°F.",
+          "A balanced fertilizer with added phosphorus has been applied to the soil.",
+          "Beneficial pollinator insects have been introduced to the garden."
+        ],
+        "rules": [
+          "Rule 9: Greenhouse coverings can modify ambient temperatures to create more favorable growing conditions.",
+          "Rule 10: Proper fertilization can correct nutrient deficiencies if applied before plant damage becomes severe."
+        ],
+        "preferences": [
+          "Rule 9 and Rule 10 together can override Rule 7 and Rule 8 when appropriate interventions are made.",
+          "Rule 7 is preferred over Rules 1 and 2 when determining pollination success.",
+          "Rule 8 is preferred over Rule 6 when nutrient deficiencies are present."
+        ],
+        "question": "With the greenhouse and fertilizer additions, will the tomato plant now produce fruit?",
+        "label": true
+      },
+      {
+        "facts": [
+          "A nearby tree has grown taller, now casting shade on the garden for 2 additional hours per day.",
+          "A soil test reveals that the pH has become highly acidic (pH 4.5).",
+          "Blossom end rot has appeared on the first fruits that started to develop."
+        ],
+        "rules": [
+          "Rule 11: Tomato plants require a soil pH between 5.8 and 7.0 for proper nutrient absorption.",
+          "Rule 12: Blossom end rot in tomatoes is caused by calcium deficiency, often related to irregular watering or improper pH.",
+          "Rule 13: Calcium uptake is severely inhibited in highly acidic soils regardless of calcium presence."
+        ],
+        "preferences": [
+          "Rule 11 and Rule 13 together take precedence over Rule 10 when pH is outside acceptable range.",
+          "Rule 12 indicates fruit quality issues even if fruits begin to form.",
+          "Rule 9 and Rule 10 together can override Rule 7 and Rule 8 when appropriate interventions are made."
+        ],
+        "question": "Will the tomato plant produce healthy, edible fruit under these conditions?",
         "label": false
       }
     ]
@@ -684,6 +896,51 @@
           "Preference 5: Distinguish between genetic and environmental factors."
         ],
         "question": "If a farmer wants consistent flower color regardless of soil conditions, which genotype should be selected?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The flower color gene exhibits pleiotropic effects, also influencing nectar production.",
+          "Plants with the R allele produce 50% more nectar than those with only r alleles.",
+          "The R' allele produces an intermediate nectar amount."
+        ],
+        "rules": [
+          "Rule 7: Pleiotropic genes affect multiple phenotypic traits simultaneously."
+        ],
+        "preferences": [
+          "Preference 6: Consider multiple traits when making breeding decisions."
+        ],
+        "question": "If a commercial grower wants to attract more pollinators while maintaining orange flower color, which genotype combination should they aim for in their breeding program?",
+        "label": true
+      },
+      {
+        "facts": [
+          "Epistasis has been observed between the flower color gene and a newly discovered gene for petal structure.",
+          "The petal structure gene has two alleles: flat (F) and ruffled (f).",
+          "When F is present, the flower color gene expresses normally, but in ff plants, all flowers appear pale regardless of flower color genotype."
+        ],
+        "rules": [
+          "Rule 8: In epistasis, one gene can mask or modify the phenotypic expression of another gene."
+        ],
+        "preferences": [
+          "Preference 7: Account for gene interactions in phenotypic predictions."
+        ],
+        "question": "If a plant with genotype RrFf is crossed with a plant with genotype Rrff, what proportion of offspring will have the expected color based on their flower color genotype?",
+        "label": true
+      },
+      {
+        "facts": [
+          "The flower color gene shows variable expressivity based on temperature.",
+          "At temperatures above 30°C, the R allele shows reduced expression, causing red flowers to appear lighter.",
+          "The r allele's expression is not affected by temperature."
+        ],
+        "rules": [
+          "Rule 9: Variable expressivity means the same genotype can produce different phenotypes under different conditions."
+        ],
+        "preferences": [
+          "Preference 8: Consider climate adaptation in breeding programs."
+        ],
+        "question": "For a greenhouse operation in a region with hot summers, which flower color genotypes would provide the most consistent visual product year-round?",
         "label": true
       }
     ]
