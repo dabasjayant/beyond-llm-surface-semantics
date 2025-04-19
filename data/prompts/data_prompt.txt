@@ -50,7 +50,7 @@ Scenario example:
   "preferences": [
     "Preference 1: Policy focus should be on job creation."
   ],
-  "question": "What should the government do to improve the economy?",
+  "question": "Should the government introduce new policy to improve the economy?",
   "label": true,
   "updates": [
     {
@@ -64,7 +64,7 @@ Scenario example:
       "preferences": [
         "Preference 1: The government should prioritize infrastructure projects."
       ],
-      "question": "How should the policy be adjusted based on the new announcement?",
+      "question": "Should the policy be adjusted based on the new announcement?",
       "label": true
     },
     {
@@ -77,7 +77,7 @@ Scenario example:
       "preferences": [
         "Preference 2: Immediate aid to struggling industries is necessary."
       ],
-      "question": "What action should be taken in response to the economic crisis?",
+      "question": "Should an action be taken in response to the economic crisis?",
       "label": false
     },
     {
@@ -90,7 +90,7 @@ Scenario example:
       "preferences": [
         "Preference 3: The government should offer direct relief to citizens."
       ],
-      "question": "How should the government restore public confidence?",
+      "question": "Should the government restore public confidence?",
       "label": true
     }
   ]
