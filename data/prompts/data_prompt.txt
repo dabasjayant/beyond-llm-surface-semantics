@@ -15,7 +15,7 @@ To enable this, we created prompt templates that promote context retention and c
 I'll need your help in designing our dataset.
 
 Task Description:
-We are creating challenging scenario with greater complexity that will more effectively test the limits of LLMs on adaptive reasoning. It'll test reasoning flexibility and memory consistency over multiple updates. Each update should involve changes to the scenario by adding or modifying facts, rules, or preferences. These updates should introduce complexity and challenge reasoning over time. The number of updates must vary between 3 and 7, with at least one scenario for each depth (3, 4, 5, 6, 7 updates).
+We are creating challenging scenarios with greater complexity that will more effectively test the limits of LLMs on adaptive reasoning. It'll test reasoning flexibility and memory consistency over multiple updates. Each update should involve changes to the scenario by adding or modifying facts, rules, or preferences. These updates should introduce complexity and challenge reasoning over time.
 
 Objectives:
 - Rule Injection: Introduce contradictions, surprise events, or unexpected rule changes in each update to test reasoning flexibility.
@@ -26,15 +26,15 @@ Guidelines:
 - Facts: Can only be added. They should provide critical information and evolve with each update.
 - Rules: Can be added or modified. They should be logically consistent with the facts presented and reflect realistic causal changes.
 - Preferences: Can be updated or added based on the changing context of the scenario.
-- Question: This may stay the same or change between updates. It should always be relevant to the facts and rules presented.
+- Question: This may stay the same or change between updates. It should always be relevant to the facts and rules presented. Only yes and no type questions.
 - Label: Represents the ground-truth answer to the question for that update, based on the current facts, rules, and preferences.
 
 Update Structure:
-- Updates: The number of updates should vary from 3 to 7, with each domain covering four scenarios of each depth (4, 5, 6, 7, 8). Each update introduces new facts, changes to rules, or updates preferences.
+- Updates: Each domain should cover four scenarios of each depth. Range of total rounds = {4, 5, 6, 7, 8}
 - Changes per Update: Ensure each update introduces at least one change (fact, rule, or preference).
 - Causal Validity: Ensure that changes follow logical causal relationships—new facts should have clear consequences, and rule changes should logically follow from earlier updates.
 
-Generate 20 scenarios based on the requirements covering four scenarios of each depth (4, 5, 6, 7, 8).
+Generate 20 complex scenarios with greater complexity that will more effectively test the limits of LLMs reasoning based on the requirements covering four scenarios of each depth, i.e. 4 scenarios with 4 total rounds, 4 with 5 total rounds, 4 with 6 total rounds, 4 with 7 total rounds, and 4 with 8 total rounds.
 
 Scenario example:
 ```
@@ -106,4 +106,4 @@ Please follow below additional requests:
 1.⁠ ⁠From the second round, you have to, of course, consider not only the rules and preferences of the corresponding round but also the rules and preferences from all the previous rounds.
 2.⁠ ⁠Add rules in ascending order. (e.g. don't add rule 6 in round n and add rule 5 in round (n-1))
 
-Domain: politics
+Domain: behavior
